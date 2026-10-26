@@ -245,6 +245,15 @@ namespace PokeMoba.UI
             toastText.supportRichText = true;
             toastText.rectTransform.Place(new Vector2(0.5f, 0.5f), new Vector2(0f, 180f), new Vector2(1400f, 200f));
 
+            if (Application.isMobilePlatform)
+            {
+                var lookZone = UIFactory.CreateImage("Arrastrar para mirar", rect, Color.clear);
+                lookZone.rectTransform.anchorMin = new Vector2(0.5f, 0.38f);
+                lookZone.rectTransform.anchorMax = new Vector2(1f, 0.8f);
+                lookZone.rectTransform.offsetMin = Vector2.zero;
+                lookZone.rectTransform.offsetMax = Vector2.zero;
+                lookZone.gameObject.AddComponent<CameraLookPad>();
+            }
             BuildJoystick(rect);
 
             var bottomRight = new Vector2(1f, 0f);
