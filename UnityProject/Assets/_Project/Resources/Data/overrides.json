@@ -1,0 +1,1365 @@
+{
+  "_info": "Ajustes a mano que no vienen de PokeAPI. El importador no sobrescribe este archivo (salvo con --reset-overrides). En 'moves' se puede corregir la forma sugerida, por ejemplo: \"tackle\": {\"shape\": \"Dash\"}.",
+  "species": {
+    "bulbasaur": {
+      "role": "Atacante",
+      "diet": "HojasPlantas",
+      "favoriteFlavor": null,
+      "zone": 0,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "ivysaur": {
+      "role": "Atacante",
+      "diet": "HojasPlantas",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "venusaur": {
+      "role": "Soporte",
+      "diet": "HojasPlantas",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "charmander": {
+      "role": "Atacante",
+      "diet": "FuegoCalor",
+      "favoriteFlavor": null,
+      "zone": 0,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "charmeleon": {
+      "role": "Atacante",
+      "diet": "FuegoCalor",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "charizard": {
+      "role": "Atacante",
+      "diet": "FuegoCalor",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "squirtle": {
+      "role": "Atacante",
+      "diet": "AlgasPlancton",
+      "favoriteFlavor": null,
+      "zone": 0,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "wartortle": {
+      "role": "Defensor",
+      "diet": "AlgasPlancton",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "blastoise": {
+      "role": "Defensor",
+      "diet": "AlgasPlancton",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "caterpie": {
+      "role": "Luchador",
+      "diet": "HojasPlantas",
+      "favoriteFlavor": null,
+      "zone": 2,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "metapod": {
+      "role": "Atacante",
+      "diet": "HojasPlantas",
+      "favoriteFlavor": null,
+      "zone": 2,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "butterfree": {
+      "role": "Soporte",
+      "diet": "NectarPolen",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "weedle": {
+      "role": "Luchador",
+      "diet": "HojasPlantas",
+      "favoriteFlavor": null,
+      "zone": 2,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "kakuna": {
+      "role": "Luchador",
+      "diet": "HojasPlantas",
+      "favoriteFlavor": null,
+      "zone": 2,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "beedrill": {
+      "role": "Luchador",
+      "diet": "NectarPolen",
+      "favoriteFlavor": null,
+      "zone": 2,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "pidgey": {
+      "role": "Luchador",
+      "diet": "BayasFrutas",
+      "favoriteFlavor": null,
+      "zone": 1,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "pidgeotto": {
+      "role": "Luchador",
+      "diet": "BayasFrutas",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "pidgeot": {
+      "role": "Veloz",
+      "diet": "BayasFrutas",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "rattata": {
+      "role": "Luchador",
+      "diet": "DeTodo",
+      "favoriteFlavor": null,
+      "zone": 1,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "raticate": {
+      "role": "Veloz",
+      "diet": "DeTodo",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "spearow": {
+      "role": "Luchador",
+      "diet": "BayasFrutas",
+      "favoriteFlavor": null,
+      "zone": 1,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "fearow": {
+      "role": "Veloz",
+      "diet": "BayasFrutas",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "ekans": {
+      "role": "Luchador",
+      "diet": "BayasFrutas",
+      "favoriteFlavor": null,
+      "zone": 3,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "arbok": {
+      "role": "Luchador",
+      "diet": "BayasFrutas",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "pikachu": {
+      "role": "Veloz",
+      "diet": "BayasFrutas",
+      "favoriteFlavor": null,
+      "zone": 2,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "raichu": {
+      "role": "Veloz",
+      "diet": "BayasFrutas",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "sandshrew": {
+      "role": "Luchador",
+      "diet": "Minerales",
+      "favoriteFlavor": null,
+      "zone": 3,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "sandslash": {
+      "role": "Luchador",
+      "diet": "Minerales",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "nidoran-f": {
+      "role": "Luchador",
+      "diet": "BayasFrutas",
+      "favoriteFlavor": null,
+      "zone": 3,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "nidorina": {
+      "role": "Luchador",
+      "diet": "BayasFrutas",
+      "favoriteFlavor": null,
+      "zone": 14,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "nidoqueen": {
+      "role": "Defensor",
+      "diet": "BayasFrutas",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "nidoran-m": {
+      "role": "Luchador",
+      "diet": "BayasFrutas",
+      "favoriteFlavor": null,
+      "zone": 3,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "nidorino": {
+      "role": "Luchador",
+      "diet": "BayasFrutas",
+      "favoriteFlavor": null,
+      "zone": 14,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "nidoking": {
+      "role": "Luchador",
+      "diet": "BayasFrutas",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "clefairy": {
+      "role": "Soporte",
+      "diet": "BayasFrutas",
+      "favoriteFlavor": null,
+      "zone": 4,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "clefable": {
+      "role": "Soporte",
+      "diet": "BayasFrutas",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "vulpix": {
+      "role": "Atacante",
+      "diet": "FuegoCalor",
+      "favoriteFlavor": null,
+      "zone": 8,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "ninetales": {
+      "role": "Veloz",
+      "diet": "FuegoCalor",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "jigglypuff": {
+      "role": "Soporte",
+      "diet": "BayasFrutas",
+      "favoriteFlavor": null,
+      "zone": 3,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "wigglytuff": {
+      "role": "Soporte",
+      "diet": "BayasFrutas",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "zubat": {
+      "role": "Luchador",
+      "diet": "BayasFrutas",
+      "favoriteFlavor": null,
+      "zone": 4,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "golbat": {
+      "role": "Veloz",
+      "diet": "BayasFrutas",
+      "favoriteFlavor": null,
+      "zone": 15,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "oddish": {
+      "role": "Atacante",
+      "diet": "HojasPlantas",
+      "favoriteFlavor": null,
+      "zone": 5,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "gloom": {
+      "role": "Atacante",
+      "diet": "HojasPlantas",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "vileplume": {
+      "role": "Atacante",
+      "diet": "HojasPlantas",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "paras": {
+      "role": "Luchador",
+      "diet": "HojasPlantas",
+      "favoriteFlavor": null,
+      "zone": 4,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "parasect": {
+      "role": "Luchador",
+      "diet": "HojasPlantas",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "venonat": {
+      "role": "Luchador",
+      "diet": "NectarPolen",
+      "favoriteFlavor": null,
+      "zone": 9,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "venomoth": {
+      "role": "Atacante",
+      "diet": "NectarPolen",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "diglett": {
+      "role": "Veloz",
+      "diet": "Minerales",
+      "favoriteFlavor": null,
+      "zone": 6,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "dugtrio": {
+      "role": "Veloz",
+      "diet": "Minerales",
+      "favoriteFlavor": null,
+      "zone": 14,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "meowth": {
+      "role": "Veloz",
+      "diet": "DeTodo",
+      "favoriteFlavor": null,
+      "zone": 5,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "persian": {
+      "role": "Veloz",
+      "diet": "DeTodo",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "psyduck": {
+      "role": "Atacante",
+      "diet": "Pescado",
+      "favoriteFlavor": null,
+      "zone": 5,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "golduck": {
+      "role": "Atacante",
+      "diet": "Pescado",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "mankey": {
+      "role": "Luchador",
+      "diet": "DeTodo",
+      "favoriteFlavor": null,
+      "zone": 5,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "primeape": {
+      "role": "Veloz",
+      "diet": "DeTodo",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "growlithe": {
+      "role": "Luchador",
+      "diet": "FuegoCalor",
+      "favoriteFlavor": null,
+      "zone": 8,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "arcanine": {
+      "role": "Veloz",
+      "diet": "FuegoCalor",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "poliwag": {
+      "role": "Veloz",
+      "diet": "AlgasPlancton",
+      "favoriteFlavor": null,
+      "zone": 1,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "poliwhirl": {
+      "role": "Veloz",
+      "diet": "AlgasPlancton",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "poliwrath": {
+      "role": "Defensor",
+      "diet": "AlgasPlancton",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "abra": {
+      "role": "Atacante",
+      "diet": "BayasFrutas",
+      "favoriteFlavor": null,
+      "zone": 5,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "kadabra": {
+      "role": "Atacante",
+      "diet": "BayasFrutas",
+      "favoriteFlavor": null,
+      "zone": 7,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "alakazam": {
+      "role": "Atacante",
+      "diet": "BayasFrutas",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "machop": {
+      "role": "Luchador",
+      "diet": "DeTodo",
+      "favoriteFlavor": null,
+      "zone": 7,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "machoke": {
+      "role": "Luchador",
+      "diet": "DeTodo",
+      "favoriteFlavor": null,
+      "zone": 15,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "machamp": {
+      "role": "Luchador",
+      "diet": "DeTodo",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "bellsprout": {
+      "role": "Luchador",
+      "diet": "HojasPlantas",
+      "favoriteFlavor": null,
+      "zone": 5,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "weepinbell": {
+      "role": "Luchador",
+      "diet": "HojasPlantas",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "victreebel": {
+      "role": "Luchador",
+      "diet": "HojasPlantas",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "tentacool": {
+      "role": "Atacante",
+      "diet": "AlgasPlancton",
+      "favoriteFlavor": null,
+      "zone": 6,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "tentacruel": {
+      "role": "Atacante",
+      "diet": "AlgasPlancton",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "geodude": {
+      "role": "Luchador",
+      "diet": "Minerales",
+      "favoriteFlavor": null,
+      "zone": 3,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "graveler": {
+      "role": "Luchador",
+      "diet": "Minerales",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "golem": {
+      "role": "Luchador",
+      "diet": "Minerales",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "ponyta": {
+      "role": "Veloz",
+      "diet": "FuegoCalor",
+      "favoriteFlavor": null,
+      "zone": 13,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "rapidash": {
+      "role": "Veloz",
+      "diet": "FuegoCalor",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "slowpoke": {
+      "role": "Luchador",
+      "diet": "AlgasPlancton",
+      "favoriteFlavor": null,
+      "zone": 12,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "slowbro": {
+      "role": "Defensor",
+      "diet": "AlgasPlancton",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "magnemite": {
+      "role": "Atacante",
+      "diet": "Electricidad",
+      "favoriteFlavor": null,
+      "zone": 11,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "magneton": {
+      "role": "Atacante",
+      "diet": "Electricidad",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "farfetchd": {
+      "role": "Luchador",
+      "diet": "InsectosSemillas",
+      "favoriteFlavor": null,
+      "zone": 6,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "doduo": {
+      "role": "Luchador",
+      "diet": "InsectosSemillas",
+      "favoriteFlavor": null,
+      "zone": 9,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "dodrio": {
+      "role": "Veloz",
+      "diet": "InsectosSemillas",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "seel": {
+      "role": "Defensor",
+      "diet": "Pescado",
+      "favoriteFlavor": null,
+      "zone": 12,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "dewgong": {
+      "role": "Defensor",
+      "diet": "Pescado",
+      "favoriteFlavor": null,
+      "zone": 12,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "grimer": {
+      "role": "Luchador",
+      "diet": "Residuos",
+      "favoriteFlavor": null,
+      "zone": 13,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "muk": {
+      "role": "Defensor",
+      "diet": "Residuos",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "shellder": {
+      "role": "Luchador",
+      "diet": "AlgasPlancton",
+      "favoriteFlavor": null,
+      "zone": 6,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "cloyster": {
+      "role": "Defensor",
+      "diet": "AlgasPlancton",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "gastly": {
+      "role": "Atacante",
+      "diet": "EnergiaEspiritual",
+      "favoriteFlavor": null,
+      "zone": 7,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "haunter": {
+      "role": "Atacante",
+      "diet": "EnergiaEspiritual",
+      "favoriteFlavor": null,
+      "zone": 7,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "gengar": {
+      "role": "Atacante",
+      "diet": "EnergiaEspiritual",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "onix": {
+      "role": "Defensor",
+      "diet": "Minerales",
+      "favoriteFlavor": null,
+      "zone": 4,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "drowzee": {
+      "role": "Defensor",
+      "diet": "EnergiaEspiritual",
+      "favoriteFlavor": null,
+      "zone": 6,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "hypno": {
+      "role": "Defensor",
+      "diet": "EnergiaEspiritual",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "krabby": {
+      "role": "Luchador",
+      "diet": "AlgasPlancton",
+      "favoriteFlavor": null,
+      "zone": 6,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "kingler": {
+      "role": "Luchador",
+      "diet": "AlgasPlancton",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "voltorb": {
+      "role": "Veloz",
+      "diet": "Electricidad",
+      "favoriteFlavor": null,
+      "zone": 11,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "electrode": {
+      "role": "Atacante",
+      "diet": "Electricidad",
+      "favoriteFlavor": null,
+      "zone": 11,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "exeggcute": {
+      "role": "Atacante",
+      "diet": "HojasPlantas",
+      "favoriteFlavor": null,
+      "zone": 9,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "exeggutor": {
+      "role": "Atacante",
+      "diet": "HojasPlantas",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "cubone": {
+      "role": "Defensor",
+      "diet": "Minerales",
+      "favoriteFlavor": null,
+      "zone": 7,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "marowak": {
+      "role": "Defensor",
+      "diet": "Minerales",
+      "favoriteFlavor": null,
+      "zone": 15,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "hitmonlee": {
+      "role": "Luchador",
+      "diet": "DeTodo",
+      "favoriteFlavor": null,
+      "zone": 10,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "hitmonchan": {
+      "role": "Luchador",
+      "diet": "DeTodo",
+      "favoriteFlavor": null,
+      "zone": 10,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "lickitung": {
+      "role": "Defensor",
+      "diet": "BayasFrutas",
+      "favoriteFlavor": null,
+      "zone": 9,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "koffing": {
+      "role": "Luchador",
+      "diet": "Residuos",
+      "favoriteFlavor": null,
+      "zone": 13,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "weezing": {
+      "role": "Defensor",
+      "diet": "Residuos",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "rhyhorn": {
+      "role": "Luchador",
+      "diet": "Minerales",
+      "favoriteFlavor": null,
+      "zone": 9,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "rhydon": {
+      "role": "Luchador",
+      "diet": "Minerales",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "chansey": {
+      "role": "Soporte",
+      "diet": "BayasFrutas",
+      "favoriteFlavor": null,
+      "zone": 9,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "tangela": {
+      "role": "Atacante",
+      "diet": "HojasPlantas",
+      "favoriteFlavor": null,
+      "zone": 8,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "kangaskhan": {
+      "role": "Veloz",
+      "diet": "DeTodo",
+      "favoriteFlavor": null,
+      "zone": 9,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "horsea": {
+      "role": "Atacante",
+      "diet": "AlgasPlancton",
+      "favoriteFlavor": null,
+      "zone": 12,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "seadra": {
+      "role": "Atacante",
+      "diet": "AlgasPlancton",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "goldeen": {
+      "role": "Luchador",
+      "diet": "AlgasPlancton",
+      "favoriteFlavor": null,
+      "zone": 5,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "seaking": {
+      "role": "Luchador",
+      "diet": "AlgasPlancton",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "staryu": {
+      "role": "Atacante",
+      "diet": "AlgasPlancton",
+      "favoriteFlavor": null,
+      "zone": 12,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "starmie": {
+      "role": "Atacante",
+      "diet": "AlgasPlancton",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "mr-mime": {
+      "role": "Soporte",
+      "diet": "BayasFrutas",
+      "favoriteFlavor": null,
+      "zone": 10,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "scyther": {
+      "role": "Veloz",
+      "diet": "HojasPlantas",
+      "favoriteFlavor": null,
+      "zone": 9,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "jynx": {
+      "role": "Atacante",
+      "diet": "BayasFrutas",
+      "favoriteFlavor": null,
+      "zone": 12,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "electabuzz": {
+      "role": "Atacante",
+      "diet": "Electricidad",
+      "favoriteFlavor": null,
+      "zone": 11,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "magmar": {
+      "role": "Veloz",
+      "diet": "FuegoCalor",
+      "favoriteFlavor": null,
+      "zone": 13,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "pinsir": {
+      "role": "Luchador",
+      "diet": "HojasPlantas",
+      "favoriteFlavor": null,
+      "zone": 9,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "tauros": {
+      "role": "Veloz",
+      "diet": "BayasFrutas",
+      "favoriteFlavor": null,
+      "zone": 9,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "magikarp": {
+      "role": "Atacante",
+      "diet": "AlgasPlancton",
+      "favoriteFlavor": null,
+      "zone": 4,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "gyarados": {
+      "role": "Luchador",
+      "diet": "AlgasPlancton",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "lapras": {
+      "role": "Defensor",
+      "diet": "AlgasPlancton",
+      "favoriteFlavor": null,
+      "zone": 10,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "ditto": {
+      "role": "Luchador",
+      "diet": "BayasFrutas",
+      "favoriteFlavor": null,
+      "zone": 13,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "eevee": {
+      "role": "Luchador",
+      "diet": "BayasFrutas",
+      "favoriteFlavor": null,
+      "zone": 8,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "vaporeon": {
+      "role": "Atacante",
+      "diet": "BayasFrutas",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "jolteon": {
+      "role": "Atacante",
+      "diet": "BayasFrutas",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "flareon": {
+      "role": "Luchador",
+      "diet": "BayasFrutas",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "porygon": {
+      "role": "Atacante",
+      "diet": "BayasFrutas",
+      "favoriteFlavor": null,
+      "zone": 8,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "omanyte": {
+      "role": "Atacante",
+      "diet": "Minerales",
+      "favoriteFlavor": null,
+      "zone": 4,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "omastar": {
+      "role": "Atacante",
+      "diet": "Minerales",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "kabuto": {
+      "role": "Luchador",
+      "diet": "Minerales",
+      "favoriteFlavor": null,
+      "zone": 4,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "kabutops": {
+      "role": "Luchador",
+      "diet": "Minerales",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "aerodactyl": {
+      "role": "Veloz",
+      "diet": "Minerales",
+      "favoriteFlavor": null,
+      "zone": 13,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "snorlax": {
+      "role": "Defensor",
+      "diet": "DeTodo",
+      "favoriteFlavor": null,
+      "zone": 7,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "articuno": {
+      "role": "Defensor",
+      "diet": "BayasFrutas",
+      "favoriteFlavor": null,
+      "zone": 12,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "zapdos": {
+      "role": "Atacante",
+      "diet": "Electricidad",
+      "favoriteFlavor": null,
+      "zone": 11,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "moltres": {
+      "role": "Atacante",
+      "diet": "FuegoCalor",
+      "favoriteFlavor": null,
+      "zone": 15,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "dratini": {
+      "role": "Luchador",
+      "diet": "AlgasPlancton",
+      "favoriteFlavor": null,
+      "zone": 9,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "dragonair": {
+      "role": "Luchador",
+      "diet": "AlgasPlancton",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "dragonite": {
+      "role": "Luchador",
+      "diet": "AlgasPlancton",
+      "favoriteFlavor": null,
+      "zone": null,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "mewtwo": {
+      "role": "Atacante",
+      "diet": "BayasFrutas",
+      "favoriteFlavor": null,
+      "zone": 16,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    },
+    "mew": {
+      "role": "Veloz",
+      "diet": "BayasFrutas",
+      "favoriteFlavor": null,
+      "zone": 17,
+      "basicMove": null,
+      "skills": [],
+      "ultimate": null
+    }
+  },
+  "moves": {}
+}

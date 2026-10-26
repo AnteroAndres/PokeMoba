@@ -1,0 +1,21 @@
+# Unity
+UnityProject/[Ll]ibrary/
+UnityProject/[Tt]emp/
+UnityProject/[Oo]bj/
+UnityProject/[Bb]uild/
+UnityProject/[Bb]uilds/
+UnityProject/[Ll]ogs/
+UnityProject/[Uu]ser[Ss]ettings/
+UnityProject/MemoryCaptures/
+UnityProject/*.csproj
+UnityProject/*.sln
+UnityProject/*.slnx
+UnityProject/.vs/
+UnityProject/.vscode/
+UnityProject/.idea/
+*.apk
+*.aab
+
+# Herramientas (la caché de PokeAPI se regenera; el JSON generado sí se versiona)
+Tools/import_pokeapi/cache/
+__pycache__/

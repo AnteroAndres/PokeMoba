@@ -1,0 +1,163 @@
+using UnityEngine;
+
+namespace PokeMoba.Combat
+{
+    /// <summary>Movimiento, esquiva, empujes y estamina. No usa físicas: todo se resuelve en el plano XZ.</summary>
+    public class CreatureMotor : MonoBehaviour
+    {
+        public float MoveSpeed { get; set; } = CombatTuning.BaseMoveSpeed;
+        public float Stamina { get; private set; } = CombatTuning.MaxStamina;
+        public Vector3 Facing { get; private set; } = Vector3.forward;
+        public Vector3 MoveInput { get; private set; }
+
+        public bool IsDodging => dodgeTimer > 0f;
+        public bool IsInvulnerable => invulnerableTimer > 0f;
+        public bool IsMovementLocked => lockTimer > 0f;
+
+        Combatant combatant;
+        Transform model;
+        Vector3 dodgeDirection;
+        Vector3 knockback;
+        float dodgeTimer;
+        float invulnerableTimer;
+        float dodgeCooldownTimer;
+        float lockTimer;
+        float bobPhase;
+
+        // Start y no Awake: Combatant añade este componente por RequireComponent
+        // y en ese momento todavía no existe.
+        void Start()
+        {
+            combatant = GetComponent<Combatant>();
+            model = transform.Find("Model");
+            Facing = transform.forward;
+        }
+
+        /// <summary>Dirección en el mundo (XZ); magnitud 0–1.</summary>
+        public void SetMoveInput(Vector3 direction)
+        {
+            direction.y = 0f;
+            MoveInput = Vector3.ClampMagnitude(direction, 1f);
+        }
+
+        public void FaceDirection(Vector3 direction)
+        {
+            direction.y = 0f;
+            if (direction.sqrMagnitude > 0.0001f) Facing = direction.normalized;
+        }
+
+        public void LockMovement(float seconds) => lockTimer = Mathf.Max(lockTimer, seconds);
+
+        public void ApplyKnockback(Vector3 impulse) => knockback += impulse;
+
+        /// <summary>Desplazamiento forzado (embestidas). Respeta el borde de la arena.</summary>
+        public void Displace(Vector3 delta) => transform.position = ClampToArena(transform.position + delta);
+
+        public bool TryDodge(Vector3 direction)
+        {
+            if (combatant.IsDead || IsDodging || dodgeCooldownTimer > 0f || Stamina < CombatTuning.DodgeCost)
+                return false;
+
+            direction.y = 0f;
+            if (direction.sqrMagnitude < 0.01f) direction = -Facing;
+
+            dodgeDirection = direction.normalized;
+            Stamina -= CombatTuning.DodgeCost;
+            dodgeTimer = CombatTuning.DodgeDuration;
+            invulnerableTimer = CombatTuning.DodgeInvulnerability;
+            dodgeCooldownTimer = CombatTuning.DodgeDuration + CombatTuning.DodgeCooldown;
+            lockTimer = 0f;
+            return true;
+        }
+
+        void Update()
+        {
+            float dt = Time.deltaTime;
+            dodgeTimer -= dt;
+            invulnerableTimer -= dt;
+            dodgeCooldownTimer -= dt;
+            lockTimer -= dt;
+
+            if (combatant.IsDead) return;
+
+            if (!IsDodging)
+                Stamina = Mathf.Min(CombatTuning.MaxStamina, Stamina + CombatTuning.StaminaRegen * dt);
+
+            Vector3 velocity;
+            if (IsDodging)
+            {
+                velocity = dodgeDirection * CombatTuning.DodgeSpeed;
+            }
+            else if (IsMovementLocked)
+            {
+                velocity = Vector3.zero;
+            }
+            else
+            {
+                velocity = MoveInput * MoveSpeed;
+                if (MoveInput.sqrMagnitude > 0.01f) FaceDirection(MoveInput);
+            }
+
+            velocity += knockback;
+            knockback = Vector3.MoveTowards(knockback, Vector3.zero, CombatTuning.KnockbackDecay * dt);
+
+            Vector3 position = transform.position + velocity * dt;
+            if (!IsDodging) position = SeparateFromOthers(position);
+            transform.position = ClampToArena(position);
+
+            transform.rotation = Quaternion.Slerp(
+                transform.rotation, Quaternion.LookRotation(Facing), 1f - Mathf.Exp(-15f * dt));
+
+            AnimateModel(dt, velocity);
+        }
+
+        void AnimateModel(float dt, Vector3 velocity)
+        {
+            if (model == null) return;
+
+            if (IsDodging)
+            {
+                // Giro y salto mientras esquiva.
+                float t = 1f - dodgeTimer / CombatTuning.DodgeDuration;
+                model.localRotation = Quaternion.Euler(0f, 360f * t, 0f);
+                model.localPosition = new Vector3(0f, Mathf.Sin(t * Mathf.PI) * 0.6f, 0f);
+                return;
+            }
+
+            model.localRotation = Quaternion.identity;
+            float speed = new Vector3(velocity.x, 0f, velocity.z).magnitude;
+            if (speed > 0.1f)
+            {
+                bobPhase += dt * 12f;
+                model.localPosition = new Vector3(0f, Mathf.Abs(Mathf.Sin(bobPhase)) * 0.15f, 0f);
+            }
+            else
+            {
+                model.localPosition = Vector3.Lerp(model.localPosition, Vector3.zero, 10f * dt);
+            }
+        }
+
+        Vector3 SeparateFromOthers(Vector3 position)
+        {
+            float minDistance = CombatTuning.BodyRadius * 2f;
+            foreach (var other in Combatant.All)
+            {
+                if (other == combatant || other.IsDead) continue;
+                Vector3 offset = position - other.transform.position;
+                offset.y = 0f;
+                float distance = offset.magnitude;
+                if (distance < minDistance && distance > 0.0001f)
+                    position = other.transform.position + offset / distance * minDistance;
+            }
+            return position;
+        }
+
+        public static Vector3 ClampToArena(Vector3 position)
+        {
+            position.y = 0f;
+            float limit = CombatTuning.ArenaRadius - CombatTuning.BodyRadius;
+            if (position.magnitude > limit) position = position.normalized * limit;
+            return position;
+        }
+    }
+}
