@@ -6,7 +6,8 @@ namespace PokeMoba.AI
 {
     /// <summary>
     /// Pokémon salvaje de la Aventura: pasea cerca de donde apareció y pelea si lo atacan
-    /// (o si es agresivo y el jugador se acerca). Deja de perseguir si el jugador se aleja.
+    /// (o si es agresivo y te acercas). Ataca a tu Pokémon; algunos agresivos van a por el entrenador
+    /// (como en los Legends). Deja de perseguir si el entrenador se aleja.
     /// </summary>
     [RequireComponent(typeof(EnemyAI))]
     public class WildBehaviour : MonoBehaviour
@@ -14,29 +15,39 @@ namespace PokeMoba.AI
         const float AggroRange = 5f;
         const float LeashRange = 18f;
         const float WanderRadius = 6f;
+        const float RetargetInterval = 0.5f;
 
         public int Level { get; private set; }
         public bool Boss { get; private set; }
         public bool Aggro { get; private set; }
+        /// <summary>Va a por el entrenador en vez de a por su Pokémon.</summary>
+        public bool HuntsTrainer { get; private set; }
 
         Combatant self;
         EnemyAI ai;
         CreatureMotor motor;
-        Func<Combatant> player;
+        Func<Combatant> pokemonTarget;
+        Func<Combatant> trainer;
         bool aggressive;
         Vector3 home;
         Vector3 wanderTarget;
         float wanderTimer;
+        float retargetTimer;
 
-        public void Setup(Func<Combatant> playerProvider, int level, bool boss, bool isAggressive)
+        /// <param name="pokemonTarget">A quién atacar normalmente (tu Pokémon, o el entrenador si no hay).</param>
+        /// <param name="trainerProvider">El entrenador: distancia de detección y objetivo de los que le cazan.</param>
+        public void Setup(Func<Combatant> pokemonTarget, Func<Combatant> trainerProvider, int level, bool boss,
+            bool isAggressive, bool huntsTrainer)
         {
             self = GetComponent<Combatant>();
             ai = GetComponent<EnemyAI>();
             motor = GetComponent<CreatureMotor>();
-            player = playerProvider;
+            this.pokemonTarget = pokemonTarget;
+            trainer = trainerProvider;
             Level = level;
             Boss = boss;
             aggressive = isAggressive;
+            HuntsTrainer = huntsTrainer;
             home = transform.position;
             wanderTarget = home;
             ai.IdleTick = Wander;
@@ -49,7 +60,7 @@ namespace PokeMoba.AI
         public void Engage()
         {
             Aggro = true;
-            ai.SetTarget(player());
+            ai.SetTarget(ChooseTarget());
         }
 
         void Disengage()
@@ -58,21 +69,38 @@ namespace PokeMoba.AI
             ai.SetTarget(null);
         }
 
+        Combatant ChooseTarget()
+        {
+            var t = trainer();
+            if (HuntsTrainer && t != null && !t.IsDead) return t;
+            return pokemonTarget();
+        }
+
         void Update()
         {
             if (self == null || self.IsDead) return;
 
-            var target = player();
-            if (target == null || target.IsDead)
+            var t = trainer();
+            if (t == null || t.IsDead)
             {
                 if (Aggro) Disengage();
                 return;
             }
 
-            float distance = CombatQueries.FlatDistance(transform.position, target.transform.position);
+            float distance = CombatQueries.FlatDistance(transform.position, t.transform.position);
             if (!Aggro && aggressive && distance < AggroRange) Engage();
             else if (Aggro && distance > LeashRange) Disengage();
-            else if (Aggro && ai.Target != target) ai.SetTarget(target); // el jugador cambió de Pokémon
+            else if (Aggro)
+            {
+                // El objetivo puede cambiar (cambio de Pokémon, debilitado): revisarlo de vez en cuando.
+                retargetTimer -= Time.deltaTime;
+                if (retargetTimer <= 0f)
+                {
+                    retargetTimer = RetargetInterval;
+                    var target = ChooseTarget();
+                    if (ai.Target != target) ai.SetTarget(target);
+                }
+            }
         }
 
         void Wander()

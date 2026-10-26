@@ -48,27 +48,30 @@ namespace PokeMoba.Modes
             world = ctx.NewWorld($"Combate contra {trainer.Name}");
             EnvironmentBuilder.BuildArena(trainer.Arena, world);
 
-            party = new PartyFighter(ctx, world, withTrainer: false);
-            party.AllFainted += () => Finish(false);
-            party.Spawned += player =>
-            {
-                if (enemyAi != null) enemyAi.SetTarget(player);
-                if (enemy != null) ctx.Hud.SetEnemy(enemy);
-                ctx.Follow.SetTargets(player.transform, enemy != null ? enemy.transform : null);
-            };
-
             ctx.Hud.gameObject.SetActive(true);
             ctx.Follow.SetOffset(FollowCamera.DefaultOffset);
-            if (!party.SpawnFirstHealthy(PlayerSpawn, Vector3.forward))
+
+            // El entrenador se queda detrás; su Pokémon sale delante.
+            party = new PartyFighter(ctx, world, PlayerSpawn + Vector3.back * 3f, Vector3.forward);
+            party.AllFainted += () => Finish(false);
+            party.Spawned += _ =>
+            {
+                if (enemyAi != null) enemyAi.SetTarget(party.TargetForEnemies());
+                if (enemy != null) party.Controller.SetLock(enemy);
+            };
+
+            if (!party.SpawnFirstHealthy())
             {
                 Save.HealAll();
-                party.SpawnFirstHealthy(PlayerSpawn, Vector3.forward);
+                party.SpawnFirstHealthy();
             }
 
             var hud = ctx.Hud;
-            potionButton = hud.AddButton("", new Color(0.3f, 0.65f, 0.4f), new Vector2(0f, 1f), new Vector2(30f, -190f), new Vector2(240f, 70f),
+            hud.AddButton("Fijar", new Color(0.85f, 0.65f, 0.15f), new Vector2(1f, 0f), new Vector2(-40f, 495f), new Vector2(140f, 70f),
+                party.Controller.CycleLock, 24);
+            potionButton = hud.AddButton("", new Color(0.3f, 0.65f, 0.4f), new Vector2(0f, 1f), new Vector2(30f, -240f), new Vector2(240f, 70f),
                 () => { party.UsePotion(); RefreshPotion(); }, 22);
-            hud.AddButton("Cambiar Pokémon", new Color(0.3f, 0.45f, 0.7f), new Vector2(0f, 1f), new Vector2(290f, -190f), new Vector2(260f, 70f),
+            hud.AddButton("Cambiar Pokémon", new Color(0.3f, 0.45f, 0.7f), new Vector2(0f, 1f), new Vector2(290f, -240f), new Vector2(260f, 70f),
                 party.SwitchNext, 22);
             hud.AddButton("Rendirse", new Color(0.35f, 0.35f, 0.4f), new Vector2(1f, 1f), new Vector2(-30f, -160f), new Vector2(200f, 70f),
                 () => Finish(false), 22);
@@ -76,6 +79,19 @@ namespace PokeMoba.Modes
 
             hud.Toast($"{trainer.Title} {trainer.Name}\n<size=36>¡Te desafía!</size>", 2.5f);
             SpawnEnemy(0);
+            ctx.Runner.StartCoroutine(RetargetEnemy());
+        }
+
+        /// <summary>El Pokémon rival ataca a tu Pokémon; mientras cambias (o si no queda), va a por el entrenador.</summary>
+        IEnumerator RetargetEnemy()
+        {
+            while (!over)
+            {
+                yield return new WaitForSeconds(0.5f);
+                if (enemyAi == null || enemy == null || enemy.IsDead) continue;
+                var target = party.TargetForEnemies();
+                if (enemyAi.Target != target) enemyAi.SetTarget(target);
+            }
         }
 
         void RefreshPotion() => potionButton.GetComponentInChildren<Text>().text = $"Poción ×{party.PotionCount}";
@@ -88,15 +104,14 @@ namespace PokeMoba.Modes
             enemy = CreatureFactory.Create(species, 1, EnemySpawn, Vector3.back, level, false, PokemonDatabase.MovesAt(species, level), world);
             enemyAi = enemy.gameObject.AddComponent<EnemyAI>();
             enemyAi.DodgeChance = Mathf.Max(Difficulty.DodgeChance, 0.5f);
-            enemyAi.SetTarget(party.Current);
+            enemyAi.SetTarget(party.TargetForEnemies());
             Save.MarkSeen(species.DexNumber);
 
             var defeated = enemy;
             enemy.Died += _ => OnEnemyDefeated(species, level, defeated);
 
-            ctx.Hud.SetEnemy(enemy);
+            party.Controller.SetLock(enemy);
             ctx.Hud.SetStatus($"{trainer.Title} {trainer.Name}\n<size=24>Pokémon {index + 1} de {trainer.Team.Length}</size>");
-            if (party.Current != null) ctx.Follow.SetTargets(party.Current.transform, enemy.transform);
         }
 
         void OnEnemyDefeated(Data.SpeciesData species, int level, Combatant defeated)

@@ -49,6 +49,8 @@ namespace PokeMoba.UI
         Combatant player;
         Combatant enemy;
         AbilityCaster playerCaster;
+        Combatant trainer;
+        TrainerPanel trainerPanel;
 
         static readonly Color PanelColor = new Color(0f, 0f, 0f, 0.45f);
         static readonly Color BarBackground = new Color(0.15f, 0.15f, 0.15f, 0.9f);
@@ -90,6 +92,44 @@ namespace PokeMoba.UI
             if (enemy != null) enemyPanel.Name.text = Title(enemy);
         }
 
+        /// <summary>Barra de vida del entrenador (Aventura); null la oculta.</summary>
+        public void SetTrainer(Combatant newTrainer)
+        {
+            trainer = newTrainer;
+            trainerPanel.Root.SetActive(trainer != null);
+            if (trainer != null) trainerPanel.Name.text = trainer.DisplayName;
+        }
+
+        class TrainerPanel
+        {
+            public GameObject Root;
+            public Text Name;
+            public RectTransform HpFill;
+        }
+
+        static TrainerPanel BuildTrainerPanel(RectTransform rect)
+        {
+            var bg = UIFactory.CreateImage("Entrenador", rect, PanelColor);
+            bg.raycastTarget = false;
+            var panelRect = bg.rectTransform.Place(new Vector2(0f, 1f), new Vector2(30f, -178f), new Vector2(400f, 52f));
+            var panel = new TrainerPanel { Root = bg.gameObject };
+
+            panel.Name = UIFactory.CreateText("Nombre", panelRect, "", 22, Color.white, TextAnchor.MiddleLeft);
+            panel.Name.rectTransform.Place(new Vector2(0f, 0.5f), new Vector2(12f, 0f), new Vector2(150f, 40f));
+
+            var bar = UIFactory.CreateBar("Vida", panelRect, BarBackground, new Color(0.95f, 0.75f, 0.3f));
+            panel.HpFill = bar;
+            ((RectTransform)bar.parent).Place(new Vector2(1f, 0.5f), new Vector2(-12f, 0f), new Vector2(220f, 18f));
+
+            bg.gameObject.SetActive(false);
+            return panel;
+        }
+
+        void UpdateTrainerPanel()
+        {
+            UIFactory.SetBarFill(trainerPanel.HpFill, trainer.MaxHp > 0f ? trainer.Hp / trainer.MaxHp : 0f);
+        }
+
         public void SetStatus(string text) => statusText.text = text ?? "";
 
         /// <summary>Aviso grande en el centro de la pantalla durante unos segundos.</summary>
@@ -112,6 +152,7 @@ namespace PokeMoba.UI
         {
             foreach (var go in extras) if (go != null) Destroy(go);
             extras.Clear();
+            SetTrainer(null);
             SetStatus("");
             toastTimer = 0f;
             toastText.text = "";
@@ -138,6 +179,7 @@ namespace PokeMoba.UI
 
             UpdatePanel(playerPanel, player);
             if (enemy != null) UpdatePanel(enemyPanel, enemy);
+            if (trainer != null) UpdateTrainerPanel();
 
             var motor = player.Motor;
             UIFactory.SetBarFill(playerPanel.StaminaFill, motor.Stamina / CombatTuning.MaxStamina);
@@ -185,17 +227,18 @@ namespace PokeMoba.UI
             var bottomRight = new Vector2(1f, 0f);
             AbilityButtons = new AbilityButton[AbilityCaster.SlotCount];
             skills = new SkillView[AbilityCaster.SlotCount];
-            Vector2[] positions = { new Vector2(-110f, 90f), new Vector2(-400f, 70f), new Vector2(-370f, 330f) };
-            float[] sizes = { 220f, 150f, 150f };
+            Vector2[] positions = { new Vector2(-110f, 90f), new Vector2(-370f, 40f), new Vector2(-380f, 230f), new Vector2(-200f, 340f) };
+            float[] sizes = { 220f, 140f, 140f, 140f };
             for (int i = 0; i < AbilityCaster.SlotCount; i++)
                 AbilityButtons[i] = BuildSkillButton(rect, i, bottomRight, positions[i], sizes[i]);
 
-            DodgeButton = BuildDodgeButton(rect, bottomRight, new Vector2(-90f, 360f), 130f);
+            DodgeButton = BuildDodgeButton(rect, bottomRight, new Vector2(-40f, 340f), 140f);
+            trainerPanel = BuildTrainerPanel(rect);
 
             if (showKeyboardHint)
             {
                 var hint = UIFactory.CreateText("Ayuda teclado", rect,
-                    "WASD mover · J ataque · K / L habilidades · Espacio esquivar",
+                    "WASD mover · J K L I movimientos · Espacio esquivar · F fijar objetivo",
                     22, new Color(1f, 1f, 1f, 0.7f), TextAnchor.LowerCenter);
                 hint.rectTransform.Place(new Vector2(0.5f, 0f), new Vector2(0f, 12f), new Vector2(900f, 40f));
             }

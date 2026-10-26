@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 namespace PokeMoba.Input
 {
-    public enum GameKey { Basic, Skill1, Skill2, Dodge }
+    public enum GameKey { Basic, Skill1, Skill2, Skill3, Dodge, LockOn }
 
     /// <summary>
     /// Teclado para probar en el editor. Funciona con el Input System nuevo o con el antiguo,
@@ -39,6 +39,8 @@ namespace PokeMoba.Input
                 case GameKey.Basic: return k.jKey.wasPressedThisFrame;
                 case GameKey.Skill1: return k.kKey.wasPressedThisFrame;
                 case GameKey.Skill2: return k.lKey.wasPressedThisFrame;
+                case GameKey.Skill3: return k.iKey.wasPressedThisFrame;
+                case GameKey.LockOn: return k.fKey.wasPressedThisFrame || k.tabKey.wasPressedThisFrame;
                 case GameKey.Dodge: return k.spaceKey.wasPressedThisFrame;
             }
             return false;
@@ -48,6 +50,8 @@ namespace PokeMoba.Input
                 case GameKey.Basic: return UnityEngine.Input.GetKeyDown(KeyCode.J);
                 case GameKey.Skill1: return UnityEngine.Input.GetKeyDown(KeyCode.K);
                 case GameKey.Skill2: return UnityEngine.Input.GetKeyDown(KeyCode.L);
+                case GameKey.Skill3: return UnityEngine.Input.GetKeyDown(KeyCode.I);
+                case GameKey.LockOn: return UnityEngine.Input.GetKeyDown(KeyCode.F) || UnityEngine.Input.GetKeyDown(KeyCode.Tab);
                 case GameKey.Dodge: return UnityEngine.Input.GetKeyDown(KeyCode.Space);
             }
             return false;

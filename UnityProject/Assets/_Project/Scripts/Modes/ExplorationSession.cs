@@ -62,14 +62,14 @@ namespace PokeMoba.Modes
             pool = species.Where(s => !s.IsSpecial).ToList();
             boss = species.FirstOrDefault(s => s.IsSpecial && !Save.Caught.Contains(s.DexNumber));
 
-            party = new PartyFighter(ctx, world, withTrainer: true);
-            party.AllFainted += OnTeamFainted;
             ctx.Hud.gameObject.SetActive(true);
             ctx.Follow.SetOffset(FollowCamera.DefaultOffset);
-            if (!party.SpawnFirstHealthy(Vector3.zero, Vector3.forward))
+            party = new PartyFighter(ctx, world, Vector3.zero, Vector3.forward);
+            party.AllFainted += OnTeamFainted;
+            if (!party.SpawnFirstHealthy())
             {
                 Save.HealAll();
-                party.SpawnFirstHealthy(Vector3.zero, Vector3.forward);
+                party.SpawnFirstHealthy();
             }
 
             BuildButtons();
@@ -87,9 +87,11 @@ namespace PokeMoba.Modes
             var right = new Vector2(1f, 0f);
             ballButton = hud.AddButton("", new Color(0.85f, 0.2f, 0.2f), right, new Vector2(-600f, 250f), new Vector2(200f, 90f), ThrowBall, 22);
             hud.AddButton("Cambiar bola", new Color(0.45f, 0.2f, 0.2f), right, new Vector2(-600f, 160f), new Vector2(200f, 70f), NextBall, 20);
-            potionButton = hud.AddButton("", new Color(0.3f, 0.65f, 0.4f), new Vector2(0f, 1f), new Vector2(30f, -190f), new Vector2(240f, 70f),
+            hud.AddButton("Fijar", new Color(0.85f, 0.65f, 0.15f), right, new Vector2(-40f, 495f), new Vector2(140f, 70f),
+                party.Controller.CycleLock, 24);
+            potionButton = hud.AddButton("", new Color(0.3f, 0.65f, 0.4f), new Vector2(0f, 1f), new Vector2(30f, -240f), new Vector2(240f, 70f),
                 () => { party.UsePotion(); RefreshButtons(); }, 22);
-            hud.AddButton("Cambiar Pokémon", new Color(0.3f, 0.45f, 0.7f), new Vector2(0f, 1f), new Vector2(290f, -190f), new Vector2(260f, 70f),
+            hud.AddButton("Cambiar Pokémon", new Color(0.3f, 0.45f, 0.7f), new Vector2(0f, 1f), new Vector2(290f, -240f), new Vector2(260f, 70f),
                 party.SwitchNext, 22);
             hud.AddButton("Salir de la zona", new Color(0.35f, 0.35f, 0.4f), new Vector2(1f, 1f), new Vector2(-30f, -160f), new Vector2(240f, 70f),
                 Leave, 22);
@@ -140,18 +142,18 @@ namespace PokeMoba.Modes
                     SpawnWild();
                 }
 
-                var player = party.Current;
-                if (player == null) continue;
+                var trainer = party.Trainer;
+                if (trainer == null || trainer.IsDead) continue;
                 party.SyncHp();
 
-                // Pokédex: visto al acercarse; panel del rival: el más cercano que esté peleando o cerca.
+                // Pokédex: visto al acercarse. Panel del rival: el objetivo fijado o, si no hay, el más cercano peleando.
                 WildBehaviour focus = null;
                 float best = float.MaxValue;
                 foreach (var wild in wilds)
                 {
                     var c = wild.GetComponent<Combatant>();
                     if (c == null || c.IsDead || !c.gameObject.activeInHierarchy) continue;
-                    float d = CombatQueries.FlatDistance(c.transform.position, player.transform.position);
+                    float d = CombatQueries.FlatDistance(c.transform.position, trainer.transform.position);
                     if (d < SeenRange) Save.MarkSeen(c.Species.DexNumber);
                     float score = wild.Aggro ? d - 100f : d;
                     if (d < ThrowRange && score < best)
@@ -161,7 +163,7 @@ namespace PokeMoba.Modes
                     }
                 }
 
-                var target = focus != null ? focus.GetComponent<Combatant>() : null;
+                var target = party.Controller.LockedTarget ?? (focus != null ? focus.GetComponent<Combatant>() : null);
                 ctx.Hud.SetEnemy(target);
                 ctx.Hud.SetStatus(StatusLine(target));
             }
@@ -189,7 +191,7 @@ namespace PokeMoba.Modes
 
         void SpawnWild(SpeciesData forced = null)
         {
-            var player = party.Current;
+            var player = party.Trainer;
             if (pool.Count == 0 && forced == null) return;
 
             var species = forced ?? PickWeighted();
@@ -215,7 +217,10 @@ namespace PokeMoba.Modes
             var ai = combatant.gameObject.AddComponent<EnemyAI>();
             ai.DodgeChance = isBoss ? 0.6f : 0.25f;
             var wild = combatant.gameObject.AddComponent<WildBehaviour>();
-            wild.Setup(() => party.Current, level, isBoss, isAggressive: isBoss || rng.NextDouble() < 0.25);
+            bool aggressive = isBoss || rng.NextDouble() < 0.25;
+            // Como en los Legends, algunos agresivos van directamente a por el entrenador.
+            bool huntsTrainer = aggressive && !isBoss && rng.NextDouble() < 0.35;
+            wild.Setup(party.TargetForEnemies, () => party.Trainer, level, isBoss, aggressive, huntsTrainer);
             combatant.Died += c => OnWildDefeated(wild, c);
             wilds.Add(wild);
 
@@ -250,9 +255,10 @@ namespace PokeMoba.Modes
 
         // ------------------------------------------------------------------ captura
 
+        /// <summary>El entrenador lanza la Poké Ball: al objetivo fijado o, si no hay, al salvaje más cercano.</summary>
         void ThrowBall()
         {
-            var player = party.Current;
+            var player = party.Trainer;
             if (capturing || player == null || player.IsDead) return;
 
             var ball = CurrentBall;
@@ -262,9 +268,12 @@ namespace PokeMoba.Modes
                 return;
             }
 
-            var target = wilds
+            var locked = party.Controller.LockedTarget;
+            bool lockedIsWild = locked != null && locked.GetComponent<WildBehaviour>() != null
+                && CombatQueries.FlatDistance(locked.transform.position, player.transform.position) < ThrowRange;
+            var target = lockedIsWild ? locked : wilds
                 .Select(w => w != null ? w.GetComponent<Combatant>() : null)
-                .Where(c => c != null && !c.IsDead)
+                .Where(c => c != null && !c.IsDead && c.gameObject.activeInHierarchy)
                 .OrderBy(c => CombatQueries.FlatDistance(c.transform.position, player.transform.position))
                 .FirstOrDefault(c => CombatQueries.FlatDistance(c.transform.position, player.transform.position) < ThrowRange);
             if (target == null)

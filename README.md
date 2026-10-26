@@ -12,7 +12,7 @@ El diseño completo está en **[GDD.md](GDD.md)**.
 
 | Modo | Qué es | Se abre |
 |---|---|---|
-| **Aventura** | Creas a tu entrenador (colores de piel, pelo, gorra, camiseta y pantalón), eliges inicial en el laboratorio de Oak y exploras las **16 zonas de Kanto**, cada una con su escenario (pradera, bosque, cueva, ciudad, playa, torre fantasma, safari, central eléctrica, nieve, volcán, Liga). Pokémon salvajes que pasean y pelean, **captura con Poké / Super / Ultra / Master Ball** (probabilidad en pantalla), shinies, experiencia, subida de nivel, **evolución** (Eevee te deja elegir), **8 gimnasios con medallas**, **Liga Pokémon** (Alto Mando + Campeón), legendarios como jefes, Centro Pokémon, tienda, equipo y PC | Siempre |
+| **Aventura** | Estilo Legends Z-A / Arceus (GDD §7.1): **controlas al entrenador**, tu Pokémon te sigue y **obedece tus órdenes** (4 movimientos con recarga contra el objetivo **fijado**); el entrenador esquiva rodando y puede recibir golpes. Creas a tu entrenador (colores de piel, pelo, gorra, camiseta y pantalón), eliges inicial en el laboratorio de Oak y exploras las **16 zonas de Kanto**, cada una con su escenario (pradera, bosque, cueva, ciudad, playa, torre fantasma, safari, central eléctrica, nieve, volcán, Liga). Pokémon salvajes que pasean y pelean, **captura con Poké / Super / Ultra / Master Ball** (probabilidad en pantalla), shinies, experiencia, subida de nivel, **evolución** (Eevee te deja elegir), **8 gimnasios con medallas**, **Liga Pokémon** (Alto Mando + Campeón), legendarios como jefes, Centro Pokémon, tienda, equipo y PC | Siempre |
 | **Duelo 1v1** | Tus Pokémon capturados contra la IA a nivel 50, en 10 arenas que se abren con la Aventura | Al tener inicial |
 | **MOBA 3v3** | Tú + 2 bots contra 3 bots. 3 carriles, río y jungla, una torre por carril y un núcleo por equipo, oleadas de súbditos, niveles de partida 1–15 con **evolución en la partida**, reaparición, 10 minutos | Medalla Trueno |
 | **Práctica** | Cualquiera de los 151 contra cualquiera, sin progreso | Siempre |
@@ -58,7 +58,7 @@ Para usar un **modelo 3D real**, basta con poner el prefab en `Assets/_Project/R
 5. Al terminar de cargar, se crea sola la escena `Assets/_Project/Scenes/Prototype.unity` y queda abierta. Si no, menú **PokeMoba → Crear escena del prototipo**.
 6. Pulsar **Play**.
 
-**Controles en el editor:** WASD mover · J ataque · K / L habilidades · Espacio esquivar. Para probar los controles táctiles con el ratón, haz clic y arrastra en la mitad izquierda (joystick) o sobre los botones.
+**Controles en el editor:** WASD mover · J K L I los 4 movimientos · Espacio esquivar · F (o Tab) fijar objetivo en la Aventura. Para probar los controles táctiles con el ratón, haz clic y arrastra en la mitad izquierda (joystick) o sobre los botones.
 
 ## Probar en el celular (Android)
 

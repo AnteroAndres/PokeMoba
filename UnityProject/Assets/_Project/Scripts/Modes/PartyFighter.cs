@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Linq;
+using PokeMoba.AI;
 using PokeMoba.Combat;
 using PokeMoba.Data;
 using PokeMoba.Data.Pokedex;
@@ -14,66 +15,120 @@ using UnityEngine;
 namespace PokeMoba.Modes
 {
     /// <summary>
-    /// El equipo del jugador en la Aventura (exploración y combates contra entrenadores):
-    /// saca al primer Pokémon sano, cambia de Pokémon, usa pociones, reparte experiencia,
-    /// sube de nivel y evoluciona. La vida se guarda en cada PokemonInstance.
+    /// El jugador en la Aventura (estilo Legends: Z-A): un entrenador que se controla con el joystick y puede recibir
+    /// daño, y su Pokémon compañero, que le sigue y obedece órdenes. Gestiona cambiar de Pokémon, pociones,
+    /// experiencia, subida de nivel y evolución. La vida de cada Pokémon se guarda en su PokemonInstance.
     /// </summary>
     public class PartyFighter
     {
         const float SwitchCooldown = 3f;
+        const float TrainerRegenPerSecond = 0.03f;
 
         readonly GameContext ctx;
         readonly Transform world;
-        readonly TrainerFollower trainer;
         float nextSwitchTime;
 
+        /// <summary>El entrenador (también es un combatiente: los salvajes pueden atacarle).</summary>
+        public Combatant Trainer { get; }
+        public TrainerController Controller { get; }
+        /// <summary>Pokémon compañero que está fuera.</summary>
         public Combatant Current { get; private set; }
         public PokemonInstance Instance { get; private set; }
 
         /// <summary>Cada vez que sale un Pokémon nuevo (para que los rivales lo apunten).</summary>
         public event Action<Combatant> Spawned;
-        /// <summary>Todo el equipo debilitado.</summary>
+        /// <summary>Todo el equipo debilitado o el entrenador desmayado.</summary>
         public event Action AllFainted;
 
         SaveData Save => ctx.Save;
 
-        public PartyFighter(GameContext ctx, Transform world, bool withTrainer)
+        public PartyFighter(GameContext ctx, Transform world, Vector3 position, Vector3 facing)
         {
             this.ctx = ctx;
             this.world = world;
-            if (withTrainer)
+
+            Trainer = CreateTrainer(position, facing);
+            Controller = Trainer.gameObject.AddComponent<TrainerController>();
+            Controller.Bind(ctx.Hud.Joystick, ctx.Hud.AbilityButtons, ctx.Hud.DodgeButton, ctx.Camera);
+            Controller.TargetChanged += target =>
             {
-                var s = Save;
-                var model = TrainerModelBuilder.Build(world,
-                    TrainerPalette.Pick(TrainerPalette.Skin, s.SkinColor), TrainerPalette.Pick(TrainerPalette.Hair, s.HairColor),
-                    TrainerPalette.Pick(TrainerPalette.Clothes, s.CapColor), TrainerPalette.Pick(TrainerPalette.Clothes, s.ShirtColor),
-                    TrainerPalette.Pick(TrainerPalette.Clothes, s.PantsColor));
-                trainer = model.GetComponent<TrainerFollower>();
+                ctx.Hud.SetEnemy(target);
+                ctx.Follow.SetTargets(Trainer.transform, target != null ? target.transform : null);
+            };
+            Trainer.Died += _ => OnTrainerFainted();
+
+            ctx.Hud.SetTrainer(Trainer);
+            ctx.Follow.SetTargets(Trainer.transform, null);
+            ctx.Runner.StartCoroutine(RegenerateTrainer());
+        }
+
+        Combatant CreateTrainer(Vector3 position, Vector3 facing)
+        {
+            var s = Save;
+            var root = new GameObject("Entrenador (jugador)");
+            root.transform.SetParent(world, false);
+            root.transform.position = position;
+            root.transform.rotation = Quaternion.LookRotation(facing);
+
+            var model = TrainerModelBuilder.Build(root.transform,
+                TrainerPalette.Pick(TrainerPalette.Skin, s.SkinColor), TrainerPalette.Pick(TrainerPalette.Hair, s.HairColor),
+                TrainerPalette.Pick(TrainerPalette.Clothes, s.CapColor), TrainerPalette.Pick(TrainerPalette.Clothes, s.ShirtColor),
+                TrainerPalette.Pick(TrainerPalette.Clothes, s.PantsColor), follower: false);
+            model.name = "Model"; // CreatureMotor y Combatant buscan el modelo por este nombre
+
+            var trainer = root.AddComponent<Combatant>();
+            int level = Mathf.Max(10, s.Team.Count > 0 ? s.Team.Max(p => p.Level) : 10);
+            trainer.Init(TrainerSpecies(s.TrainerName), team: 0, level: level);
+            return trainer;
+        }
+
+        /// <summary>"Especie" del entrenador: solo sirve para la vida, la defensa y la velocidad.</summary>
+        static SpeciesData TrainerSpecies(string name)
+        {
+            var noMove = MoveFactory.Fallback(basic: true);
+            return new SpeciesData
+            {
+                DexNumber = 0, Key = "trainer", Name = name,
+                Types = new[] { PokemonType.Normal },
+                BaseStats = new BaseStats(80, 10, 70, 10, 70, 75),
+                Moves = new[] { noMove, noMove, noMove, noMove },
+                Size = 1f
+            };
+        }
+
+        IEnumerator RegenerateTrainer()
+        {
+            while (Trainer != null)
+            {
+                if (!Trainer.IsDead) Trainer.Heal(Trainer.MaxHp * TrainerRegenPerSecond * 0.5f);
+                yield return new WaitForSeconds(0.5f);
             }
         }
 
-        public bool SpawnFirstHealthy(Vector3 position, Vector3 facing)
+        // ------------------------------------------------------------------ Pokémon compañero
+
+        public bool SpawnFirstHealthy()
         {
             var first = Save.FirstHealthy();
             if (first == null) return false;
-            Spawn(first, position, facing);
+            Spawn(first);
             return true;
         }
 
-        void Spawn(PokemonInstance instance, Vector3 position, Vector3 facing)
+        void Spawn(PokemonInstance instance)
         {
             var species = PokemonDatabase.Get(instance.Key);
             Instance = instance;
-            Current = CreatureFactory.Create(species, 0, position, facing, instance.Level, instance.Shiny,
+            Vector3 position = Trainer.transform.position + Trainer.transform.right * 1.5f - Trainer.transform.forward * 0.5f;
+            Current = CreatureFactory.Create(species, 0, position, Trainer.transform.forward, instance.Level, instance.Shiny,
                 PokemonDatabase.MovesAt(species, instance.Level), world);
             Current.SetHpFraction(instance.HpFraction);
-            Current.gameObject.AddComponent<PlayerController>()
-                .Bind(ctx.Hud.Joystick, ctx.Hud.AbilityButtons, ctx.Hud.DodgeButton, ctx.Camera);
+            Current.gameObject.AddComponent<CompanionAI>().Setup(Trainer.transform);
             Current.Died += OnFainted;
 
-            ctx.Hud.Bind(Current, null);
-            ctx.Follow.SetTargets(Current.transform, null);
-            if (trainer != null) trainer.Follow(Current.transform);
+            Controller.SetCompanion(Current);
+            ctx.Hud.Bind(Current, Controller.LockedTarget);
+            Vfx.Burst(position + Vector3.up, Color.white, 1.8f);
             Spawned?.Invoke(Current);
         }
 
@@ -94,15 +149,29 @@ namespace PokeMoba.Modes
         IEnumerator AfterFaint()
         {
             yield return new WaitForSeconds(1.3f);
+            if (Trainer.IsDead) yield break;
             var next = Save.FirstHealthy();
             if (next != null) Replace(next);
             else AllFainted?.Invoke();
         }
 
+        void OnTrainerFainted()
+        {
+            SyncHp();
+            ctx.Hud.Toast($"¡{Save.TrainerName} se ha desmayado!", 2.5f);
+            ctx.Runner.StartCoroutine(AfterTrainerFaint());
+        }
+
+        IEnumerator AfterTrainerFaint()
+        {
+            yield return new WaitForSeconds(1.5f);
+            AllFainted?.Invoke();
+        }
+
         /// <summary>Saca al siguiente Pokémon sano del equipo (botón «Cambiar»).</summary>
         public void SwitchNext()
         {
-            if (Current == null || Current.IsDead) return;
+            if (Current == null || Trainer.IsDead) return;
             if (Time.time < nextSwitchTime)
             {
                 ctx.Hud.Toast("Espera un momento para volver a cambiar", 1.2f);
@@ -124,10 +193,8 @@ namespace PokeMoba.Modes
 
         void Replace(PokemonInstance next)
         {
-            Vector3 position = Current != null ? Current.transform.position : Vector3.zero;
-            Vector3 facing = Current != null ? Current.transform.forward : Vector3.forward;
             if (Current != null) UnityEngine.Object.Destroy(Current.gameObject);
-            Spawn(next, position, facing);
+            Spawn(next);
             ctx.Hud.Toast($"¡Adelante, {Current.DisplayName}!", 1.5f);
         }
 
@@ -156,6 +223,8 @@ namespace PokeMoba.Modes
         }
 
         public int PotionCount => Save.ItemCount(Items.Potion) + Save.ItemCount(Items.SuperPotion);
+
+        // ------------------------------------------------------------------ experiencia y evolución
 
         /// <summary>Experiencia por debilitar o capturar; sube de nivel y evoluciona si toca.</summary>
         public void AwardExp(SpeciesData defeated, int defeatedLevel, bool fromTrainer)
@@ -216,5 +285,11 @@ namespace PokeMoba.Modes
             ctx.Hud.Toast($"¡{before} evolucionó a {target.Name}!", 3f);
             SaveService.Save();
         }
+
+        /// <summary>
+        /// A quién atacan los rivales: normalmente a tu Pokémon; si no está (cambiando o debilitado), al entrenador.
+        /// </summary>
+        public Combatant TargetForEnemies() =>
+            Current != null && !Current.IsDead ? Current : Trainer;
     }
 }

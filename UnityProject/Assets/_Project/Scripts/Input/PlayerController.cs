@@ -67,6 +67,7 @@ namespace PokeMoba.Input
             if (InputCompat.WasPressed(GameKey.Basic)) CastAutoAim(0);
             if (InputCompat.WasPressed(GameKey.Skill1)) CastAutoAim(1);
             if (InputCompat.WasPressed(GameKey.Skill2)) CastAutoAim(2);
+            if (InputCompat.WasPressed(GameKey.Skill3)) CastAutoAim(3);
             if (InputCompat.WasPressed(GameKey.Dodge)) motor.TryDodge(motor.MoveInput);
 
             if (aimingSlot != NotAiming)
