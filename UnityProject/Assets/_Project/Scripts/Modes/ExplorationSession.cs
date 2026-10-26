@@ -65,7 +65,7 @@ namespace PokeMoba.Modes
             party = new PartyFighter(ctx, world, withTrainer: true);
             party.AllFainted += OnTeamFainted;
             ctx.Hud.gameObject.SetActive(true);
-            ctx.Follow.SetOffset(FollowCamera.DefaultOffset);
+            ctx.Follow.SetThirdPerson(true);
             if (!party.SpawnFirstHealthy(Vector3.zero, Vector3.forward))
             {
                 Save.HealAll();

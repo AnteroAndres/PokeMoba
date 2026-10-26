@@ -72,8 +72,8 @@ namespace PokeMoba.Modes
             Current.Died += OnFainted;
 
             ctx.Hud.Bind(Current, null);
-            ctx.Follow.SetTargets(Current.transform, null);
             if (trainer != null) trainer.Follow(Current.transform);
+            ctx.Follow.SetTargets(ctx.Follow.ThirdPerson && trainer != null ? trainer.transform : Current.transform, null);
             Spawned?.Invoke(Current);
         }
 

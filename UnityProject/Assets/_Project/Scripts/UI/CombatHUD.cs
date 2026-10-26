@@ -46,6 +46,8 @@ namespace PokeMoba.UI
         float toastTimer;
         readonly List<GameObject> extras = new List<GameObject>();
 
+        readonly List<Button> keyboardActions = new List<Button>();
+
         Combatant player;
         Combatant enemy;
         AbilityCaster playerCaster;
@@ -79,7 +81,7 @@ namespace PokeMoba.UI
             {
                 var move = playerCaster.GetMove(i);
                 skills[i].Background.color = move.Type.TypeColor();
-                skills[i].Label.text = move.Name;
+                skills[i].Label.text = move.Name + (Application.isMobilePlatform ? "" : " [" + new[] { "J", "K", "L" }[i] + "]");
             }
         }
 
@@ -104,6 +106,15 @@ namespace PokeMoba.UI
         {
             var button = UIFactory.CreateButton(label, root, label, fontSize, color, onClick);
             ((RectTransform)button.transform).Place(anchor, position, size);
+            if (!Application.isMobilePlatform && keyboardActions.Count < 12)
+            {
+                int index = keyboardActions.Count;
+                keyboardActions.Add(button);
+                var keyHint = UIFactory.CreateText("Atajo", button.transform, "F" + (index + 1), 18,
+                    Color.white, TextAnchor.UpperRight);
+                keyHint.rectTransform.Stretch();
+                keyHint.raycastTarget = false;
+            }
             extras.Add(button.gameObject);
             return button;
         }
@@ -112,6 +123,7 @@ namespace PokeMoba.UI
         {
             foreach (var go in extras) if (go != null) Destroy(go);
             extras.Clear();
+            keyboardActions.Clear();
             SetStatus("");
             toastTimer = 0f;
             toastText.text = "";
@@ -126,6 +138,17 @@ namespace PokeMoba.UI
 
         void Update()
         {
+            // Invocar solo una acción: puede reconstruir el mundo y borrar esta lista.
+            for (int i = 0; i < keyboardActions.Count; i++)
+            {
+                var button = keyboardActions[i];
+                if (InputCompat.ExtraPressed(i) && button != null && button.IsActive() && button.interactable)
+                {
+                    button.onClick.Invoke();
+                    break;
+                }
+            }
+
             if (toastTimer > 0f)
             {
                 toastTimer -= Time.unscaledDeltaTime;
@@ -195,9 +218,9 @@ namespace PokeMoba.UI
             if (showKeyboardHint)
             {
                 var hint = UIFactory.CreateText("Ayuda teclado", rect,
-                    "WASD mover · J ataque · K / L habilidades · Espacio esquivar",
+                    "WASD / flechas mover · J ataque · K / L habilidades · Espacio esquivar · F1–F12 acciones",
                     22, new Color(1f, 1f, 1f, 0.7f), TextAnchor.LowerCenter);
-                hint.rectTransform.Place(new Vector2(0.5f, 0f), new Vector2(0f, 12f), new Vector2(900f, 40f));
+                hint.rectTransform.Place(new Vector2(0.5f, 0f), new Vector2(0f, 12f), new Vector2(1400f, 40f));
             }
         }
 
@@ -289,7 +312,7 @@ namespace PokeMoba.UI
             dodgeBackground.alphaHitTestMinimumThreshold = 0.1f;
             dodgeBackground.rectTransform.Place(anchor, position, Vector2.one * size);
 
-            var label = UIFactory.CreateText("Texto", dodgeBackground.transform, "Esquivar", 24, Color.white, TextAnchor.MiddleCenter);
+            var label = UIFactory.CreateText("Texto", dodgeBackground.transform, Application.isMobilePlatform ? "Esquivar" : "Espacio", 24, Color.white, TextAnchor.MiddleCenter);
             label.rectTransform.Stretch();
 
             return dodgeBackground.gameObject.AddComponent<AbilityButton>();

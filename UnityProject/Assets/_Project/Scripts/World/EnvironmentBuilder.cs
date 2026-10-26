@@ -71,6 +71,7 @@ namespace PokeMoba.World
                 Decoration(biome, root, new Vector3(Mathf.Cos(angle) * distance, 0f, Mathf.Sin(angle) * distance), rng, registerObstacle: false);
             }
             Disc(root, "Exterior", Vector3.down * 0.1f, radius * 2f + 30f, look.GroundAlt, 0.05f);
+            FieldTheme.Apply(root, radius, radius);
             return root;
         }
 
@@ -115,6 +116,7 @@ namespace PokeMoba.World
             if (biome == Biome.Ciudad || biome == Biome.Pradera)
                 Buildings(root, rng, halfSize, biome == Biome.Ciudad ? 7 : 3);
 
+            FieldTheme.Apply(root, halfSize, halfSize);
             return root;
         }
 

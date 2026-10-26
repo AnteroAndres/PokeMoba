@@ -1,4 +1,5 @@
 using UnityEngine;
+using PokeMoba.Input;
 
 namespace PokeMoba.Prototype
 {
@@ -9,6 +10,28 @@ namespace PokeMoba.Prototype
 
         const float EnemyBias = 0.3f;
         const float Smoothing = 6f;
+
+        public bool ThirdPerson { get; private set; }
+        float yaw;
+        float pitch = 14f;
+        const float Distance = 6f;
+
+        public void SetThirdPerson(bool enabled)
+        {
+            ThirdPerson = enabled;
+            if (enabled)
+            {
+                yaw = player != null ? player.eulerAngles.y : 0f;
+                pitch = 14f;
+            }
+        }
+
+        public void RotateLook(Vector2 delta)
+        {
+            if (!ThirdPerson) return;
+            yaw += delta.x;
+            pitch = Mathf.Clamp(pitch - delta.y, -12f, 55f);
+        }
 
         Vector3 offset = DefaultOffset;
         Transform player;
@@ -26,7 +49,7 @@ namespace PokeMoba.Prototype
         {
             this.player = player;
             this.enemy = enemy;
-            transform.position = Focus() + offset;
+            if (!ThirdPerson) transform.position = Focus() + offset;
         }
 
         /// <summary>Encuadre fijo (menú principal, escaparates).</summary>
@@ -41,6 +64,24 @@ namespace PokeMoba.Prototype
         void LateUpdate()
         {
             if (player == null) return;
+            if (ThirdPerson)
+            {
+                if (Time.timeScale <= 0f) return;
+                RotateLook(InputCompat.CameraLook());
+                Vector3 pivot = player.position + Vector3.up * 1.5f;
+                Quaternion rotation = Quaternion.Euler(pitch, yaw, 0f);
+                Vector3 back = rotation * Vector3.back;
+                float distance = Distance;
+                foreach (var hit in Physics.SphereCastAll(pivot, 0.2f, back, Distance, ~0, QueryTriggerInteraction.Ignore))
+                {
+                    if (hit.collider.GetComponentInParent<PokeMoba.Combat.Combatant>() != null ||
+                        hit.collider.GetComponentInParent<PokeMoba.World.TrainerFollower>() != null) continue;
+                    distance = Mathf.Min(distance, Mathf.Max(0.4f, hit.distance - 0.15f));
+                }
+                transform.position = pivot + back * distance;
+                transform.rotation = rotation;
+                return;
+            }
             Vector3 desired = Focus() + offset;
             transform.position = Vector3.Lerp(transform.position, desired, 1f - Mathf.Exp(-Smoothing * Time.deltaTime));
         }

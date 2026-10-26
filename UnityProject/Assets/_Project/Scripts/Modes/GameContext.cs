@@ -45,6 +45,7 @@ namespace PokeMoba.Modes
             foreach (var c in new List<Combatant>(Combatant.All)) UnityEngine.Object.Destroy(c.gameObject);
             foreach (var p in new List<Projectile>(Projectile.Active)) UnityEngine.Object.Destroy(p.gameObject);
             foreach (var a in new List<AreaTelegraph>(AreaTelegraph.Active)) UnityEngine.Object.Destroy(a.gameObject);
+            Follow.SetThirdPerson(false);
             Follow.SetTargets(null, null);
         }
     }

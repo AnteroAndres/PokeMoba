@@ -101,6 +101,7 @@ namespace PokeMoba.World
                 if (Mathf.Abs(z) < 3.5f || Mathf.Abs(Mathf.Abs(z) - LaneZ) < 3.5f) continue; // carriles
                 Tree(root, new Vector3(x, 0f, z), 0.8f + (float)rng.NextDouble() * 0.5f);
             }
+            FieldTheme.Apply(root, HalfX, HalfZ);
             return root;
         }
 

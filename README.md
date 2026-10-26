@@ -114,3 +114,16 @@ Respecto al [GDD](GDD.md#20-hoja-de-ruta), todavía falta:
 - **Megaevolución en combate** (el Mega-Aro ya se consigue al ganar la Liga)
 - **Multijugador online** (Duelo y MOBA son contra la IA)
 - Comida y bayas, ropa desbloqueable por zona, tareas de la Pokédex, piedras evolutivas en la tienda (ahora los Pokémon que evolucionan con piedra lo hacen a nivel 30 y los de intercambio a nivel 37)
+
+## Controles para computadora y celular
+
+Los controles se comparten entre Aventura, Duelo, Práctica y MOBA.
+
+- Computadora: WASD o flechas para moverse, J para el ataque básico, K y L para habilidades y Espacio para esquivar. F1–F12 activan los botones adicionales del modo; cada botón muestra su tecla. Los ataques de teclado apuntan automáticamente al enemigo cercano.
+- Celular: joystick flotante a la izquierda, botones de ataque, habilidades y esquiva a la derecha. Tocar apunta automáticamente; arrastrar un botón permite elegir la dirección. Las acciones adicionales se activan tocando sus botones.
+
+## Campos de los 18 tipos
+
+En el menú principal, pulsa **Campo** y elige Normal, Fuego, Agua, Planta, Eléctrico, Hielo, Lucha, Veneno, Tierra, Volador, Psíquico, Bicho, Roca, Fantasma, Dragón, Siniestro, Acero o Hada.
+
+La elección se conserva entre sesiones y se aplica a las arenas de Práctica y Duelo, los gimnasios y las zonas de Aventura, y el mapa MOBA. Cambia el color del suelo, el fondo y los hitos de decoración. Son temas visuales propios del proyecto, sin modificadores de daño. **Según la zona** restaura los escenarios originales. Los carriles, las bases y los obstáculos mantienen su función.

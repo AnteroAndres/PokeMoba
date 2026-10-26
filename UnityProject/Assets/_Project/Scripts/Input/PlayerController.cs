@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace PokeMoba.Input
 {
-    /// <summary>Conecta los controles táctiles (y el teclado en el editor) con el Pokémon del jugador.</summary>
+    /// <summary>Conecta los controles táctiles (y el teclado en computadora) con el Pokémon del jugador.</summary>
     [RequireComponent(typeof(AbilityCaster))]
     public class PlayerController : MonoBehaviour
     {
@@ -52,6 +52,12 @@ namespace PokeMoba.Input
 
         void Update()
         {
+            if (Time.timeScale <= 0f)
+            {
+                motor.SetMoveInput(Vector3.zero);
+                return;
+            }
+
             if (self.IsDead)
             {
                 motor.SetMoveInput(Vector3.zero);

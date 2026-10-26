@@ -1,4 +1,5 @@
 using System.Linq;
+using PokeMoba.Data;
 using PokeMoba.Data.Pokedex;
 using PokeMoba.Game;
 using PokeMoba.Modes;
@@ -62,6 +63,9 @@ namespace PokeMoba.Prototype
                 : "Empieza la Aventura para elegir tu primer Pokémon";
             var panel = ctx.Menus.Open("PokeMoba", trainer, 0.35f);
 
+            MenuScreens.Button(panel, "Campo: " + FieldTheme.Name, new Color(0.25f, 0.45f, 0.4f),
+                new Vector2(0.5f, 1f), new Vector2(0f, -240f), new Vector2(600f, 75f), ShowFields, 30);
+
             bool duel = Progression.DuelUnlocked(save);
             bool moba = Progression.MobaUnlocked(save);
             Card(panel, 0, "Aventura", "Explora Kanto, captura,\ngana medallas", new Color(0.2f, 0.6f, 0.3f), true, () => new AdventureMode(ctx).Enter());
@@ -84,6 +88,24 @@ namespace PokeMoba.Prototype
                 }, 28);
             MenuScreens.Button(panel, "Borrar partida", new Color(0.35f, 0.25f, 0.25f), bottom, new Vector2(460f, 60f), new Vector2(420f, 90f),
                 ConfirmDelete, 28);
+        }
+
+        void ShowFields()
+        {
+            var panel = ctx.Menus.Open("Tipos de campo", "Aspecto para Aventura, Duelo, Práctica y MOBA · conserva las reglas del combate");
+            var types = (PokemonType[])System.Enum.GetValues(typeof(PokemonType));
+            for (int i = 0; i < types.Length; i++)
+            {
+                var type = types[i];
+                MenuScreens.Button(panel, type.DisplayName(), type.TypeColor(), new Vector2(0.5f, 0.5f),
+                    new Vector2((i % 6 - 2.5f) * 285f, 170f - (i / 6) * 145f), new Vector2(260f, 110f),
+                    () => { FieldTheme.Selected = type; ShowMainMenu(); }, 30);
+            }
+            MenuScreens.Button(panel, "Según la zona", new Color(0.3f, 0.4f, 0.3f), new Vector2(0.5f, 0f),
+                new Vector2(-240f, 90f), new Vector2(420f, 85f),
+                () => { FieldTheme.Selected = null; ShowMainMenu(); }, 30);
+            MenuScreens.Button(panel, "Volver", Color.gray, new Vector2(0.5f, 0f),
+                new Vector2(240f, 90f), new Vector2(420f, 85f), ShowMainMenu, 30);
         }
 
         static void Card(RectTransform panel, int index, string title, string description, Color color, bool enabled, System.Action onClick)
