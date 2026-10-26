@@ -104,6 +104,7 @@ namespace PokeMoba.Data.Pokedex
         public int? Zone;
         public string BasicMove;
         public List<string> Skills;
+        /// <summary>4.ª ranura: el movimiento más potente.</summary>
         public string Ultimate;
     }
 

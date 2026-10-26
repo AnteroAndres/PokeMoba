@@ -11,7 +11,7 @@ namespace PokeMoba.Combat
     public class AbilityCaster : MonoBehaviour
     {
         public const int BasicSlot = 0;
-        public const int SlotCount = 3;
+        public const int SlotCount = 4;
 
         public event Action<int> Casted;
 

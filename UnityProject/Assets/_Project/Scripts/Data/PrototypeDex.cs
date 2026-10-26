@@ -67,6 +67,25 @@ namespace PokeMoba.Data
             Shape = MoveShape.Dash, Range = 6f, Radius = 1.2f, Cooldown = 6f, Windup = 0.2f
         };
 
+        static readonly MoveData RayoSolar = new MoveData
+        {
+            Name = "Rayo Solar", Type = PokemonType.Planta, Category = MoveCategory.Especial, Power = 120,
+            Shape = MoveShape.Projectile, Range = 10f, Radius = 0.75f, Cooldown = 7.5f, Windup = 0.4f, ProjectileSpeed = 11f
+        };
+
+        static readonly MoveData Llamarada = new MoveData
+        {
+            Name = "Llamarada", Type = PokemonType.Fuego, Category = MoveCategory.Especial, Power = 110,
+            Shape = MoveShape.GroundArea, Range = 9f, Radius = 2.35f, Cooldown = 8f, Windup = 0.2f, TelegraphTime = 0.8f,
+            Status = StatusEffect.Quemado, StatusChance = 0.1f
+        };
+
+        static readonly MoveData Surf = new MoveData
+        {
+            Name = "Surf", Type = PokemonType.Agua, Category = MoveCategory.Especial, Power = 90,
+            Shape = MoveShape.Cone, Range = 5.5f, Radius = 50f, Cooldown = 7f, Windup = 0.35f
+        };
+
         // --- Especies ---
 
         public static readonly SpeciesData Bulbasaur = new SpeciesData
@@ -74,7 +93,7 @@ namespace PokeMoba.Data
             DexNumber = 1, Key = "bulbasaur", Name = "Bulbasaur",
             Types = new[] { PokemonType.Planta, PokemonType.Veneno },
             BaseStats = new BaseStats(45, 49, 49, 65, 65, 45),
-            Moves = new[] { LatigoCepa, BombaLodo, Derribo },
+            Moves = new[] { LatigoCepa, BombaLodo, Derribo, RayoSolar },
             Size = 1f
         };
 
@@ -83,7 +102,7 @@ namespace PokeMoba.Data
             DexNumber = 4, Key = "charmander", Name = "Charmander",
             Types = new[] { PokemonType.Fuego },
             BaseStats = new BaseStats(39, 52, 43, 60, 50, 65),
-            Moves = new[] { Aranazo, Ascuas, Lanzallamas },
+            Moves = new[] { Aranazo, Ascuas, Lanzallamas, Llamarada },
             Size = 0.95f
         };
 
@@ -92,7 +111,7 @@ namespace PokeMoba.Data
             DexNumber = 7, Key = "squirtle", Name = "Squirtle",
             Types = new[] { PokemonType.Agua },
             BaseStats = new BaseStats(44, 48, 65, 50, 64, 43),
-            Moves = new[] { Placaje, PistolaAgua, Hidrobomba },
+            Moves = new[] { Placaje, PistolaAgua, Hidrobomba, Surf },
             Size = 0.95f
         };
 

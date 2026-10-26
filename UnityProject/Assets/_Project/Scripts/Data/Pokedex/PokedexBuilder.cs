@@ -110,12 +110,25 @@ namespace PokeMoba.Data.Pokedex
                 .Where(m => m != null)
                 .Take(2)
                 .ToList();
-            if (skills.Count < 2)
-                skills.AddRange(ChooseSkills(candidates, types, basic, skills, context).Take(2 - skills.Count));
+            MoveData strongest = FromOverride(speciesOverride?.Ultimate, context, basic: false, raw.Key);
+
+            // Lo que falte se elige solo: la 4.ª ranura es el movimiento más fuerte y las 2 habilidades, los siguientes.
+            int missing = (2 - skills.Count) + (strongest == null ? 1 : 0);
+            if (missing > 0)
+            {
+                var taken = skills.Concat(new[] { basic, strongest }).Where(m => m != null).ToList();
+                var picked = ChooseSkills(candidates, types, taken, context, missing).ToList();
+                if (strongest == null && picked.Count > 0)
+                {
+                    strongest = picked[0];
+                    picked.RemoveAt(0);
+                }
+                skills.AddRange(picked.Take(2 - skills.Count));
+            }
 
             while (skills.Count < 2) skills.Add(MoveFactory.Fallback(basic: false));
 
-            return new[] { basic ?? MoveFactory.Fallback(basic: true), skills[0], skills[1] };
+            return new[] { basic ?? MoveFactory.Fallback(basic: true), skills[0], skills[1], strongest ?? MoveFactory.Fallback(basic: false) };
         }
 
         /// <summary>Movimientos de daño que aprende hasta el nivel dado; si son pocos, se suman los de MT.</summary>
@@ -129,12 +142,15 @@ namespace PokeMoba.Data.Pokedex
                 .ToList();
 
             var usable = keys.Select(k => Usable(k, context)).Where(m => m != null).ToList();
-            if (usable.Count < 3)
+            if (usable.Count < 4)
             {
+                // Las MT completan, pero sin movimientos más fuertes de lo que toca a ese nivel
+                // (que un Charmander de nivel 5 no tenga Sofoco).
+                int maxPower = 30 + level * 3;
                 usable.AddRange((learnset.Machine ?? new List<string>())
                     .Where(k => !keys.Contains(k))
                     .Select(k => Usable(k, context))
-                    .Where(m => m != null));
+                    .Where(m => m != null && (m.Power ?? MoveFactory.VariablePower) <= maxPower));
             }
             return usable;
         }
@@ -176,38 +192,39 @@ namespace PokeMoba.Data.Pokedex
             return MoveFactory.Create(pick, ov, basic: true);
         }
 
-        static IEnumerable<MoveData> ChooseSkills(List<RawMove> candidates, PokemonType[] types, MoveData basic,
-            List<MoveData> alreadyChosen, Context context)
+        /// <summary>
+        /// Elige <paramref name="count"/> movimientos de mayor a menor daño. Cada uno, si puede, de una forma
+        /// que todavía no esté elegida y sin perder demasiado daño (más variedad al jugar).
+        /// </summary>
+        static IEnumerable<MoveData> ChooseSkills(List<RawMove> candidates, PokemonType[] types,
+            List<MoveData> alreadyChosen, Context context, int count)
         {
             var taken = new HashSet<string>(alreadyChosen.Select(m => m.Name));
-            if (basic != null) taken.Add(basic.Name);
+            var usedShapes = new HashSet<MoveShape>(alreadyChosen.Select(m => m.Shape));
 
             var ranked = candidates
                 .Where(m => !taken.Contains(m.Name ?? m.Key))
                 .OrderByDescending(m => Score(m, types))
                 .ToList();
-            if (ranked.Count == 0) yield break;
 
-            var first = ranked[0];
-            ranked.RemoveAt(0);
-
-            // La segunda, de otra forma distinta si no pierde demasiado daño (más variedad al jugar).
-            RawMove second = null;
-            if (ranked.Count > 0)
+            for (int i = 0; i < count && ranked.Count > 0; i++)
             {
                 float bar = Score(ranked[0], types) * 0.6f;
-                second = ranked.FirstOrDefault(m => Shape(m, context) != Shape(first, context) && Score(m, types) >= bar)
-                         ?? ranked[0];
-            }
+                var pick = i == 0
+                    ? ranked[0] // el primero (el más fuerte) siempre
+                    : ranked.FirstOrDefault(m => !usedShapes.Contains(ShapeOf(m, context)) && Score(m, types) >= bar) ?? ranked[0];
+                ranked.Remove(pick);
 
-            foreach (var raw in new[] { first, second })
-            {
-                if (raw == null) continue;
-                context.MoveOverrides.TryGetValue(raw.Key, out var ov);
-                var move = MoveFactory.Create(raw, ov, basic: false);
-                if (move != null) yield return move;
+                context.MoveOverrides.TryGetValue(pick.Key, out var ov);
+                var move = MoveFactory.Create(pick, ov, basic: false);
+                if (move == null) continue;
+                usedShapes.Add(move.Shape);
+                yield return move;
             }
         }
+
+        static MoveShape ShapeOf(RawMove move, Context context) =>
+            Enum.TryParse(Shape(move, context), out MoveShape shape) ? shape : MoveShape.Melee;
 
         static float Score(RawMove move, PokemonType[] types) =>
             (move.Power ?? MoveFactory.VariablePower)

@@ -57,7 +57,7 @@ namespace PokeMoba.Data
         public int? EvolvesFrom;
         public List<EvolutionData> Evolutions = new List<EvolutionData>();
 
-        /// <summary>Movimientos a nivel 50 (Duelo). Ranura 0 = ataque básico, 1 y 2 = habilidades.</summary>
+        /// <summary>Movimientos a nivel 50 (Duelo). Ranura 0 = ataque básico, 1 y 2 = habilidades, 3 = el más potente.</summary>
         public MoveData[] Moves;
 
         /// <summary>Escala del modelo provisional.</summary>

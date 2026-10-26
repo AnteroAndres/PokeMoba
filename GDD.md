@@ -179,16 +179,122 @@ Ejemplo: para entrar en el Mt. Moon necesitas **12 especies capturadas** y la **
 
 ## 7. Modos de juego
 
-### 7.1 Aventura (Arcade)
+### 7.1 Aventura (estilo Pokémon Legends: Z-A y Legends: Arceus)
 
-- **Cámara**: isométrica en tercera persona, estilo MOBA, con el entrenador y su Pokémon líder siempre visibles.
-- **Exploración**: el entrenador camina por la zona; su Pokémon líder lo sigue.
-- **Encuentros**: los Pokémon salvajes se ven en el mapa (no son aleatorios). Algunos huyen, otros atacan al verte.
-- **Combate**: al acercarte a uno salvaje empieza el combate en el mismo lugar, sin cambio de pantalla. Controlas a tu Pokémon con los controles de combate.
-- **Equipo**: hasta 6 Pokémon. El resto va al **PC** (accesible desde los Centros Pokémon).
-- **Centros Pokémon**: curar, PC, guardar partida.
-- **Tienda**: Poké Balls, pociones, objetos.
-- **Nivel persistente**: 1–100, con experiencia y evolución normales.
+> Rediseño (rama `aventura`). Toma el **combate en tiempo real dando órdenes** de Legends: Z-A y la **exploración, captura sigilosa, investigación y artesanía** de Legends: Arceus. Las mecánicas se adaptan a Kanto y al celular; no se copian nombres de lugares ni personajes de esos juegos.
+
+#### 7.1.1 Idea central: controlas al entrenador
+
+En los dos Legends **el jugador es el entrenador**, no el Pokémon:
+
+| | Antes (prototipo) | Ahora (Legends) |
+|---|---|---|
+| Qué mueve el joystick | Al Pokémon | **Al entrenador** |
+| Tu Pokémon | Lo manejas tú | **Te acompaña y obedece tus órdenes** |
+| Atacar | Botón → tu Pokémon ataca | Botón → **ordenas** un movimiento contra el objetivo fijado |
+| Esquivar | El Pokémon rueda | **El entrenador rueda** (los salvajes y alfas también te atacan a ti) |
+| Capturar | Debilitar y lanzar | **Lanzar la Poké Ball directamente**, sin combate, mejor por la espalda |
+
+En el Duelo 1v1, la Práctica y el MOBA se sigue controlando al Pokémon directamente.
+
+#### 7.1.2 Ciudad base y zonas salvajes (Z-A)
+
+- **Ciudad base**: cada región tiene una ciudad hub (para Kanto, Ciudad Azafrán como centro). Se recorre a pie.
+  - Edificios: **Centro Pokémon** (curar, PC; los **bancos** también permiten descansar y pasar al día o a la noche), **tienda**, **mesa de artesanía**, **tablón de encargos**, **boutique** de ropa y **laboratorio** (Pokédex).
+- **Zonas salvajes**: áreas marcadas en el mapa, dentro de la ciudad y en sus alrededores, donde viven los Pokémon salvajes. Son las 16 zonas del §6, que siguen abriéndose por progreso.
+- **Ciclo de día y noche**: 1 día de juego ≈ 20 minutos reales. Cambia qué Pokémon aparecen y, de noche, se activa la **Liga nocturna** (§7.1.6).
+
+#### 7.1.3 Exploración y captura (Arceus)
+
+- **Sigilo**: botón **Agacharse** (te mueves despacio y haces menos ruido). Cada salvaje tiene un **cono de visión** y un indicador de alerta (`?` → `!`).
+- **Temperamento** de cada especie:
+  - **Asustadizo**: huye al verte (Pidgey, Abra).
+  - **Tranquilo**: se queda cerca (Bulbasaur, Slowpoke).
+  - **Agresivo**: te persigue y **te ataca a ti** (Spearow, Mankey, Gyarados).
+- **Captura directa**: lanzas la Poké Ball desde la distancia, apuntando con un arco, **sin empezar un combate**.
+  - **Por la espalda sin ser visto: ×2,5** (GDD §9).
+  - Si falla, el Pokémon se asusta o se enfada.
+  - También se puede debilitar primero lanzando a tu Pokémon (combate) y luego capturar.
+- **Objetos que se lanzan**:
+  - **Bayas y cebos**: lo distraen mientras come (captura por la espalda más fácil).
+  - **Bola de barro**: lo aturde unos segundos.
+  - **Bomba de humo**: te esconde para escapar o volver a acercarte.
+- **Lanzar a tu Pokémon** hacia un salvaje empieza el combate. Si le das por la espalda, empiezas con ventaja (el rival queda aturdido 2 s).
+- **Recursos en el mapa**: árboles de bayas y de **Bonguris**, rocas con **minerales**, hierbas y cajas perdidas. Se recogen andando hacia ellos.
+
+#### 7.1.4 Combate en tiempo real dando órdenes (Z-A)
+
+- **Fijar objetivo**: botón de fijado; la cámara y tu Pokémon se orientan al rival.
+- **4 movimientos** por Pokémon, cada uno con su **tiempo de recarga** (más potencia → más recarga). Al pulsar uno, tu Pokémon se coloca a distancia y lo lanza.
+- **El entrenador sigue moviéndose**: puedes ponerte detrás de tu Pokémon o **rodar para esquivar** los ataques de área. Si el entrenador recibe demasiado daño, **se desmaya** y vuelve al Centro Pokémon.
+- **Posición**: los movimientos tienen alcance y área (las formas del §8.4); colocarse bien es parte de la estrategia.
+- **Cambiar de Pokémon** en cualquier momento (con un pequeño tiempo de recarga).
+- **Mega Evolución**: con el **Mega-Aro** y la megapiedra, una **barra de energía Mega** se llena peleando. Al activarla, el Pokémon megaevoluciona hasta que la barra se vacía.
+
+#### 7.1.5 Pokémon especiales
+
+- **Alfas** (Arceus): ejemplares **más grandes, con ojos rojos**, nivel más alto y siempre agresivos. Uno o dos por zona; dan materiales raros y cuentan para la Pokédex.
+- **Brotes masivos** (Arceus): de vez en cuando una zona se llena de una sola especie durante un rato. Más fácil completar su investigación y **más probabilidad de shiny**.
+- **Pokémon frenéticos** (jefes, mezcla de los Nobles de Arceus y las Megas descontroladas de Z-A): los legendarios de Kanto y algunos Mega están fuera de control.
+  - Tienen una **barra de calma** por fases.
+  - Se baja **lanzándoles su bálsamo** (fabricado con su comida favorita) mientras esquivas sus ataques, y peleando con tus Pokémon para aturdirlos.
+  - Al calmarlos del todo: los legendarios se pueden capturar; las Megas dan **Orbes Mega** (para mejorar la barra Mega).
+
+#### 7.1.6 Liga nocturna de rangos (Z-A Royale)
+
+- De noche aparecen **zonas de batalla** en la ciudad. Los entrenadores que hay dentro te desafían al verte (combates de 1 a 3 Pokémon).
+- Ganar da **puntos**. Las **cartas de bonus** (por ejemplo, «gana usando un movimiento supereficaz» o «gana sin que te debiliten ninguno») dan puntos extra.
+- Con suficientes puntos se desbloquea un **combate de ascenso**. Si lo ganas, subes de **rango Z → Y → … → A**.
+- Los **8 gimnasios de Kanto** siguen existiendo: un líder solo acepta tu reto a partir de cierto rango (Brock desde el rango X, Misty desde el W, etc.). La **Liga Pokémon** exige el rango A.
+
+#### 7.1.7 Investigación y Pokédex (Arceus)
+
+- Cada especie tiene **tareas de investigación**: capturar X, vencer X, verlo usar un movimiento, capturarlo sin ser visto, darle de comer, evolucionarlo, capturar un alfa… (§15.3).
+- Una entrada se considera completa al llegar al **nivel de investigación 10**.
+- Los **puntos de investigación** suben tu **rango de investigador**, que:
+  - Abre zonas nuevas (sustituye al requisito de «capturar N especies» del §6).
+  - Sube el nivel máximo de obediencia.
+  - Da recetas y dinero.
+
+#### 7.1.8 Artesanía (Arceus)
+
+- **Mesa de artesanía** (en la ciudad y en campamentos): materiales recogidos → objetos.
+
+  | Objeto | Receta (ejemplo) |
+  |---|---|
+  | Poké Ball | 1 Bonguri + 1 mineral |
+  | Super Ball | 1 Bonguri + 2 minerales |
+  | Ultra Ball | 1 Bonguri + 1 mineral raro |
+  | Poción | 1 hierba medicinal + 1 baya Aranja |
+  | Cebo | 1 baya + 1 miel |
+  | Bola de barro | 2 barro |
+  | Bomba de humo | 1 hierba + 1 carbón |
+  | Bálsamo | Comida favorita del frenético + 2 hierbas |
+
+- Las recetas se ganan con el rango de investigador y con encargos.
+
+#### 7.1.9 Encargos, ropa y monturas
+
+- **Tablón de encargos** (Z-A) y **peticiones de vecinos** (Arceus): enseñar un Pokémon, conseguir materiales, vencer a un alfa… Dan dinero, recetas, ropa y objetos.
+- **Boutique**: ropa nueva por zona, rango y encargos (GDD §12).
+- **Monturas** (Arceus, más adelante): Rapidash para correr, Lapras para el agua y Charizard o Pidgeot para volar entre zonas.
+
+#### 7.1.10 Lo que se conserva del diseño anterior
+
+Equipo de 6 y PC, experiencia y evolución (§11), Poké Balls y fórmula de captura (§9), alimentación (§14), shinies (§10), personalización (§12) y las 16 zonas con sus especies (§6).
+
+#### 7.1.11 Orden de implementación
+
+| Paso | Contenido | Mecánica de |
+|---|---|---|
+| A1 ✅ | **Controlar al entrenador**: el Pokémon le sigue y obedece; fijar objetivo; 4 movimientos con recarga; el entrenador esquiva y puede recibir daño | Z-A |
+| A2 | **Captura directa** con arco de lanzamiento, bonus por la espalda, cono de visión, agacharse, temperamentos | Arceus |
+| A3 | **Recursos y artesanía**: bayas, Bonguris, minerales; mesa de artesanía; cebos, bolas de barro y humo | Arceus |
+| A4 | **Investigación**: tareas por especie, nivel 1–10, rango de investigador que abre zonas | Arceus |
+| A5 | **Alfas y brotes masivos** | Arceus |
+| A6 | **Ciudad base** con edificios, **día y noche** y **Liga nocturna** de rangos Z→A; gimnasios ligados al rango | Z-A |
+| A7 | **Mega Evolución** con barra y **Pokémon frenéticos** con bálsamos | Z-A + Arceus |
+| A8 | Encargos, boutique y monturas | Z-A + Arceus |
 
 ### 7.2 Duelo 1v1
 

@@ -29,7 +29,8 @@ namespace PokeMoba.World
 
     public static class TrainerModelBuilder
     {
-        public static Transform Build(Transform parent, Color skin, Color hair, Color cap, Color shirt, Color pants)
+        /// <param name="follower">true: sigue solo a un Pokémon (escaparates); false: lo controla el jugador (Aventura).</param>
+        public static Transform Build(Transform parent, Color skin, Color hair, Color cap, Color shirt, Color pants, bool follower = true)
         {
             var root = new GameObject("Entrenador").transform;
             root.SetParent(parent, false);
@@ -63,18 +64,15 @@ namespace PokeMoba.World
             Part(PrimitiveType.Sphere, "Ojo", new Vector3(0.08f, 1.74f, 0.19f), Vector3.one * 0.06f, Color.black);
             Part(PrimitiveType.Cube, "Mochila", new Vector3(0f, 1.1f, -0.25f), new Vector3(0.38f, 0.42f, 0.2f), Color.Lerp(pants, Color.black, 0.2f));
 
-            root.gameObject.AddComponent<TrainerFollower>().Setup(legs, arms);
+            root.gameObject.AddComponent<TrainerRig>().Setup(legs, arms);
+            if (follower) root.gameObject.AddComponent<TrainerFollower>();
             return root;
         }
     }
 
-    /// <summary>Hace que el entrenador siga a su Pokémon a cierta distancia y anime las piernas al andar.</summary>
-    public class TrainerFollower : MonoBehaviour
+    /// <summary>Piernas y brazos del entrenador: los balancea al andar.</summary>
+    public class TrainerRig : MonoBehaviour
     {
-        const float FollowDistance = 2.4f;
-        const float Speed = 7f;
-
-        Transform target;
         List<Transform> legs;
         List<Transform> arms;
         float phase;
@@ -84,6 +82,29 @@ namespace PokeMoba.World
             this.legs = legs;
             this.arms = arms;
         }
+
+        /// <param name="walking">0 = quieto, 1 = andando a velocidad normal.</param>
+        public void Animate(float walking)
+        {
+            if (legs == null) return;
+            phase += Time.deltaTime * 10f * walking;
+            float swing = Mathf.Sin(phase) * 30f * Mathf.Clamp01(walking);
+            for (int i = 0; i < legs.Count; i++) legs[i].localRotation = Quaternion.Euler(i == 0 ? swing : -swing, 0f, 0f);
+            for (int i = 0; i < arms.Count; i++) arms[i].localRotation = Quaternion.Euler(i == 0 ? -swing : swing, 0f, 0f);
+        }
+    }
+
+    /// <summary>Hace que el entrenador siga a un Pokémon a cierta distancia (escaparates de los menús).</summary>
+    [RequireComponent(typeof(TrainerRig))]
+    public class TrainerFollower : MonoBehaviour
+    {
+        const float FollowDistance = 2.4f;
+        const float Speed = 7f;
+
+        Transform target;
+        TrainerRig rig;
+
+        void Awake() => rig = GetComponent<TrainerRig>();
 
         public void Follow(Transform newTarget)
         {
@@ -112,11 +133,7 @@ namespace PokeMoba.World
             if (look.sqrMagnitude > 0.01f)
                 transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(look), 8f * Time.deltaTime);
 
-            float walking = moved > 0.001f ? 1f : 0f;
-            phase += Time.deltaTime * 10f * walking;
-            float swing = Mathf.Sin(phase) * 30f * walking;
-            for (int i = 0; i < legs.Count; i++) legs[i].localRotation = Quaternion.Euler(i == 0 ? swing : -swing, 0f, 0f);
-            for (int i = 0; i < arms.Count; i++) arms[i].localRotation = Quaternion.Euler(i == 0 ? -swing : swing, 0f, 0f);
+            rig.Animate(moved > 0.001f ? 1f : 0f);
         }
     }
 }
