@@ -1,0 +1,27 @@
+{
+  "dex": 132,
+  "key": "ditto",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/132_Ditto/Ditto.fbx",
+  "sha256": "7652ad4f48490504a997e575abcaab0f31617d3a1382034b4af38adf2ef15f20",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "BodySpc-material",
+      "texture": "tex/pm0132_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Eye-material",
+      "texture": "tex/pm0132_00_Eye1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Mouth-material",
+      "texture": "tex/pm0132_00_Mouth1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 3
+}

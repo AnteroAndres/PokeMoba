@@ -1,0 +1,22 @@
+{
+  "dex": 54,
+  "key": "psyduck",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/054_Psyduck/Psyduck.fbx",
+  "sha256": "111e1453c0d5e9aa3205fca27616b0f7f5bbaa96f1115c13dbacaec38b1988da",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Body01",
+      "texture": "tex/pm0054_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Eye",
+      "texture": "tex/pm0054_00_Eye1_Merged.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

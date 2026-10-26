@@ -1,0 +1,22 @@
+{
+  "dex": 111,
+  "key": "rhyhorn",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/111 - Rhyhorn/source/BR_Rhyhorn.obj",
+  "sha256": "9ed3e21e3eb39c4913d179f018b10c3002d48036f2a43b27bd88b4f502e18c67",
+  "placeholder": false,
+  "modelFile": "Model.obj",
+  "bindings": [
+    {
+      "material": "mat_0",
+      "texture": "Textures/sihorn_0_0.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_1",
+      "texture": "Textures/sihorn_0_0.tga",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 4
+}

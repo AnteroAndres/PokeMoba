@@ -1,0 +1,27 @@
+{
+  "dex": 43,
+  "key": "oddish",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/043_Oddish/Oddish.fbx",
+  "sha256": "2f1d0335525f3bdef6291e485b832d519f5162bdc1820599c0f5644f67a08d3b",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Body",
+      "texture": "tex/pm0043_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Mouth",
+      "texture": "tex/pm0043_00_Mouth1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Eye",
+      "texture": "tex/pm0043_00_Eye1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 3
+}

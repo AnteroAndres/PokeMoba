@@ -1,0 +1,22 @@
+{
+  "dex": 65,
+  "key": "alakazam",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/065_Alakazam/Alakazam.fbx",
+  "sha256": "a5e902ef580d31ddc43aebbd90cb03bd79f7d89f68091bf2b05638bee601c280",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #91",
+      "texture": "tex/pm0065_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #92",
+      "texture": "tex/pm0065_00_Eye1_Merged.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

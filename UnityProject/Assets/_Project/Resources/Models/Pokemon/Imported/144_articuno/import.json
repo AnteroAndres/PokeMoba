@@ -1,0 +1,27 @@
+{
+  "dex": 144,
+  "key": "articuno",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/144_Articuno/Articuno.fbx",
+  "sha256": "8040cdd590f8a7f1ffb0050968497167e929d24d9e725ae4deb530368d75f8d2",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #35",
+      "texture": "tex/pm0144_00_BodyB1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #36",
+      "texture": "tex/pm0144_00_Eye1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #37",
+      "texture": "tex/pm0144_00_BodyA1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 3
+}

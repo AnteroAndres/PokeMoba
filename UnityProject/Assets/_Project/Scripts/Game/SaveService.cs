@@ -49,7 +49,16 @@ namespace PokeMoba.Game
                 if (File.Exists(FilePath))
                 {
                     current = JsonConvert.DeserializeObject<SaveData>(File.ReadAllText(FilePath));
-                    if (current != null) return;
+                    if (current != null)
+                    {
+                        if (string.IsNullOrEmpty(current.TrainerCharacter) ||
+                            (current.TrainerCharacter == "Procedural" && !current.HasChosenTrainerCharacter))
+                        {
+                            current.TrainerCharacter = SaveData.DefaultTrainerCharacter;
+                            Save();
+                        }
+                        return;
+                    }
                 }
             }
             catch (Exception e)

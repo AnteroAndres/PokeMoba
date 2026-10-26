@@ -1,0 +1,27 @@
+{
+  "dex": 18,
+  "key": "pidgeot",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/018_Pidgeot/Pidgeot.fbx",
+  "sha256": "2cd7f75ddd070281644c1147ca1d238de4293bb92a9ee39755d1fb5e9eefde7b",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Eye",
+      "texture": "tex/pm0018_00_Eye1_Merged.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyA00",
+      "texture": "tex/pm0018_00_BodyA1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyB01",
+      "texture": "tex/pm0018_00_BodyB1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 3
+}

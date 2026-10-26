@@ -1,0 +1,172 @@
+{
+  "dex": 102,
+  "key": "exeggcute",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/102 - Exeggcute/Exeggcute.fbx",
+  "sha256": "7e8029d9be598f4a08d68a4703a567860662abe19aba6b280e96d7061831babd",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "mat_14_NONE",
+      "texture": "tex/tamatama_0_14.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_14_NONE",
+      "texture": "tex/tamatama_0_14.tga",
+      "channel": "TransparentColor"
+    },
+    {
+      "material": "mat_14",
+      "texture": "tex/tamatama_0_14.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_14",
+      "texture": "tex/tamatama_0_14.tga",
+      "channel": "TransparentColor"
+    },
+    {
+      "material": "mat_13",
+      "texture": "tex/tamatama_0_13.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_13",
+      "texture": "tex/tamatama_0_13.tga",
+      "channel": "TransparentColor"
+    },
+    {
+      "material": "mat_12",
+      "texture": "tex/tamatama_0_12.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_12",
+      "texture": "tex/tamatama_0_12.tga",
+      "channel": "TransparentColor"
+    },
+    {
+      "material": "mat_11",
+      "texture": "tex/tamatama_0_11.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_11",
+      "texture": "tex/tamatama_0_11.tga",
+      "channel": "TransparentColor"
+    },
+    {
+      "material": "mat_10",
+      "texture": "tex/tamatama_0_10.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_10",
+      "texture": "tex/tamatama_0_10.tga",
+      "channel": "TransparentColor"
+    },
+    {
+      "material": "mat_9",
+      "texture": "tex/tamatama_0_9.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_9",
+      "texture": "tex/tamatama_0_9.tga",
+      "channel": "TransparentColor"
+    },
+    {
+      "material": "mat_8",
+      "texture": "tex/tamatama_0_8.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_8",
+      "texture": "tex/tamatama_0_8.tga",
+      "channel": "TransparentColor"
+    },
+    {
+      "material": "mat_7",
+      "texture": "tex/tamatama_0_7.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_7",
+      "texture": "tex/tamatama_0_7.tga",
+      "channel": "TransparentColor"
+    },
+    {
+      "material": "mat_6",
+      "texture": "tex/tamatama_0_6.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_6",
+      "texture": "tex/tamatama_0_6.tga",
+      "channel": "TransparentColor"
+    },
+    {
+      "material": "mat_5",
+      "texture": "tex/tamatama_0_5.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_5",
+      "texture": "tex/tamatama_0_5.tga",
+      "channel": "TransparentColor"
+    },
+    {
+      "material": "mat_4",
+      "texture": "tex/tamatama_0_4.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_4",
+      "texture": "tex/tamatama_0_4.tga",
+      "channel": "TransparentColor"
+    },
+    {
+      "material": "mat_3",
+      "texture": "tex/tamatama_0_3.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_3",
+      "texture": "tex/tamatama_0_3.tga",
+      "channel": "TransparentColor"
+    },
+    {
+      "material": "mat_2",
+      "texture": "tex/tamatama_0_2.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_2",
+      "texture": "tex/tamatama_0_2.tga",
+      "channel": "TransparentColor"
+    },
+    {
+      "material": "mat_1",
+      "texture": "tex/tamatama_0_1.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_1",
+      "texture": "tex/tamatama_0_1.tga",
+      "channel": "TransparentColor"
+    },
+    {
+      "material": "mat_0",
+      "texture": "tex/tamatama_0_0.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_0",
+      "texture": "tex/tamatama_0_0.tga",
+      "channel": "TransparentColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 57
+}

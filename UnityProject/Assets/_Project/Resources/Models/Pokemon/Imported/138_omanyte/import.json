@@ -1,0 +1,22 @@
+{
+  "dex": 138,
+  "key": "omanyte",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/138_Omanyte/Omanyte.fbx",
+  "sha256": "7c65bdd550b78507d507329132bd6eb1ad778b4380b5bc49791501d2e6a33ef4",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #10",
+      "texture": "tex/pm0138_00_Eye1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #11",
+      "texture": "tex/pm0138_00_Body1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

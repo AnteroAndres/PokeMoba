@@ -1,0 +1,42 @@
+{
+  "dex": 116,
+  "key": "horsea",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/116 - Horsea/source/BR_Horsea.obj",
+  "sha256": "93537c88aab349884d0a4fccb6b6f286f357cc92d360fcc8233c2c4025f14537",
+  "placeholder": false,
+  "modelFile": "Model.obj",
+  "bindings": [
+    {
+      "material": "mat_0",
+      "texture": "Textures/tattu_0_0.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_1",
+      "texture": "Textures/tattu_0_1.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_2",
+      "texture": "Textures/tattu_0_1.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_3",
+      "texture": "Textures/tattu_0_3.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_4",
+      "texture": "Textures/tattu_0_4.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_5",
+      "texture": "Textures/tattu_0_5.tga",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 10
+}

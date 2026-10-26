@@ -1,0 +1,37 @@
+{
+  "dex": 115,
+  "key": "kangaskhan",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/115_Kangaskhan/Kangaskhan.fbx",
+  "sha256": "83bcd0a21bca6c3b49862e0db519c614ea5718ccf0c9af131c3cd7a23c5e3c62",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #10",
+      "texture": "tex/pm0115_00_BodyA1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #11",
+      "texture": "tex/pm0115_00_EyeA1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #22",
+      "texture": "tex/pm0115_00_BodyB1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #23",
+      "texture": "tex/pm0115_00_EyeB1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #24",
+      "texture": "tex/pm0115_00_Mouth1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 5
+}

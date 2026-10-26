@@ -1,0 +1,17 @@
+{
+  "dex": 124,
+  "key": "jynx",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/124 - Jynx/source/BR_Jynx.obj",
+  "sha256": "bba7fb2ae8c3efae2d58c1830ed42a67e7d7109859e7d0ca95b7ae56712fe440",
+  "placeholder": false,
+  "modelFile": "Model.obj",
+  "bindings": [
+    {
+      "material": "mat_0",
+      "texture": "source/Textures/rougela_0_0.tga",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 4
+}

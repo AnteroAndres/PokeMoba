@@ -1,0 +1,32 @@
+{
+  "dex": 143,
+  "key": "snorlax",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/143_Snorlax/Snorlax.fbx",
+  "sha256": "3f0823e372ea812ef4687a8e770115b1f6c976553f031b738d4d2253778614a2",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Body01",
+      "texture": "tex/Body1_0.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Body00",
+      "texture": "tex/Body1_0.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Eye",
+      "texture": "tex/Eye1_0.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Mouth",
+      "texture": "tex/Mouth1_0.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 3
+}

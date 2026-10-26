@@ -1,0 +1,22 @@
+{
+  "dex": 72,
+  "key": "tentacool",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/072_Tentacool/Tentacool.fbx",
+  "sha256": "bed64e86f0a1e211ef13d6d21457525dcf2620bafdf9cc47095786e554869e55",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "BodyTattu00",
+      "texture": "tex/pm0072_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Eye",
+      "texture": "tex/pm0072_00_Eye1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

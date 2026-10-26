@@ -1,0 +1,27 @@
+{
+  "dex": 147,
+  "key": "dratini",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/147_Dratini/Dratini.fbx",
+  "sha256": "76d2dda19d3aacc74e8c5f4cde1a8adec68d689910822510a6eeac43b725797b",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #181",
+      "texture": "tex/pm0147_00_Mouth1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #182",
+      "texture": "tex/pm0147_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #183",
+      "texture": "tex/pm0147_00_Eye1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 3
+}

@@ -50,16 +50,18 @@ namespace PokeMoba.World
             var root = new GameObject("Entrenador").transform;
             root.SetParent(parent, false);
 
-            if (appearance != null && appearance.AvatarStyle == 2)
+            if (appearance != null && ((!string.IsNullOrEmpty(appearance.TrainerCharacter) && appearance.TrainerCharacter != "Procedural") || appearance.AvatarStyle == 2))
             {
-                var imported = ImportedTrainerModel.TryBuild(root);
+                var imported = appearance.TrainerCharacter != "Procedural"
+                    ? ImportedTrainerModel.TryBuild(root, appearance.TrainerCharacter)
+                    : ImportedTrainerModel.TryBuild(root);
                 if (imported != null)
                 {
                     root.gameObject.AddComponent<TrainerRig>().SetupImported(imported);
                     if (follower) root.gameObject.AddComponent<TrainerFollower>();
                     return root;
                 }
-                Debug.LogWarning("No se encontró el modelo de Master Roshi. Se usa el sabio provisional.");
+                Debug.LogWarning("No se encontró el modelo del entrenador seleccionado. Se usa el modelo procedural.");
             }
 
             var outfit = root.gameObject.AddComponent<TrainerOutfit>();

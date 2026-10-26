@@ -1,0 +1,32 @@
+{
+  "dex": 3,
+  "key": "venusaur",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/003_Venusaur/Venusaur.fbx",
+  "sha256": "7ed82f8cea3ff13374486f4bb71ff667164fc00bdf434fad4e69225de53cc5d0",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #63",
+      "texture": "tex/pm0003_00_BodyB1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #61",
+      "texture": "tex/pm0003_00_Eye1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #62",
+      "texture": "tex/pm0003_00_BodyA1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #60",
+      "texture": "tex/pm0003_00_BodyC1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 4
+}

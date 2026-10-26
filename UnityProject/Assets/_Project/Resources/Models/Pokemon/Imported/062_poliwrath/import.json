@@ -1,0 +1,22 @@
+{
+  "dex": 62,
+  "key": "poliwrath",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/062_Poliwrath/Poliwrath.fbx",
+  "sha256": "2c962360d64b25a58da8b3045f86ca91c02a0a4f91b14cfe8e5890a9f3419fe7",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "BodyNyorobon",
+      "texture": "tex/pm0062_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Eye",
+      "texture": "tex/pm0062_00_Eye1_Merged.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

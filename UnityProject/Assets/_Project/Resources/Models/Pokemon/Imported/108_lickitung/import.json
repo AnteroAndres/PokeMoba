@@ -1,0 +1,62 @@
+{
+  "dex": 108,
+  "key": "lickitung",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/108 - Lickitung/source/BR_Lickitung.obj",
+  "sha256": "a1ce621580f97550ac16ff84f6153f09d210b86deb75d00ff002c8f41f5e0501",
+  "placeholder": false,
+  "modelFile": "Model.obj",
+  "bindings": [
+    {
+      "material": "mat_0",
+      "texture": "source/Textures/beroringa_0_0.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_1",
+      "texture": "source/Textures/beroringa_0_1.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_2",
+      "texture": "source/Textures/beroringa_0_2.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_3",
+      "texture": "source/Textures/beroringa_0_3.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_4",
+      "texture": "source/Textures/beroringa_0_4.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_5",
+      "texture": "source/Textures/beroringa_0_5.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_6",
+      "texture": "source/Textures/beroringa_0_6.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_7",
+      "texture": "source/Textures/beroringa_0_7.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_8",
+      "texture": "source/Textures/beroringa_0_8.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_9",
+      "texture": "source/Textures/beroringa_0_9.tga",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 20
+}

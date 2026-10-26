@@ -1,0 +1,22 @@
+{
+  "dex": 105,
+  "key": "marowak",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/105_Marowak/Marowak.fbx",
+  "sha256": "022e4c22048febc881533e5927bde29b5eec30ba4cd64829b21944eab7d5c27d",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #151",
+      "texture": "tex/pm0105_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #152",
+      "texture": "tex/pm0105_00_Eye1_Merged.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

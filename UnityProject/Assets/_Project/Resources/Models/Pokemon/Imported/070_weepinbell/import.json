@@ -1,0 +1,22 @@
+{
+  "dex": 70,
+  "key": "weepinbell",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/070_Weepinbell/Weepinbell.fbx",
+  "sha256": "efcd2a36f99739ae91f2f3abda9089a4dd4797413f84a13f427d1b2e509545d4",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #64",
+      "texture": "tex/pm0070_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #65",
+      "texture": "tex/pm0070_00_Eye1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

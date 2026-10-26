@@ -1,0 +1,27 @@
+{
+  "dex": 122,
+  "key": "mr-mime",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/122_Mr. Mime/MrMime.fbx",
+  "sha256": "69154e3d5b10fc444b2eb7e1ada07134178c70f003a15978e4bd136256c7f72b",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #35",
+      "texture": "tex/pm0122_00_Mouth1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #36",
+      "texture": "tex/pm0122_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #37",
+      "texture": "tex/pm0122_00_Eye1_Merged.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 3
+}

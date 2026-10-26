@@ -1,0 +1,22 @@
+{
+  "dex": 79,
+  "key": "slowpoke",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/079_Slowpoke/Slowpoke.fbx",
+  "sha256": "d5b76cd3195fde57e8bc7c3269706258af6a44d06874a3dda9819b60e8a2a751",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #35",
+      "texture": "tex/pm0079_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #36",
+      "texture": "tex/pm0079_00_Eye1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

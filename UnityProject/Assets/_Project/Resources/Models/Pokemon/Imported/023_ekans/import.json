@@ -1,0 +1,22 @@
+{
+  "dex": 23,
+  "key": "ekans",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/023_Ekans/Ekans.fbx",
+  "sha256": "7e9a58930918f2ebfba9138ac1c7e6912e939dc295bbfe10c0b914b37eebd4a9",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #22",
+      "texture": "tex/pm0023_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #23",
+      "texture": "tex/pm0023_00_Eye1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

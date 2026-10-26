@@ -1,0 +1,27 @@
+{
+  "dex": 12,
+  "key": "butterfree",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/012_Butterfree/Butterfree.fbx",
+  "sha256": "fc79dca48f77747c84766f0f0fc7832dfd8e15ee50daf19e212a218b95690c42",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #96",
+      "texture": "tex/pm0012_00_BodyC1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #97",
+      "texture": "tex/pm0012_00_BodyA1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #98",
+      "texture": "tex/pm0012_00_BodyB1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 3
+}

@@ -12,6 +12,7 @@ namespace PokeMoba.Prototype
         const float Smoothing = 6f;
 
         public bool ThirdPerson { get; private set; }
+        bool mouseReleased;
         float yaw;
         float pitch = 10f;
         Vector3 smoothPivot;
@@ -21,6 +22,8 @@ namespace PokeMoba.Prototype
         public void SetThirdPerson(bool enabled)
         {
             ThirdPerson = enabled;
+            mouseReleased = false;
+            if (!enabled) { Cursor.lockState = CursorLockMode.None; Cursor.visible = true; }
             resetPivot = true;
             var camera = GetComponent<Camera>();
             if (camera != null) camera.fieldOfView = enabled ? 58f : 50f;
@@ -72,6 +75,16 @@ namespace PokeMoba.Prototype
             if (player == null) return;
             if (ThirdPerson)
             {
+                if (!Application.isMobilePlatform)
+                {
+                    if (PokeMoba.UI.MenuScreens.AnyOpen || Time.timeScale <= 0f)
+                    { Cursor.lockState = CursorLockMode.None; Cursor.visible = true; return; }
+                    if (InputCompat.ReleaseMouse()) mouseReleased = true;
+                    else if (InputCompat.CaptureMouse()) mouseReleased = false;
+                    Cursor.lockState = mouseReleased ? CursorLockMode.None : CursorLockMode.Locked;
+                    Cursor.visible = mouseReleased;
+                    if (mouseReleased) return;
+                }
                 if (Time.timeScale <= 0f) return;
                 RotateLook(InputCompat.CameraLook());
                 Vector3 targetPivot = player.position + Vector3.up * 1.65f;
@@ -95,6 +108,13 @@ namespace PokeMoba.Prototype
             Vector3 desired = Focus() + offset;
             transform.position = Vector3.Lerp(transform.position, desired, 1f - Mathf.Exp(-Smoothing * Time.deltaTime));
         }
+
+        void OnApplicationFocus(bool focused)
+        {
+            if (!focused) { mouseReleased = true; Cursor.lockState = CursorLockMode.None; Cursor.visible = true; }
+        }
+
+        void OnDisable() { Cursor.lockState = CursorLockMode.None; Cursor.visible = true; }
 
         Vector3 Focus()
         {

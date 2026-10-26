@@ -1,0 +1,27 @@
+{
+  "dex": 24,
+  "key": "arbok",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/024_Arbok/Arbok.fbx",
+  "sha256": "1659dac8241f22f24c28af4c6894d8ffdf8639d084e3bf129093a570990d536f",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Eye",
+      "texture": "tex/pm0024_00_Eye1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyA",
+      "texture": "tex/pm0024_00_BodyA1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyB",
+      "texture": "tex/pm0024_00_BodyB1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 3
+}

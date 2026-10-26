@@ -1,0 +1,22 @@
+{
+  "dex": 131,
+  "key": "lapras",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/131_Lapras/Lapras.fbx",
+  "sha256": "c9d6d0448707dd62e216e2c0ac5172e835f6431edfea28d1f5ab676a82a9e9b5",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "assets/textures/a13145060",
+      "texture": "tex/0131_Body.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "assets/textures/a13145063",
+      "texture": "tex/0131_Eyes.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

@@ -1,0 +1,22 @@
+{
+  "dex": 53,
+  "key": "persian",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/053_Persian/Persian.fbx",
+  "sha256": "3230161cd36becc33ceab9aa76db5394b89f162d430cfe5cccdde6694b099217",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Eye",
+      "texture": "tex/pm0053_00_Eye1_Merged.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Body",
+      "texture": "tex/pm0053_00_Body1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

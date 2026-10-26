@@ -1,0 +1,27 @@
+{
+  "dex": 49,
+  "key": "venomoth",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/049_Venomoth/Venomoth.fbx",
+  "sha256": "4dd0bb361949ecf8e9bc0189bff3efa94071f71c9c515bdd7bf7131c3c5b35d3",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "BodyA02",
+      "texture": "tex/pm0049_00_BodyA1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyBKurumiruVco",
+      "texture": "tex/pm0049_00_BodyB1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyCNon",
+      "texture": "tex/pm0049_00_BodyC1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 5
+}

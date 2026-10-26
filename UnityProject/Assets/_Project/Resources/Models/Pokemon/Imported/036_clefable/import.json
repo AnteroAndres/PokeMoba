@@ -1,0 +1,27 @@
+{
+  "dex": 36,
+  "key": "clefable",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/036_Clefable/Clefable.fbx",
+  "sha256": "992d92e32b544a82e96e1053bf2fcd5ec30adc438f7a499ee5770b1a99fe6c79",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Body",
+      "texture": "tex/pm0036_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "REye",
+      "texture": "tex/pm0036_00_Eye1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Mouth",
+      "texture": "tex/pm0036_00_Mouth1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 3
+}

@@ -1,0 +1,162 @@
+{
+  "dex": 78,
+  "key": "rapidash",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/078_Rapidash/Rapidash.fbx",
+  "sha256": "db71077d3f0b34e0ca2cd6a32a89f7cda93c5368e2fcfc374fc129a3d92cb811",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Body",
+      "texture": "tex/pm0078_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Eye",
+      "texture": "tex/pm0078_00_Eye1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "FireCoreA",
+      "texture": "tex/pm0078_00_FireCore1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "FireCoreA",
+      "texture": "tex/pm0078_00_FireCore1.png",
+      "channel": "TransparentColor"
+    },
+    {
+      "material": "FireCoreA.1",
+      "texture": "tex/pm0078_00_FireCore1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "FireCoreA.1",
+      "texture": "tex/pm0078_00_FireCore1.png",
+      "channel": "TransparentColor"
+    },
+    {
+      "material": "FireCoreA.2",
+      "texture": "tex/pm0078_00_FireCore1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "FireCoreA.2",
+      "texture": "tex/pm0078_00_FireCore1.png",
+      "channel": "TransparentColor"
+    },
+    {
+      "material": "FireCoreA.3",
+      "texture": "tex/pm0078_00_FireCore1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "FireCoreA.3",
+      "texture": "tex/pm0078_00_FireCore1.png",
+      "channel": "TransparentColor"
+    },
+    {
+      "material": "FireCoreA.4",
+      "texture": "tex/pm0078_00_FireCore1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "FireCoreA.4",
+      "texture": "tex/pm0078_00_FireCore1.png",
+      "channel": "TransparentColor"
+    },
+    {
+      "material": "FireCoreA.5",
+      "texture": "tex/pm0078_00_FireCore1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "FireCoreA.5",
+      "texture": "tex/pm0078_00_FireCore1.png",
+      "channel": "TransparentColor"
+    },
+    {
+      "material": "FireCoreA.6",
+      "texture": "tex/pm0078_00_FireCore1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "FireCoreA.6",
+      "texture": "tex/pm0078_00_FireCore1.png",
+      "channel": "TransparentColor"
+    },
+    {
+      "material": "FireStenA",
+      "texture": "tex/pm0078_00_FireSten1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "FireStenA",
+      "texture": "tex/pm0078_00_FireSten1.png",
+      "channel": "TransparentColor"
+    },
+    {
+      "material": "FireStenA.1",
+      "texture": "tex/pm0078_00_FireSten1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "FireStenA.1",
+      "texture": "tex/pm0078_00_FireSten1.png",
+      "channel": "TransparentColor"
+    },
+    {
+      "material": "FireStenA.2",
+      "texture": "tex/pm0078_00_FireSten1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "FireStenA.2",
+      "texture": "tex/pm0078_00_FireSten1.png",
+      "channel": "TransparentColor"
+    },
+    {
+      "material": "FireStenA.3",
+      "texture": "tex/pm0078_00_FireSten1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "FireStenA.3",
+      "texture": "tex/pm0078_00_FireSten1.png",
+      "channel": "TransparentColor"
+    },
+    {
+      "material": "FireStenA.4",
+      "texture": "tex/pm0078_00_FireSten1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "FireStenA.4",
+      "texture": "tex/pm0078_00_FireSten1.png",
+      "channel": "TransparentColor"
+    },
+    {
+      "material": "FireStenA.5",
+      "texture": "tex/pm0078_00_FireSten1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "FireStenA.5",
+      "texture": "tex/pm0078_00_FireSten1.png",
+      "channel": "TransparentColor"
+    },
+    {
+      "material": "FireStenA.6",
+      "texture": "tex/pm0078_00_FireSten1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "FireStenA.6",
+      "texture": "tex/pm0078_00_FireSten1.png",
+      "channel": "TransparentColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 8
+}

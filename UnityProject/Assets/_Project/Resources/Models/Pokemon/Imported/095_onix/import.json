@@ -1,0 +1,37 @@
+{
+  "dex": 95,
+  "key": "onix",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/095 - Onix/Onix.fbx",
+  "sha256": "80ae22214f30074b03492b303917b041d64e8084c8e8a6bdcc2ee453436af9eb",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "mat_4",
+      "texture": "tex/iwark_0_2.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_3",
+      "texture": "tex/iwark_0_5.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_2",
+      "texture": "tex/iwark_0_4.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_1",
+      "texture": "tex/iwark_0_2.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_0",
+      "texture": "tex/iwark_0_0.tga",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 4
+}

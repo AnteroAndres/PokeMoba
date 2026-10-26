@@ -1,0 +1,17 @@
+{
+  "dex": 41,
+  "key": "zubat",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/041_Zubat/Zubat.fbx",
+  "sha256": "32c929be96309c508e8cc5e00dd80b7a18fe1adcada596a04d696b111c817f96",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Body04",
+      "texture": "tex/Body1_0.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 1
+}

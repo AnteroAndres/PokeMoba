@@ -102,7 +102,7 @@ namespace PokeMoba.World
                 float x = ((float)rng.NextDouble() * 2f - 1f) * half;
                 float z = ((float)rng.NextDouble() * 2f - 1f) * half;
                 // Sendero sinuoso: espacio abierto para leer al entrenador y al compañero.
-                if (Mathf.Abs(x - Mathf.Sin(z * .12f) * 3f) < 1.7f) continue;
+                if (Mathf.Abs(x - Mathf.Sin(z * .12f) * 3f) < 1.7f || !PokeMoba.Combat.PlayArea.IsFree(new Vector3(x, 0f, z), .3f)) continue;
                 float height = .16f + (float)rng.NextDouble() * .48f;
                 for (int blade = 0; blade < 2; blade++)
                 {

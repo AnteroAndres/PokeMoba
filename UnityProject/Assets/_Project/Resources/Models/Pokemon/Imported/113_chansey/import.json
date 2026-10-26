@@ -1,0 +1,27 @@
+{
+  "dex": 113,
+  "key": "chansey",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/113 - Chansey/source/BR_Chansey.obj",
+  "sha256": "5539bfd41738ef87d8e66f90939b04c647b1ecb892076b6111847f2350d274f2",
+  "placeholder": false,
+  "modelFile": "Model.obj",
+  "bindings": [
+    {
+      "material": "mat_0",
+      "texture": "Textures/lucky_0_0.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_1",
+      "texture": "Textures/lucky_0_1.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_2",
+      "texture": "Textures/lucky_0_2.tga",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 6
+}

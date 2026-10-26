@@ -1,0 +1,27 @@
+{
+  "dex": 59,
+  "key": "arcanine",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/059_Arcanine/Arcanine.fbx",
+  "sha256": "6504d9b909c3b225e47294d9a445bd1b1abb60be24f2e6f7690c515696c60d25",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #35",
+      "texture": "tex/pm0059_00_BodyA1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #36",
+      "texture": "tex/pm0059_00_Eye1_Merged.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #37",
+      "texture": "tex/pm0059_00_BodyB1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 3
+}

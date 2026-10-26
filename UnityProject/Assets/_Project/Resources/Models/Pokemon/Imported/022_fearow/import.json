@@ -1,0 +1,27 @@
+{
+  "dex": 22,
+  "key": "fearow",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/022_Fearow/Fearow.fbx",
+  "sha256": "a3ec8d0803e0b8918e30739e649364419618922e52b43d80018b9055d1c7ce91",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "BodyA",
+      "texture": "tex/pm0022_00_BodyA1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyB",
+      "texture": "tex/pm0022_00_BodyB1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Eye",
+      "texture": "tex/pm0022_00_Eye1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 3
+}

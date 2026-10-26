@@ -1,0 +1,22 @@
+{
+  "dex": 90,
+  "key": "shellder",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/090_Shellder/Shellder.fbx",
+  "sha256": "8e01911eaa00f24a3b03a5f43addd4330c4b9caf3a43c1789775b898645ee138",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "pm0090_00_Body1-material_001-material",
+      "texture": "tex/pm0090_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "pm0090_00_Eye1-material_001-material",
+      "texture": "tex/pm0090_00_Eye1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

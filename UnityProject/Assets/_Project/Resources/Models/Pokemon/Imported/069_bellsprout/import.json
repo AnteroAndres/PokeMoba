@@ -1,0 +1,22 @@
+{
+  "dex": 69,
+  "key": "bellsprout",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/069_Bellsprout/Bellsprout.fbx",
+  "sha256": "44873062dcb7c7a814d2d40b12f953976d96194b07451d8ab96c2b0ac2fdca31",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Body00",
+      "texture": "tex/pm0069_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Eye",
+      "texture": "tex/pm0069_00_Eye1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

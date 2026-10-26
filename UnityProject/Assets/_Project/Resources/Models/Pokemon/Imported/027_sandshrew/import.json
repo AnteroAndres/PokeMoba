@@ -1,0 +1,27 @@
+{
+  "dex": 27,
+  "key": "sandshrew",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/027_Sandshrew/Sandshrew.fbx",
+  "sha256": "014069c608f5c5c4e5c2b97b9b4cf95fe0136fe452ea31688d14cc2300093718",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #35",
+      "texture": "tex/pm0027_00_BodyA1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #36",
+      "texture": "tex/pm0027_00_Eye1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #47",
+      "texture": "tex/pm0027_00_BodyB1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 3
+}

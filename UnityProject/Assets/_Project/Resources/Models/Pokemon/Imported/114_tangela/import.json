@@ -1,0 +1,27 @@
+{
+  "dex": 114,
+  "key": "tangela",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/114 - Tangela/source/BR_Tangela.obj",
+  "sha256": "14e047bc5250f32ffa399872e0fc483a347e1c1074577a39fd1db2af88128369",
+  "placeholder": false,
+  "modelFile": "Model.obj",
+  "bindings": [
+    {
+      "material": "mat_0",
+      "texture": "Textures/monjara_0_0.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_1",
+      "texture": "Textures/monjara_0_0.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_2",
+      "texture": "Textures/monjara_0_0.tga",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

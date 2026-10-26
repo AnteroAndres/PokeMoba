@@ -1,0 +1,27 @@
+{
+  "dex": 28,
+  "key": "sandslash",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/028_Sandslash/Sandslash.fbx",
+  "sha256": "5463e0f0c66a4247f857146566521d0169397133eb686e4a06215b051aa3784c",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #58",
+      "texture": "tex/pm0028_00_Eye1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #59",
+      "texture": "tex/pm0028_00_BodyA1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #60",
+      "texture": "tex/pm0028_00_BodyB1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 3
+}

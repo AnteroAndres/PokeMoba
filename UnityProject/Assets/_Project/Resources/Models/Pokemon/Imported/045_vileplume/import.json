@@ -1,0 +1,27 @@
+{
+  "dex": 45,
+  "key": "vileplume",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/045_Vileplume/Vileplume.fbx",
+  "sha256": "9323a2e9ad88dc0fd1e305264744f5357fbfec5cd7f9ae139487677911e6da51",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Mouth",
+      "texture": "tex/pm0045_00_Mouth1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Eye",
+      "texture": "tex/pm0045_00_Eye1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Body01_00",
+      "texture": "tex/pm0045_00_Body1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 3
+}

@@ -1,0 +1,22 @@
+{
+  "dex": 87,
+  "key": "dewgong",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/087_Dewgong/Dewgong.fbx",
+  "sha256": "f66a8e2ba507b837e09ec345981483e6c0bdb7dfcbe2097b257b7b41e681ad2f",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Body",
+      "texture": "tex/pm0087_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Eye",
+      "texture": "tex/pm0087_00_Eye1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

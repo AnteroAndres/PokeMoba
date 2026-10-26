@@ -1,0 +1,27 @@
+{
+  "dex": 51,
+  "key": "dugtrio",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/051_Dugtrio/Dugtrio.fbx",
+  "sha256": "761501fbad121e309a35967fd6d9630cc3b2e638978f95b0bfb294982242e35e",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "BodyA00",
+      "texture": "tex/pm0051_00_BodyA1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Eye00",
+      "texture": "tex/pm0051_00_EyeA1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyB",
+      "texture": "tex/pm0051_00_BodyB1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 3
+}

@@ -1,0 +1,37 @@
+{
+  "dex": 94,
+  "key": "gengar",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/094_Gengar/Gengar.fbx",
+  "sha256": "ce7a4407d4bd9fc7f4c8ee011d1e0613f46c11cf15c8278f4f4d855e2e9fd46d",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #10",
+      "texture": "tex/pm0094_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #11",
+      "texture": "tex/pm0094_00_Eye1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #10.1",
+      "texture": "tex/pm0094_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #10.2",
+      "texture": "tex/pm0094_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #10.3",
+      "texture": "tex/pm0094_00_Body1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

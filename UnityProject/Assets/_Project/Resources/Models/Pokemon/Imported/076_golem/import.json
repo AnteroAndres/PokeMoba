@@ -1,0 +1,27 @@
+{
+  "dex": 76,
+  "key": "golem",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/076_Golem/Golem.fbx",
+  "sha256": "ffe1b3ae254520de3c066dea1cf7b6f9e345828f445abde85b71eaf59d1b6c6c",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "BodyA00",
+      "texture": "tex/pm0076_00_BodyA1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Eye",
+      "texture": "tex/pm0076_00_Eye1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyB00",
+      "texture": "tex/pm0076_00_BodyB1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 3
+}

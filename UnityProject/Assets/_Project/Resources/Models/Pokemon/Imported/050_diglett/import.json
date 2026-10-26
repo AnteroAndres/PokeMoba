@@ -1,0 +1,22 @@
+{
+  "dex": 50,
+  "key": "diglett",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/050_Diglett/Diglett.fbx",
+  "sha256": "411d5b9b7020c2371fab70635b6e1044fcfc1bd9289d27bc13c33e4238f13a25",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Body00",
+      "texture": "tex/pm0050_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Eye",
+      "texture": "tex/pm0050_00_Eye1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

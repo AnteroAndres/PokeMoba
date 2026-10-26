@@ -1,0 +1,47 @@
+{
+  "dex": 121,
+  "key": "starmie",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/121_Starmie/Starmie.fbx",
+  "sha256": "f36d4924def4f84487b8c6e5b456df45a1a3033a2792064099d9fa17d174411e",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "BodyA01_003-material",
+      "texture": "tex/pm0121_00_BodyA1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyB00_003-material",
+      "texture": "tex/pm0121_00_BodyB1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyB00_003-material.1",
+      "texture": "tex/pm0121_00_BodyB1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyA01_003-material.1",
+      "texture": "tex/pm0121_00_BodyA1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyB00_003-material.2",
+      "texture": "tex/pm0121_00_BodyB1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyB00_003-material.3",
+      "texture": "tex/pm0121_00_BodyB1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyA01_003-material.2",
+      "texture": "tex/pm0121_00_BodyA1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

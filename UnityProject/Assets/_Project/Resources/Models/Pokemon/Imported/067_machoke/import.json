@@ -1,0 +1,22 @@
+{
+  "dex": 67,
+  "key": "machoke",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/067_Machoke/Machoke.fbx",
+  "sha256": "63aeb63023a9d3e13070d5896c57adba54a65a72c8403de94ee6e286577dd2a4",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #89",
+      "texture": "tex/pm0067_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #90",
+      "texture": "tex/pm0067_00_Eye1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

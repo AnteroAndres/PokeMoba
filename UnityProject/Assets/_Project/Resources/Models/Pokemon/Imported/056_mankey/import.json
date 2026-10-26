@@ -1,0 +1,22 @@
+{
+  "dex": 56,
+  "key": "mankey",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/056_Mankey/Mankey.fbx",
+  "sha256": "f0f6856ae376a176e65b455f97c17060c0e3cdcaa8dd3d4db3c93994709debed",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "BodyDodo_Hair",
+      "texture": "tex/pm0056_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Eye",
+      "texture": "tex/pm0056_00_Eye1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

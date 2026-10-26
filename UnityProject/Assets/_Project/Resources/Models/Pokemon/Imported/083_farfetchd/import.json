@@ -1,0 +1,22 @@
+{
+  "dex": 83,
+  "key": "farfetchd",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/083_Farfetch'd/Farfetch'd.fbx",
+  "sha256": "1d00b2e2b90e275cd27fd5d1dd8b648b44ab0eb78535b17e616c14729fb57eea",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "_61440_003-material",
+      "texture": "tex/Body.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "_61445_003-material",
+      "texture": "tex/Eyes.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

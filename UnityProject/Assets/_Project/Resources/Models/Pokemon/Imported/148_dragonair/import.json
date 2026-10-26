@@ -1,0 +1,27 @@
+{
+  "dex": 148,
+  "key": "dragonair",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/148_Dragonair/Dragonair.fbx",
+  "sha256": "e3bfef2eff58a23f921439ca6b2ee7baa849f3b517e099ed235409878a0cf9f8",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #194",
+      "texture": "tex/pm0148_00_Mouth1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #195",
+      "texture": "tex/pm0148_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #196",
+      "texture": "tex/pm0148_00_Eye1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 3
+}

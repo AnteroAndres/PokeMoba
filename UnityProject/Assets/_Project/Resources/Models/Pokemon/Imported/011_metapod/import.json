@@ -1,0 +1,22 @@
+{
+  "dex": 11,
+  "key": "metapod",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/011_Metapod/Metapod.fbx",
+  "sha256": "ed5a85b6570330291121514b5489421daff9fd100c8fc11109413db59e33a024",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #58",
+      "texture": "tex/pm0011_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #59",
+      "texture": "tex/pm0011_00_Eye1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

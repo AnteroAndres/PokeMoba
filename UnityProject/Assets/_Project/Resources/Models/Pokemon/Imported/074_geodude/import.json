@@ -1,0 +1,22 @@
+{
+  "dex": 74,
+  "key": "geodude",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/074_Geodude/Geodude.fbx",
+  "sha256": "6326482ead96ea6598aa102c81d84bdb3684ae6a8b945312a9e0579d068e2572",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Eye",
+      "texture": "tex/pm0074_00_Eye1_Merged.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Body",
+      "texture": "tex/pm0074_00_Body1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

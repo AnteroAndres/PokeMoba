@@ -1,0 +1,27 @@
+{
+  "dex": 38,
+  "key": "ninetales",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/038_Ninetales/Ninetales.fbx",
+  "sha256": "8e0efceab2d3b277d7f5737eb1d55203cedefd63351e8ce2df47767cc155b2f0",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Eye",
+      "texture": "tex/pm0038_00_Eye1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyA00",
+      "texture": "tex/pm0038_00_BodyA1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyB",
+      "texture": "tex/pm0038_00_BodyB1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 3
+}

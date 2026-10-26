@@ -1,0 +1,27 @@
+{
+  "dex": 142,
+  "key": "aerodactyl",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/142_Aerodactyl/Aerodactyl.fbx",
+  "sha256": "c6a1e67101900fdfe09d84722d4fce3e2490224e6be53ce06d05dffa0599015a",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #23",
+      "texture": "tex/pm0142_00_BodyA1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #24",
+      "texture": "tex/pm0142_51_Eye1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #25",
+      "texture": "tex/pm0142_00_BodyB1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 3
+}

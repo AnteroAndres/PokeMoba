@@ -8,9 +8,12 @@ namespace PokeMoba.UI
     public static class UIFactory
     {
         static Sprite circle;
+        static Sprite roundedRectangle;
         static Font font;
 
         public static Sprite Circle => circle != null ? circle : (circle = CreateCircleSprite(128));
+        public static Sprite RoundedRectangle => roundedRectangle != null
+            ? roundedRectangle : (roundedRectangle = CreateRoundedRectangleSprite());
         public static Font Font => font != null ? font : (font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf"));
 
         public static Canvas CreateCanvas(string name)
@@ -140,6 +143,30 @@ namespace PokeMoba.UI
         public static void SetBarFill(RectTransform fill, float fraction)
         {
             fill.anchorMax = new Vector2(Mathf.Clamp01(fraction), 1f);
+        }
+
+        static Sprite CreateRoundedRectangleSprite()
+        {
+            const int size = 64;
+            const float radius = 20f;
+            var texture = new Texture2D(size, size, TextureFormat.RGBA32, false)
+            {
+                name = "Rounded UI rectangle",
+                wrapMode = TextureWrapMode.Clamp
+            };
+            var pixels = new Color32[size * size];
+            for (int y = 0; y < size; y++)
+            for (int x = 0; x < size; x++)
+            {
+                float dx = Mathf.Max(Mathf.Abs(x + .5f - size * .5f) - (size * .5f - radius), 0f);
+                float dy = Mathf.Max(Mathf.Abs(y + .5f - size * .5f) - (size * .5f - radius), 0f);
+                byte alpha = (byte)(255 * Mathf.Clamp01(radius - Mathf.Sqrt(dx * dx + dy * dy)));
+                pixels[y * size + x] = new Color32(255, 255, 255, alpha);
+            }
+            texture.SetPixels32(pixels);
+            texture.Apply(false, true);
+            return Sprite.Create(texture, new Rect(0, 0, size, size), new Vector2(.5f, .5f),
+                100, 0, SpriteMeshType.FullRect, new Vector4(radius, radius, radius, radius));
         }
 
         static Sprite CreateCircleSprite(int size)

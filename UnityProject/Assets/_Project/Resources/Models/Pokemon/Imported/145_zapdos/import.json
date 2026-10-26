@@ -1,0 +1,27 @@
+{
+  "dex": 145,
+  "key": "zapdos",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/145_Zapdos/Zapdos.fbx",
+  "sha256": "6466ba76401a370fb04f897f84ab5efa0d27cc0a91ec5bf45c7864c7cef4223e",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #48",
+      "texture": "tex/pm0145_00_BodyA1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #49",
+      "texture": "tex/pm0145_00_BodyB1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #50",
+      "texture": "tex/pm0145_00_Eye1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 3
+}

@@ -1,0 +1,27 @@
+{
+  "dex": 151,
+  "key": "mew",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/151_Mew/Mew.fbx",
+  "sha256": "60a6287ec731550719fbe34c38d7993f873b0d2a3da79521ccbf47848caa3b7d",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #62",
+      "texture": "tex/pm0151_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #63",
+      "texture": "tex/pm0151_00_Eye1_Merged.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #64",
+      "texture": "tex/pm0151_00_Mouth1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 3
+}

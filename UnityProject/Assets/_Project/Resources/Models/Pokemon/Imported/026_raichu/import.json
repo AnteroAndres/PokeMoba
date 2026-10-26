@@ -1,0 +1,27 @@
+{
+  "dex": 26,
+  "key": "raichu",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/026_Raichu/Raichu.fbx",
+  "sha256": "8090b2a54264a393f65dd63abd99d767b47eb3c4d5258ea119e2459cd08a0ad7",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #146",
+      "texture": "tex/pm0026_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #147",
+      "texture": "tex/pm0026_00_Eye1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #148",
+      "texture": "tex/pm0026_00_Mouth1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 3
+}

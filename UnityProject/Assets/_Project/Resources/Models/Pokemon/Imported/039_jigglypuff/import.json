@@ -1,0 +1,27 @@
+{
+  "dex": 39,
+  "key": "jigglypuff",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/039_Jigglypuff/Jigglypuff.fbx",
+  "sha256": "28bd5e85e7a4914753bbe072d133889791cf5bddc991353b55a97b04e1a5a3f4",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Mouth",
+      "texture": "tex/pm0039_00_Mouth1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "LEye",
+      "texture": "tex/pm0039_00_Eye1_Merged.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Body",
+      "texture": "tex/pm0039_00_Body1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 3
+}

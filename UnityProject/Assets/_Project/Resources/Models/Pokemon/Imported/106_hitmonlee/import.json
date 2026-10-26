@@ -1,0 +1,22 @@
+{
+  "dex": 106,
+  "key": "hitmonlee",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/106 - Hitmonlee/Hitmonlee.fbx",
+  "sha256": "8fef5f09c0da6321e2204600c620c77ce1bd30457faf28360a5726e5c8e72b4b",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "mat1",
+      "texture": "tex/SawamularDh.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat2",
+      "texture": "tex/SawamularEyeDh.tga",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 8
+}

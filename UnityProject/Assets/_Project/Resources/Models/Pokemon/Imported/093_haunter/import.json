@@ -1,0 +1,22 @@
+{
+  "dex": 93,
+  "key": "haunter",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/093 - Haunter/Haunter.fbx",
+  "sha256": "d7bc4e86b68c1c7a4f21c5575746971ba499993a857ab0cb1d407c2c696bcc2b",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "mat_1",
+      "texture": "tex/ghost_0_1.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_0",
+      "texture": "tex/ghost_0_0.tga",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

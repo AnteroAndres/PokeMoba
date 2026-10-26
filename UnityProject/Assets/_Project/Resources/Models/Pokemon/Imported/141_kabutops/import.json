@@ -1,0 +1,92 @@
+{
+  "dex": 141,
+  "key": "kabutops",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/141 - Kabutops/source/BR_Kabutops.obj",
+  "sha256": "93971f028dd5329bb15c590018ae97b3f5d9c783edbc95c3295027e35558daa2",
+  "placeholder": false,
+  "modelFile": "Model.obj",
+  "bindings": [
+    {
+      "material": "mat_0",
+      "texture": "source/Textures/kabutops_0_0.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_1",
+      "texture": "source/Textures/kabutops_0_1.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_10",
+      "texture": "source/Textures/kabutops_0_10.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_11",
+      "texture": "source/Textures/kabutops_0_11.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_12",
+      "texture": "source/Textures/kabutops_0_12.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_13",
+      "texture": "source/Textures/kabutops_0_13.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_14",
+      "texture": "source/Textures/kabutops_0_14.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_14_NONE",
+      "texture": "source/Textures/kabutops_0_14.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_2",
+      "texture": "source/Textures/kabutops_0_2.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_3",
+      "texture": "source/Textures/kabutops_0_3.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_4",
+      "texture": "source/Textures/kabutops_0_4.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_5",
+      "texture": "source/Textures/kabutops_0_5.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_6",
+      "texture": "source/Textures/kabutops_0_6.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_7",
+      "texture": "source/Textures/kabutops_0_7.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_8",
+      "texture": "source/Textures/kabutops_0_8.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_9",
+      "texture": "source/Textures/kabutops_0_9.tga",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 32
+}

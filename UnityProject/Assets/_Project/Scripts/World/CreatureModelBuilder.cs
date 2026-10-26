@@ -18,12 +18,16 @@ namespace PokeMoba.World
         {
             var model = new GameObject("Model").transform;
             model.SetParent(parent, false);
+            FlightVisual.Add(model, species);
 
             var prefab = Resources.Load<GameObject>($"{ModelsFolder}{species.DexNumber:000}_{species.Key}");
+            bool fromArchive = prefab == null;
+            if (prefab == null)
+                prefab = Resources.Load<GameObject>($"{ModelsFolder}Imported/{species.DexNumber:000}_{species.Key}/Model");
             if (prefab != null)
             {
                 var instance = Object.Instantiate(prefab, model);
-                FitHeight(instance.transform, 1.6f * species.Size);
+                ImportedPokemonModel.Configure(instance, 1.6f * species.Size, shiny, fromArchive);
                 foreach (var c in instance.GetComponentsInChildren<Collider>()) Object.Destroy(c);
                 return model;
             }
@@ -45,15 +49,6 @@ namespace PokeMoba.World
             var animator = model.gameObject.AddComponent<CreatureAnimator>();
             animator.Setup(rig, parts.Wings, parts.Legs, parts.Tail, parts.Segments, parts.Flame, parts.Floating);
             return model;
-        }
-
-        static void FitHeight(Transform t, float height)
-        {
-            var renderers = t.GetComponentsInChildren<Renderer>();
-            if (renderers.Length == 0) return;
-            var bounds = renderers[0].bounds;
-            foreach (var r in renderers) bounds.Encapsulate(r.bounds);
-            if (bounds.size.y > 0.01f) t.localScale *= height / bounds.size.y;
         }
 
         // ------------------------------------------------------------------ formas

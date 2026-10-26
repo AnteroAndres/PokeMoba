@@ -1,0 +1,32 @@
+{
+  "dex": 2,
+  "key": "ivysaur",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/002_Ivysaur/Ivysaur.fbx",
+  "sha256": "e239ec05e53a65824acfd6a36c9f00aadad8a122c248c9aadff1fcbd58caeb63",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #46",
+      "texture": "tex/pm0002_00_BodyA1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #47",
+      "texture": "tex/pm0002_00_Eye1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #48",
+      "texture": "tex/pm0002_00_BodyB1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #49",
+      "texture": "tex/pm0002_00_BodyC1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 4
+}

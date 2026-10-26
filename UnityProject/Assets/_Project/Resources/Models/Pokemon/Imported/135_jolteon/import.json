@@ -1,0 +1,22 @@
+{
+  "dex": 135,
+  "key": "jolteon",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/135_Jolteon/Jolteon.fbx",
+  "sha256": "0c0588bf8983e1f551d253c0b93d26297407453b1aeb87c619ea890d20405c5a",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #10",
+      "texture": "tex/pm0135_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #11",
+      "texture": "tex/pm0135_00_Eye1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

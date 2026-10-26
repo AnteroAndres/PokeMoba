@@ -1,0 +1,22 @@
+{
+  "dex": 20,
+  "key": "raticate",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/020_Raticate/Raticate.fbx",
+  "sha256": "8da04d0fb620a86502242bcedc5bee286e929f009868a17ee0af51d131ebd16b",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Body00",
+      "texture": "tex/pm0020_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Eye",
+      "texture": "tex/pm0020_00_Eye1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

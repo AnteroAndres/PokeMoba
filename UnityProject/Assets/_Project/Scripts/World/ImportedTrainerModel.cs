@@ -15,12 +15,19 @@ namespace PokeMoba.World
 
         public static ImportedTrainerModel TryBuild(Transform root)
         {
-            var asset = Resources.Load<GameObject>(Folder + "N02_321out");
+            return TryBuild(root, "MasterRoshi/N02_321out");
+        }
+
+        public static ImportedTrainerModel TryBuild(Transform root, string modelPath)
+        {
+            var asset = Resources.Load<GameObject>("Models/Trainers/ImportedFbx/" + modelPath);
+            if (asset == null && modelPath == "MasterRoshi/N02_321out")
+                asset = Resources.Load<GameObject>(Folder + "N02_321out");
             if (asset == null) return null;
             var adapter = root.gameObject.AddComponent<ImportedTrainerModel>();
             var model = Instantiate(asset, root);
-            model.name = "Master Roshi";
-            adapter.Configure(model.transform);
+            model.name = modelPath;
+            adapter.Configure(model.transform, modelPath);
             return adapter;
         }
 
@@ -30,7 +37,7 @@ namespace PokeMoba.World
             return null;
         }
 
-        void Configure(Transform model)
+        void Configure(Transform model, string modelPath)
         {
             foreach (var collider in model.GetComponentsInChildren<Collider>()) Destroy(collider);
             foreach (var animator in model.GetComponentsInChildren<Animator>()) animator.enabled = false;
@@ -44,6 +51,24 @@ namespace PokeMoba.World
                     model.rotation = Quaternion.FromToRotation(direction.normalized, transform.forward) * model.rotation;
             }
             var renderers = model.GetComponentsInChildren<Renderer>();
+            foreach (var group in model.GetComponentsInChildren<LODGroup>()) group.ForceLOD(0);
+            var visible = new List<Renderer>();
+            foreach (var renderer in renderers)
+            {
+                // These FBX files contain coincident LOD0/1/2 meshes, not separate characters.
+                bool lowerLod = false;
+                for (var node = renderer.transform; node != null && node != model; node = node.parent)
+                    lowerLod |= System.Text.RegularExpressions.Regex.IsMatch(node.name, @"_lod[1-9]\d*", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+                if (lowerLod) { renderer.enabled = false; continue; }
+                if (renderer is SkinnedMeshRenderer skin)
+                {
+                    skin.quality = SkinQuality.Bone4;
+                    skin.updateWhenOffscreen = true;
+                }
+                if (renderer.enabled) visible.Add(renderer);
+            }
+            renderers = visible.ToArray();
+            if (modelPath.StartsWith("tr")) RepairMaterials(renderers, modelPath);
             if (renderers.Length > 0)
             {
                 var bounds = renderers[0].bounds;
@@ -53,6 +78,9 @@ namespace PokeMoba.World
                 foreach (var renderer in renderers) bounds.Encapsulate(renderer.bounds);
                 model.position += new Vector3(transform.position.x - bounds.center.x, transform.position.y - bounds.min.y, transform.position.z - bounds.center.z);
             }
+            // The legacy character's atlas must never overwrite the other trainers' materials.
+            if (modelPath == "MasterRoshi/N02_321out")
+            {
             var textures = new[] { Resources.Load<Texture2D>(Folder + "N50_514a1"), Resources.Load<Texture2D>(Folder + "N50_514a2") };
             var materials = new Material[2];
             for (int i = 0; i < 2; i++)
@@ -70,6 +98,7 @@ namespace PokeMoba.World
                 renderer.sharedMaterials = slots;
                 if (renderer is SkinnedMeshRenderer skin) skin.updateWhenOffscreen = true;
             }
+            }
             // El archivo viene en pose de referencia con brazos abiertos.
             foreach (var side in new[] { "L", "R" })
             {
@@ -81,12 +110,90 @@ namespace PokeMoba.World
                 if (current.sqrMagnitude > .0001f)
                     shoulder.rotation = Quaternion.FromToRotation(current.normalized, relaxed.normalized) * shoulder.rotation;
             }
-            foreach (var name in new[] { "JointHipL", "JointHipR", "JointShoulderL", "JointShoulderR" })
+            foreach (var side in new[] { "left", "right" })
+            {
+                var shoulder = Find(model, side + "_arm_01");
+                var elbow = Find(model, side + "_arm_02");
+                if (shoulder != null && elbow != null)
+                {
+                    Vector3 direction = elbow.position - shoulder.position;
+                    if (direction.sqrMagnitude > .0001f)
+                        shoulder.rotation = Quaternion.FromToRotation(direction.normalized,
+                            (-transform.up + transform.right * (side == "left" ? -.18f : .18f)).normalized) * shoulder.rotation;
+                }
+            }
+            foreach (var name in new[] { "JointHipL", "JointHipR", "JointShoulderL", "JointShoulderR",
+                "left_leg_01", "right_leg_01", "left_arm_01", "right_arm_01", "left_leg_02", "right_leg_02" })
             {
                 var joint = Find(model, name);
                 if (joint == null) continue;
                 joints.Add(joint); rest.Add(joint.localRotation);
-                amplitudes.Add(name.EndsWith("L") ? 1f : -1f);
+                amplitudes.Add(name.EndsWith("L") || name.StartsWith("left") ? 1f : -1f);
+            }
+        }
+
+        void RepairMaterials(Renderer[] renderers, string modelPath)
+        {
+            var slash = modelPath.IndexOf('/');
+            if (slash < 0) return;
+            string folder = modelPath.Substring(0, slash);
+            string textureRoot = "Models/Trainers/ImportedFbx/" + folder + "/";
+            var textures = Resources.LoadAll<Texture2D>(textureRoot);
+            Texture2D FindTexture(string key)
+            {
+                for (int i = 0; i < textures.Length; i++)
+                    if (textures[i].name.ToLowerInvariant() == key || textures[i].name.ToLowerInvariant().Contains("_" + key + "_alb")) return textures[i];
+                return null;
+            }
+
+            var shader = Shader.Find("Universal Render Pipeline/Lit") ?? Shader.Find("Standard");
+            var repaired = new Dictionary<Material, Material>();
+            foreach (var renderer in renderers)
+            {
+                var slots = renderer.sharedMaterials;
+                for (int i = 0; i < slots.Length; i++)
+                {
+                    var original = slots[i];
+                    if (original == null) continue;
+                    if (repaired.TryGetValue(original, out var cached)) { slots[i] = cached; continue; }
+                    string name = original.name.ToLowerInvariant();
+                    Texture2D texture = original.mainTexture != null ? FindTexture(original.mainTexture.name.ToLowerInvariant()) : null;
+                    if (texture == null) texture = name.Contains("face") ? FindTexture("face")
+                        : name.Contains("eye") ? FindTexture("eye")
+                        : name.Contains("hair") ? FindTexture("hairstyle")
+                        : name.Contains("shoe") ? FindTexture("shoe")
+                        : name.Contains("baggage") ? FindTexture("baggage")
+                        : name.Contains("cap") ? FindTexture("cap")
+                        : name.Contains("obj01") ? FindTexture("obj01")
+                        : name.Contains("obj02") ? FindTexture("obj02")
+                        : name.Contains("obj") ? FindTexture("obj")
+                        : name.Contains("obi") ? FindTexture("obi")
+                        : name.Contains("ring") ? FindTexture("ring")
+                        : name.Contains("body") ? FindTexture("body") : null;
+                    if (texture == null && name.Contains("shoe")) texture = FindTexture("shoes");
+                    if (texture == null)
+                    {
+                        Debug.LogWarning($"Textura no resuelta: {modelPath} / {original.name}. Se conserva el material original.");
+                        continue;
+                    }
+                    var material = new Material(shader) { name = original.name + " Fixed" };
+                    material.color = Color.white;
+                    material.mainTexture = texture;
+                    if (material.HasProperty("_BaseMap")) material.SetTexture("_BaseMap", texture);
+                    if (material.HasProperty("_BaseColor")) material.SetColor("_BaseColor", Color.white);
+                    material.SetFloat("_Glossiness", 0f);
+                    material.SetFloat("_Smoothness", 0f);
+                    material.SetOverrideTag("RenderType", "TransparentCutout");
+                    material.SetFloat("_AlphaClip", 1f);
+                    material.SetFloat("_Cutoff", .3f);
+                    material.SetFloat("_Cull", 0f);
+                    material.EnableKeyword("_ALPHATEST_ON");
+                    material.renderQueue = (int)UnityEngine.Rendering.RenderQueue.AlphaTest;
+                    owned.Add(material);
+                    repaired[original] = material;
+                    slots[i] = material;
+                }
+                renderer.sharedMaterials = slots;
             }
         }
 
@@ -100,7 +207,7 @@ namespace PokeMoba.World
                 joint.localRotation = rest[i];
                 // Girar en el eje lateral del personaje conservando las rotaciones del bind pose.
                 Vector3 axis = joint.InverseTransformDirection(transform.right);
-                float angle = Mathf.Sin(phase) * amplitudes[i] * (joint.name.Contains("Hip") ? 20f : -10f) * speed;
+                float angle = Mathf.Sin(phase) * amplitudes[i] * (joint.name.Contains("Hip") || joint.name.Contains("leg_01") ? 25f : joint.name.Contains("leg_02") ? 12f : -18f) * speed;
                 joint.localRotation = rest[i] * Quaternion.AngleAxis(angle, axis);
             }
         }

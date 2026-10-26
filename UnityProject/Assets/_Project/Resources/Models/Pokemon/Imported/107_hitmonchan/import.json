@@ -1,0 +1,22 @@
+{
+  "dex": 107,
+  "key": "hitmonchan",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/107_Hitmonchan/Hitmonchan.fbx",
+  "sha256": "610f98054ae68732c90fcca75f4a1873e54b77e5129d0e8c9c0201a5058f97f7",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #109",
+      "texture": "tex/pm0107_00_Eye1_Merged.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #110",
+      "texture": "tex/pm0107_00_Body1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

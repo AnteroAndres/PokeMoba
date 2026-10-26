@@ -1,0 +1,67 @@
+{
+  "dex": 126,
+  "key": "magmar",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/126 - Magmar/source/BR_Magmar.obj",
+  "sha256": "44e0b414baf4e49dba43ae58935ba87671e01518f1c1db19cac7e83f826a6847",
+  "placeholder": false,
+  "modelFile": "Model.obj",
+  "bindings": [
+    {
+      "material": "mat_0",
+      "texture": "source/Textures/boober_0_0.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_1",
+      "texture": "source/Textures/boober_0_1.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_10",
+      "texture": "source/Textures/boober_0_10.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_2",
+      "texture": "source/Textures/boober_0_2.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_3",
+      "texture": "source/Textures/boober_0_3.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_4",
+      "texture": "source/Textures/boober_0_4.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_5",
+      "texture": "source/Textures/boober_0_5.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_6",
+      "texture": "source/Textures/boober_0_6.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_7",
+      "texture": "source/Textures/boober_0_7.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_8",
+      "texture": "source/Textures/boober_0_8.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_9",
+      "texture": "source/Textures/boober_0_9.tga",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 22
+}

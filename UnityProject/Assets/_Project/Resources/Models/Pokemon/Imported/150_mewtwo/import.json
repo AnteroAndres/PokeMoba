@@ -1,0 +1,22 @@
+{
+  "dex": 150,
+  "key": "mewtwo",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/150_Mewtwo/Mewtwo.fbx",
+  "sha256": "ed29e58ebf9c1a068c33a0dc1cccd4f24392a2293349e03696933fe43917adfb",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #35",
+      "texture": "tex/pm0150_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #36",
+      "texture": "tex/pm0150_00_Eye1_Merged.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

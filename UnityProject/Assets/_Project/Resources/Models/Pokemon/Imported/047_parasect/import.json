@@ -1,0 +1,27 @@
+{
+  "dex": 47,
+  "key": "parasect",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/047_Parasect/Parasect.fbx",
+  "sha256": "959c7c9056707542961d57cd5328239e938fce83460051eceeb6b0e97244f4c2",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "BodyASpc00",
+      "texture": "tex/pm0047_00_BodyA1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyB",
+      "texture": "tex/pm0047_00_BodyB1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyASpc00.1",
+      "texture": "tex/pm0047_00_BodyA1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

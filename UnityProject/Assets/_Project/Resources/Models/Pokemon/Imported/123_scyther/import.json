@@ -1,0 +1,22 @@
+{
+  "dex": 123,
+  "key": "scyther",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/123_Scyther/Scyther.fbx",
+  "sha256": "98a02b64db72ab7c84778fd81f7b9e91ddd4a868d0bf943421529aefd2d7116e",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Body",
+      "texture": "tex/pm0123_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Eye",
+      "texture": "tex/pm0123_00_Eye1_Merged.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

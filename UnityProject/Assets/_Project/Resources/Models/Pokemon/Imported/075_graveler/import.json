@@ -1,0 +1,27 @@
+{
+  "dex": 75,
+  "key": "graveler",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/075_Graveler/Graveler.fbx",
+  "sha256": "7be0747d903d8b03f9a6388aeeb3bf67677c42650fa5b4452f7ca268c18b3d8e",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Eye",
+      "texture": "tex/pm0075_00_Eye1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyA00",
+      "texture": "tex/pm0075_00_BodyA1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyB00",
+      "texture": "tex/pm0075_00_BodyB1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 3
+}

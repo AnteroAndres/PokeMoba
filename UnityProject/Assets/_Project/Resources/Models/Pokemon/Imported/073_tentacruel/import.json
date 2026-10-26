@@ -1,0 +1,27 @@
+{
+  "dex": 73,
+  "key": "tentacruel",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/073_Tentacruel/Tentacruel.fbx",
+  "sha256": "f788f64aafe3767b42536adfe41331af5f04bb5027e32b901fc0dfdef448ea87",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "BodyATattu",
+      "texture": "tex/pm0073_00_BodyA1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyBTattu",
+      "texture": "tex/pm0073_00_BodyB1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Eye",
+      "texture": "tex/pm0073_00_Eye1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 3
+}

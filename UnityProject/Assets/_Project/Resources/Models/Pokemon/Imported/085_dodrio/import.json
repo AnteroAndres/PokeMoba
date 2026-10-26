@@ -1,0 +1,37 @@
+{
+  "dex": 85,
+  "key": "dodrio",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/085_Dodrio/Dodrio.fbx",
+  "sha256": "da1c8aef951b3ff059e8a272ca0af392048f9fbb921d4a58d083de98bda96564",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Body",
+      "texture": "tex/pm0085_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Body.1",
+      "texture": "tex/pm0085_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "EyeA",
+      "texture": "tex/pm0085_00_Eye1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "EyeA.1",
+      "texture": "tex/pm0085_00_Eye1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "EyeA.2",
+      "texture": "tex/pm0085_00_Eye1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

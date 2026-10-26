@@ -1,0 +1,22 @@
+{
+  "dex": 7,
+  "key": "squirtle",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/007_Squirtle/Squirtle.fbx",
+  "sha256": "8f1b758fd5f4bcc382341eacd23831d2e94e184977663e1bf286a18db7566097",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #60",
+      "texture": "tex/pm0007_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #61",
+      "texture": "tex/pm0007_00_Eye1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

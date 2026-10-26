@@ -12,17 +12,25 @@ namespace PokeMoba.UI
 
         public MenuScreens(Transform canvas) => this.canvas = canvas;
 
+        public static bool AnyOpen { get; private set; }
+
         public bool IsOpen => current != null;
 
         public RectTransform Open(string title, string subtitle = null, float dim = 0.7f)
         {
             Close();
+            AnyOpen = true;
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
             var overlay = UIFactory.CreateImage("Menú", canvas, new Color(0.02f, 0.03f, 0.08f, dim));
             overlay.rectTransform.Stretch();
             current = overlay.gameObject;
 
-            var titleText = UIFactory.CreateText("Título", overlay.transform, title, 68, Color.white, TextAnchor.MiddleCenter);
-            titleText.rectTransform.Place(new Vector2(0.5f, 1f), new Vector2(0f, -40f), new Vector2(1600f, 100f));
+            if (!string.IsNullOrEmpty(title))
+            {
+                var titleText = UIFactory.CreateText("Título", overlay.transform, title, 68, Color.white, TextAnchor.MiddleCenter);
+                titleText.rectTransform.Place(new Vector2(0.5f, 1f), new Vector2(0f, -40f), new Vector2(1600f, 100f));
+            }
 
             if (!string.IsNullOrEmpty(subtitle))
             {
@@ -36,6 +44,33 @@ namespace PokeMoba.UI
         {
             if (current != null) UnityEngine.Object.Destroy(current);
             current = null;
+            AnyOpen = false;
+        }
+
+        public void SetBackground(Sprite sprite, float opacity = 0.78f)
+        {
+            if (current == null || sprite == null) return;
+
+            var overlay = current.GetComponent<Image>();
+            overlay.sprite = null;
+            overlay.color = Color.black;
+            overlay.raycastTarget = false;
+
+            var existing = current.transform.Find("Fondo del lobby");
+            var image = existing != null ? existing.GetComponent<Image>()
+                : UIFactory.CreateImage("Fondo del lobby", current.transform, Color.white);
+            image.sprite = sprite;
+            image.type = Image.Type.Simple;
+            image.preserveAspect = false;
+            image.color = new Color(1f, 1f, 1f, Mathf.Clamp01(opacity));
+            image.raycastTarget = false;
+            image.transform.SetAsFirstSibling();
+
+            // Cover the viewport without stretching; wider/narrower screens crop the edges.
+            var fitter = image.GetComponent<AspectRatioFitter>();
+            if (fitter == null) fitter = image.gameObject.AddComponent<AspectRatioFitter>();
+            fitter.aspectRatio = sprite.rect.width / sprite.rect.height;
+            fitter.aspectMode = AspectRatioFitter.AspectMode.EnvelopeParent;
         }
 
         public static Button Button(RectTransform panel, string label, Color color, Vector2 anchor, Vector2 position, Vector2 size,

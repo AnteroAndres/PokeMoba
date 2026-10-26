@@ -1,0 +1,27 @@
+{
+  "dex": 134,
+  "key": "vaporeon",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/134_Vaporeon/Vaporeon.fbx",
+  "sha256": "8f7a69ba457eb1254939cb87b18fcd4d271df66b6012abd33cebfac129296778",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #10",
+      "texture": "tex/pm0134_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #11",
+      "texture": "tex/pm0134_00_Eye1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #12",
+      "texture": "tex/pm0134_00_Mouth1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 3
+}

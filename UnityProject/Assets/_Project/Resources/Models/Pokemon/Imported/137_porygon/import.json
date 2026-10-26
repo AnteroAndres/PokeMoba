@@ -1,0 +1,22 @@
+{
+  "dex": 137,
+  "key": "porygon",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/137_Porygon/Porygon.fbx",
+  "sha256": "d523223d50ab4bf8fc11294e4719667f1a582d77c848cbce0e8d4de5aadc7d22",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #114",
+      "texture": "tex/pm0137_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #115",
+      "texture": "tex/pm0137_00_Eye1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

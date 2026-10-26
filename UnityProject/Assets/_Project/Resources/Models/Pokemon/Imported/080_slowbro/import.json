@@ -1,0 +1,32 @@
+{
+  "dex": 80,
+  "key": "slowbro",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/080_Slowbro/Slowbro.fbx",
+  "sha256": "32f7be218523e954cccbbda56b1dda6cdab6982b30b530e11667b66bfc497261",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #34",
+      "texture": "tex/pm0080_00_BodyA1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #35",
+      "texture": "tex/pm0080_00_EyeA1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #36",
+      "texture": "tex/pm0080_00_BodyB1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #37",
+      "texture": "tex/pm0080_00_EyeB1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 4
+}

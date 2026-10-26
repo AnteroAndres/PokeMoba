@@ -1,0 +1,27 @@
+{
+  "dex": 64,
+  "key": "kadabra",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/064_Kadabra/Kadabra.fbx",
+  "sha256": "37aca02b0bbab74faa07956d81b44b0e4e128b573e6f124e0b9d0b17d6617918",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #88",
+      "texture": "tex/pm0064_00_BodyB1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #89",
+      "texture": "tex/pm0064_00_BodyA1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #90",
+      "texture": "tex/pm0064_00_Eye1_Merged.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 3
+}

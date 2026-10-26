@@ -1,0 +1,102 @@
+{
+  "dex": 82,
+  "key": "magneton",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/082_Magneton/Magneton.fbx",
+  "sha256": "ed296d61097e23a23e6e918f942b23eb8e218bf6bb125a05b85cf2a795def02d",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Eye00_mat-material",
+      "texture": "tex/pm0082_00_Eye1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodySpc_mat-material",
+      "texture": "tex/pm0082_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodySpc_mat-material.1",
+      "texture": "tex/pm0082_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodySpc_mat-material.2",
+      "texture": "tex/pm0082_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodySpc_mat-material.3",
+      "texture": "tex/pm0082_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodySpc_mat-material.4",
+      "texture": "tex/pm0082_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodySpc_mat-material.5",
+      "texture": "tex/pm0082_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodySpc_mat-material.6",
+      "texture": "tex/pm0082_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodySpc_mat-material.7",
+      "texture": "tex/pm0082_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodySpc_mat-material.8",
+      "texture": "tex/pm0082_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodySpc_mat-material.9",
+      "texture": "tex/pm0082_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodySpc_mat-material.10",
+      "texture": "tex/pm0082_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodySpc_mat-material.11",
+      "texture": "tex/pm0082_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodySpc_mat-material.12",
+      "texture": "tex/pm0082_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodySpc_mat-material.13",
+      "texture": "tex/pm0082_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodySpc_mat-material.14",
+      "texture": "tex/pm0082_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Eye00_mat-material.1",
+      "texture": "tex/pm0082_00_Eye1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Eye00_mat-material.2",
+      "texture": "tex/pm0082_00_Eye1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

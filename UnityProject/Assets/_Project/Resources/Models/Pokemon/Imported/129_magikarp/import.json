@@ -1,0 +1,22 @@
+{
+  "dex": 129,
+  "key": "magikarp",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/129_Magikarp/Magikarp.fbx",
+  "sha256": "c8df3b0e58b125e32b2eaf84c560a2091dcfcf5869ade88bc218ee59e3c7a27e",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #116",
+      "texture": "tex/pm0129_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #117",
+      "texture": "tex/pm0129_00_Eye1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

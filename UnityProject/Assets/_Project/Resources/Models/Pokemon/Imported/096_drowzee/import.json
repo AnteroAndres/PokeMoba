@@ -1,0 +1,17 @@
+{
+  "dex": 96,
+  "key": "drowzee",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/096_Drowzee/Drowzee.fbx",
+  "sha256": "d9598fea117d43596eae71f9ff47b7032484c45592a0d6e883eb61a98f72f7c4",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "drowzee",
+      "texture": "tex/drowzee.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 1
+}

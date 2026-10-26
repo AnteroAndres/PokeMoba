@@ -1,4 +1,5 @@
 using System.Linq;
+using CharacterCustomizer;
 using PokeMoba.Data;
 using PokeMoba.Data.Pokedex;
 using PokeMoba.Game;
@@ -21,8 +22,15 @@ namespace PokeMoba.Modes
         Transform trainerPreview;
         SaveData appearance;
         float previewYaw = 20f;
+        int customizationCategory;
+        CharacterCustomizerUI packageCustomizer;
 
         public AdventureMode(GameContext ctx) : base(ctx) { }
+
+        public void OpenCustomization()
+        {
+            ShowTrainerCreation();
+        }
 
         public override void Enter()
         {
@@ -37,7 +45,64 @@ namespace PokeMoba.Modes
             appearance = new SaveData();
             appearance.CopyAppearanceFrom(Save);
             previewYaw = 20f;
-            DrawTrainerCreation();
+            customizationCategory = 0;
+            OpenPackageCustomizer();
+        }
+
+        void OpenPackageCustomizer()
+        {
+            var world = Ctx.NewWorld("Vestidor del entrenador");
+            EnvironmentBuilder.BuildArena(Biome.Liga, world, 8f);
+            Ctx.Follow.LookAtPoint(new Vector3(2.5f, 1.2f, 0f), new Vector3(0f, .45f, 5.5f));
+            RebuildTrainerPreview(world);
+
+            var go = new GameObject("Character Customizer");
+            go.SetActive(false);
+            packageCustomizer = go.AddComponent<CharacterCustomizerUI>();
+            packageCustomizer.BuildOnAwake = false;
+            packageCustomizer.Initialize(trainerPreview, appearance.SkinColor, appearance.HairStyle, appearance.HairColor,
+                RoleName(appearance.AvatarStyle), appearance.TrainerCharacter, SavePackageCustomization, CancelPackageCustomization,
+                key =>
+                {
+                    appearance.TrainerCharacter = key;
+                    RebuildTrainerPreview(world);
+                    packageCustomizer.SetCharacterRoot(trainerPreview);
+                });
+            go.SetActive(true);
+            packageCustomizer.OpenCharacterPicker();
+        }
+
+        string RoleName(int style) => style == 1 ? "Exploradora" : style == 2 ? "Sabio" : "Explorador";
+
+        void SavePackageCustomization()
+        {
+            if (packageCustomizer == null) return;
+            appearance.SkinColor = packageCustomizer.SelectedSkin;
+            appearance.HairStyle = packageCustomizer.SelectedHair;
+            appearance.HairColor = packageCustomizer.SelectedHairColor;
+            appearance.TrainerCharacter = packageCustomizer.SelectedCharacter;
+            appearance.HasChosenTrainerCharacter = true;
+            appearance.AvatarStyle = packageCustomizer.SelectedRole == "Exploradora" ? 1 : packageCustomizer.SelectedRole == "Sabio" ? 2 : 0;
+            appearance.TrainerName = string.IsNullOrWhiteSpace(appearance.TrainerName) ? "Entrenador" : appearance.TrainerName.Trim();
+            Save.CopyAppearanceFrom(appearance);
+            SaveService.Save();
+            ClosePackageCustomizer();
+            if (Save.HasStarter) ShowZoneMap(); else ShowStarterChoice();
+        }
+
+        void CancelPackageCustomization()
+        {
+            ClosePackageCustomizer();
+            if (Save.HasStarter) ShowZoneMap(); else Ctx.ReturnToMainMenu();
+        }
+
+        void ClosePackageCustomizer()
+        {
+            if (packageCustomizer != null)
+            {
+                Object.Destroy(packageCustomizer.gameObject);
+                packageCustomizer = null;
+            }
         }
 
         void DrawTrainerCreation()
@@ -46,13 +111,26 @@ namespace PokeMoba.Modes
             EnvironmentBuilder.BuildArena(Biome.Liga, world, 8f);
             Ctx.Follow.LookAtPoint(new Vector3(1.6f, 1.2f, 0f), new Vector3(0f, .45f, 5.5f));
             RebuildTrainerPreview(world);
-            var panel = Ctx.Menus.Open("Tu personaje", appearance.AvatarStyle == 2
-                ? "Sabio: Master Roshi importado · conserva sus texturas y accesorios originales"
-                : "Elige un estilo y personaliza su aspecto · vista previa 3D", .12f);
-            var left = new Vector2(0f, .5f);
+            var panel = Ctx.Menus.Open(null, null, .12f);
+
+            MenuScreens.Label(panel, "Tu personaje", 48, new Vector2(0f, 1f), new Vector2(130f, -55f),
+                new Vector2(760f, 70f), TextAnchor.MiddleLeft);
+            MenuScreens.Label(panel, appearance.AvatarStyle == 2
+                ? "Sabio · modelo importado · algunos accesorios están bloqueados"
+                : "Personaliza tu entrenador · los cambios se ven al instante", 18, new Vector2(0f, 1f),
+                new Vector2(130f, -105f), new Vector2(800f, 36f), TextAnchor.MiddleLeft);
+
+            MenuScreens.Button(panel, "‹", new Color(.12f, .2f, .3f, .95f), new Vector2(0f, 1f),
+                new Vector2(48f, -55f), new Vector2(70f, 70f), () =>
+                {
+                    if (Save.HasStarter) ShowZoneMap(); else Ctx.ReturnToMainMenu();
+                }, 46);
+
+            MenuScreens.Card(panel, new Color(.035f, .1f, .18f, .91f), new Vector2(0f, .5f),
+                new Vector2(25f, -20f), new Vector2(850f, 780f));
             var nameField = UIFactory.CreateInputField("Nombre", panel, appearance.TrainerName, "Tu nombre", 28);
             nameField.characterLimit = 12;
-            ((RectTransform)nameField.transform).Place(left, new Vector2(50f, 300f), new Vector2(650f, 65f));
+            ((RectTransform)nameField.transform).Place(new Vector2(0f, .5f), new Vector2(245f, 310f), new Vector2(560f, 55f));
             nameField.onValueChanged.AddListener(value => appearance.TrainerName = value);
 
             string[] presets = { "Explorador", "Exploradora", "Sabio" };
@@ -60,7 +138,7 @@ namespace PokeMoba.Modes
             {
                 int style = i;
                 MenuScreens.Button(panel, presets[i], appearance.AvatarStyle == i ? new Color(.25f, .55f, .6f) : new Color(.22f, .27f, .36f),
-                    left, new Vector2(50f + i * 225f, 215f), new Vector2(210f, 70f), () =>
+                    new Vector2(0f, .5f), new Vector2(245f + i * 190f, 245f), new Vector2(175f, 58f), () =>
                     {
                         appearance.AvatarStyle = style;
                         appearance.HairStyle = style == 0 ? 0 : style == 1 ? 2 : 3;
@@ -73,35 +151,113 @@ namespace PokeMoba.Modes
                         appearance.ShirtColor = style == 2 ? 7 : 1;
                         appearance.PantsColor = style == 2 ? 4 : 1;
                         DrawTrainerCreation();
-                    }, 26);
+                    }, 21);
             }
-            AppearanceButton(panel, world, "Piel", () => appearance.SkinColor, v => appearance.SkinColor = v, TrainerPalette.Skin.Length, 0);
-            AppearanceButton(panel, world, "Color de cabello", () => appearance.HairColor, v => appearance.HairColor = v, TrainerPalette.Hair.Length, 1);
-            AppearanceButton(panel, world, "Peinado", () => appearance.HairStyle, v => appearance.HairStyle = v, 4, 2,
-                new[] { "Corto", "Largo", "Coleta", "Rapado" });
-            AppearanceButton(panel, world, "Ojos", () => appearance.EyeColor, v => appearance.EyeColor = v, TrainerPalette.Eyes.Length, 3);
-            AppearanceButton(panel, world, "Prenda de cabeza", () => appearance.HatStyle, v => appearance.HatStyle = v, 3, 4,
-                new[] { "Gorra", "Pañuelo", "Sin prenda" });
-            AppearanceButton(panel, world, "Color de cabeza", () => appearance.CapColor, v => appearance.CapColor = v, TrainerPalette.Clothes.Length, 5);
-            AppearanceButton(panel, world, "Conjunto", () => appearance.OutfitStyle, v => appearance.OutfitStyle = v, 3, 6,
-                new[] { "Explorador", "Túnica", "Abrigo" });
-            AppearanceButton(panel, world, "Color de ropa", () => appearance.ShirtColor, v => appearance.ShirtColor = v, TrainerPalette.Clothes.Length, 7);
-            AppearanceButton(panel, world, "Pantalón", () => appearance.PantsColor, v => appearance.PantsColor = v, TrainerPalette.Clothes.Length, 8);
-            AppearanceButton(panel, world, "Pañuelo", () => appearance.ScarfColor, v => appearance.ScarfColor = v, TrainerPalette.Clothes.Length, 9);
-            AppearanceButton(panel, world, "Barba", () => appearance.BeardStyle, v => appearance.BeardStyle = v, 2, 10, new[] { "No", "Sí" });
-            AppearanceButton(panel, world, "Gafas", () => appearance.GlassesStyle, v => appearance.GlassesStyle = v, 2, 11, new[] { "No", "Sí" });
-            MenuScreens.Button(panel, "Girar vista", new Color(.25f, .3f, .4f), new Vector2(1f, .5f), new Vector2(-230f, -290f),
-                new Vector2(300f, 65f), () => { previewYaw += 45f; RebuildTrainerPreview(world); }, 26);
+
+            string[] categories = { "Apariencia", "Cabeza", "Ropa", "Accesorios", "Vista previa" };
+            for (int i = 0; i < categories.Length; i++)
+            {
+                int category = i;
+                MenuScreens.Button(panel, categories[i], customizationCategory == i ? new Color(.25f, .55f, .8f) : new Color(.12f, .22f, .32f),
+                    new Vector2(0f, .5f), new Vector2(125f, 170f - i * 82f), new Vector2(190f, 64f),
+                    () => { customizationCategory = category; DrawTrainerCreation(); }, 18);
+            }
+
+            DrawCustomizationCategory(panel, world);
+
+            MenuScreens.Button(panel, "↻  Girar vista", new Color(.18f, .3f, .42f), new Vector2(1f, .5f), new Vector2(-270f, -300f),
+                new Vector2(260f, 65f), () => { previewYaw += 45f; RebuildTrainerPreview(world); }, 22);
             MenuScreens.Button(panel, Save.HasStarter ? "Guardar apariencia" : "Continuar", new Color(.2f, .6f, .3f),
-                new Vector2(1f, 0f), new Vector2(-60f, 30f), new Vector2(430f, 85f), () =>
+                new Vector2(1f, 0f), new Vector2(-75f, 45f), new Vector2(430f, 85f), () =>
                 {
                     appearance.TrainerName = string.IsNullOrWhiteSpace(appearance.TrainerName) ? "Entrenador" : appearance.TrainerName.Trim();
                     Save.CopyAppearanceFrom(appearance);
                     SaveService.Save();
                     if (Save.HasStarter) ShowZoneMap(); else ShowStarterChoice();
                 }, 32);
-            MenuScreens.Button(panel, "Cancelar", new Color(.35f, .35f, .4f), new Vector2(0f, 0f), new Vector2(60f, 30f),
+            MenuScreens.Button(panel, "Cancelar", new Color(.35f, .35f, .4f), new Vector2(0f, 0f), new Vector2(75f, 45f),
                 new Vector2(300f, 75f), () => { if (Save.HasStarter) ShowZoneMap(); else Ctx.ReturnToMainMenu(); }, 28);
+        }
+
+        void DrawCustomizationCategory(RectTransform panel, Transform world)
+        {
+            bool locked = appearance.AvatarStyle == 2;
+            switch (customizationCategory)
+            {
+                case 0:
+                    ColorRow(panel, "Piel", TrainerPalette.Skin, () => appearance.SkinColor, v => appearance.SkinColor = v, 300, 0, true);
+                    ColorRow(panel, "Color de cabello", TrainerPalette.Hair, () => appearance.HairColor, v => appearance.HairColor = v, 300, -145, !locked);
+                    ColorRow(panel, "Color de ojos", TrainerPalette.Eyes, () => appearance.EyeColor, v => appearance.EyeColor = v, 300, -290, !locked);
+                    break;
+                case 1:
+                    OptionRow(panel, "Peinado", new[] { "Corto", "Largo", "Coleta", "Rapado" }, () => appearance.HairStyle,
+                        v => { appearance.HairStyle = v; RebuildTrainerPreview(world); }, 300, 0, !locked);
+                    OptionRow(panel, "Prenda de cabeza", new[] { "Gorra", "Pañuelo", "Sin prenda" }, () => appearance.HatStyle,
+                        v => { appearance.HatStyle = v; RebuildTrainerPreview(world); }, 300, -145, !locked);
+                    ColorRow(panel, "Color de gorra", TrainerPalette.Clothes, () => appearance.CapColor, v => appearance.CapColor = v, 300, -290, !locked);
+                    break;
+                case 2:
+                    OptionRow(panel, "Conjunto", new[] { "Explorador", "Túnica", "Abrigo" }, () => appearance.OutfitStyle,
+                        v => { appearance.OutfitStyle = v; RebuildTrainerPreview(world); }, 300, 0, !locked);
+                    ColorRow(panel, "Color de ropa", TrainerPalette.Clothes, () => appearance.ShirtColor, v => appearance.ShirtColor = v, 300, -145, !locked);
+                    ColorRow(panel, "Color de pantalón", TrainerPalette.Clothes, () => appearance.PantsColor, v => appearance.PantsColor = v, 300, -290, !locked);
+                    break;
+                case 3:
+                    ColorRow(panel, "Pañuelo", TrainerPalette.Clothes, () => appearance.ScarfColor, v => appearance.ScarfColor = v, 300, 0, !locked);
+                    OptionRow(panel, "Barba", new[] { "No", "Sí" }, () => appearance.BeardStyle,
+                        v => { appearance.BeardStyle = v; RebuildTrainerPreview(world); }, 300, -145, !locked);
+                    OptionRow(panel, "Gafas", new[] { "No", "Sí" }, () => appearance.GlassesStyle,
+                        v => { appearance.GlassesStyle = v; RebuildTrainerPreview(world); }, 300, -290, !locked);
+                    break;
+                default:
+                    MenuScreens.Label(panel, "Vista previa en 3D\n\nGira al entrenador con el botón inferior derecho.\nLos cambios se aplican al guardar.", 25,
+                        new Vector2(0f, .5f), new Vector2(475f, 0f), new Vector2(650f, 200f));
+                    break;
+            }
+        }
+
+        void ColorRow(RectTransform panel, string title, Color[] colors, System.Func<int> get, System.Action<int> set,
+            float x, float y, bool enabled)
+        {
+            MenuScreens.Label(panel, title, 21, new Vector2(0f, .5f), new Vector2(x, y + 42f), new Vector2(620f, 34f), TextAnchor.MiddleLeft);
+            for (int i = 0; i < colors.Length; i++)
+            {
+                int index = i;
+                Color swatch = Color.Lerp(colors[i], Color.white, get() == i ? .3f : 0f);
+                MenuScreens.Button(panel, "", swatch, new Vector2(0f, .5f), new Vector2(x + i * 66f, y),
+                    new Vector2(52f, 52f), () => { set(index); DrawTrainerCreation(); }, 1, enabled);
+            }
+        }
+
+        void OptionRow(RectTransform panel, string title, string[] options, System.Func<int> get, System.Action<int> set,
+            float x, float y, bool interactable)
+        {
+            MenuScreens.Label(panel, title, 21, new Vector2(0f, .5f), new Vector2(x, y + 42f), new Vector2(620f, 34f), TextAnchor.MiddleLeft);
+            for (int i = 0; i < options.Length; i++)
+            {
+                int index = i;
+                MenuScreens.Button(panel, options[i], get() == i ? new Color(.2f, .55f, .75f) : new Color(.16f, .28f, .4f),
+                    new Vector2(0f, .5f), new Vector2(x + i * 155f, y), new Vector2(140f, 60f),
+                    () => { set(index); DrawTrainerCreation(); }, 17, interactable);
+            }
+        }
+
+        void AppearanceButtonAt(RectTransform panel, Transform world, string part, System.Func<int> get, System.Action<int> set,
+            int count, Vector2 position, string[] names = null, bool interactable = true)
+        {
+            string Label()
+            {
+                int value = ((get() % count) + count) % count;
+                return part + "\n<size=20>" + (names != null ? names[value] : (value + 1) + "/" + count) + "</size>";
+            }
+            Button button = null;
+            button = MenuScreens.Button(panel, Label(), new Color(.18f, .32f, .45f), new Vector2(0f, .5f), position,
+                new Vector2(320f, 86f), () =>
+                {
+                    set((((get() % count) + count) % count + 1) % count);
+                    button.GetComponentInChildren<Text>().text = Label();
+                    RebuildTrainerPreview(world);
+                }, 22, interactable);
         }
 
         void AppearanceButton(RectTransform panel, Transform world, string part, System.Func<int> get, System.Action<int> set,
@@ -130,7 +286,7 @@ namespace PokeMoba.Modes
                 Object.Destroy(trainerPreview.gameObject);
             }
             trainerPreview = TrainerModelBuilder.Build(world, appearance, follower: false);
-            trainerPreview.position = new Vector3(1.6f, 0f, 0f);
+            trainerPreview.position = new Vector3(-0.9f, 0f, 0f);
             trainerPreview.rotation = Quaternion.Euler(0f, previewYaw, 0f);
             trainerPreview.localScale *= 1.15f;
         }

@@ -49,6 +49,7 @@ namespace PokeMoba.Modes
 
             Trainer = CreateTrainer(position, facing);
             Controller = Trainer.gameObject.AddComponent<TrainerController>();
+            Controller.EnsureCompanion = () => Current != null && !Current.IsDead || SpawnFirstHealthy();
             Controller.Bind(ctx.Hud.Joystick, ctx.Hud.AbilityButtons, ctx.Hud.DodgeButton, ctx.Camera);
             Controller.TargetChanged += target =>
             {
@@ -104,8 +105,21 @@ namespace PokeMoba.Modes
 
         // ------------------------------------------------------------------ Pokémon compañero
 
+        public void Recall()
+        {
+            if (Current == null) return;
+            SyncHp();
+            Controller.SetLock(null);
+            Controller.SetCompanion(null);
+            Current.gameObject.SetActive(false);
+            UnityEngine.Object.Destroy(Current.gameObject);
+            Current = null;
+            ctx.Hud.Bind(null, null);
+        }
+
         public bool SpawnFirstHealthy()
         {
+            if (Current != null && !Current.IsDead) return true;
             var first = Save.FirstHealthy();
             if (first == null) return false;
             Spawn(first);
@@ -120,6 +134,8 @@ namespace PokeMoba.Modes
             Current = CreatureFactory.Create(species, 0, position, Trainer.transform.forward, instance.Level, instance.Shiny,
                 PokemonDatabase.MovesAt(species, instance.Level), world);
             Current.SetHpFraction(instance.HpFraction);
+            var teamRing = Current.transform.Find("Anillo de equipo");
+            if (teamRing != null) teamRing.gameObject.SetActive(false);
             Current.gameObject.AddComponent<CompanionAI>().Setup(Trainer.transform);
             Current.Died += OnFainted;
 
@@ -229,6 +245,10 @@ namespace PokeMoba.Modes
             if (Instance == null || Current == null) return;
             var species = PokemonDatabase.Get(Instance.Key);
             int exp = Leveling.ExpYield(defeated.BaseExperience, defeatedLevel, fromTrainer);
+            int trainerLevels = Save.AwardTrainerExperience(exp);
+            SaveService.Save();
+            if (trainerLevels > 0)
+                ctx.Hud.Toast($"¡Entrenador nivel {Save.TrainerLevel}! Nuevo diseño de perfil desbloqueado.", 3f);
             int gained = Instance.AddExp(species, exp);
             if (gained <= 0) return;
 

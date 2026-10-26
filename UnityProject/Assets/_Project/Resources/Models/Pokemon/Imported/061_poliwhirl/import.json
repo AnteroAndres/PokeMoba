@@ -1,0 +1,22 @@
+{
+  "dex": 61,
+  "key": "poliwhirl",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/061_Poliwhirl/Poliwhirl.fbx",
+  "sha256": "26d1cc64264663270f0ac4d323545a505c167e271931ed467c7ab0c0982554db",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "BodyNyorobon",
+      "texture": "tex/pm0061_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Eye",
+      "texture": "tex/pm0061_00_Eye1_Merged.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

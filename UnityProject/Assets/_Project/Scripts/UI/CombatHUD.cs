@@ -69,7 +69,8 @@ namespace PokeMoba.UI
         public void Bind(Combatant player, Combatant enemy)
         {
             this.player = player;
-            playerCaster = player.GetComponent<AbilityCaster>();
+            playerCaster = player != null ? player.GetComponent<AbilityCaster>() : null;
+            playerPanel.Root.SetActive(player != null);
             RefreshPlayer();
             SetEnemy(enemy);
         }
@@ -155,6 +156,11 @@ namespace PokeMoba.UI
                 keyHint.rectTransform.Stretch();
                 keyHint.raycastTarget = false;
             }
+            if (!Application.isMobilePlatform)
+            {
+                var group = button.gameObject.AddComponent<CanvasGroup>();
+                group.alpha = 0f; group.blocksRaycasts = false;
+            }
             extras.Add(button.gameObject);
             return button;
         }
@@ -183,7 +189,7 @@ namespace PokeMoba.UI
             for (int i = 0; i < keyboardActions.Count; i++)
             {
                 var button = keyboardActions[i];
-                if (InputCompat.ExtraPressed(i) && button != null && button.IsActive() && button.interactable)
+                if (InputCompat.ExtraPressed(i) && button != null && button.IsActive() && button.interactable && !MenuScreens.AnyOpen && Time.timeScale > 0f)
                 {
                     button.onClick.Invoke();
                     break;
@@ -198,6 +204,8 @@ namespace PokeMoba.UI
                 toastText.color = c;
             }
 
+            if (trainer != null) UpdateTrainerPanel();
+            if (enemy != null) UpdatePanel(enemyPanel, enemy);
             if (player == null) return;
 
             UpdatePanel(playerPanel, player);
@@ -266,6 +274,16 @@ namespace PokeMoba.UI
 
             DodgeButton = BuildDodgeButton(rect, bottomRight, new Vector2(-40f, 340f), 140f);
             trainerPanel = BuildTrainerPanel(rect);
+
+            if (!Application.isMobilePlatform)
+            {
+                Joystick.gameObject.SetActive(false);
+                foreach (var button in AbilityButtons) button.gameObject.SetActive(false);
+                DodgeButton.gameObject.SetActive(false);
+                var crosshair = UIFactory.CreateText("Mira", rect, "+", 26, new Color(1f, 1f, 1f, .75f), TextAnchor.MiddleCenter);
+                crosshair.raycastTarget = false;
+                crosshair.rectTransform.Place(new Vector2(.5f, .5f), Vector2.zero, new Vector2(30f, 30f));
+            }
 
             if (showKeyboardHint)
             {

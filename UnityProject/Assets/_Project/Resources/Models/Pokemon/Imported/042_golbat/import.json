@@ -1,0 +1,37 @@
+{
+  "dex": 42,
+  "key": "golbat",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/042_Golbat/Golbat.fbx",
+  "sha256": "8a1e3ed2ea9522e24c7e7547b2e60aed688f6e13eee174cb7a63f5ad1c6767d6",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Body00",
+      "texture": "tex/Body1_0.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Eye",
+      "texture": "tex/Eye1_0.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Body01",
+      "texture": "tex/Body1_0.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Body03",
+      "texture": "tex/Body1_0.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Body02",
+      "texture": "tex/Body1_0.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

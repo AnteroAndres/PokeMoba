@@ -51,7 +51,7 @@ namespace PokeMoba.Combat
 
                 if (target.ReceiveHit(Owner, move, Direction))
                 {
-                    Vfx.Burst(transform.position, move.Type.TypeColor(), 1.4f);
+                    ElementalAttackEffect.Impact(ElementalAttackEffect.Origin(target), move);
                     Destroy(gameObject);
                     return;
                 }

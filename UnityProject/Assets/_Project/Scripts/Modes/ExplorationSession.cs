@@ -66,11 +66,8 @@ namespace PokeMoba.Modes
             ctx.Follow.SetThirdPerson(true);
             party = new PartyFighter(ctx, world, Vector3.zero, Vector3.forward);
             party.AllFainted += OnTeamFainted;
-            if (!party.SpawnFirstHealthy())
-            {
-                Save.HealAll();
-                party.SpawnFirstHealthy();
-            }
+            if (Save.FirstHealthy() == null) Save.HealAll();
+            ctx.Hud.Bind(null, null);
 
             BuildButtons();
             ctx.Hud.Toast(zone.Name, 2.5f);
@@ -130,6 +127,7 @@ namespace PokeMoba.Modes
         IEnumerator Loop()
         {
             float spawnTimer = SpawnInterval;
+            float peaceTimer = 0f;
             while (!leaving)
             {
                 yield return new WaitForSeconds(0.25f);
@@ -164,6 +162,18 @@ namespace PokeMoba.Modes
                 }
 
                 var target = party.Controller.LockedTarget ?? (focus != null ? focus.GetComponent<Combatant>() : null);
+                bool danger = wilds.Any(w => w != null && w.Aggro && !w.GetComponent<Combatant>().IsDead &&
+                    CombatQueries.FlatDistance(w.transform.position, trainer.transform.position) < 18f);
+                if (danger)
+                {
+                    peaceTimer = 0f;
+                    if (party.Current == null) party.SpawnFirstHealthy();
+                }
+                else if (party.Controller.LockedTarget == null)
+                {
+                    peaceTimer += .25f;
+                    if (peaceTimer >= 5f) party.Recall();
+                }
                 ctx.Hud.SetEnemy(target);
                 ctx.Hud.SetStatus(StatusLine(target));
             }

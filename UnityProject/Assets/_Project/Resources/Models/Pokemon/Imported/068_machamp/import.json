@@ -1,0 +1,27 @@
+{
+  "dex": 68,
+  "key": "machamp",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/068_Machamp/Machamp.fbx",
+  "sha256": "f93b9298a4b3ab47f4e62333e99ff5e54689b8a9da048f280cc66316d44660c4",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #101",
+      "texture": "tex/pm0068_00_BodyA1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #102",
+      "texture": "tex/pm0068_00_BodyB1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #103",
+      "texture": "tex/pm0068_00_Eye1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 3
+}

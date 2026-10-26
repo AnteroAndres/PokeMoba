@@ -1,0 +1,22 @@
+{
+  "dex": 127,
+  "key": "pinsir",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/127_Pinsir/Pinsir.fbx",
+  "sha256": "669b6710340faa04685237ace5660c47ad86004c13201f3366113a95ff882a39",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #22",
+      "texture": "tex/pm0127_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #23",
+      "texture": "tex/pm0127_00_Eye1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

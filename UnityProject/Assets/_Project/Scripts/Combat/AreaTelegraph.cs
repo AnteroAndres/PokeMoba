@@ -67,7 +67,7 @@ namespace PokeMoba.Combat
                     target.ReceiveHit(Owner, move, target.transform.position - transform.position);
             }
 
-            Vfx.Burst(transform.position + Vector3.up * 0.5f, move.Type.TypeColor(), Radius * 2f);
+            ElementalAttackEffect.Impact(transform.position + Vector3.up * .5f, move);
             Destroy(gameObject);
         }
     }

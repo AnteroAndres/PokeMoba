@@ -1,0 +1,22 @@
+{
+  "dex": 100,
+  "key": "voltorb",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/100_Voltorb/Voltorb.fbx",
+  "sha256": "746e4a26803c62c4951717c8adee8e28717040d2b1b2c9d63b47cf7a818aa02c",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "BodySpc",
+      "texture": "tex/pm0100_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Eye",
+      "texture": "tex/pm0100_00_Eye1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

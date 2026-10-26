@@ -21,6 +21,7 @@ namespace PokeMoba.Input
         public Combatant LockedTarget => companion != null ? companion.Target : lockedWithoutCompanion;
         /// <summary>Se llama al fijar o soltar un objetivo (para la cámara y el panel del rival).</summary>
         public event Action<Combatant> TargetChanged;
+        public Func<bool> EnsureCompanion;
 
         Combatant self;
         CreatureMotor motor;
@@ -94,7 +95,9 @@ namespace PokeMoba.Input
 
         void Order(int slot)
         {
-            if (self.IsDead || companion == null) return;
+            if (self.IsDead) return;
+            if (companion == null && (EnsureCompanion == null || !EnsureCompanion())) return;
+            if (companion == null) return;
             if (LockedTarget == null)
             {
                 // Sin objetivo fijado: se fija automáticamente el enemigo más cercano.
@@ -110,8 +113,9 @@ namespace PokeMoba.Input
             var locked = LockedTarget;
             if (locked != null && (locked.IsDead || !locked.gameObject.activeInHierarchy)) SetLock(null);
 
-            if (self.IsDead)
+            if (self.IsDead || Time.timeScale <= 0f || PokeMoba.UI.MenuScreens.AnyOpen || (!Application.isMobilePlatform && Cursor.lockState != CursorLockMode.Locked))
             {
+                if (rig != null) rig.Animate(0f);
                 motor.SetMoveInput(Vector3.zero);
                 return;
             }

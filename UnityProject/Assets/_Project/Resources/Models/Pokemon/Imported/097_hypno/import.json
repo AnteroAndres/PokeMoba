@@ -1,0 +1,32 @@
+{
+  "dex": 97,
+  "key": "hypno",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/097 - Hypno/Hypno.fbx",
+  "sha256": "ec8ed75a16341079f2e33b9b4e3cc4d7a8b186c5fd873bb1c67c25fe20f094ea",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "mat_1",
+      "texture": "tex/sleeper_0_1.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_1",
+      "texture": "tex/sleeper_0_1.tga",
+      "channel": "TransparentColor"
+    },
+    {
+      "material": "mat_0",
+      "texture": "tex/sleeper_0_0.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_0",
+      "texture": "tex/sleeper_0_0.tga",
+      "channel": "TransparentColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

@@ -1,0 +1,22 @@
+{
+  "dex": 104,
+  "key": "cubone",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/104_Cubone/Cubone.fbx",
+  "sha256": "38324912284a79a8093c2b6448bd10cea85515a3c9a7a763ce820343de17e318",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #139",
+      "texture": "tex/pm0104_00_Eye1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #140",
+      "texture": "tex/pm0104_00_Body1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

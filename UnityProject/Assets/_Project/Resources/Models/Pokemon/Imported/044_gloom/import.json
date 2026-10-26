@@ -1,0 +1,22 @@
+{
+  "dex": 44,
+  "key": "gloom",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/044_Gloom/Gloom.fbx",
+  "sha256": "a02d37642292a12416faec20c39988bb1cd415fb1ab5524914b7f589a90dec61",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "BodyA_00",
+      "texture": "tex/pm0044_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Eye",
+      "texture": "tex/pm0044_00_Eye1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

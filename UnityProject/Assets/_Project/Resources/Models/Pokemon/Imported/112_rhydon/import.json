@@ -1,0 +1,27 @@
+{
+  "dex": 112,
+  "key": "rhydon",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/112_Rhydon/Rhydon.fbx",
+  "sha256": "3a1326d19385e1afac87d624ed4348eebb839cf29ce346c6e39c265a7b804c0f",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #63",
+      "texture": "tex/pm0112_00_BodyB1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #64",
+      "texture": "tex/pm0112_00_BodyA1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #65",
+      "texture": "tex/pm0112_00_Eye1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 3
+}

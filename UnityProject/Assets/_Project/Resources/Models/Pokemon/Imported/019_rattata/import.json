@@ -1,0 +1,22 @@
+{
+  "dex": 19,
+  "key": "rattata",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/019_Rattata/Rattata.fbx",
+  "sha256": "403c5618c45ef600ba2be63f3a25ac137f28f255a2d16f5e076844f261c316b4",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Body00",
+      "texture": "tex/pm0019_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Eye",
+      "texture": "tex/pm0019_00_Eye1_Merged.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 4
+}

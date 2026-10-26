@@ -1,0 +1,32 @@
+{
+  "dex": 37,
+  "key": "vulpix",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/037_Vulpix/Vulpix.fbx",
+  "sha256": "3d1b4d0919d14058ef4b4a5e11ee1514be187eb6100d2f4fa1dfdbdbb7842612",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "BodyB",
+      "texture": "tex/pm0037_00_BodyB1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Eye",
+      "texture": "tex/pm0037_00_Eye1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Mouth",
+      "texture": "tex/pm0037_00_Mouth1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyA01",
+      "texture": "tex/pm0037_00_BodyA1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 4
+}

@@ -1,0 +1,27 @@
+{
+  "dex": 130,
+  "key": "gyarados",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/130_Gyarados/Gyarados.fbx",
+  "sha256": "4e5b863770530224abcbf17931ca39115c86df1177f2b9baf4b18bb6d366afe3",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #140",
+      "texture": "tex/pm0130_00_BodyB1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #141",
+      "texture": "tex/pm0130_00_Eye1_Merged.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #142",
+      "texture": "tex/pm0130_00_BodyA1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 3
+}

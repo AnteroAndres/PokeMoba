@@ -1,0 +1,22 @@
+{
+  "dex": 5,
+  "key": "charmeleon",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/005_Charmeleon/Charmeleon.fbx",
+  "sha256": "6d3f59a78d8c81429326af9338625a2c053b3aeaee2dff450d37dcffa70f2dd5",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #34",
+      "texture": "tex/pm0005_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #35",
+      "texture": "tex/pm0005_00_Eye1_Merged.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 9
+}

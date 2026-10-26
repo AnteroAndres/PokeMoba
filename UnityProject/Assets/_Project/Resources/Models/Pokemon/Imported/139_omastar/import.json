@@ -1,0 +1,22 @@
+{
+  "dex": 139,
+  "key": "omastar",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/139_Omastar/Omastar.fbx",
+  "sha256": "79d28720bba0cedb1a06a52a11b3d23f13e89beeb6fc0639f8905a4a327590ab",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #112",
+      "texture": "tex/pm0139_00_Eye1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #113",
+      "texture": "tex/pm0139_00_Body1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

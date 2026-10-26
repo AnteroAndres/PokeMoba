@@ -1,0 +1,22 @@
+{
+  "dex": 14,
+  "key": "kakuna",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/014_Kakuna/Kakuna.fbx",
+  "sha256": "8778a99dc1823d1847f612750fe547bd6bb13be2125d647e90d7e1446a3f6aa6",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "BodySpc00",
+      "texture": "tex/pm0014_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Bug",
+      "texture": "tex/pm0014_00_Eye1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

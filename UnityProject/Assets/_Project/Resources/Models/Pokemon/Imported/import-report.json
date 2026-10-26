@@ -1,0 +1,4923 @@
+[
+  {
+    "dex": 1,
+    "key": "bulbasaur",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/001_Bulbasaur/Bulbasaur.fbx",
+    "sha256": "78960d3aa595afdf7512a82c868463054a20049b958fa84d719e4d260767c382",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #12",
+        "texture": "tex/pm0001_00_BodyB1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #11",
+        "texture": "tex/pm0001_00_Eye1_Merged.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #10",
+        "texture": "tex/pm0001_00_BodyA1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 3
+  },
+  {
+    "dex": 2,
+    "key": "ivysaur",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/002_Ivysaur/Ivysaur.fbx",
+    "sha256": "e239ec05e53a65824acfd6a36c9f00aadad8a122c248c9aadff1fcbd58caeb63",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #46",
+        "texture": "tex/pm0002_00_BodyA1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #47",
+        "texture": "tex/pm0002_00_Eye1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #48",
+        "texture": "tex/pm0002_00_BodyB1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #49",
+        "texture": "tex/pm0002_00_BodyC1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 4
+  },
+  {
+    "dex": 3,
+    "key": "venusaur",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/003_Venusaur/Venusaur.fbx",
+    "sha256": "7ed82f8cea3ff13374486f4bb71ff667164fc00bdf434fad4e69225de53cc5d0",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #63",
+        "texture": "tex/pm0003_00_BodyB1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #61",
+        "texture": "tex/pm0003_00_Eye1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #62",
+        "texture": "tex/pm0003_00_BodyA1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #60",
+        "texture": "tex/pm0003_00_BodyC1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 4
+  },
+  {
+    "dex": 4,
+    "key": "charmander",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/004_Charmander/Charmander.fbx",
+    "sha256": "7d4409fe2d796971ddea16d6bbd9f2c49271ffca966aa68f1d227a0858653440",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #34",
+        "texture": "tex/pm0004_00_Eye1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #35",
+        "texture": "tex/pm0004_00_Body1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 8
+  },
+  {
+    "dex": 5,
+    "key": "charmeleon",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/005_Charmeleon/Charmeleon.fbx",
+    "sha256": "6d3f59a78d8c81429326af9338625a2c053b3aeaee2dff450d37dcffa70f2dd5",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #34",
+        "texture": "tex/pm0005_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #35",
+        "texture": "tex/pm0005_00_Eye1_Merged.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 9
+  },
+  {
+    "dex": 6,
+    "key": "charizard",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/006_Charizard/Charizard.fbx",
+    "sha256": "3d833f2ce04dfe1a744c61561198122e8dd12a755c7aa5999ed30768dc1d1b3b",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #12",
+        "texture": "tex/pm0006_00_Eye1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #13",
+        "texture": "tex/pm0006_00_BodyA1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #14",
+        "texture": "tex/pm0006_00_BodyB1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #15",
+        "texture": "tex/pm0006_00_FireCoreA1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #16",
+        "texture": "tex/pm0006_00_FireStenA1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 8
+  },
+  {
+    "dex": 7,
+    "key": "squirtle",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/007_Squirtle/Squirtle.fbx",
+    "sha256": "8f1b758fd5f4bcc382341eacd23831d2e94e184977663e1bf286a18db7566097",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #60",
+        "texture": "tex/pm0007_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #61",
+        "texture": "tex/pm0007_00_Eye1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 8,
+    "key": "wartortle",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/008_Wartortle/Wartortle.fbx",
+    "sha256": "0f9714b1ee8d83b5bae7b0837c434537b24f1040d888e506984904860196c5fa",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #72",
+        "texture": "tex/pm0008_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #73",
+        "texture": "tex/pm0008_00_Eye1_Merged.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 9,
+    "key": "blastoise",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/009_Blastoise/Blastoise.fbx",
+    "sha256": "df3f868a0bbe376d27e6074ca98582ccd49640d95932954d94d88a182637c4ef",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #87",
+        "texture": "tex/pm0009_00_Eye1_Merged.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #86",
+        "texture": "tex/pm0009_00_BodyB1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #85",
+        "texture": "tex/pm0009_00_BodyA1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #86.1",
+        "texture": "tex/pm0009_00_BodyB1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #86.2",
+        "texture": "tex/pm0009_00_BodyB1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 3
+  },
+  {
+    "dex": 10,
+    "key": "caterpie",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/010_Caterpie/Caterpie.fbx",
+    "sha256": "2e74a0f9d023f8229f2ae257c15f852a7644b38f1703495f12178611bc09acf1",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #35",
+        "texture": "tex/pm0010_00_Body1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 1
+  },
+  {
+    "dex": 11,
+    "key": "metapod",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/011_Metapod/Metapod.fbx",
+    "sha256": "ed5a85b6570330291121514b5489421daff9fd100c8fc11109413db59e33a024",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #58",
+        "texture": "tex/pm0011_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #59",
+        "texture": "tex/pm0011_00_Eye1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 12,
+    "key": "butterfree",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/012_Butterfree/Butterfree.fbx",
+    "sha256": "fc79dca48f77747c84766f0f0fc7832dfd8e15ee50daf19e212a218b95690c42",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #96",
+        "texture": "tex/pm0012_00_BodyC1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #97",
+        "texture": "tex/pm0012_00_BodyA1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #98",
+        "texture": "tex/pm0012_00_BodyB1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 3
+  },
+  {
+    "dex": 13,
+    "key": "weedle",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/013_Weedle/Weedle.fbx",
+    "sha256": "0fa3400b8d75b25a13c4f0695287bf4be1c31ad62462b6c55027e83271f3b0d3",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Body",
+        "texture": "tex/pm0013_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Eye",
+        "texture": "tex/pm0013_00_Eye1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 14,
+    "key": "kakuna",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/014_Kakuna/Kakuna.fbx",
+    "sha256": "8778a99dc1823d1847f612750fe547bd6bb13be2125d647e90d7e1446a3f6aa6",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "BodySpc00",
+        "texture": "tex/pm0014_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Bug",
+        "texture": "tex/pm0014_00_Eye1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 15,
+    "key": "beedrill",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/015_Beedrill/Beedrill.fbx",
+    "sha256": "b448a91d9872816d1180232e0ba7165457804ce890473b11f9aacb2f937d79d2",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Bug",
+        "texture": "tex/pm0015_00_BodyC1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodyANutrey_Env",
+        "texture": "tex/pm0015_00_BodyA1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodyBRediba_Wing00",
+        "texture": "tex/pm0015_00_BodyB1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 3
+  },
+  {
+    "dex": 16,
+    "key": "pidgey",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/016_Pidgey/Pidgey.fbx",
+    "sha256": "d19a336b3dd9c3b0866b1136abaa7a4ba684f473700a33a3d7e0b9820295fef4",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Body00",
+        "texture": "tex/pm0016_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Eye",
+        "texture": "tex/pm0016_00_Eye1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 17,
+    "key": "pidgeotto",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/017_Pidgeotto/Pidgeotto.fbx",
+    "sha256": "b8024700656ac38681e82ff6eec1a67707620e062856f82c69c0bc700aed4895",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "BodyA00",
+        "texture": "tex/pm0017_00_BodyA1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Eye",
+        "texture": "tex/pm0017_00_Eye1_Merged.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodyB01",
+        "texture": "tex/pm0017_00_BodyB1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 3
+  },
+  {
+    "dex": 18,
+    "key": "pidgeot",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/018_Pidgeot/Pidgeot.fbx",
+    "sha256": "2cd7f75ddd070281644c1147ca1d238de4293bb92a9ee39755d1fb5e9eefde7b",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Eye",
+        "texture": "tex/pm0018_00_Eye1_Merged.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodyA00",
+        "texture": "tex/pm0018_00_BodyA1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodyB01",
+        "texture": "tex/pm0018_00_BodyB1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 3
+  },
+  {
+    "dex": 19,
+    "key": "rattata",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/019_Rattata/Rattata.fbx",
+    "sha256": "403c5618c45ef600ba2be63f3a25ac137f28f255a2d16f5e076844f261c316b4",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Body00",
+        "texture": "tex/pm0019_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Eye",
+        "texture": "tex/pm0019_00_Eye1_Merged.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 4
+  },
+  {
+    "dex": 20,
+    "key": "raticate",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/020_Raticate/Raticate.fbx",
+    "sha256": "8da04d0fb620a86502242bcedc5bee286e929f009868a17ee0af51d131ebd16b",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Body00",
+        "texture": "tex/pm0020_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Eye",
+        "texture": "tex/pm0020_00_Eye1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 21,
+    "key": "spearow",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/021_Spearow/Spearow.fbx",
+    "sha256": "7d39e87733943152547b5c269cd277bd218b0a2cc809b111767427e6df17a40f",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "BodyA00",
+        "texture": "tex/pm0021_00_BodyA1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Eye",
+        "texture": "tex/pm0021_00_Eye1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodyB",
+        "texture": "tex/pm0021_00_BodyB1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 3
+  },
+  {
+    "dex": 22,
+    "key": "fearow",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/022_Fearow/Fearow.fbx",
+    "sha256": "a3ec8d0803e0b8918e30739e649364419618922e52b43d80018b9055d1c7ce91",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "BodyA",
+        "texture": "tex/pm0022_00_BodyA1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodyB",
+        "texture": "tex/pm0022_00_BodyB1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Eye",
+        "texture": "tex/pm0022_00_Eye1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 3
+  },
+  {
+    "dex": 23,
+    "key": "ekans",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/023_Ekans/Ekans.fbx",
+    "sha256": "7e9a58930918f2ebfba9138ac1c7e6912e939dc295bbfe10c0b914b37eebd4a9",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #22",
+        "texture": "tex/pm0023_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #23",
+        "texture": "tex/pm0023_00_Eye1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 24,
+    "key": "arbok",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/024_Arbok/Arbok.fbx",
+    "sha256": "1659dac8241f22f24c28af4c6894d8ffdf8639d084e3bf129093a570990d536f",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Eye",
+        "texture": "tex/pm0024_00_Eye1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodyA",
+        "texture": "tex/pm0024_00_BodyA1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodyB",
+        "texture": "tex/pm0024_00_BodyB1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 3
+  },
+  {
+    "dex": 25,
+    "key": "pikachu",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/025_Pikachu/Pikachu.fbx",
+    "sha256": "d7e96b8de5c7c19539252493abf42efec70a744b09fadadcbfca8c1c311eefee",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #160",
+        "texture": "tex/pm0025_00_BodyA1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #161",
+        "texture": "tex/pm0025_00_BodyB1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #162",
+        "texture": "tex/pm0025_00_Mouth1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #163",
+        "texture": "tex/pm0025_00_Eye1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 4
+  },
+  {
+    "dex": 26,
+    "key": "raichu",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/026_Raichu/Raichu.fbx",
+    "sha256": "8090b2a54264a393f65dd63abd99d767b47eb3c4d5258ea119e2459cd08a0ad7",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #146",
+        "texture": "tex/pm0026_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #147",
+        "texture": "tex/pm0026_00_Eye1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #148",
+        "texture": "tex/pm0026_00_Mouth1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 3
+  },
+  {
+    "dex": 27,
+    "key": "sandshrew",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/027_Sandshrew/Sandshrew.fbx",
+    "sha256": "014069c608f5c5c4e5c2b97b9b4cf95fe0136fe452ea31688d14cc2300093718",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #35",
+        "texture": "tex/pm0027_00_BodyA1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #36",
+        "texture": "tex/pm0027_00_Eye1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #47",
+        "texture": "tex/pm0027_00_BodyB1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 3
+  },
+  {
+    "dex": 28,
+    "key": "sandslash",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/028_Sandslash/Sandslash.fbx",
+    "sha256": "5463e0f0c66a4247f857146566521d0169397133eb686e4a06215b051aa3784c",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #58",
+        "texture": "tex/pm0028_00_Eye1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #59",
+        "texture": "tex/pm0028_00_BodyA1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #60",
+        "texture": "tex/pm0028_00_BodyB1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 3
+  },
+  {
+    "dex": 29,
+    "key": "nidoran-f",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/029_NidoranFemale/NidoranFemale.fbx",
+    "sha256": "cc33ae8f5225758ac6b6b66eb86da1940d9ead883d1ebb46cbf4a2a59aa613c8",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #10",
+        "texture": "tex/pm0029_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #11",
+        "texture": "tex/pm0029_00_Eye1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 30,
+    "key": "nidorina",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/030_Nidorina/Nidorina.fbx",
+    "sha256": "b4131279f0f32a5553ade19b0c70060282de17b6e433b7ce5937f9bdba8ca7d7",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #10",
+        "texture": "tex/pm0030_00_Eye1_Merged.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #11",
+        "texture": "tex/pm0030_00_Body1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 31,
+    "key": "nidoqueen",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/031_Nidoqueen/Nidoqueen.fbx",
+    "sha256": "bb9f6b6c4b618cc1bea00363d7da90a70393e6f4fad84059c3e04cc365e16e5f",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #127",
+        "texture": "tex/pm0031_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #128",
+        "texture": "tex/pm0031_00_Eye1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 32,
+    "key": "nidoran-m",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/032_NidoranMale/NidoranMale.fbx",
+    "sha256": "513471d7bc865f8ce3e60b3fee019588799f3dbb37efb8d9f00543961642489c",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #139",
+        "texture": "tex/pm0032_00_Eye1_Merged.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #140",
+        "texture": "tex/pm0032_00_Body1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 33,
+    "key": "nidorino",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/033_Nidorino/Nidorino.fbx",
+    "sha256": "f783aa496307b05ecc64dd8a5635d478b36bff618726845e9d3e87da3c781417",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #152",
+        "texture": "tex/pm0033_00_Eye1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #153",
+        "texture": "tex/pm0033_00_Body1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 4
+  },
+  {
+    "dex": 34,
+    "key": "nidoking",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/034_Nidoking/Nidoking.fbx",
+    "sha256": "c99b54bc92c4b5e34bcf139896496a491016c79ef944c5e1be55c7790237889e",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #164",
+        "texture": "tex/pm0034_00_BodyA1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #165",
+        "texture": "tex/pm0034_00_Eye1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #166",
+        "texture": "tex/pm0034_00_BodyB1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 3
+  },
+  {
+    "dex": 35,
+    "key": "clefairy",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/035_Clefairy/Clefairy.fbx",
+    "sha256": "f9319ab1974586e252f23c8c3d33af52335bd7b5cd64241ca1306778e549292b",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Body",
+        "texture": "tex/Body1_0.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "REye",
+        "texture": "tex/Eye1_0.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Mouth",
+        "texture": "tex/Mouth1_0.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "LEye",
+        "texture": "tex/Eye1_0.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 6
+  },
+  {
+    "dex": 36,
+    "key": "clefable",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/036_Clefable/Clefable.fbx",
+    "sha256": "992d92e32b544a82e96e1053bf2fcd5ec30adc438f7a499ee5770b1a99fe6c79",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Body",
+        "texture": "tex/pm0036_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "REye",
+        "texture": "tex/pm0036_00_Eye1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Mouth",
+        "texture": "tex/pm0036_00_Mouth1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 3
+  },
+  {
+    "dex": 37,
+    "key": "vulpix",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/037_Vulpix/Vulpix.fbx",
+    "sha256": "3d1b4d0919d14058ef4b4a5e11ee1514be187eb6100d2f4fa1dfdbdbb7842612",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "BodyB",
+        "texture": "tex/pm0037_00_BodyB1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Eye",
+        "texture": "tex/pm0037_00_Eye1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Mouth",
+        "texture": "tex/pm0037_00_Mouth1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodyA01",
+        "texture": "tex/pm0037_00_BodyA1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 4
+  },
+  {
+    "dex": 38,
+    "key": "ninetales",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/038_Ninetales/Ninetales.fbx",
+    "sha256": "8e0efceab2d3b277d7f5737eb1d55203cedefd63351e8ce2df47767cc155b2f0",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Eye",
+        "texture": "tex/pm0038_00_Eye1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodyA00",
+        "texture": "tex/pm0038_00_BodyA1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodyB",
+        "texture": "tex/pm0038_00_BodyB1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 3
+  },
+  {
+    "dex": 39,
+    "key": "jigglypuff",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/039_Jigglypuff/Jigglypuff.fbx",
+    "sha256": "28bd5e85e7a4914753bbe072d133889791cf5bddc991353b55a97b04e1a5a3f4",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Mouth",
+        "texture": "tex/pm0039_00_Mouth1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "LEye",
+        "texture": "tex/pm0039_00_Eye1_Merged.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Body",
+        "texture": "tex/pm0039_00_Body1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 3
+  },
+  {
+    "dex": 40,
+    "key": "wigglytuff",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/040_Wigglytuff/Wigglytuff.fbx",
+    "sha256": "f8e61eaca147c0a2adb6c07c2345d32aa126936515976eadf5f4e6439d127787",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Mouth",
+        "texture": "tex/pm0040_00_Mouth1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Body",
+        "texture": "tex/pm0040_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Eye",
+        "texture": "tex/pm0040_00_Eye1_Merged.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Body.1",
+        "texture": "tex/pm0040_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Body.2",
+        "texture": "tex/pm0040_00_Body1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 3
+  },
+  {
+    "dex": 41,
+    "key": "zubat",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/041_Zubat/Zubat.fbx",
+    "sha256": "32c929be96309c508e8cc5e00dd80b7a18fe1adcada596a04d696b111c817f96",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Body04",
+        "texture": "tex/Body1_0.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 1
+  },
+  {
+    "dex": 42,
+    "key": "golbat",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/042_Golbat/Golbat.fbx",
+    "sha256": "8a1e3ed2ea9522e24c7e7547b2e60aed688f6e13eee174cb7a63f5ad1c6767d6",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Body00",
+        "texture": "tex/Body1_0.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Eye",
+        "texture": "tex/Eye1_0.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Body01",
+        "texture": "tex/Body1_0.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Body03",
+        "texture": "tex/Body1_0.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Body02",
+        "texture": "tex/Body1_0.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 43,
+    "key": "oddish",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/043_Oddish/Oddish.fbx",
+    "sha256": "2f1d0335525f3bdef6291e485b832d519f5162bdc1820599c0f5644f67a08d3b",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Body",
+        "texture": "tex/pm0043_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Mouth",
+        "texture": "tex/pm0043_00_Mouth1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Eye",
+        "texture": "tex/pm0043_00_Eye1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 3
+  },
+  {
+    "dex": 44,
+    "key": "gloom",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/044_Gloom/Gloom.fbx",
+    "sha256": "a02d37642292a12416faec20c39988bb1cd415fb1ab5524914b7f589a90dec61",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "BodyA_00",
+        "texture": "tex/pm0044_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Eye",
+        "texture": "tex/pm0044_00_Eye1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 45,
+    "key": "vileplume",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/045_Vileplume/Vileplume.fbx",
+    "sha256": "9323a2e9ad88dc0fd1e305264744f5357fbfec5cd7f9ae139487677911e6da51",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Mouth",
+        "texture": "tex/pm0045_00_Mouth1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Eye",
+        "texture": "tex/pm0045_00_Eye1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Body01_00",
+        "texture": "tex/pm0045_00_Body1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 3
+  },
+  {
+    "dex": 46,
+    "key": "paras",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/046_Paras/Paras.fbx",
+    "sha256": "70634807ee1efb4cac2796e8a721ef6b74b31806dd39c8f299a670756c410c2b",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "BodyASpc00",
+        "texture": "tex/pm0046_00_BodyA1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodyB",
+        "texture": "tex/pm0046_00_BodyAParasMask.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 3
+  },
+  {
+    "dex": 47,
+    "key": "parasect",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/047_Parasect/Parasect.fbx",
+    "sha256": "959c7c9056707542961d57cd5328239e938fce83460051eceeb6b0e97244f4c2",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "BodyASpc00",
+        "texture": "tex/pm0047_00_BodyA1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodyB",
+        "texture": "tex/pm0047_00_BodyB1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodyASpc00.1",
+        "texture": "tex/pm0047_00_BodyA1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 48,
+    "key": "venonat",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/048_Venonat/Venonat.fbx",
+    "sha256": "fed372214ef3f311139eb46031b8403a476cf3b692faf397e6b92b525d14e891",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "BodyABuffron_HairVco",
+        "texture": "tex/pm0048_00_BodyA1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Bug",
+        "texture": "tex/pm0048_00_BodyB1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 49,
+    "key": "venomoth",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/049_Venomoth/Venomoth.fbx",
+    "sha256": "4dd0bb361949ecf8e9bc0189bff3efa94071f71c9c515bdd7bf7131c3c5b35d3",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "BodyA02",
+        "texture": "tex/pm0049_00_BodyA1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodyBKurumiruVco",
+        "texture": "tex/pm0049_00_BodyB1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodyCNon",
+        "texture": "tex/pm0049_00_BodyC1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 5
+  },
+  {
+    "dex": 50,
+    "key": "diglett",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/050_Diglett/Diglett.fbx",
+    "sha256": "411d5b9b7020c2371fab70635b6e1044fcfc1bd9289d27bc13c33e4238f13a25",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Body00",
+        "texture": "tex/pm0050_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Eye",
+        "texture": "tex/pm0050_00_Eye1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 51,
+    "key": "dugtrio",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/051_Dugtrio/Dugtrio.fbx",
+    "sha256": "761501fbad121e309a35967fd6d9630cc3b2e638978f95b0bfb294982242e35e",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "BodyA00",
+        "texture": "tex/pm0051_00_BodyA1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Eye00",
+        "texture": "tex/pm0051_00_EyeA1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodyB",
+        "texture": "tex/pm0051_00_BodyB1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 3
+  },
+  {
+    "dex": 52,
+    "key": "meowth",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/052_Meowth/Meowth.fbx",
+    "sha256": "a9dfab2e47d921b13b334a42bbdda9a83fd3cfe6482f0aab419c22be1e02d1ef",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "REye",
+        "texture": "tex/pm0052_00_Eye1_Merged.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Body00",
+        "texture": "tex/pm0052_00_Body1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 53,
+    "key": "persian",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/053_Persian/Persian.fbx",
+    "sha256": "3230161cd36becc33ceab9aa76db5394b89f162d430cfe5cccdde6694b099217",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Eye",
+        "texture": "tex/pm0053_00_Eye1_Merged.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Body",
+        "texture": "tex/pm0053_00_Body1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 54,
+    "key": "psyduck",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/054_Psyduck/Psyduck.fbx",
+    "sha256": "111e1453c0d5e9aa3205fca27616b0f7f5bbaa96f1115c13dbacaec38b1988da",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Body01",
+        "texture": "tex/pm0054_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Eye",
+        "texture": "tex/pm0054_00_Eye1_Merged.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 55,
+    "key": "golduck",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/055_Golduck/Golduck.fbx",
+    "sha256": "5d2918c6e7ebab1529a6875952cbeb2efe622be487ab2d788281d884e96ea333",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Eye",
+        "texture": "tex/pm0055_00_Eye1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodySpc01",
+        "texture": "tex/pm0055_00_Body1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 56,
+    "key": "mankey",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/056_Mankey/Mankey.fbx",
+    "sha256": "f0f6856ae376a176e65b455f97c17060c0e3cdcaa8dd3d4db3c93994709debed",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "BodyDodo_Hair",
+        "texture": "tex/pm0056_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Eye",
+        "texture": "tex/pm0056_00_Eye1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 57,
+    "key": "primeape",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/057_Primeape/Primeape.fbx",
+    "sha256": "8f67e061da25a269da48198bbaa6e7d70e2570817bef2354a708edfa91d14425",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "BodyDodo_Hair",
+        "texture": "tex/pm0057_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Eye",
+        "texture": "tex/pm0057_00_Eye1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodyDodo_Hair.1",
+        "texture": "tex/pm0057_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodyDodo_Hair.2",
+        "texture": "tex/pm0057_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodyDodo_Hair.3",
+        "texture": "tex/pm0057_00_Body1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 58,
+    "key": "growlithe",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/058_Growlithe/Growlithe.fbx",
+    "sha256": "a93f8f42204f0688dcda18efe0c69e714ecce9093aa05b71e6249c80ded1eb4f",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "BodyA",
+        "texture": "tex/pm0058_00_BodyA1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodyBBuffronVco",
+        "texture": "tex/pm0058_00_BodyB1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Eye",
+        "texture": "tex/pm0058_00_Eye1_Merged.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 3
+  },
+  {
+    "dex": 59,
+    "key": "arcanine",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/059_Arcanine/Arcanine.fbx",
+    "sha256": "6504d9b909c3b225e47294d9a445bd1b1abb60be24f2e6f7690c515696c60d25",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #35",
+        "texture": "tex/pm0059_00_BodyA1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #36",
+        "texture": "tex/pm0059_00_Eye1_Merged.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #37",
+        "texture": "tex/pm0059_00_BodyB1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 3
+  },
+  {
+    "dex": 60,
+    "key": "poliwag",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/060_Poliwag/Poliwag.fbx",
+    "sha256": "1eae42d6c9abf77b41c86333e26899902eb3c0504016a4329cb0325258f6af29",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "BodyNyorobon",
+        "texture": "tex/Body1_0.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Eye",
+        "texture": "tex/Eye1_0.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 61,
+    "key": "poliwhirl",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/061_Poliwhirl/Poliwhirl.fbx",
+    "sha256": "26d1cc64264663270f0ac4d323545a505c167e271931ed467c7ab0c0982554db",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "BodyNyorobon",
+        "texture": "tex/pm0061_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Eye",
+        "texture": "tex/pm0061_00_Eye1_Merged.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 62,
+    "key": "poliwrath",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/062_Poliwrath/Poliwrath.fbx",
+    "sha256": "2c962360d64b25a58da8b3045f86ca91c02a0a4f91b14cfe8e5890a9f3419fe7",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "BodyNyorobon",
+        "texture": "tex/pm0062_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Eye",
+        "texture": "tex/pm0062_00_Eye1_Merged.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 63,
+    "key": "abra",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/063_Abra/Abra.fbx",
+    "sha256": "490ffa873f7345861679c1eb69aaaf2a1751b6fdc23d3aca181da23a053dbc41",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #63",
+        "texture": "tex/pm0063_00_Body1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 1
+  },
+  {
+    "dex": 64,
+    "key": "kadabra",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/064_Kadabra/Kadabra.fbx",
+    "sha256": "37aca02b0bbab74faa07956d81b44b0e4e128b573e6f124e0b9d0b17d6617918",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #88",
+        "texture": "tex/pm0064_00_BodyB1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #89",
+        "texture": "tex/pm0064_00_BodyA1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #90",
+        "texture": "tex/pm0064_00_Eye1_Merged.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 3
+  },
+  {
+    "dex": 65,
+    "key": "alakazam",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/065_Alakazam/Alakazam.fbx",
+    "sha256": "a5e902ef580d31ddc43aebbd90cb03bd79f7d89f68091bf2b05638bee601c280",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #91",
+        "texture": "tex/pm0065_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #92",
+        "texture": "tex/pm0065_00_Eye1_Merged.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 66,
+    "key": "machop",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/066_Machop/Machop.fbx",
+    "sha256": "9392e4af20ba08b43b76a3f08b84e63dcc9f7b5bf5047f411adff9d703c5a9a6",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #76",
+        "texture": "tex/pm0066_00_Eye1_Merged.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #77",
+        "texture": "tex/pm0066_00_Body1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 67,
+    "key": "machoke",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/067_Machoke/Machoke.fbx",
+    "sha256": "63aeb63023a9d3e13070d5896c57adba54a65a72c8403de94ee6e286577dd2a4",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #89",
+        "texture": "tex/pm0067_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #90",
+        "texture": "tex/pm0067_00_Eye1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 68,
+    "key": "machamp",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/068_Machamp/Machamp.fbx",
+    "sha256": "f93b9298a4b3ab47f4e62333e99ff5e54689b8a9da048f280cc66316d44660c4",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #101",
+        "texture": "tex/pm0068_00_BodyA1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #102",
+        "texture": "tex/pm0068_00_BodyB1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #103",
+        "texture": "tex/pm0068_00_Eye1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 3
+  },
+  {
+    "dex": 69,
+    "key": "bellsprout",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/069_Bellsprout/Bellsprout.fbx",
+    "sha256": "44873062dcb7c7a814d2d40b12f953976d96194b07451d8ab96c2b0ac2fdca31",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Body00",
+        "texture": "tex/pm0069_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Eye",
+        "texture": "tex/pm0069_00_Eye1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 70,
+    "key": "weepinbell",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/070_Weepinbell/Weepinbell.fbx",
+    "sha256": "efcd2a36f99739ae91f2f3abda9089a4dd4797413f84a13f427d1b2e509545d4",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #64",
+        "texture": "tex/pm0070_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #65",
+        "texture": "tex/pm0070_00_Eye1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 71,
+    "key": "victreebel",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/071_Victreebel/Victreebel.fbx",
+    "sha256": "7f14a0c33a5bc0deb3a25f95b3134a10988efa499e3c3ff5ffbb5a67bdaa1a58",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "BodyVco",
+        "texture": "tex/pm0071_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Eye",
+        "texture": "tex/pm0071_00_Eye1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 72,
+    "key": "tentacool",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/072_Tentacool/Tentacool.fbx",
+    "sha256": "bed64e86f0a1e211ef13d6d21457525dcf2620bafdf9cc47095786e554869e55",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "BodyTattu00",
+        "texture": "tex/pm0072_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Eye",
+        "texture": "tex/pm0072_00_Eye1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 73,
+    "key": "tentacruel",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/073_Tentacruel/Tentacruel.fbx",
+    "sha256": "f788f64aafe3767b42536adfe41331af5f04bb5027e32b901fc0dfdef448ea87",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "BodyATattu",
+        "texture": "tex/pm0073_00_BodyA1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodyBTattu",
+        "texture": "tex/pm0073_00_BodyB1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Eye",
+        "texture": "tex/pm0073_00_Eye1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 3
+  },
+  {
+    "dex": 74,
+    "key": "geodude",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/074_Geodude/Geodude.fbx",
+    "sha256": "6326482ead96ea6598aa102c81d84bdb3684ae6a8b945312a9e0579d068e2572",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Eye",
+        "texture": "tex/pm0074_00_Eye1_Merged.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Body",
+        "texture": "tex/pm0074_00_Body1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 75,
+    "key": "graveler",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/075_Graveler/Graveler.fbx",
+    "sha256": "7be0747d903d8b03f9a6388aeeb3bf67677c42650fa5b4452f7ca268c18b3d8e",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Eye",
+        "texture": "tex/pm0075_00_Eye1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodyA00",
+        "texture": "tex/pm0075_00_BodyA1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodyB00",
+        "texture": "tex/pm0075_00_BodyB1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 3
+  },
+  {
+    "dex": 76,
+    "key": "golem",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/076_Golem/Golem.fbx",
+    "sha256": "ffe1b3ae254520de3c066dea1cf7b6f9e345828f445abde85b71eaf59d1b6c6c",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "BodyA00",
+        "texture": "tex/pm0076_00_BodyA1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Eye",
+        "texture": "tex/pm0076_00_Eye1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodyB00",
+        "texture": "tex/pm0076_00_BodyB1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 3
+  },
+  {
+    "dex": 77,
+    "key": "ponyta",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/077_Ponyta/Ponyta.fbx",
+    "sha256": "69c0debd1016a22d33dd593915dd99109403eb0ccadf48d63b9ae6157db4846f",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "BodyA",
+        "texture": "tex/pm0077_00_BodyA1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Eye",
+        "texture": "tex/pm0077_00_Eye1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "FireCoreA",
+        "texture": "tex/pm0077_00_FireCore1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "FireCoreA",
+        "texture": "tex/pm0077_00_FireCore1.png",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "FireCoreA.1",
+        "texture": "tex/pm0077_00_FireCore1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "FireCoreA.1",
+        "texture": "tex/pm0077_00_FireCore1.png",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "FireCoreA.2",
+        "texture": "tex/pm0077_00_FireCore1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "FireCoreA.2",
+        "texture": "tex/pm0077_00_FireCore1.png",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "FireCoreA.3",
+        "texture": "tex/pm0077_00_FireCore1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "FireCoreA.3",
+        "texture": "tex/pm0077_00_FireCore1.png",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "FireCoreA.4",
+        "texture": "tex/pm0077_00_FireCore1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "FireCoreA.4",
+        "texture": "tex/pm0077_00_FireCore1.png",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "FireStenA",
+        "texture": "tex/pm0077_00_FireSten1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "FireStenA",
+        "texture": "tex/pm0077_00_FireSten1.png",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "FireStenA.1",
+        "texture": "tex/pm0077_00_FireSten1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "FireStenA.1",
+        "texture": "tex/pm0077_00_FireSten1.png",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "FireStenA.2",
+        "texture": "tex/pm0077_00_FireSten1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "FireStenA.2",
+        "texture": "tex/pm0077_00_FireSten1.png",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "FireStenA.3",
+        "texture": "tex/pm0077_00_FireSten1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "FireStenA.3",
+        "texture": "tex/pm0077_00_FireSten1.png",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "FireStenA.4",
+        "texture": "tex/pm0077_00_FireSten1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "FireStenA.4",
+        "texture": "tex/pm0077_00_FireSten1.png",
+        "channel": "TransparentColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 8
+  },
+  {
+    "dex": 78,
+    "key": "rapidash",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/078_Rapidash/Rapidash.fbx",
+    "sha256": "db71077d3f0b34e0ca2cd6a32a89f7cda93c5368e2fcfc374fc129a3d92cb811",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Body",
+        "texture": "tex/pm0078_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Eye",
+        "texture": "tex/pm0078_00_Eye1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "FireCoreA",
+        "texture": "tex/pm0078_00_FireCore1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "FireCoreA",
+        "texture": "tex/pm0078_00_FireCore1.png",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "FireCoreA.1",
+        "texture": "tex/pm0078_00_FireCore1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "FireCoreA.1",
+        "texture": "tex/pm0078_00_FireCore1.png",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "FireCoreA.2",
+        "texture": "tex/pm0078_00_FireCore1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "FireCoreA.2",
+        "texture": "tex/pm0078_00_FireCore1.png",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "FireCoreA.3",
+        "texture": "tex/pm0078_00_FireCore1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "FireCoreA.3",
+        "texture": "tex/pm0078_00_FireCore1.png",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "FireCoreA.4",
+        "texture": "tex/pm0078_00_FireCore1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "FireCoreA.4",
+        "texture": "tex/pm0078_00_FireCore1.png",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "FireCoreA.5",
+        "texture": "tex/pm0078_00_FireCore1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "FireCoreA.5",
+        "texture": "tex/pm0078_00_FireCore1.png",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "FireCoreA.6",
+        "texture": "tex/pm0078_00_FireCore1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "FireCoreA.6",
+        "texture": "tex/pm0078_00_FireCore1.png",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "FireStenA",
+        "texture": "tex/pm0078_00_FireSten1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "FireStenA",
+        "texture": "tex/pm0078_00_FireSten1.png",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "FireStenA.1",
+        "texture": "tex/pm0078_00_FireSten1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "FireStenA.1",
+        "texture": "tex/pm0078_00_FireSten1.png",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "FireStenA.2",
+        "texture": "tex/pm0078_00_FireSten1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "FireStenA.2",
+        "texture": "tex/pm0078_00_FireSten1.png",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "FireStenA.3",
+        "texture": "tex/pm0078_00_FireSten1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "FireStenA.3",
+        "texture": "tex/pm0078_00_FireSten1.png",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "FireStenA.4",
+        "texture": "tex/pm0078_00_FireSten1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "FireStenA.4",
+        "texture": "tex/pm0078_00_FireSten1.png",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "FireStenA.5",
+        "texture": "tex/pm0078_00_FireSten1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "FireStenA.5",
+        "texture": "tex/pm0078_00_FireSten1.png",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "FireStenA.6",
+        "texture": "tex/pm0078_00_FireSten1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "FireStenA.6",
+        "texture": "tex/pm0078_00_FireSten1.png",
+        "channel": "TransparentColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 8
+  },
+  {
+    "dex": 79,
+    "key": "slowpoke",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/079_Slowpoke/Slowpoke.fbx",
+    "sha256": "d5b76cd3195fde57e8bc7c3269706258af6a44d06874a3dda9819b60e8a2a751",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #35",
+        "texture": "tex/pm0079_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #36",
+        "texture": "tex/pm0079_00_Eye1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 80,
+    "key": "slowbro",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/080_Slowbro/Slowbro.fbx",
+    "sha256": "32f7be218523e954cccbbda56b1dda6cdab6982b30b530e11667b66bfc497261",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #34",
+        "texture": "tex/pm0080_00_BodyA1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #35",
+        "texture": "tex/pm0080_00_EyeA1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #36",
+        "texture": "tex/pm0080_00_BodyB1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #37",
+        "texture": "tex/pm0080_00_EyeB1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 4
+  },
+  {
+    "dex": 81,
+    "key": "magnemite",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/081_Magnemite/Magnemite.fbx",
+    "sha256": "df34c03b1c5d7a4c095b2f6710af037ba1c88e9f3326825d7483700f6752c6ab",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "BodyEnv00Vco00_006-material",
+        "texture": "tex/pm0081_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodyEnv00Vco00_006-material.1",
+        "texture": "tex/pm0081_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Eye_006-material",
+        "texture": "tex/pm0081_00_Eye1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodyEnv00Vco00_006-material.2",
+        "texture": "tex/pm0081_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodyEnv00Vco00_006-material.3",
+        "texture": "tex/pm0081_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodyEnv00Vco00_006-material.4",
+        "texture": "tex/pm0081_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodyEnv00Vco00_006-material.5",
+        "texture": "tex/pm0081_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodyEnv00Vco00_006-material.6",
+        "texture": "tex/pm0081_00_Body1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 82,
+    "key": "magneton",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/082_Magneton/Magneton.fbx",
+    "sha256": "ed296d61097e23a23e6e918f942b23eb8e218bf6bb125a05b85cf2a795def02d",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Eye00_mat-material",
+        "texture": "tex/pm0082_00_Eye1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodySpc_mat-material",
+        "texture": "tex/pm0082_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodySpc_mat-material.1",
+        "texture": "tex/pm0082_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodySpc_mat-material.2",
+        "texture": "tex/pm0082_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodySpc_mat-material.3",
+        "texture": "tex/pm0082_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodySpc_mat-material.4",
+        "texture": "tex/pm0082_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodySpc_mat-material.5",
+        "texture": "tex/pm0082_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodySpc_mat-material.6",
+        "texture": "tex/pm0082_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodySpc_mat-material.7",
+        "texture": "tex/pm0082_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodySpc_mat-material.8",
+        "texture": "tex/pm0082_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodySpc_mat-material.9",
+        "texture": "tex/pm0082_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodySpc_mat-material.10",
+        "texture": "tex/pm0082_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodySpc_mat-material.11",
+        "texture": "tex/pm0082_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodySpc_mat-material.12",
+        "texture": "tex/pm0082_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodySpc_mat-material.13",
+        "texture": "tex/pm0082_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodySpc_mat-material.14",
+        "texture": "tex/pm0082_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Eye00_mat-material.1",
+        "texture": "tex/pm0082_00_Eye1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Eye00_mat-material.2",
+        "texture": "tex/pm0082_00_Eye1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 83,
+    "key": "farfetchd",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/083_Farfetch'd/Farfetch'd.fbx",
+    "sha256": "1d00b2e2b90e275cd27fd5d1dd8b648b44ab0eb78535b17e616c14729fb57eea",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "_61440_003-material",
+        "texture": "tex/Body.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "_61445_003-material",
+        "texture": "tex/Eyes.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 84,
+    "key": "doduo",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/084_Doduo/Doduo.fbx",
+    "sha256": "4cdf15a9c07c025a8bf60d3ce1ca92a0b20f0dbd604828b04c119ece1615db3c",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Body",
+        "texture": "tex/pm0084_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "EyeA",
+        "texture": "tex/pm0084_00_Eye1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Body.1",
+        "texture": "tex/pm0084_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "EyeA.1",
+        "texture": "tex/pm0084_00_Eye1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 85,
+    "key": "dodrio",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/085_Dodrio/Dodrio.fbx",
+    "sha256": "da1c8aef951b3ff059e8a272ca0af392048f9fbb921d4a58d083de98bda96564",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Body",
+        "texture": "tex/pm0085_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Body.1",
+        "texture": "tex/pm0085_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "EyeA",
+        "texture": "tex/pm0085_00_Eye1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "EyeA.1",
+        "texture": "tex/pm0085_00_Eye1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "EyeA.2",
+        "texture": "tex/pm0085_00_Eye1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 86,
+    "key": "seel",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/086_Seel/Seel.fbx",
+    "sha256": "7ae74305f963904bade5978642f76ded411959062a911e1d0b851d94d67ded72",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Body",
+        "texture": "tex/pm0086_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Eye",
+        "texture": "tex/pm0086_00_Eye1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 87,
+    "key": "dewgong",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/087_Dewgong/Dewgong.fbx",
+    "sha256": "f66a8e2ba507b837e09ec345981483e6c0bdb7dfcbe2097b257b7b41e681ad2f",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Body",
+        "texture": "tex/pm0087_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Eye",
+        "texture": "tex/pm0087_00_Eye1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 88,
+    "key": "grimer",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/088_Grimer/Grimer.fbx",
+    "sha256": "8cfc0453fd8b434eecb119f8bf98ea2264869d95fe49eeddfc489d92e3b7ec79",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Eye1-material",
+        "texture": "tex/pm0088_00_Eye1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodyASpc-material",
+        "texture": "tex/pm0088_00_BodyA1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodyASpc-material.1",
+        "texture": "tex/pm0088_00_BodyA1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodyASpc-material.2",
+        "texture": "tex/pm0088_00_BodyA1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodyBSpc00-material",
+        "texture": "tex/pm0088_00_BodyB1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodyBSpc00-material.1",
+        "texture": "tex/pm0088_00_BodyB1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Eye1-material.1",
+        "texture": "tex/pm0088_00_Eye1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 5
+  },
+  {
+    "dex": 89,
+    "key": "muk",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/089_Muk/Muk.fbx",
+    "sha256": "1965a2f755e196212590d3bd5e5743455d6a86f05c55f3ed85abf813c1c2267f",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "VisualMaterial0",
+        "texture": "tex/pm0089_00_BodyB1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "VisualMaterial10",
+        "texture": "tex/pm0089_00_BodyA1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "VisualMaterial0.1",
+        "texture": "tex/pm0089_00_BodyB1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "VisualMaterial40",
+        "texture": "tex/pm0089_00_Eye1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 5
+  },
+  {
+    "dex": 90,
+    "key": "shellder",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/090_Shellder/Shellder.fbx",
+    "sha256": "8e01911eaa00f24a3b03a5f43addd4330c4b9caf3a43c1789775b898645ee138",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "pm0090_00_Body1-material_001-material",
+        "texture": "tex/pm0090_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "pm0090_00_Eye1-material_001-material",
+        "texture": "tex/pm0090_00_Eye1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 91,
+    "key": "cloyster",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/091_Cloyster/Cloyster.fbx",
+    "sha256": "87e73764d7a00fa78e457a4f755509f68022360adcc5486e748c46490814892d",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "assets_textures_pm0091_00_BodyA1-material-material",
+        "texture": "tex/pm0091_00_BodyA1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "assets_textures_pm0091_00_Eye1-material-material",
+        "texture": "tex/pm0091_00_Eye1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "assets_textures_pm0091_00_Mouth1-material-material",
+        "texture": "tex/pm0091_00_Mouth1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "assets_textures_pm0091_00_BodyB1-material-material",
+        "texture": "tex/pm0091_00_BodyB1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 4
+  },
+  {
+    "dex": 92,
+    "key": "gastly",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/092 - Gastly/Gastly.fbx",
+    "sha256": "c8153fd76582fe2e283004de5cb82fbce7e51edf39474d9b6366049e8193c82d",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "mat2",
+        "texture": "tex/GhosEyeDh.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat1",
+        "texture": "tex/GhosDh.tga",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 93,
+    "key": "haunter",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/093 - Haunter/Haunter.fbx",
+    "sha256": "d7bc4e86b68c1c7a4f21c5575746971ba499993a857ab0cb1d407c2c696bcc2b",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "mat_1",
+        "texture": "tex/ghost_0_1.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_0",
+        "texture": "tex/ghost_0_0.tga",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 94,
+    "key": "gengar",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/094_Gengar/Gengar.fbx",
+    "sha256": "ce7a4407d4bd9fc7f4c8ee011d1e0613f46c11cf15c8278f4f4d855e2e9fd46d",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #10",
+        "texture": "tex/pm0094_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #11",
+        "texture": "tex/pm0094_00_Eye1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #10.1",
+        "texture": "tex/pm0094_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #10.2",
+        "texture": "tex/pm0094_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #10.3",
+        "texture": "tex/pm0094_00_Body1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 95,
+    "key": "onix",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/095 - Onix/Onix.fbx",
+    "sha256": "80ae22214f30074b03492b303917b041d64e8084c8e8a6bdcc2ee453436af9eb",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "mat_4",
+        "texture": "tex/iwark_0_2.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_3",
+        "texture": "tex/iwark_0_5.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_2",
+        "texture": "tex/iwark_0_4.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_1",
+        "texture": "tex/iwark_0_2.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_0",
+        "texture": "tex/iwark_0_0.tga",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 4
+  },
+  {
+    "dex": 96,
+    "key": "drowzee",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/096_Drowzee/Drowzee.fbx",
+    "sha256": "d9598fea117d43596eae71f9ff47b7032484c45592a0d6e883eb61a98f72f7c4",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "drowzee",
+        "texture": "tex/drowzee.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 1
+  },
+  {
+    "dex": 97,
+    "key": "hypno",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/097 - Hypno/Hypno.fbx",
+    "sha256": "ec8ed75a16341079f2e33b9b4e3cc4d7a8b186c5fd873bb1c67c25fe20f094ea",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "mat_1",
+        "texture": "tex/sleeper_0_1.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_1",
+        "texture": "tex/sleeper_0_1.tga",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "mat_0",
+        "texture": "tex/sleeper_0_0.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_0",
+        "texture": "tex/sleeper_0_0.tga",
+        "channel": "TransparentColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 98,
+    "key": "krabby",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/098 - Krabby/Krabby.fbx",
+    "sha256": "04e55e24e2c5608fb09f11474453ae7d48ce5fb64e3c3dfe647b176a51e3bb71",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "mat_9",
+        "texture": "tex/crab_0_9.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_9",
+        "texture": "tex/crab_0_9.tga",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "mat_8",
+        "texture": "tex/crab_0_8.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_8",
+        "texture": "tex/crab_0_8.tga",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "mat_7",
+        "texture": "tex/crab_0_7.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_7",
+        "texture": "tex/crab_0_7.tga",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "mat_6",
+        "texture": "tex/crab_0_6.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_6",
+        "texture": "tex/crab_0_6.tga",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "mat_5",
+        "texture": "tex/crab_0_5.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_5",
+        "texture": "tex/crab_0_5.tga",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "mat_4",
+        "texture": "tex/crab_0_4.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_4",
+        "texture": "tex/crab_0_4.tga",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "mat_3",
+        "texture": "tex/crab_0_3.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_3",
+        "texture": "tex/crab_0_3.tga",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "mat_2",
+        "texture": "tex/crab_0_2.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_2",
+        "texture": "tex/crab_0_2.tga",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "mat_1",
+        "texture": "tex/crab_0_1.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_1",
+        "texture": "tex/crab_0_1.tga",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "mat_0",
+        "texture": "tex/crab_0_0.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_0",
+        "texture": "tex/crab_0_0.tga",
+        "channel": "TransparentColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 10
+  },
+  {
+    "dex": 99,
+    "key": "kingler",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/099 - Kingler/Kingler.fbx",
+    "sha256": "7d2a835c777464b46ea2924acc7d2baec2dd0cdf2fc44f973c422e736c93b0e6",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "mat_9",
+        "texture": "tex/kingler_0_9.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_9",
+        "texture": "tex/kingler_0_9.tga",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "mat_8",
+        "texture": "tex/kingler_0_8.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_8",
+        "texture": "tex/kingler_0_8.tga",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "mat_7",
+        "texture": "tex/kingler_0_7.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_7",
+        "texture": "tex/kingler_0_7.tga",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "mat_6",
+        "texture": "tex/kingler_0_6.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_6",
+        "texture": "tex/kingler_0_6.tga",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "mat_5",
+        "texture": "tex/kingler_0_5.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_5",
+        "texture": "tex/kingler_0_5.tga",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "mat_4",
+        "texture": "tex/kingler_0_4.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_4",
+        "texture": "tex/kingler_0_4.tga",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "mat_3",
+        "texture": "tex/kingler_0_3.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_3",
+        "texture": "tex/kingler_0_3.tga",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "mat_2",
+        "texture": "tex/kingler_0_2.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_2",
+        "texture": "tex/kingler_0_2.tga",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "mat_1",
+        "texture": "tex/kingler_0_1.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_1",
+        "texture": "tex/kingler_0_1.tga",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "mat_0",
+        "texture": "tex/kingler_0_0.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_0",
+        "texture": "tex/kingler_0_0.tga",
+        "channel": "TransparentColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 10
+  },
+  {
+    "dex": 100,
+    "key": "voltorb",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/100_Voltorb/Voltorb.fbx",
+    "sha256": "746e4a26803c62c4951717c8adee8e28717040d2b1b2c9d63b47cf7a818aa02c",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "BodySpc",
+        "texture": "tex/pm0100_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Eye",
+        "texture": "tex/pm0100_00_Eye1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 101,
+    "key": "electrode",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/101 - Electrode/Electrode.fbx",
+    "sha256": "eef70a80c924855a02f1cc85c7522ad46984456bc5090fb7be4441e7bd7bad96",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "mat2",
+        "texture": "tex/MarumineEyeDh.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat1",
+        "texture": "tex/MarumineDh.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat4",
+        "texture": "tex/MarumineMouthDh.tga",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 18
+  },
+  {
+    "dex": 102,
+    "key": "exeggcute",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/102 - Exeggcute/Exeggcute.fbx",
+    "sha256": "7e8029d9be598f4a08d68a4703a567860662abe19aba6b280e96d7061831babd",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "mat_14_NONE",
+        "texture": "tex/tamatama_0_14.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_14_NONE",
+        "texture": "tex/tamatama_0_14.tga",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "mat_14",
+        "texture": "tex/tamatama_0_14.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_14",
+        "texture": "tex/tamatama_0_14.tga",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "mat_13",
+        "texture": "tex/tamatama_0_13.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_13",
+        "texture": "tex/tamatama_0_13.tga",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "mat_12",
+        "texture": "tex/tamatama_0_12.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_12",
+        "texture": "tex/tamatama_0_12.tga",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "mat_11",
+        "texture": "tex/tamatama_0_11.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_11",
+        "texture": "tex/tamatama_0_11.tga",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "mat_10",
+        "texture": "tex/tamatama_0_10.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_10",
+        "texture": "tex/tamatama_0_10.tga",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "mat_9",
+        "texture": "tex/tamatama_0_9.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_9",
+        "texture": "tex/tamatama_0_9.tga",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "mat_8",
+        "texture": "tex/tamatama_0_8.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_8",
+        "texture": "tex/tamatama_0_8.tga",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "mat_7",
+        "texture": "tex/tamatama_0_7.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_7",
+        "texture": "tex/tamatama_0_7.tga",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "mat_6",
+        "texture": "tex/tamatama_0_6.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_6",
+        "texture": "tex/tamatama_0_6.tga",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "mat_5",
+        "texture": "tex/tamatama_0_5.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_5",
+        "texture": "tex/tamatama_0_5.tga",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "mat_4",
+        "texture": "tex/tamatama_0_4.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_4",
+        "texture": "tex/tamatama_0_4.tga",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "mat_3",
+        "texture": "tex/tamatama_0_3.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_3",
+        "texture": "tex/tamatama_0_3.tga",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "mat_2",
+        "texture": "tex/tamatama_0_2.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_2",
+        "texture": "tex/tamatama_0_2.tga",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "mat_1",
+        "texture": "tex/tamatama_0_1.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_1",
+        "texture": "tex/tamatama_0_1.tga",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "mat_0",
+        "texture": "tex/tamatama_0_0.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_0",
+        "texture": "tex/tamatama_0_0.tga",
+        "channel": "TransparentColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 57
+  },
+  {
+    "dex": 103,
+    "key": "exeggutor",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/103 - Exeggutor/Exeggutor.fbx",
+    "sha256": "103818d5464c0a844153b0009c5c7b228353762f515ae6429e2dd4f90557cdf3",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "mat_9",
+        "texture": "tex/nassy_0_9.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_9",
+        "texture": "tex/nassy_0_9.tga",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "mat_8",
+        "texture": "tex/nassy_0_8.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_8",
+        "texture": "tex/nassy_0_8.tga",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "mat_7",
+        "texture": "tex/nassy_0_7.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_7",
+        "texture": "tex/nassy_0_7.tga",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "mat_10",
+        "texture": "tex/nassy_0_4.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_10",
+        "texture": "tex/nassy_0_4.tga",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "mat_6",
+        "texture": "tex/nassy_0_6.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_6",
+        "texture": "tex/nassy_0_6.tga",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "mat_5",
+        "texture": "tex/nassy_0_5.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_5",
+        "texture": "tex/nassy_0_5.tga",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "mat_4",
+        "texture": "tex/nassy_0_4.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_4",
+        "texture": "tex/nassy_0_4.tga",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "mat_3",
+        "texture": "tex/nassy_0_3.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_3",
+        "texture": "tex/nassy_0_3.tga",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "mat_11",
+        "texture": "tex/nassy_0_4.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_11",
+        "texture": "tex/nassy_0_4.tga",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "mat_2",
+        "texture": "tex/nassy_0_2.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_2",
+        "texture": "tex/nassy_0_2.tga",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "mat_1",
+        "texture": "tex/nassy_0_1.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_1",
+        "texture": "tex/nassy_0_1.tga",
+        "channel": "TransparentColor"
+      },
+      {
+        "material": "mat_0",
+        "texture": "tex/nassy_0_0.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_0",
+        "texture": "tex/nassy_0_0.tga",
+        "channel": "TransparentColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 30
+  },
+  {
+    "dex": 104,
+    "key": "cubone",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/104_Cubone/Cubone.fbx",
+    "sha256": "38324912284a79a8093c2b6448bd10cea85515a3c9a7a763ce820343de17e318",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #139",
+        "texture": "tex/pm0104_00_Eye1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #140",
+        "texture": "tex/pm0104_00_Body1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 105,
+    "key": "marowak",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/105_Marowak/Marowak.fbx",
+    "sha256": "022e4c22048febc881533e5927bde29b5eec30ba4cd64829b21944eab7d5c27d",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #151",
+        "texture": "tex/pm0105_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #152",
+        "texture": "tex/pm0105_00_Eye1_Merged.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 106,
+    "key": "hitmonlee",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/106 - Hitmonlee/Hitmonlee.fbx",
+    "sha256": "8fef5f09c0da6321e2204600c620c77ce1bd30457faf28360a5726e5c8e72b4b",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "mat1",
+        "texture": "tex/SawamularDh.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat2",
+        "texture": "tex/SawamularEyeDh.tga",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 8
+  },
+  {
+    "dex": 107,
+    "key": "hitmonchan",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/107_Hitmonchan/Hitmonchan.fbx",
+    "sha256": "610f98054ae68732c90fcca75f4a1873e54b77e5129d0e8c9c0201a5058f97f7",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #109",
+        "texture": "tex/pm0107_00_Eye1_Merged.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #110",
+        "texture": "tex/pm0107_00_Body1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 108,
+    "key": "lickitung",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/108 - Lickitung/source/BR_Lickitung.obj",
+    "sha256": "a1ce621580f97550ac16ff84f6153f09d210b86deb75d00ff002c8f41f5e0501",
+    "placeholder": false,
+    "modelFile": "Model.obj",
+    "bindings": [
+      {
+        "material": "mat_0",
+        "texture": "source/Textures/beroringa_0_0.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_1",
+        "texture": "source/Textures/beroringa_0_1.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_2",
+        "texture": "source/Textures/beroringa_0_2.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_3",
+        "texture": "source/Textures/beroringa_0_3.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_4",
+        "texture": "source/Textures/beroringa_0_4.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_5",
+        "texture": "source/Textures/beroringa_0_5.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_6",
+        "texture": "source/Textures/beroringa_0_6.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_7",
+        "texture": "source/Textures/beroringa_0_7.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_8",
+        "texture": "source/Textures/beroringa_0_8.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_9",
+        "texture": "source/Textures/beroringa_0_9.tga",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 20
+  },
+  {
+    "dex": 109,
+    "key": "koffing",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/109 - Koffing/source/BR_Koffing.obj",
+    "sha256": "ae8d79800ae6484ccba5e26f3468d4296c841b5224e54e4b0165fd030a31a6c9",
+    "placeholder": false,
+    "modelFile": "Model.obj",
+    "bindings": [
+      {
+        "material": "mat_0",
+        "texture": "source/Textures/dogars_0_0.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_1",
+        "texture": "source/Textures/dogars_0_1.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_2",
+        "texture": "source/Textures/dogars_0_2.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_3",
+        "texture": "source/Textures/dogars_0_3.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_4",
+        "texture": "source/Textures/dogars_0_4.tga",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 10
+  },
+  {
+    "dex": 110,
+    "key": "weezing",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/110 - Weezing/source/BR_Weezing.obj",
+    "sha256": "ed1c3a59333ec3f655b79623aecd6fe9a881467a80f486d83ab62f87dab35a44",
+    "placeholder": false,
+    "modelFile": "Model.obj",
+    "bindings": [
+      {
+        "material": "mat_1",
+        "texture": "Textures/matadogas_0_0.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_2",
+        "texture": "Textures/matadogas_0_1.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_3",
+        "texture": "Textures/matadogas_0_2.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_4",
+        "texture": "Textures/matadogas_0_3.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_5",
+        "texture": "Textures/matadogas_0_4.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_6",
+        "texture": "Textures/matadogas_0_5.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_7",
+        "texture": "Textures/matadogas_0_6.tga",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 14
+  },
+  {
+    "dex": 111,
+    "key": "rhyhorn",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/111 - Rhyhorn/source/BR_Rhyhorn.obj",
+    "sha256": "9ed3e21e3eb39c4913d179f018b10c3002d48036f2a43b27bd88b4f502e18c67",
+    "placeholder": false,
+    "modelFile": "Model.obj",
+    "bindings": [
+      {
+        "material": "mat_0",
+        "texture": "Textures/sihorn_0_0.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_1",
+        "texture": "Textures/sihorn_0_0.tga",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 4
+  },
+  {
+    "dex": 112,
+    "key": "rhydon",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/112_Rhydon/Rhydon.fbx",
+    "sha256": "3a1326d19385e1afac87d624ed4348eebb839cf29ce346c6e39c265a7b804c0f",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #63",
+        "texture": "tex/pm0112_00_BodyB1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #64",
+        "texture": "tex/pm0112_00_BodyA1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #65",
+        "texture": "tex/pm0112_00_Eye1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 3
+  },
+  {
+    "dex": 113,
+    "key": "chansey",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/113 - Chansey/source/BR_Chansey.obj",
+    "sha256": "5539bfd41738ef87d8e66f90939b04c647b1ecb892076b6111847f2350d274f2",
+    "placeholder": false,
+    "modelFile": "Model.obj",
+    "bindings": [
+      {
+        "material": "mat_0",
+        "texture": "Textures/lucky_0_0.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_1",
+        "texture": "Textures/lucky_0_1.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_2",
+        "texture": "Textures/lucky_0_2.tga",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 6
+  },
+  {
+    "dex": 114,
+    "key": "tangela",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/114 - Tangela/source/BR_Tangela.obj",
+    "sha256": "14e047bc5250f32ffa399872e0fc483a347e1c1074577a39fd1db2af88128369",
+    "placeholder": false,
+    "modelFile": "Model.obj",
+    "bindings": [
+      {
+        "material": "mat_0",
+        "texture": "Textures/monjara_0_0.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_1",
+        "texture": "Textures/monjara_0_0.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_2",
+        "texture": "Textures/monjara_0_0.tga",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 115,
+    "key": "kangaskhan",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/115_Kangaskhan/Kangaskhan.fbx",
+    "sha256": "83bcd0a21bca6c3b49862e0db519c614ea5718ccf0c9af131c3cd7a23c5e3c62",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #10",
+        "texture": "tex/pm0115_00_BodyA1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #11",
+        "texture": "tex/pm0115_00_EyeA1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #22",
+        "texture": "tex/pm0115_00_BodyB1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #23",
+        "texture": "tex/pm0115_00_EyeB1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #24",
+        "texture": "tex/pm0115_00_Mouth1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 5
+  },
+  {
+    "dex": 116,
+    "key": "horsea",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/116 - Horsea/source/BR_Horsea.obj",
+    "sha256": "93537c88aab349884d0a4fccb6b6f286f357cc92d360fcc8233c2c4025f14537",
+    "placeholder": false,
+    "modelFile": "Model.obj",
+    "bindings": [
+      {
+        "material": "mat_0",
+        "texture": "Textures/tattu_0_0.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_1",
+        "texture": "Textures/tattu_0_1.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_2",
+        "texture": "Textures/tattu_0_1.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_3",
+        "texture": "Textures/tattu_0_3.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_4",
+        "texture": "Textures/tattu_0_4.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_5",
+        "texture": "Textures/tattu_0_5.tga",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 10
+  },
+  {
+    "dex": 117,
+    "key": "seadra",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/117 - Seadra/source/BR_Seadra.obj",
+    "sha256": "012641240705aec245a5693a8d7d1d87fd6253ddd9807cfd2ddd96fc14a8e003",
+    "placeholder": false,
+    "modelFile": "Model.obj",
+    "bindings": [
+      {
+        "material": "mat_0",
+        "texture": "Textures/seadra_0_0.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_1",
+        "texture": "Textures/seadra_0_1.tga",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 4
+  },
+  {
+    "dex": 118,
+    "key": "goldeen",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/118_Goldeen/Goldeen.fbx",
+    "sha256": "f279f18b33ac2a4321703384cecdc5466279d20be2abb1237a819051ced1b93f",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "_",
+        "texture": "tex/0_model0.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 1
+  },
+  {
+    "dex": 119,
+    "key": "seaking",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/119_Seaking/Seaking.dae",
+    "sha256": "93e38268a565733c43dc7ac7690569cd4ecb6a102071aacbe6fb59e57b32573e",
+    "placeholder": false,
+    "modelFile": "Model.dae",
+    "bindings": [],
+    "missingTextures": [],
+    "textureCount": 0
+  },
+  {
+    "dex": 120,
+    "key": "staryu",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/120_Staryu/Staryu.fbx",
+    "sha256": "cbc484ad2c26afb1ed663392536b1a83b35f402c1f628c6bb260e52a1866accc",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Body_004-material",
+        "texture": "tex/pm0120_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Body_004-material.1",
+        "texture": "tex/pm0120_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Body_004-material.2",
+        "texture": "tex/pm0120_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Body_004-material.3",
+        "texture": "tex/pm0120_00_Body1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 1
+  },
+  {
+    "dex": 121,
+    "key": "starmie",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/121_Starmie/Starmie.fbx",
+    "sha256": "f36d4924def4f84487b8c6e5b456df45a1a3033a2792064099d9fa17d174411e",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "BodyA01_003-material",
+        "texture": "tex/pm0121_00_BodyA1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodyB00_003-material",
+        "texture": "tex/pm0121_00_BodyB1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodyB00_003-material.1",
+        "texture": "tex/pm0121_00_BodyB1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodyA01_003-material.1",
+        "texture": "tex/pm0121_00_BodyA1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodyB00_003-material.2",
+        "texture": "tex/pm0121_00_BodyB1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodyB00_003-material.3",
+        "texture": "tex/pm0121_00_BodyB1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "BodyA01_003-material.2",
+        "texture": "tex/pm0121_00_BodyA1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 122,
+    "key": "mr-mime",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/122_Mr. Mime/MrMime.fbx",
+    "sha256": "69154e3d5b10fc444b2eb7e1ada07134178c70f003a15978e4bd136256c7f72b",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #35",
+        "texture": "tex/pm0122_00_Mouth1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #36",
+        "texture": "tex/pm0122_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #37",
+        "texture": "tex/pm0122_00_Eye1_Merged.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 3
+  },
+  {
+    "dex": 123,
+    "key": "scyther",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/123_Scyther/Scyther.fbx",
+    "sha256": "98a02b64db72ab7c84778fd81f7b9e91ddd4a868d0bf943421529aefd2d7116e",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Body",
+        "texture": "tex/pm0123_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Eye",
+        "texture": "tex/pm0123_00_Eye1_Merged.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 124,
+    "key": "jynx",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/124 - Jynx/source/BR_Jynx.obj",
+    "sha256": "bba7fb2ae8c3efae2d58c1830ed42a67e7d7109859e7d0ca95b7ae56712fe440",
+    "placeholder": false,
+    "modelFile": "Model.obj",
+    "bindings": [
+      {
+        "material": "mat_0",
+        "texture": "source/Textures/rougela_0_0.tga",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 4
+  },
+  {
+    "dex": 125,
+    "key": "electabuzz",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/125 - Electabuzz/source/BR_Electabuzz.obj",
+    "sha256": "29d1a55d9434e4cc6b06d41dd3c5c12ca16ef12aa94b9835f3aa99c357c2a47e",
+    "placeholder": false,
+    "modelFile": "Model.obj",
+    "bindings": [
+      {
+        "material": "mat_0",
+        "texture": "source/Textures/eleboo_0_0.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_1",
+        "texture": "source/Textures/eleboo_0_0.tga",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 4
+  },
+  {
+    "dex": 126,
+    "key": "magmar",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/126 - Magmar/source/BR_Magmar.obj",
+    "sha256": "44e0b414baf4e49dba43ae58935ba87671e01518f1c1db19cac7e83f826a6847",
+    "placeholder": false,
+    "modelFile": "Model.obj",
+    "bindings": [
+      {
+        "material": "mat_0",
+        "texture": "source/Textures/boober_0_0.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_1",
+        "texture": "source/Textures/boober_0_1.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_10",
+        "texture": "source/Textures/boober_0_10.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_2",
+        "texture": "source/Textures/boober_0_2.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_3",
+        "texture": "source/Textures/boober_0_3.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_4",
+        "texture": "source/Textures/boober_0_4.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_5",
+        "texture": "source/Textures/boober_0_5.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_6",
+        "texture": "source/Textures/boober_0_6.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_7",
+        "texture": "source/Textures/boober_0_7.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_8",
+        "texture": "source/Textures/boober_0_8.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_9",
+        "texture": "source/Textures/boober_0_9.tga",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 22
+  },
+  {
+    "dex": 127,
+    "key": "pinsir",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/127_Pinsir/Pinsir.fbx",
+    "sha256": "669b6710340faa04685237ace5660c47ad86004c13201f3366113a95ff882a39",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #22",
+        "texture": "tex/pm0127_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #23",
+        "texture": "tex/pm0127_00_Eye1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 128,
+    "key": "tauros",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/128 - Tauros/source/BR_Tauros.obj",
+    "sha256": "0667643de39f5ba266661b8e033af3bb2dacaf0301393dfdfbf5305bd1d8aa86",
+    "placeholder": false,
+    "modelFile": "Model.obj",
+    "bindings": [
+      {
+        "material": "mat_0",
+        "texture": "source/Textures/kentauros_0_0.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_1",
+        "texture": "source/Textures/kentauros_0_1.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_10",
+        "texture": "source/Textures/kentauros_0_10.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_11",
+        "texture": "source/Textures/kentauros_0_11.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_12",
+        "texture": "source/Textures/kentauros_0_12.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_13",
+        "texture": "source/Textures/kentauros_0_13.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_14",
+        "texture": "source/Textures/kentauros_0_14.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_2",
+        "texture": "source/Textures/kentauros_0_2.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_3",
+        "texture": "source/Textures/kentauros_0_3.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_4",
+        "texture": "source/Textures/kentauros_0_4.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_5",
+        "texture": "source/Textures/kentauros_0_5.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_6",
+        "texture": "source/Textures/kentauros_0_6.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_7",
+        "texture": "source/Textures/kentauros_0_7.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_8",
+        "texture": "source/Textures/kentauros_0_8.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_9",
+        "texture": "source/Textures/kentauros_0_9.tga",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 30
+  },
+  {
+    "dex": 129,
+    "key": "magikarp",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/129_Magikarp/Magikarp.fbx",
+    "sha256": "c8df3b0e58b125e32b2eaf84c560a2091dcfcf5869ade88bc218ee59e3c7a27e",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #116",
+        "texture": "tex/pm0129_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #117",
+        "texture": "tex/pm0129_00_Eye1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 130,
+    "key": "gyarados",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/130_Gyarados/Gyarados.fbx",
+    "sha256": "4e5b863770530224abcbf17931ca39115c86df1177f2b9baf4b18bb6d366afe3",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #140",
+        "texture": "tex/pm0130_00_BodyB1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #141",
+        "texture": "tex/pm0130_00_Eye1_Merged.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #142",
+        "texture": "tex/pm0130_00_BodyA1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 3
+  },
+  {
+    "dex": 131,
+    "key": "lapras",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/131_Lapras/Lapras.fbx",
+    "sha256": "c9d6d0448707dd62e216e2c0ac5172e835f6431edfea28d1f5ab676a82a9e9b5",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "assets/textures/a13145060",
+        "texture": "tex/0131_Body.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "assets/textures/a13145063",
+        "texture": "tex/0131_Eyes.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 132,
+    "key": "ditto",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/132_Ditto/Ditto.fbx",
+    "sha256": "7652ad4f48490504a997e575abcaab0f31617d3a1382034b4af38adf2ef15f20",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "BodySpc-material",
+        "texture": "tex/pm0132_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Eye-material",
+        "texture": "tex/pm0132_00_Eye1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Mouth-material",
+        "texture": "tex/pm0132_00_Mouth1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 3
+  },
+  {
+    "dex": 133,
+    "key": "eevee",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/133_Eevee/Eevee.fbx",
+    "sha256": "40e67a651d8333d668503e9113847d9b0f5a4b8b4e7be47a6baa2aaec262e659",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #12",
+        "texture": "tex/pm0133_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #13",
+        "texture": "tex/pm0133_00_Eye1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #14",
+        "texture": "tex/pm0133_00_Mouth1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 3
+  },
+  {
+    "dex": 134,
+    "key": "vaporeon",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/134_Vaporeon/Vaporeon.fbx",
+    "sha256": "8f7a69ba457eb1254939cb87b18fcd4d271df66b6012abd33cebfac129296778",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #10",
+        "texture": "tex/pm0134_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #11",
+        "texture": "tex/pm0134_00_Eye1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #12",
+        "texture": "tex/pm0134_00_Mouth1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 3
+  },
+  {
+    "dex": 135,
+    "key": "jolteon",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/135_Jolteon/Jolteon.fbx",
+    "sha256": "0c0588bf8983e1f551d253c0b93d26297407453b1aeb87c619ea890d20405c5a",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #10",
+        "texture": "tex/pm0135_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #11",
+        "texture": "tex/pm0135_00_Eye1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 136,
+    "key": "flareon",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/136_Flareon/Flareon.fbx",
+    "sha256": "acb2f2cccb52c7c844af52d0a810a09f25f8b44a1d67cacf3f056ff5ef2745c6",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #10",
+        "texture": "tex/pm0136_00_BodyB1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #11",
+        "texture": "tex/pm0136_00_BodyA1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #12",
+        "texture": "tex/pm0136_00_Eye1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #13",
+        "texture": "tex/pm0136_00_Mouth1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 4
+  },
+  {
+    "dex": 137,
+    "key": "porygon",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/137_Porygon/Porygon.fbx",
+    "sha256": "d523223d50ab4bf8fc11294e4719667f1a582d77c848cbce0e8d4de5aadc7d22",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #114",
+        "texture": "tex/pm0137_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #115",
+        "texture": "tex/pm0137_00_Eye1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 138,
+    "key": "omanyte",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/138_Omanyte/Omanyte.fbx",
+    "sha256": "7c65bdd550b78507d507329132bd6eb1ad778b4380b5bc49791501d2e6a33ef4",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #10",
+        "texture": "tex/pm0138_00_Eye1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #11",
+        "texture": "tex/pm0138_00_Body1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 139,
+    "key": "omastar",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/139_Omastar/Omastar.fbx",
+    "sha256": "79d28720bba0cedb1a06a52a11b3d23f13e89beeb6fc0639f8905a4a327590ab",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #112",
+        "texture": "tex/pm0139_00_Eye1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #113",
+        "texture": "tex/pm0139_00_Body1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 140,
+    "key": "kabuto",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/140 - Kabuto/source/BR_Kabuto.obj",
+    "sha256": "6c06190ee1eabf367c391924a95ddc5a117a82d7619d43c276984d74d30ba133",
+    "placeholder": false,
+    "modelFile": "Model.obj",
+    "bindings": [
+      {
+        "material": "mat_0",
+        "texture": "source/Textures/kabuto_0_0.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_1",
+        "texture": "source/Textures/kabuto_0_2.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_2",
+        "texture": "source/Textures/kabuto_0_3.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_3",
+        "texture": "source/Textures/kabuto_0_4.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_4",
+        "texture": "source/Textures/kabuto_0_5.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_5",
+        "texture": "source/Textures/kabuto_0_6.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_6",
+        "texture": "source/Textures/kabuto_0_7.tga",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 16
+  },
+  {
+    "dex": 141,
+    "key": "kabutops",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/141 - Kabutops/source/BR_Kabutops.obj",
+    "sha256": "93971f028dd5329bb15c590018ae97b3f5d9c783edbc95c3295027e35558daa2",
+    "placeholder": false,
+    "modelFile": "Model.obj",
+    "bindings": [
+      {
+        "material": "mat_0",
+        "texture": "source/Textures/kabutops_0_0.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_1",
+        "texture": "source/Textures/kabutops_0_1.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_10",
+        "texture": "source/Textures/kabutops_0_10.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_11",
+        "texture": "source/Textures/kabutops_0_11.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_12",
+        "texture": "source/Textures/kabutops_0_12.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_13",
+        "texture": "source/Textures/kabutops_0_13.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_14",
+        "texture": "source/Textures/kabutops_0_14.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_14_NONE",
+        "texture": "source/Textures/kabutops_0_14.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_2",
+        "texture": "source/Textures/kabutops_0_2.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_3",
+        "texture": "source/Textures/kabutops_0_3.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_4",
+        "texture": "source/Textures/kabutops_0_4.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_5",
+        "texture": "source/Textures/kabutops_0_5.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_6",
+        "texture": "source/Textures/kabutops_0_6.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_7",
+        "texture": "source/Textures/kabutops_0_7.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_8",
+        "texture": "source/Textures/kabutops_0_8.tga",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "mat_9",
+        "texture": "source/Textures/kabutops_0_9.tga",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 32
+  },
+  {
+    "dex": 142,
+    "key": "aerodactyl",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/142_Aerodactyl/Aerodactyl.fbx",
+    "sha256": "c6a1e67101900fdfe09d84722d4fce3e2490224e6be53ce06d05dffa0599015a",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #23",
+        "texture": "tex/pm0142_00_BodyA1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #24",
+        "texture": "tex/pm0142_51_Eye1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #25",
+        "texture": "tex/pm0142_00_BodyB1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 3
+  },
+  {
+    "dex": 143,
+    "key": "snorlax",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/143_Snorlax/Snorlax.fbx",
+    "sha256": "3f0823e372ea812ef4687a8e770115b1f6c976553f031b738d4d2253778614a2",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Body01",
+        "texture": "tex/Body1_0.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Body00",
+        "texture": "tex/Body1_0.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Eye",
+        "texture": "tex/Eye1_0.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Mouth",
+        "texture": "tex/Mouth1_0.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 3
+  },
+  {
+    "dex": 144,
+    "key": "articuno",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/144_Articuno/Articuno.fbx",
+    "sha256": "8040cdd590f8a7f1ffb0050968497167e929d24d9e725ae4deb530368d75f8d2",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #35",
+        "texture": "tex/pm0144_00_BodyB1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #36",
+        "texture": "tex/pm0144_00_Eye1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #37",
+        "texture": "tex/pm0144_00_BodyA1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 3
+  },
+  {
+    "dex": 145,
+    "key": "zapdos",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/145_Zapdos/Zapdos.fbx",
+    "sha256": "6466ba76401a370fb04f897f84ab5efa0d27cc0a91ec5bf45c7864c7cef4223e",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #48",
+        "texture": "tex/pm0145_00_BodyA1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #49",
+        "texture": "tex/pm0145_00_BodyB1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #50",
+        "texture": "tex/pm0145_00_Eye1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 3
+  },
+  {
+    "dex": 146,
+    "key": "moltres",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/146_Moltres/Moltres.fbx",
+    "sha256": "74266f56e9cba2065acaba1de8a2c07b856c7bde69499d44c8253af97a54a925",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #10",
+        "texture": "tex/pm0146_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #11",
+        "texture": "tex/pm0146_00_Eye1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #12",
+        "texture": "tex/pm0146_00_FireCoreA1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #13",
+        "texture": "tex/pm0146_00_FireCoreBC1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #14",
+        "texture": "tex/pm0146_00_FireStenABC1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 5
+  },
+  {
+    "dex": 147,
+    "key": "dratini",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/147_Dratini/Dratini.fbx",
+    "sha256": "76d2dda19d3aacc74e8c5f4cde1a8adec68d689910822510a6eeac43b725797b",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #181",
+        "texture": "tex/pm0147_00_Mouth1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #182",
+        "texture": "tex/pm0147_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #183",
+        "texture": "tex/pm0147_00_Eye1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 3
+  },
+  {
+    "dex": 148,
+    "key": "dragonair",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/148_Dragonair/Dragonair.fbx",
+    "sha256": "e3bfef2eff58a23f921439ca6b2ee7baa849f3b517e099ed235409878a0cf9f8",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #194",
+        "texture": "tex/pm0148_00_Mouth1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #195",
+        "texture": "tex/pm0148_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #196",
+        "texture": "tex/pm0148_00_Eye1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 3
+  },
+  {
+    "dex": 149,
+    "key": "dragonite",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/149_Dragonite/Dragonite.fbx",
+    "sha256": "c1dd404ec27aea833e191acc2db7e51d1e0e8b34dc3da4f33344048a741bfc69",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #207",
+        "texture": "tex/pm0149_00_Eye1_Merged.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #208",
+        "texture": "tex/pm0149_00_BodyB1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #209",
+        "texture": "tex/pm0149_00_BodyA1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 3
+  },
+  {
+    "dex": 150,
+    "key": "mewtwo",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/150_Mewtwo/Mewtwo.fbx",
+    "sha256": "ed29e58ebf9c1a068c33a0dc1cccd4f24392a2293349e03696933fe43917adfb",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #35",
+        "texture": "tex/pm0150_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #36",
+        "texture": "tex/pm0150_00_Eye1_Merged.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 2
+  },
+  {
+    "dex": 151,
+    "key": "mew",
+    "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/151_Mew/Mew.fbx",
+    "sha256": "60a6287ec731550719fbe34c38d7993f873b0d2a3da79521ccbf47848caa3b7d",
+    "placeholder": false,
+    "modelFile": "Model.fbx",
+    "bindings": [
+      {
+        "material": "Material #62",
+        "texture": "tex/pm0151_00_Body1.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #63",
+        "texture": "tex/pm0151_00_Eye1_Merged.png",
+        "channel": "DiffuseColor"
+      },
+      {
+        "material": "Material #64",
+        "texture": "tex/pm0151_00_Mouth1.png",
+        "channel": "DiffuseColor"
+      }
+    ],
+    "missingTextures": [],
+    "textureCount": 3
+  }
+]

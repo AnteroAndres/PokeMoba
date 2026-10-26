@@ -1,0 +1,22 @@
+{
+  "dex": 4,
+  "key": "charmander",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/004_Charmander/Charmander.fbx",
+  "sha256": "7d4409fe2d796971ddea16d6bbd9f2c49271ffca966aa68f1d227a0858653440",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #34",
+      "texture": "tex/pm0004_00_Eye1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #35",
+      "texture": "tex/pm0004_00_Body1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 8
+}

@@ -1,0 +1,112 @@
+{
+  "dex": 98,
+  "key": "krabby",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/098 - Krabby/Krabby.fbx",
+  "sha256": "04e55e24e2c5608fb09f11474453ae7d48ce5fb64e3c3dfe647b176a51e3bb71",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "mat_9",
+      "texture": "tex/crab_0_9.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_9",
+      "texture": "tex/crab_0_9.tga",
+      "channel": "TransparentColor"
+    },
+    {
+      "material": "mat_8",
+      "texture": "tex/crab_0_8.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_8",
+      "texture": "tex/crab_0_8.tga",
+      "channel": "TransparentColor"
+    },
+    {
+      "material": "mat_7",
+      "texture": "tex/crab_0_7.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_7",
+      "texture": "tex/crab_0_7.tga",
+      "channel": "TransparentColor"
+    },
+    {
+      "material": "mat_6",
+      "texture": "tex/crab_0_6.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_6",
+      "texture": "tex/crab_0_6.tga",
+      "channel": "TransparentColor"
+    },
+    {
+      "material": "mat_5",
+      "texture": "tex/crab_0_5.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_5",
+      "texture": "tex/crab_0_5.tga",
+      "channel": "TransparentColor"
+    },
+    {
+      "material": "mat_4",
+      "texture": "tex/crab_0_4.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_4",
+      "texture": "tex/crab_0_4.tga",
+      "channel": "TransparentColor"
+    },
+    {
+      "material": "mat_3",
+      "texture": "tex/crab_0_3.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_3",
+      "texture": "tex/crab_0_3.tga",
+      "channel": "TransparentColor"
+    },
+    {
+      "material": "mat_2",
+      "texture": "tex/crab_0_2.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_2",
+      "texture": "tex/crab_0_2.tga",
+      "channel": "TransparentColor"
+    },
+    {
+      "material": "mat_1",
+      "texture": "tex/crab_0_1.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_1",
+      "texture": "tex/crab_0_1.tga",
+      "channel": "TransparentColor"
+    },
+    {
+      "material": "mat_0",
+      "texture": "tex/crab_0_0.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_0",
+      "texture": "tex/crab_0_0.tga",
+      "channel": "TransparentColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 10
+}

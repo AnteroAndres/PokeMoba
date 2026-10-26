@@ -1,0 +1,27 @@
+{
+  "dex": 58,
+  "key": "growlithe",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/058_Growlithe/Growlithe.fbx",
+  "sha256": "a93f8f42204f0688dcda18efe0c69e714ecce9093aa05b71e6249c80ded1eb4f",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "BodyA",
+      "texture": "tex/pm0058_00_BodyA1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyBBuffronVco",
+      "texture": "tex/pm0058_00_BodyB1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Eye",
+      "texture": "tex/pm0058_00_Eye1_Merged.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 3
+}

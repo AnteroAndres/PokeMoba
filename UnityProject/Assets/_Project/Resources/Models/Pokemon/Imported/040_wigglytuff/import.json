@@ -1,0 +1,37 @@
+{
+  "dex": 40,
+  "key": "wigglytuff",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/040_Wigglytuff/Wigglytuff.fbx",
+  "sha256": "f8e61eaca147c0a2adb6c07c2345d32aa126936515976eadf5f4e6439d127787",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Mouth",
+      "texture": "tex/pm0040_00_Mouth1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Body",
+      "texture": "tex/pm0040_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Eye",
+      "texture": "tex/pm0040_00_Eye1_Merged.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Body.1",
+      "texture": "tex/pm0040_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Body.2",
+      "texture": "tex/pm0040_00_Body1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 3
+}

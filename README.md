@@ -135,3 +135,11 @@ Al comenzar Aventura se abre el vestidor con tres estilos de personaje: Explorad
 Se pueden cambiar piel, peinado (corto, largo, coleta o rapado), color de cabello y ojos, gorra/paÃ±uelo/sin prenda, conjunto (explorador, tÃºnica o abrigo), colores de ropa y paÃ±uelo, barba y gafas. **Girar vista** muestra el modelo desde otros Ã¡ngulos. **Guardar apariencia** confirma los cambios; **Cancelar** conserva la apariencia anterior. Elegir otro estilo carga sus valores iniciales, que se pueden ajustar despuÃ©s.
 
 Los personajes son modelos procedurales originales basados en las referencias visuales; todavÃ­a requieren revisiÃ³n visual en Unity y no tienen el acabado de modelos esculpidos y texturizados profesionalmente.
+
+## Exploración y controles de escritorio
+
+En Aventura se explora únicamente con el entrenador. Una orden J/K/L/I saca al primer Pokémon sano para combatir. Un salvaje agresivo cercano también provoca su salida. Tras cinco segundos sin enemigos agresivos ni objetivo fijado se guarda automáticamente, conservando su vida. Los combates de gimnasio mantienen su compañero desde el inicio.
+
+En PC el ratón controla directamente la cámara con el cursor capturado y una mira central; Esc libera el ratón y un clic recupera el control. Los menús liberan el cursor automáticamente. WASD/flechas mueven, Espacio esquiva y F fija/suelta el objetivo. Se ocultan joystick y botones táctiles; los atajos F1–F12 de las acciones adicionales siguen disponibles. En exploración: F1 lanzar bola, F2 cambiar bola, F3 fijar, F4 poción, F5 cambiar Pokémon, F6 salir de la zona. En móvil permanecen los controles táctiles.
+
+Los modelos de Pokémon con skin se ajustan al suelo usando la geometría deformada, en lugar de los límites de animación del archivo. Los entrenadores importados con huesos left/right_arm/leg reciben movimiento procedural básico; todavía no equivale a clips completos de animación.

@@ -1,0 +1,22 @@
+{
+  "dex": 16,
+  "key": "pidgey",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/016_Pidgey/Pidgey.fbx",
+  "sha256": "d19a336b3dd9c3b0866b1136abaa7a4ba684f473700a33a3d7e0b9820295fef4",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Body00",
+      "texture": "tex/pm0016_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Eye",
+      "texture": "tex/pm0016_00_Eye1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

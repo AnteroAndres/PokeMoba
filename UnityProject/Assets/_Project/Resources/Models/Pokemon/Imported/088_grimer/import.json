@@ -1,0 +1,47 @@
+{
+  "dex": 88,
+  "key": "grimer",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/088_Grimer/Grimer.fbx",
+  "sha256": "8cfc0453fd8b434eecb119f8bf98ea2264869d95fe49eeddfc489d92e3b7ec79",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Eye1-material",
+      "texture": "tex/pm0088_00_Eye1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyASpc-material",
+      "texture": "tex/pm0088_00_BodyA1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyASpc-material.1",
+      "texture": "tex/pm0088_00_BodyA1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyASpc-material.2",
+      "texture": "tex/pm0088_00_BodyA1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyBSpc00-material",
+      "texture": "tex/pm0088_00_BodyB1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyBSpc00-material.1",
+      "texture": "tex/pm0088_00_BodyB1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Eye1-material.1",
+      "texture": "tex/pm0088_00_Eye1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 5
+}

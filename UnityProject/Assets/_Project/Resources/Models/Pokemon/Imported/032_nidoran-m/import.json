@@ -1,0 +1,22 @@
+{
+  "dex": 32,
+  "key": "nidoran-m",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/032_NidoranMale/NidoranMale.fbx",
+  "sha256": "513471d7bc865f8ce3e60b3fee019588799f3dbb37efb8d9f00543961642489c",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #139",
+      "texture": "tex/pm0032_00_Eye1_Merged.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #140",
+      "texture": "tex/pm0032_00_Body1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

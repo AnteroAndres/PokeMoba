@@ -1,0 +1,122 @@
+{
+  "dex": 77,
+  "key": "ponyta",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/077_Ponyta/Ponyta.fbx",
+  "sha256": "69c0debd1016a22d33dd593915dd99109403eb0ccadf48d63b9ae6157db4846f",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "BodyA",
+      "texture": "tex/pm0077_00_BodyA1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Eye",
+      "texture": "tex/pm0077_00_Eye1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "FireCoreA",
+      "texture": "tex/pm0077_00_FireCore1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "FireCoreA",
+      "texture": "tex/pm0077_00_FireCore1.png",
+      "channel": "TransparentColor"
+    },
+    {
+      "material": "FireCoreA.1",
+      "texture": "tex/pm0077_00_FireCore1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "FireCoreA.1",
+      "texture": "tex/pm0077_00_FireCore1.png",
+      "channel": "TransparentColor"
+    },
+    {
+      "material": "FireCoreA.2",
+      "texture": "tex/pm0077_00_FireCore1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "FireCoreA.2",
+      "texture": "tex/pm0077_00_FireCore1.png",
+      "channel": "TransparentColor"
+    },
+    {
+      "material": "FireCoreA.3",
+      "texture": "tex/pm0077_00_FireCore1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "FireCoreA.3",
+      "texture": "tex/pm0077_00_FireCore1.png",
+      "channel": "TransparentColor"
+    },
+    {
+      "material": "FireCoreA.4",
+      "texture": "tex/pm0077_00_FireCore1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "FireCoreA.4",
+      "texture": "tex/pm0077_00_FireCore1.png",
+      "channel": "TransparentColor"
+    },
+    {
+      "material": "FireStenA",
+      "texture": "tex/pm0077_00_FireSten1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "FireStenA",
+      "texture": "tex/pm0077_00_FireSten1.png",
+      "channel": "TransparentColor"
+    },
+    {
+      "material": "FireStenA.1",
+      "texture": "tex/pm0077_00_FireSten1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "FireStenA.1",
+      "texture": "tex/pm0077_00_FireSten1.png",
+      "channel": "TransparentColor"
+    },
+    {
+      "material": "FireStenA.2",
+      "texture": "tex/pm0077_00_FireSten1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "FireStenA.2",
+      "texture": "tex/pm0077_00_FireSten1.png",
+      "channel": "TransparentColor"
+    },
+    {
+      "material": "FireStenA.3",
+      "texture": "tex/pm0077_00_FireSten1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "FireStenA.3",
+      "texture": "tex/pm0077_00_FireSten1.png",
+      "channel": "TransparentColor"
+    },
+    {
+      "material": "FireStenA.4",
+      "texture": "tex/pm0077_00_FireSten1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "FireStenA.4",
+      "texture": "tex/pm0077_00_FireSten1.png",
+      "channel": "TransparentColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 8
+}

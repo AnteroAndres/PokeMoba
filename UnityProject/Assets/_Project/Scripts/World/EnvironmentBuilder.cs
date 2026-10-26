@@ -109,12 +109,9 @@ namespace PokeMoba.World
             for (int i = 0; i < count; i++)
             {
                 var pos = RandomIn(rng, halfSize - 2f);
-                if (pos.magnitude < 6f) continue;
+                if (pos.magnitude < 6f || !PlayArea.IsFree(pos, 2f)) continue;
                 Decoration(biome, root, pos, rng, registerObstacle: true);
             }
-
-            if (biome == Biome.Ciudad || biome == Biome.Pradera)
-                Buildings(root, rng, halfSize, biome == Biome.Ciudad ? 7 : 3);
 
             AdventureLandscape.Build(root, biome, halfSize, seed);
             FieldTheme.Apply(root, halfSize, halfSize);
@@ -323,14 +320,27 @@ namespace PokeMoba.World
             Color[] roofs = { new Color(0.75f, 0.25f, 0.2f), new Color(0.25f, 0.4f, 0.75f), new Color(0.3f, 0.6f, 0.35f) };
             for (int i = 0; i < count; i++)
             {
-                var pos = RandomIn(rng, halfSize - 5f);
-                if (pos.magnitude < 9f) continue;
-                Block(root, "Casa", pos + new Vector3(0f, 1.2f, 0f), new Vector3(4f, 2.4f, 3.5f), new Color(0.95f, 0.92f, 0.85f));
-                var roof = Block(root, "Tejado", pos + new Vector3(0f, 2.9f, 0f), new Vector3(3f, 3f, 3.7f), roofs[rng.Next(roofs.Length)]);
-                roof.localRotation = Quaternion.Euler(0f, 0f, 45f);
-                roof.localScale = new Vector3(2.9f, 2.9f, 3.7f);
-                Block(root, "Puerta", pos + new Vector3(0f, 0.6f, 1.76f), new Vector3(0.8f, 1.2f, 0.05f), new Color(0.45f, 0.3f, 0.2f));
-                PlayArea.AddObstacle(pos, 2.4f);
+                // Dos hileras orientadas hacia una calle central, con separación entre viviendas.
+                float spacing = 8f;
+                int row = i / 2;
+                var pos = new Vector3(i % 2 == 0 ? -10f : 10f, 0f, -halfSize + 7f + row * spacing);
+                if (!PlayArea.IsFree(pos, 3.5f)) continue;
+                var house = new GameObject("Vivienda " + (i + 1)).transform;
+                house.SetParent(root, false); house.localPosition = pos;
+                house.localRotation = Quaternion.Euler(0f, i % 2 == 0 ? 90f : -90f, 0f);
+                Block(house, "Casa", new Vector3(0f, 1.2f, 0f), new Vector3(4f, 2.4f, 3.5f), new Color(.86f, .82f, .72f));
+                // Tejado a dos aguas, con cumbrera horizontal, sin el cubo girado que tapaba la fachada.
+                for (int side = -1; side <= 1; side += 2)
+                {
+                    var roof = Block(house, "Tejado", new Vector3(side * 1.05f, 2.82f, 0f),
+                        new Vector3(2.55f, .16f, 4f), roofs[i % roofs.Length]);
+                    roof.localRotation = Quaternion.Euler(0f, 0f, side * -25f);
+                    Block(house, "Ventana", new Vector3(side * 1.12f, 1.35f, 1.77f), new Vector3(.65f, .7f, .04f), new Color(.40f, .65f, .73f));
+                }
+                Block(house, "Puerta", new Vector3(0f, .75f, 1.77f), new Vector3(.85f, 1.5f, .05f), new Color(.34f, .22f, .13f));
+                var collision = house.gameObject.AddComponent<BoxCollider>();
+                collision.center = new Vector3(0f, 1.4f, 0f); collision.size = new Vector3(4.4f, 3.2f, 4f);
+                PlayArea.AddObstacle(pos, 3f);
             }
         }
     }

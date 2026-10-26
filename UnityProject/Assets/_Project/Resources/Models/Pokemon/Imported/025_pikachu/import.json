@@ -1,0 +1,32 @@
+{
+  "dex": 25,
+  "key": "pikachu",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/025_Pikachu/Pikachu.fbx",
+  "sha256": "d7e96b8de5c7c19539252493abf42efec70a744b09fadadcbfca8c1c311eefee",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #160",
+      "texture": "tex/pm0025_00_BodyA1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #161",
+      "texture": "tex/pm0025_00_BodyB1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #162",
+      "texture": "tex/pm0025_00_Mouth1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #163",
+      "texture": "tex/pm0025_00_Eye1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 4
+}

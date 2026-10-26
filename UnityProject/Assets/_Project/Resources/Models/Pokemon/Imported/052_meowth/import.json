@@ -1,0 +1,22 @@
+{
+  "dex": 52,
+  "key": "meowth",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/052_Meowth/Meowth.fbx",
+  "sha256": "a9dfab2e47d921b13b334a42bbdda9a83fd3cfe6482f0aab419c22be1e02d1ef",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "REye",
+      "texture": "tex/pm0052_00_Eye1_Merged.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Body00",
+      "texture": "tex/pm0052_00_Body1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

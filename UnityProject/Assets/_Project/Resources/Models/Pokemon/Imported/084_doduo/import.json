@@ -1,0 +1,32 @@
+{
+  "dex": 84,
+  "key": "doduo",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/084_Doduo/Doduo.fbx",
+  "sha256": "4cdf15a9c07c025a8bf60d3ce1ca92a0b20f0dbd604828b04c119ece1615db3c",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Body",
+      "texture": "tex/pm0084_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "EyeA",
+      "texture": "tex/pm0084_00_Eye1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Body.1",
+      "texture": "tex/pm0084_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "EyeA.1",
+      "texture": "tex/pm0084_00_Eye1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

@@ -1,0 +1,32 @@
+{
+  "dex": 136,
+  "key": "flareon",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/136_Flareon/Flareon.fbx",
+  "sha256": "acb2f2cccb52c7c844af52d0a810a09f25f8b44a1d67cacf3f056ff5ef2745c6",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #10",
+      "texture": "tex/pm0136_00_BodyB1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #11",
+      "texture": "tex/pm0136_00_BodyA1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #12",
+      "texture": "tex/pm0136_00_Eye1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #13",
+      "texture": "tex/pm0136_00_Mouth1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 4
+}

@@ -151,7 +151,7 @@ namespace PokeMoba.Combat
             if (speed > 0.1f)
             {
                 bobPhase += dt * 12f;
-                model.localPosition = new Vector3(0f, Mathf.Abs(Mathf.Sin(bobPhase)) * 0.15f, 0f);
+                model.localPosition = new Vector3(0f, Mathf.Abs(Mathf.Sin(bobPhase)) * 0.015f, 0f);
             }
             else
             {

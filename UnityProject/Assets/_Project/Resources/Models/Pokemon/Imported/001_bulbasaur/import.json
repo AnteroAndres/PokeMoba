@@ -1,0 +1,27 @@
+{
+  "dex": 1,
+  "key": "bulbasaur",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/001_Bulbasaur/Bulbasaur.fbx",
+  "sha256": "78960d3aa595afdf7512a82c868463054a20049b958fa84d719e4d260767c382",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #12",
+      "texture": "tex/pm0001_00_BodyB1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #11",
+      "texture": "tex/pm0001_00_Eye1_Merged.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #10",
+      "texture": "tex/pm0001_00_BodyA1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 3
+}

@@ -1,0 +1,52 @@
+{
+  "dex": 81,
+  "key": "magnemite",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/081_Magnemite/Magnemite.fbx",
+  "sha256": "df34c03b1c5d7a4c095b2f6710af037ba1c88e9f3326825d7483700f6752c6ab",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "BodyEnv00Vco00_006-material",
+      "texture": "tex/pm0081_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyEnv00Vco00_006-material.1",
+      "texture": "tex/pm0081_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Eye_006-material",
+      "texture": "tex/pm0081_00_Eye1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyEnv00Vco00_006-material.2",
+      "texture": "tex/pm0081_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyEnv00Vco00_006-material.3",
+      "texture": "tex/pm0081_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyEnv00Vco00_006-material.4",
+      "texture": "tex/pm0081_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyEnv00Vco00_006-material.5",
+      "texture": "tex/pm0081_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyEnv00Vco00_006-material.6",
+      "texture": "tex/pm0081_00_Body1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

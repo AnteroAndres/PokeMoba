@@ -1,0 +1,37 @@
+{
+  "dex": 6,
+  "key": "charizard",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/006_Charizard/Charizard.fbx",
+  "sha256": "3d833f2ce04dfe1a744c61561198122e8dd12a755c7aa5999ed30768dc1d1b3b",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #12",
+      "texture": "tex/pm0006_00_Eye1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #13",
+      "texture": "tex/pm0006_00_BodyA1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #14",
+      "texture": "tex/pm0006_00_BodyB1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #15",
+      "texture": "tex/pm0006_00_FireCoreA1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #16",
+      "texture": "tex/pm0006_00_FireStenA1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 8
+}

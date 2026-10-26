@@ -1,0 +1,22 @@
+{
+  "dex": 48,
+  "key": "venonat",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/048_Venonat/Venonat.fbx",
+  "sha256": "fed372214ef3f311139eb46031b8403a476cf3b692faf397e6b92b525d14e891",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "BodyABuffron_HairVco",
+      "texture": "tex/pm0048_00_BodyA1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Bug",
+      "texture": "tex/pm0048_00_BodyB1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

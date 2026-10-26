@@ -1,0 +1,22 @@
+{
+  "dex": 46,
+  "key": "paras",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/046_Paras/Paras.fbx",
+  "sha256": "70634807ee1efb4cac2796e8a721ef6b74b31806dd39c8f299a670756c410c2b",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "BodyASpc00",
+      "texture": "tex/pm0046_00_BodyA1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyB",
+      "texture": "tex/pm0046_00_BodyAParasMask.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 3
+}

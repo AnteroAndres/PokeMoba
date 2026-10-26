@@ -83,20 +83,21 @@ namespace PokeMoba.Combat
                 yield break;
             }
 
+            ElementalAttackEffect.Cast(self, move, direction);
             switch (move.Shape)
             {
                 case MoveShape.Melee:
                     HitAll(move, CombatQueries.EnemiesInCone(self, transform.position, direction, move.Range + self.Radius, CombatTuning.MeleeAngle));
-                    Vfx.Slash(transform.position + Vector3.up * 0.8f + direction * (self.Radius + 0.7f), direction, Color.white, move.Radius * 1.4f);
+                    Vfx.Slash(ElementalAttackEffect.Origin(self) + direction * (self.Radius + 0.7f), direction, move.Type.TypeColor(), move.Radius * 1.4f);
                     break;
 
                 case MoveShape.Projectile:
-                    Projectile.Spawn(self, move, transform.position + Vector3.up * 0.8f + direction * (self.Radius + 0.3f), direction);
+                    Projectile.Spawn(self, move, ElementalAttackEffect.Origin(self) + direction * (self.Radius + 0.3f), direction);
                     break;
 
                 case MoveShape.Cone:
                     HitAll(move, CombatQueries.EnemiesInCone(self, transform.position, direction, move.Range, move.Radius));
-                    Vfx.ConeBurst(transform.position + Vector3.up * 0.8f, direction, move.Range, move.Radius, move.Type.TypeColor());
+                    Vfx.ConeBurst(ElementalAttackEffect.Origin(self), direction, move.Range, move.Radius, move.Type.TypeColor());
                     break;
 
                 case MoveShape.GroundArea:
@@ -126,7 +127,7 @@ namespace PokeMoba.Combat
                 if (hits.Count > 0)
                 {
                     HitAll(move, hits);
-                    Vfx.Burst(transform.position + Vector3.up * 0.8f + direction, move.Type.TypeColor(), 1.6f);
+                    Vfx.Burst(ElementalAttackEffect.Origin(self) + direction, move.Type.TypeColor(), 1.6f);
                     motor.LockMovement(0.15f);
                     yield break;
                 }
@@ -138,7 +139,8 @@ namespace PokeMoba.Combat
         void HitAll(MoveData move, List<Combatant> targets)
         {
             foreach (var target in targets)
-                target.ReceiveHit(self, move, target.transform.position - transform.position);
+                if (target.ReceiveHit(self, move, target.transform.position - transform.position))
+                    ElementalAttackEffect.Impact(ElementalAttackEffect.Origin(target), move);
         }
 
         Vector3 ClampToRange(Vector3 point, float range)

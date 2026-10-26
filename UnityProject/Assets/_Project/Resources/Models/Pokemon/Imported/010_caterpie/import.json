@@ -1,0 +1,17 @@
+{
+  "dex": 10,
+  "key": "caterpie",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/010_Caterpie/Caterpie.fbx",
+  "sha256": "2e74a0f9d023f8229f2ae257c15f852a7644b38f1703495f12178611bc09acf1",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #35",
+      "texture": "tex/pm0010_00_Body1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 1
+}

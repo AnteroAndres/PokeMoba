@@ -1,0 +1,22 @@
+{
+  "dex": 60,
+  "key": "poliwag",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/060_Poliwag/Poliwag.fbx",
+  "sha256": "1eae42d6c9abf77b41c86333e26899902eb3c0504016a4329cb0325258f6af29",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "BodyNyorobon",
+      "texture": "tex/Body1_0.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Eye",
+      "texture": "tex/Eye1_0.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

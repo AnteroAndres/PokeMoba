@@ -1,0 +1,22 @@
+{
+  "dex": 30,
+  "key": "nidorina",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/030_Nidorina/Nidorina.fbx",
+  "sha256": "b4131279f0f32a5553ade19b0c70060282de17b6e433b7ce5937f9bdba8ca7d7",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #10",
+      "texture": "tex/pm0030_00_Eye1_Merged.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #11",
+      "texture": "tex/pm0030_00_Body1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

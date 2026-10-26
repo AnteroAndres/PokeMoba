@@ -1,0 +1,27 @@
+{
+  "dex": 15,
+  "key": "beedrill",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/015_Beedrill/Beedrill.fbx",
+  "sha256": "b448a91d9872816d1180232e0ba7165457804ce890473b11f9aacb2f937d79d2",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Bug",
+      "texture": "tex/pm0015_00_BodyC1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyANutrey_Env",
+      "texture": "tex/pm0015_00_BodyA1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyBRediba_Wing00",
+      "texture": "tex/pm0015_00_BodyB1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 3
+}

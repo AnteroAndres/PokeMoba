@@ -1,0 +1,32 @@
+{
+  "dex": 35,
+  "key": "clefairy",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/035_Clefairy/Clefairy.fbx",
+  "sha256": "f9319ab1974586e252f23c8c3d33af52335bd7b5cd64241ca1306778e549292b",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Body",
+      "texture": "tex/Body1_0.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "REye",
+      "texture": "tex/Eye1_0.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Mouth",
+      "texture": "tex/Mouth1_0.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "LEye",
+      "texture": "tex/Eye1_0.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 6
+}

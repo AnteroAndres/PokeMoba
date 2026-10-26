@@ -1,0 +1,37 @@
+{
+  "dex": 57,
+  "key": "primeape",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/057_Primeape/Primeape.fbx",
+  "sha256": "8f67e061da25a269da48198bbaa6e7d70e2570817bef2354a708edfa91d14425",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "BodyDodo_Hair",
+      "texture": "tex/pm0057_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Eye",
+      "texture": "tex/pm0057_00_Eye1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyDodo_Hair.1",
+      "texture": "tex/pm0057_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyDodo_Hair.2",
+      "texture": "tex/pm0057_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyDodo_Hair.3",
+      "texture": "tex/pm0057_00_Body1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

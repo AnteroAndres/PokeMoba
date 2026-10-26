@@ -1,0 +1,22 @@
+{
+  "dex": 92,
+  "key": "gastly",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/092 - Gastly/Gastly.fbx",
+  "sha256": "c8153fd76582fe2e283004de5cb82fbce7e51edf39474d9b6366049e8193c82d",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "mat2",
+      "texture": "tex/GhosEyeDh.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat1",
+      "texture": "tex/GhosDh.tga",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

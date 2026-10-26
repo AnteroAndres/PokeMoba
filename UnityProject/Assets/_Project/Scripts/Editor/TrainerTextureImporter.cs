@@ -9,13 +9,26 @@ namespace PokeMoba.Editor
         void OnPreprocessTexture()
         {
             if (!assetPath.StartsWith("Assets/_Project/Resources/Models/Trainers/MasterRoshi/",
+                System.StringComparison.Ordinal) &&
+                !assetPath.StartsWith("Assets/_Project/Resources/Models/Trainers/ImportedFbx/",
                 System.StringComparison.Ordinal)) return;
             var importer = (TextureImporter)assetImporter;
             importer.textureType = TextureImporterType.Default;
             importer.textureShape = TextureImporterShape.Texture2D;
             importer.sRGBTexture = true;
             importer.mipmapEnabled = true;
-            importer.maxTextureSize = 1024;
+            importer.maxTextureSize = 4096;
+            importer.npotScale = TextureImporterNPOTScale.None;
+            importer.textureCompression = TextureImporterCompression.Uncompressed;
+            importer.filterMode = FilterMode.Trilinear;
+            importer.anisoLevel = 8;
+            importer.alphaIsTransparency = true;
+            foreach (string platform in new[] { "Standalone", "Android", "iPhone" })
+            {
+                var settings = importer.GetPlatformTextureSettings(platform);
+                settings.overridden = false;
+                importer.SetPlatformTextureSettings(settings);
+            }
         }
     }
 }

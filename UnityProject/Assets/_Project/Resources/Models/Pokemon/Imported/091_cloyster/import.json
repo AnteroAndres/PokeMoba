@@ -1,0 +1,32 @@
+{
+  "dex": 91,
+  "key": "cloyster",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/091_Cloyster/Cloyster.fbx",
+  "sha256": "87e73764d7a00fa78e457a4f755509f68022360adcc5486e748c46490814892d",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "assets_textures_pm0091_00_BodyA1-material-material",
+      "texture": "tex/pm0091_00_BodyA1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "assets_textures_pm0091_00_Eye1-material-material",
+      "texture": "tex/pm0091_00_Eye1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "assets_textures_pm0091_00_Mouth1-material-material",
+      "texture": "tex/pm0091_00_Mouth1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "assets_textures_pm0091_00_BodyB1-material-material",
+      "texture": "tex/pm0091_00_BodyB1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 4
+}

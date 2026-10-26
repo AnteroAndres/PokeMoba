@@ -1,0 +1,22 @@
+{
+  "dex": 8,
+  "key": "wartortle",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/008_Wartortle/Wartortle.fbx",
+  "sha256": "0f9714b1ee8d83b5bae7b0837c434537b24f1040d888e506984904860196c5fa",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #72",
+      "texture": "tex/pm0008_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #73",
+      "texture": "tex/pm0008_00_Eye1_Merged.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

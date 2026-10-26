@@ -1,0 +1,22 @@
+{
+  "dex": 13,
+  "key": "weedle",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/013_Weedle/Weedle.fbx",
+  "sha256": "0fa3400b8d75b25a13c4f0695287bf4be1c31ad62462b6c55027e83271f3b0d3",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Body",
+      "texture": "tex/pm0013_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Eye",
+      "texture": "tex/pm0013_00_Eye1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

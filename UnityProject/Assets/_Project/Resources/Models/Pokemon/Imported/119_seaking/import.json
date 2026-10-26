@@ -1,0 +1,11 @@
+{
+  "dex": 119,
+  "key": "seaking",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/119_Seaking/Seaking.dae",
+  "sha256": "93e38268a565733c43dc7ac7690569cd4ecb6a102071aacbe6fb59e57b32573e",
+  "placeholder": false,
+  "modelFile": "Model.dae",
+  "bindings": [],
+  "missingTextures": [],
+  "textureCount": 0
+}

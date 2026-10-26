@@ -17,6 +17,27 @@ namespace PokeMoba.Game
 
         // Entrenador (GDD §12: personalización básica)
         public string TrainerName = "Rojo";
+        public int TrainerLevel = 1;
+        public int TrainerExperience;
+
+        [JsonIgnore] public int TrainerExperienceRequired => 500 + Math.Max(1, TrainerLevel) * 50;
+
+        public int AwardTrainerExperience(int amount)
+        {
+            TrainerLevel = Math.Max(1, Math.Min(151, TrainerLevel));
+            int before = TrainerLevel;
+            TrainerExperience += Math.Max(0, amount);
+            while (TrainerLevel < 151 && TrainerExperience >= TrainerExperienceRequired)
+            {
+                TrainerExperience -= TrainerExperienceRequired;
+                TrainerLevel++;
+            }
+            if (TrainerLevel == 151) TrainerExperience = 0;
+            return TrainerLevel - before;
+        }
+        public const string DefaultTrainerCharacter = "tr0036_Rei/Rei";
+        public string TrainerCharacter = DefaultTrainerCharacter;
+        public bool HasChosenTrainerCharacter;
         public int AvatarStyle;
         public int HairStyle;
         public int EyeColor;
@@ -34,6 +55,8 @@ namespace PokeMoba.Game
         public void CopyAppearanceFrom(SaveData source)
         {
             TrainerName = source.TrainerName;
+            TrainerCharacter = source.TrainerCharacter;
+            HasChosenTrainerCharacter = source.HasChosenTrainerCharacter;
             AvatarStyle = source.AvatarStyle; HairStyle = source.HairStyle; EyeColor = source.EyeColor;
             OutfitStyle = source.OutfitStyle; HatStyle = source.HatStyle; ScarfColor = source.ScarfColor;
             BeardStyle = source.BeardStyle; GlassesStyle = source.GlassesStyle;

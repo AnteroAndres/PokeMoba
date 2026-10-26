@@ -1,0 +1,37 @@
+{
+  "dex": 146,
+  "key": "moltres",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/146_Moltres/Moltres.fbx",
+  "sha256": "74266f56e9cba2065acaba1de8a2c07b856c7bde69499d44c8253af97a54a925",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #10",
+      "texture": "tex/pm0146_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #11",
+      "texture": "tex/pm0146_00_Eye1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #12",
+      "texture": "tex/pm0146_00_FireCoreA1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #13",
+      "texture": "tex/pm0146_00_FireCoreBC1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #14",
+      "texture": "tex/pm0146_00_FireStenABC1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 5
+}

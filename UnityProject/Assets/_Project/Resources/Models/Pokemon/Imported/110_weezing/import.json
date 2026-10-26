@@ -1,0 +1,47 @@
+{
+  "dex": 110,
+  "key": "weezing",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/110 - Weezing/source/BR_Weezing.obj",
+  "sha256": "ed1c3a59333ec3f655b79623aecd6fe9a881467a80f486d83ab62f87dab35a44",
+  "placeholder": false,
+  "modelFile": "Model.obj",
+  "bindings": [
+    {
+      "material": "mat_1",
+      "texture": "Textures/matadogas_0_0.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_2",
+      "texture": "Textures/matadogas_0_1.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_3",
+      "texture": "Textures/matadogas_0_2.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_4",
+      "texture": "Textures/matadogas_0_3.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_5",
+      "texture": "Textures/matadogas_0_4.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_6",
+      "texture": "Textures/matadogas_0_5.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_7",
+      "texture": "Textures/matadogas_0_6.tga",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 14
+}

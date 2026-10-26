@@ -1,0 +1,37 @@
+{
+  "dex": 109,
+  "key": "koffing",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/109 - Koffing/source/BR_Koffing.obj",
+  "sha256": "ae8d79800ae6484ccba5e26f3468d4296c841b5224e54e4b0165fd030a31a6c9",
+  "placeholder": false,
+  "modelFile": "Model.obj",
+  "bindings": [
+    {
+      "material": "mat_0",
+      "texture": "source/Textures/dogars_0_0.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_1",
+      "texture": "source/Textures/dogars_0_1.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_2",
+      "texture": "source/Textures/dogars_0_2.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_3",
+      "texture": "source/Textures/dogars_0_3.tga",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "mat_4",
+      "texture": "source/Textures/dogars_0_4.tga",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 10
+}

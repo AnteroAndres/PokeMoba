@@ -1,0 +1,22 @@
+{
+  "dex": 31,
+  "key": "nidoqueen",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/031_Nidoqueen/Nidoqueen.fbx",
+  "sha256": "bb9f6b6c4b618cc1bea00363d7da90a70393e6f4fad84059c3e04cc365e16e5f",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #127",
+      "texture": "tex/pm0031_00_Body1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #128",
+      "texture": "tex/pm0031_00_Eye1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 2
+}

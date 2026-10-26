@@ -13,15 +13,32 @@ namespace PokeMoba.Input
     /// </summary>
     public static class InputCompat
     {
+        public static bool ReleaseMouse()
+        {
+#if ENABLE_INPUT_SYSTEM
+            return Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame;
+#else
+            return UnityEngine.Input.GetKeyDown(KeyCode.Escape);
+#endif
+        }
+        public static bool CaptureMouse()
+        {
+#if ENABLE_INPUT_SYSTEM
+            return Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame;
+#else
+            return UnityEngine.Input.GetMouseButtonDown(0);
+#endif
+        }
+
         public static Vector2 CameraLook()
         {
 #if ENABLE_INPUT_SYSTEM
             var mouse = Mouse.current;
             var keyboard = Keyboard.current;
-            Vector2 delta = mouse != null && mouse.rightButton.isPressed ? mouse.delta.ReadValue() * 0.15f : Vector2.zero;
+            Vector2 delta = mouse != null && (Cursor.lockState == CursorLockMode.Locked || mouse.rightButton.isPressed) ? mouse.delta.ReadValue() * 0.15f : Vector2.zero;
             if (keyboard != null) delta.x += ((keyboard.eKey.isPressed ? 1f : 0f) - (keyboard.qKey.isPressed ? 1f : 0f)) * 100f * Time.unscaledDeltaTime;
 #else
-            Vector2 delta = UnityEngine.Input.GetMouseButton(1)
+            Vector2 delta = (Cursor.lockState == CursorLockMode.Locked || UnityEngine.Input.GetMouseButton(1))
                 ? new Vector2(UnityEngine.Input.GetAxis("Mouse X"), UnityEngine.Input.GetAxis("Mouse Y")) * 3f : Vector2.zero;
             delta.x += ((UnityEngine.Input.GetKey(KeyCode.E) ? 1f : 0f) - (UnityEngine.Input.GetKey(KeyCode.Q) ? 1f : 0f)) * 100f * Time.unscaledDeltaTime;
 #endif

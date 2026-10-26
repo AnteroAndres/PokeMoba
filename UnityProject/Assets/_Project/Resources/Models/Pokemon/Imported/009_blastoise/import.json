@@ -1,0 +1,37 @@
+{
+  "dex": 9,
+  "key": "blastoise",
+  "sourceModel": "PoGo-3D-Assets-master/Pokemon-Gen1/009_Blastoise/Blastoise.fbx",
+  "sha256": "df3f868a0bbe376d27e6074ca98582ccd49640d95932954d94d88a182637c4ef",
+  "placeholder": false,
+  "modelFile": "Model.fbx",
+  "bindings": [
+    {
+      "material": "Material #87",
+      "texture": "tex/pm0009_00_Eye1_Merged.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #86",
+      "texture": "tex/pm0009_00_BodyB1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #85",
+      "texture": "tex/pm0009_00_BodyA1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #86.1",
+      "texture": "tex/pm0009_00_BodyB1.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Material #86.2",
+      "texture": "tex/pm0009_00_BodyB1.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "missingTextures": [],
+  "textureCount": 3
+}
