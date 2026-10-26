@@ -3,7 +3,7 @@ using PokeMoba.Input;
 
 namespace PokeMoba.Prototype
 {
-    /// <summary>Cámara isométrica fija que sigue al jugador, desplazada un poco hacia el rival si lo hay.</summary>
+    /// <summary>Cámara orbital al hombro en Aventura e isométrica en los demás modos.</summary>
     public class FollowCamera : MonoBehaviour
     {
         public static readonly Vector3 DefaultOffset = new Vector3(0f, 13f, -9.5f);
@@ -13,16 +13,21 @@ namespace PokeMoba.Prototype
 
         public bool ThirdPerson { get; private set; }
         float yaw;
-        float pitch = 14f;
-        const float Distance = 6f;
+        float pitch = 10f;
+        Vector3 smoothPivot;
+        bool resetPivot = true;
+        const float Distance = 5.2f;
 
         public void SetThirdPerson(bool enabled)
         {
             ThirdPerson = enabled;
+            resetPivot = true;
+            var camera = GetComponent<Camera>();
+            if (camera != null) camera.fieldOfView = enabled ? 58f : 50f;
             if (enabled)
             {
                 yaw = player != null ? player.eulerAngles.y : 0f;
-                pitch = 14f;
+                pitch = 10f;
             }
         }
 
@@ -47,6 +52,7 @@ namespace PokeMoba.Prototype
 
         public void SetTargets(Transform player, Transform enemy)
         {
+            if (this.player != player) resetPivot = true;
             this.player = player;
             this.enemy = enemy;
             if (!ThirdPerson) transform.position = Focus() + offset;
@@ -68,11 +74,15 @@ namespace PokeMoba.Prototype
             {
                 if (Time.timeScale <= 0f) return;
                 RotateLook(InputCompat.CameraLook());
-                Vector3 pivot = player.position + Vector3.up * 1.5f;
+                Vector3 targetPivot = player.position + Vector3.up * 1.65f;
+                smoothPivot = resetPivot ? targetPivot : Vector3.Lerp(smoothPivot, targetPivot, 1f - Mathf.Exp(-12f * Time.deltaTime));
+                resetPivot = false;
+                Vector3 pivot = smoothPivot;
                 Quaternion rotation = Quaternion.Euler(pitch, yaw, 0f);
-                Vector3 back = rotation * Vector3.back;
-                float distance = Distance;
-                foreach (var hit in Physics.SphereCastAll(pivot, 0.2f, back, Distance, ~0, QueryTriggerInteraction.Ignore))
+                Vector3 boom = rotation * new Vector3(.55f, 0f, -Distance);
+                Vector3 back = boom.normalized;
+                float distance = boom.magnitude;
+                foreach (var hit in Physics.SphereCastAll(pivot, 0.2f, back, distance, ~0, QueryTriggerInteraction.Ignore))
                 {
                     if (hit.collider.GetComponentInParent<PokeMoba.Combat.Combatant>() != null ||
                         hit.collider.GetComponentInParent<PokeMoba.World.TrainerFollower>() != null) continue;

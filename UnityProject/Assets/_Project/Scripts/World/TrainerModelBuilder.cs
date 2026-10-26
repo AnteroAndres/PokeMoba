@@ -18,6 +18,12 @@ namespace PokeMoba.World
             new Color(0.75f, 0.2f, 0.15f), new Color(0.3f, 0.35f, 0.75f), new Color(0.85f, 0.85f, 0.85f)
         };
 
+        public static readonly Color[] Eyes =
+        {
+            new Color(.17f, .24f, .27f), new Color(.20f, .40f, .70f), new Color(.25f, .48f, .25f),
+            new Color(.42f, .24f, .12f), new Color(.55f, .35f, .65f), new Color(.7f, .55f, .22f)
+        };
+
         public static readonly Color[] Clothes =
         {
             new Color(0.85f, 0.15f, 0.15f), new Color(0.2f, 0.35f, 0.75f), new Color(0.2f, 0.6f, 0.3f), new Color(0.95f, 0.8f, 0.2f),
@@ -29,40 +35,35 @@ namespace PokeMoba.World
 
     public static class TrainerModelBuilder
     {
+        public static Transform Build(Transform parent, PokeMoba.Game.SaveData appearance, bool follower = true)
+        {
+            return Build(parent, TrainerPalette.Pick(TrainerPalette.Skin, appearance.SkinColor),
+                TrainerPalette.Pick(TrainerPalette.Hair, appearance.HairColor),
+                TrainerPalette.Pick(TrainerPalette.Clothes, appearance.CapColor),
+                TrainerPalette.Pick(TrainerPalette.Clothes, appearance.ShirtColor),
+                TrainerPalette.Pick(TrainerPalette.Clothes, appearance.PantsColor), follower, appearance);
+        }
+
         /// <param name="follower">true: sigue solo a un Pokémon (escaparates); false: lo controla el jugador (Aventura).</param>
-        public static Transform Build(Transform parent, Color skin, Color hair, Color cap, Color shirt, Color pants, bool follower = true)
+        public static Transform Build(Transform parent, Color skin, Color hair, Color cap, Color shirt, Color pants, bool follower = true, PokeMoba.Game.SaveData appearance = null)
         {
             var root = new GameObject("Entrenador").transform;
             root.SetParent(parent, false);
 
-            Transform Part(PrimitiveType type, string name, Vector3 pos, Vector3 scale, Color color, Vector3 euler = default)
+            if (appearance != null && appearance.AvatarStyle == 2)
             {
-                var t = Vfx.Primitive(type, name, color).transform;
-                t.SetParent(root, false);
-                t.localPosition = pos;
-                t.localRotation = Quaternion.Euler(euler);
-                t.localScale = scale;
-                return t;
+                var imported = ImportedTrainerModel.TryBuild(root);
+                if (imported != null)
+                {
+                    root.gameObject.AddComponent<TrainerRig>().SetupImported(imported);
+                    if (follower) root.gameObject.AddComponent<TrainerFollower>();
+                    return root;
+                }
+                Debug.LogWarning("No se encontró el modelo de Master Roshi. Se usa el sabio provisional.");
             }
 
-            var legs = new List<Transform>
-            {
-                Part(PrimitiveType.Capsule, "Pierna", new Vector3(-0.13f, 0.4f, 0f), new Vector3(0.2f, 0.4f, 0.2f), pants),
-                Part(PrimitiveType.Capsule, "Pierna", new Vector3(0.13f, 0.4f, 0f), new Vector3(0.2f, 0.4f, 0.2f), pants)
-            };
-            Part(PrimitiveType.Capsule, "Torso", new Vector3(0f, 1.1f, 0f), new Vector3(0.5f, 0.38f, 0.32f), shirt);
-            var arms = new List<Transform>
-            {
-                Part(PrimitiveType.Capsule, "Brazo", new Vector3(-0.33f, 1.1f, 0f), new Vector3(0.14f, 0.32f, 0.14f), shirt),
-                Part(PrimitiveType.Capsule, "Brazo", new Vector3(0.33f, 1.1f, 0f), new Vector3(0.14f, 0.32f, 0.14f), shirt)
-            };
-            Part(PrimitiveType.Sphere, "Cabeza", new Vector3(0f, 1.72f, 0f), Vector3.one * 0.42f, skin);
-            Part(PrimitiveType.Sphere, "Pelo", new Vector3(0f, 1.76f, -0.05f), new Vector3(0.45f, 0.38f, 0.42f), hair);
-            Part(PrimitiveType.Sphere, "Gorra", new Vector3(0f, 1.9f, 0f), new Vector3(0.46f, 0.2f, 0.46f), cap);
-            Part(PrimitiveType.Cube, "Visera", new Vector3(0f, 1.86f, 0.25f), new Vector3(0.36f, 0.04f, 0.22f), cap);
-            Part(PrimitiveType.Sphere, "Ojo", new Vector3(-0.08f, 1.74f, 0.19f), Vector3.one * 0.06f, Color.black);
-            Part(PrimitiveType.Sphere, "Ojo", new Vector3(0.08f, 1.74f, 0.19f), Vector3.one * 0.06f, Color.black);
-            Part(PrimitiveType.Cube, "Mochila", new Vector3(0f, 1.1f, -0.25f), new Vector3(0.38f, 0.42f, 0.2f), Color.Lerp(pants, Color.black, 0.2f));
+            var outfit = root.gameObject.AddComponent<TrainerOutfit>();
+            outfit.Build(skin, hair, cap, shirt, pants, out var legs, out var arms, appearance);
 
             root.gameObject.AddComponent<TrainerRig>().Setup(legs, arms);
             if (follower) root.gameObject.AddComponent<TrainerFollower>();
@@ -76,6 +77,9 @@ namespace PokeMoba.World
         List<Transform> legs;
         List<Transform> arms;
         float phase;
+        ImportedTrainerModel imported;
+
+        public void SetupImported(ImportedTrainerModel model) => imported = model;
 
         public void Setup(List<Transform> legs, List<Transform> arms)
         {
@@ -86,6 +90,7 @@ namespace PokeMoba.World
         /// <param name="walking">0 = quieto, 1 = andando a velocidad normal.</param>
         public void Animate(float walking)
         {
+            if (imported != null) { imported.Animate(walking); return; }
             if (legs == null) return;
             phase += Time.deltaTime * 10f * walking;
             float swing = Mathf.Sin(phase) * 30f * Mathf.Clamp01(walking);

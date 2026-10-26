@@ -116,6 +116,7 @@ namespace PokeMoba.World
             if (biome == Biome.Ciudad || biome == Biome.Pradera)
                 Buildings(root, rng, halfSize, biome == Biome.Ciudad ? 7 : 3);
 
+            AdventureLandscape.Build(root, biome, halfSize, seed);
             FieldTheme.Apply(root, halfSize, halfSize);
             return root;
         }

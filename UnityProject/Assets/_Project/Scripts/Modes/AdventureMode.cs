@@ -19,6 +19,8 @@ namespace PokeMoba.Modes
         const int StarterLevel = 5;
 
         Transform trainerPreview;
+        SaveData appearance;
+        float previewYaw = 20f;
 
         public AdventureMode(GameContext ctx) : base(ctx) { }
 
@@ -32,58 +34,105 @@ namespace PokeMoba.Modes
 
         void ShowTrainerCreation()
         {
-            var world = Ctx.NewWorld("Creación de entrenador");
-            EnvironmentBuilder.BuildArena(Biome.Pradera, world, 8f);
-            Ctx.Follow.LookAtPoint(new Vector3(1.2f, 1f, 0f), new Vector3(0f, 1.3f, 5.5f));
-            RebuildTrainerPreview(world);
-
-            var panel = Ctx.Menus.Open("Crea a tu entrenador", "Más ropa se desbloquea al abrir zonas y ganar medallas", 0.15f);
-            var left = new Vector2(0f, 0.5f);
-
-            MenuScreens.Label(panel, "Nombre", 32, left, new Vector2(80f, 260f), new Vector2(500f, 50f), TextAnchor.MiddleLeft);
-            var nameField = UIFactory.CreateInputField("Nombre", panel, Save.TrainerName, "Tu nombre", 34);
-            nameField.characterLimit = 12;
-            ((RectTransform)nameField.transform).Place(left, new Vector2(80f, 190f), new Vector2(500f, 80f));
-
-            AppearanceButton(panel, world, "Piel", () => Save.SkinColor, v => Save.SkinColor = v, TrainerPalette.Skin.Length, 80f);
-            AppearanceButton(panel, world, "Pelo", () => Save.HairColor, v => Save.HairColor = v, TrainerPalette.Hair.Length, -20f);
-            AppearanceButton(panel, world, "Gorra", () => Save.CapColor, v => Save.CapColor = v, TrainerPalette.Clothes.Length, -120f);
-            AppearanceButton(panel, world, "Camiseta", () => Save.ShirtColor, v => Save.ShirtColor = v, TrainerPalette.Clothes.Length, -220f);
-            AppearanceButton(panel, world, "Pantalón", () => Save.PantsColor, v => Save.PantsColor = v, TrainerPalette.Clothes.Length, -320f);
-
-            MenuScreens.Button(panel, "Continuar", new Color(0.2f, 0.6f, 0.3f), new Vector2(1f, 0f), new Vector2(-60f, 40f),
-                new Vector2(380f, 100f), () =>
-                {
-                    Save.TrainerName = string.IsNullOrWhiteSpace(nameField.text) ? "Rojo" : nameField.text.Trim();
-                    SaveService.Save();
-                    ShowStarterChoice();
-                }, 40);
-            MenuScreens.Button(panel, "Menú principal", new Color(0.35f, 0.35f, 0.4f), new Vector2(0f, 0f), new Vector2(60f, 40f),
-                new Vector2(340f, 80f), () => Ctx.ReturnToMainMenu(), 28);
+            appearance = new SaveData();
+            appearance.CopyAppearanceFrom(Save);
+            previewYaw = 20f;
+            DrawTrainerCreation();
         }
 
-        void AppearanceButton(RectTransform panel, Transform world, string part, System.Func<int> get, System.Action<int> set, int count, float y)
+        void DrawTrainerCreation()
         {
-            Button button = null;
-            button = MenuScreens.Button(panel, $"{part}: {get() + 1}/{count}", new Color(0.25f, 0.35f, 0.55f), new Vector2(0f, 0.5f),
-                new Vector2(80f, y), new Vector2(500f, 80f), () =>
+            var world = Ctx.NewWorld("Vestidor del entrenador");
+            EnvironmentBuilder.BuildArena(Biome.Liga, world, 8f);
+            Ctx.Follow.LookAtPoint(new Vector3(1.6f, 1.2f, 0f), new Vector3(0f, .45f, 5.5f));
+            RebuildTrainerPreview(world);
+            var panel = Ctx.Menus.Open("Tu personaje", appearance.AvatarStyle == 2
+                ? "Sabio: Master Roshi importado · conserva sus texturas y accesorios originales"
+                : "Elige un estilo y personaliza su aspecto · vista previa 3D", .12f);
+            var left = new Vector2(0f, .5f);
+            var nameField = UIFactory.CreateInputField("Nombre", panel, appearance.TrainerName, "Tu nombre", 28);
+            nameField.characterLimit = 12;
+            ((RectTransform)nameField.transform).Place(left, new Vector2(50f, 300f), new Vector2(650f, 65f));
+            nameField.onValueChanged.AddListener(value => appearance.TrainerName = value);
+
+            string[] presets = { "Explorador", "Exploradora", "Sabio" };
+            for (int i = 0; i < presets.Length; i++)
+            {
+                int style = i;
+                MenuScreens.Button(panel, presets[i], appearance.AvatarStyle == i ? new Color(.25f, .55f, .6f) : new Color(.22f, .27f, .36f),
+                    left, new Vector2(50f + i * 225f, 215f), new Vector2(210f, 70f), () =>
+                    {
+                        appearance.AvatarStyle = style;
+                        appearance.HairStyle = style == 0 ? 0 : style == 1 ? 2 : 3;
+                        appearance.HatStyle = style;
+                        appearance.OutfitStyle = style;
+                        appearance.BeardStyle = style == 2 ? 1 : 0;
+                        appearance.GlassesStyle = style == 2 ? 1 : 0;
+                        appearance.HairColor = style == 2 ? 5 : 0;
+                        appearance.CapColor = style == 1 ? 5 : 0;
+                        appearance.ShirtColor = style == 2 ? 7 : 1;
+                        appearance.PantsColor = style == 2 ? 4 : 1;
+                        DrawTrainerCreation();
+                    }, 26);
+            }
+            AppearanceButton(panel, world, "Piel", () => appearance.SkinColor, v => appearance.SkinColor = v, TrainerPalette.Skin.Length, 0);
+            AppearanceButton(panel, world, "Color de cabello", () => appearance.HairColor, v => appearance.HairColor = v, TrainerPalette.Hair.Length, 1);
+            AppearanceButton(panel, world, "Peinado", () => appearance.HairStyle, v => appearance.HairStyle = v, 4, 2,
+                new[] { "Corto", "Largo", "Coleta", "Rapado" });
+            AppearanceButton(panel, world, "Ojos", () => appearance.EyeColor, v => appearance.EyeColor = v, TrainerPalette.Eyes.Length, 3);
+            AppearanceButton(panel, world, "Prenda de cabeza", () => appearance.HatStyle, v => appearance.HatStyle = v, 3, 4,
+                new[] { "Gorra", "Pañuelo", "Sin prenda" });
+            AppearanceButton(panel, world, "Color de cabeza", () => appearance.CapColor, v => appearance.CapColor = v, TrainerPalette.Clothes.Length, 5);
+            AppearanceButton(panel, world, "Conjunto", () => appearance.OutfitStyle, v => appearance.OutfitStyle = v, 3, 6,
+                new[] { "Explorador", "Túnica", "Abrigo" });
+            AppearanceButton(panel, world, "Color de ropa", () => appearance.ShirtColor, v => appearance.ShirtColor = v, TrainerPalette.Clothes.Length, 7);
+            AppearanceButton(panel, world, "Pantalón", () => appearance.PantsColor, v => appearance.PantsColor = v, TrainerPalette.Clothes.Length, 8);
+            AppearanceButton(panel, world, "Pañuelo", () => appearance.ScarfColor, v => appearance.ScarfColor = v, TrainerPalette.Clothes.Length, 9);
+            AppearanceButton(panel, world, "Barba", () => appearance.BeardStyle, v => appearance.BeardStyle = v, 2, 10, new[] { "No", "Sí" });
+            AppearanceButton(panel, world, "Gafas", () => appearance.GlassesStyle, v => appearance.GlassesStyle = v, 2, 11, new[] { "No", "Sí" });
+            MenuScreens.Button(panel, "Girar vista", new Color(.25f, .3f, .4f), new Vector2(1f, .5f), new Vector2(-230f, -290f),
+                new Vector2(300f, 65f), () => { previewYaw += 45f; RebuildTrainerPreview(world); }, 26);
+            MenuScreens.Button(panel, Save.HasStarter ? "Guardar apariencia" : "Continuar", new Color(.2f, .6f, .3f),
+                new Vector2(1f, 0f), new Vector2(-60f, 30f), new Vector2(430f, 85f), () =>
                 {
-                    set((get() + 1) % count);
-                    button.GetComponentInChildren<Text>().text = $"{part}: {get() + 1}/{count}";
+                    appearance.TrainerName = string.IsNullOrWhiteSpace(appearance.TrainerName) ? "Entrenador" : appearance.TrainerName.Trim();
+                    Save.CopyAppearanceFrom(appearance);
+                    SaveService.Save();
+                    if (Save.HasStarter) ShowZoneMap(); else ShowStarterChoice();
+                }, 32);
+            MenuScreens.Button(panel, "Cancelar", new Color(.35f, .35f, .4f), new Vector2(0f, 0f), new Vector2(60f, 30f),
+                new Vector2(300f, 75f), () => { if (Save.HasStarter) ShowZoneMap(); else Ctx.ReturnToMainMenu(); }, 28);
+        }
+
+        void AppearanceButton(RectTransform panel, Transform world, string part, System.Func<int> get, System.Action<int> set,
+            int count, int index, string[] names = null)
+        {
+            string Label()
+            {
+                int value = ((get() % count) + count) % count;
+                return part + ": " + (names != null ? names[value] : (value + 1) + "/" + count);
+            }
+            Button button = null;
+            button = MenuScreens.Button(panel, Label(), new Color(.22f, .30f, .42f), new Vector2(0f, .5f),
+                new Vector2(50f + (index % 2) * 345f, 130f - (index / 2) * 76f), new Vector2(330f, 64f), () =>
+                {
+                    set((((get() % count) + count) % count + 1) % count);
+                    button.GetComponentInChildren<Text>().text = Label();
                     RebuildTrainerPreview(world);
-                }, 30);
+                }, 23, appearance.AvatarStyle != 2);
         }
 
         void RebuildTrainerPreview(Transform world)
         {
-            if (trainerPreview != null) Object.Destroy(trainerPreview.gameObject);
-            trainerPreview = TrainerModelBuilder.Build(world,
-                TrainerPalette.Pick(TrainerPalette.Skin, Save.SkinColor), TrainerPalette.Pick(TrainerPalette.Hair, Save.HairColor),
-                TrainerPalette.Pick(TrainerPalette.Clothes, Save.CapColor), TrainerPalette.Pick(TrainerPalette.Clothes, Save.ShirtColor),
-                TrainerPalette.Pick(TrainerPalette.Clothes, Save.PantsColor));
-            trainerPreview.position = new Vector3(1.2f, 0f, 0f);
-            trainerPreview.rotation = Quaternion.Euler(0f, 20f, 0f);
-            trainerPreview.localScale = Vector3.one * 1.3f;
+            if (trainerPreview != null)
+            {
+                trainerPreview.gameObject.SetActive(false);
+                Object.Destroy(trainerPreview.gameObject);
+            }
+            trainerPreview = TrainerModelBuilder.Build(world, appearance, follower: false);
+            trainerPreview.position = new Vector3(1.6f, 0f, 0f);
+            trainerPreview.rotation = Quaternion.Euler(0f, previewYaw, 0f);
+            trainerPreview.localScale *= 1.15f;
         }
 
         void ShowStarterChoice()
@@ -143,6 +192,9 @@ namespace PokeMoba.Modes
             string subtitle = message ??
                 $"{Save.TrainerName} · Medallas {Save.Medals.Count}/8 · Capturados {Save.CaughtCount}/151 · {Save.Money} ₽";
             var panel = Ctx.Menus.Open("Kanto", subtitle, 0.95f);
+
+            MenuScreens.Button(panel, "Personalizar personaje", new Color(.3f, .4f, .6f), new Vector2(1f, 1f),
+                new Vector2(-40f, -100f), new Vector2(360f, 70f), ShowTrainerCreation, 25);
 
             var zones = ZoneCatalog.Zones;
             for (int i = 0; i < zones.Length; i++)

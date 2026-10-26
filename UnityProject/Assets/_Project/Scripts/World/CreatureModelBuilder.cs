@@ -10,7 +10,7 @@ namespace PokeMoba.World
     /// 2) Si no, genera una figura con primitivas según la forma del cuerpo y el color de PokeAPI,
     ///    con detalles según el tipo (llama, bulbo, caparazón, alas, cuernos…).
     /// </summary>
-    public static class CreatureModelBuilder
+    public static partial class CreatureModelBuilder
     {
         public const string ModelsFolder = "Models/Pokemon/";
 
@@ -34,8 +34,11 @@ namespace PokeMoba.World
 
             var palette = Palette.For(species, shiny);
             var parts = new Parts(rig, palette, species.Size);
-            BuildShape(species, parts);
-            AddTypeDetails(species, parts);
+            if (!BuildRecognizableSpecies(species, parts))
+            {
+                BuildShape(species, parts);
+                AddTypeDetails(species, parts);
+            }
 
             if (shiny) parts.ShinyStar();
 
@@ -411,6 +414,18 @@ namespace PokeMoba.World
             public static Palette For(SpeciesData species, bool shiny)
             {
                 Color main = FromName(species.BodyColor, species.Types[0].TypeColor());
+                switch (species.DexNumber)
+                {
+                    case 1: case 2: case 3: main = new Color(0.25f, 0.7f, 0.57f); break;
+                    case 4: case 6: main = new Color(0.98f, 0.46f, 0.12f); break;
+                    case 5: main = new Color(0.87f, 0.22f, 0.13f); break;
+                    case 7: case 8: case 9: main = new Color(0.27f, 0.68f, 0.83f); break;
+                    case 25: main = new Color(1f, 0.81f, 0.08f); break;
+                    case 39: main = new Color(1f, 0.66f, 0.77f); break;
+                    case 94: main = new Color(0.36f, 0.22f, 0.55f); break;
+                    case 133: main = new Color(0.61f, 0.36f, 0.17f); break;
+                    case 143: main = new Color(0.12f, 0.34f, 0.4f); break;
+                }
                 if (shiny)
                 {
                     Color.RGBToHSV(main, out float h, out float s, out float v);

@@ -70,10 +70,7 @@ namespace PokeMoba.Modes
             root.transform.position = position;
             root.transform.rotation = Quaternion.LookRotation(facing);
 
-            var model = TrainerModelBuilder.Build(root.transform,
-                TrainerPalette.Pick(TrainerPalette.Skin, s.SkinColor), TrainerPalette.Pick(TrainerPalette.Hair, s.HairColor),
-                TrainerPalette.Pick(TrainerPalette.Clothes, s.CapColor), TrainerPalette.Pick(TrainerPalette.Clothes, s.ShirtColor),
-                TrainerPalette.Pick(TrainerPalette.Clothes, s.PantsColor), follower: false);
+            var model = TrainerModelBuilder.Build(root.transform, s, follower: false);
             model.name = "Model"; // CreatureMotor y Combatant buscan el modelo por este nombre
 
             var trainer = root.AddComponent<Combatant>();

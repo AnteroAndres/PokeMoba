@@ -127,3 +127,11 @@ Los controles se comparten entre Aventura, Duelo, Práctica y MOBA.
 En el menú principal, pulsa **Campo** y elige Normal, Fuego, Agua, Planta, Eléctrico, Hielo, Lucha, Veneno, Tierra, Volador, Psíquico, Bicho, Roca, Fantasma, Dragón, Siniestro, Acero o Hada.
 
 La elección se conserva entre sesiones y se aplica a las arenas de Práctica y Duelo, los gimnasios y las zonas de Aventura, y el mapa MOBA. Cambia el color del suelo, el fondo y los hitos de decoración. Son temas visuales propios del proyecto, sin modificadores de daño. **Según la zona** restaura los escenarios originales. Los carriles, las bases y los obstáculos mantienen su función.
+
+## Personajes y personalización
+
+Al comenzar Aventura se abre el vestidor con tres estilos de personaje: Explorador, Exploradora y Sabio. También puedes volver desde **Aventura → Personalizar personaje**, en el mapa de Kanto, sin reiniciar el progreso.
+
+Se pueden cambiar piel, peinado (corto, largo, coleta o rapado), color de cabello y ojos, gorra/pañuelo/sin prenda, conjunto (explorador, túnica o abrigo), colores de ropa y pañuelo, barba y gafas. **Girar vista** muestra el modelo desde otros ángulos. **Guardar apariencia** confirma los cambios; **Cancelar** conserva la apariencia anterior. Elegir otro estilo carga sus valores iniciales, que se pueden ajustar después.
+
+Los personajes son modelos procedurales originales basados en las referencias visuales; todavía requieren revisión visual en Unity y no tienen el acabado de modelos esculpidos y texturizados profesionalmente.

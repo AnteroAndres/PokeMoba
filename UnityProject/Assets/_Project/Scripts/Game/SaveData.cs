@@ -17,11 +17,29 @@ namespace PokeMoba.Game
 
         // Entrenador (GDD §12: personalización básica)
         public string TrainerName = "Rojo";
+        public int AvatarStyle;
+        public int HairStyle;
+        public int EyeColor;
+        public int OutfitStyle;
+        public int HatStyle;
+        public int ScarfColor;
+        public int BeardStyle;
+        public int GlassesStyle;
         public int SkinColor;
         public int HairColor;
         public int CapColor;
-        public int ShirtColor;
+        public int ShirtColor = 1;
         public int PantsColor = 1;
+
+        public void CopyAppearanceFrom(SaveData source)
+        {
+            TrainerName = source.TrainerName;
+            AvatarStyle = source.AvatarStyle; HairStyle = source.HairStyle; EyeColor = source.EyeColor;
+            OutfitStyle = source.OutfitStyle; HatStyle = source.HatStyle; ScarfColor = source.ScarfColor;
+            BeardStyle = source.BeardStyle; GlassesStyle = source.GlassesStyle;
+            SkinColor = source.SkinColor; HairColor = source.HairColor; CapColor = source.CapColor;
+            ShirtColor = source.ShirtColor; PantsColor = source.PantsColor;
+        }
 
         public bool HasStarter;
         public List<PokemonInstance> Team = new List<PokemonInstance>();
