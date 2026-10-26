@@ -95,6 +95,38 @@ namespace PokeMoba.UI
             return button;
         }
 
+        /// <summary>Campo de texto de una línea (en el celular abre el teclado).</summary>
+        public static InputField CreateInputField(string name, Transform parent, string value, string placeholder, int fontSize)
+        {
+            var background = CreateImage(name, parent, new Color(1f, 1f, 1f, 0.92f));
+            var input = background.gameObject.AddComponent<InputField>();
+
+            var text = CreateText("Texto", background.transform, "", fontSize, new Color(0.1f, 0.1f, 0.15f), TextAnchor.MiddleLeft);
+            Destroy(text.GetComponent<Outline>());
+            text.supportRichText = false;
+            text.rectTransform.Stretch();
+            text.rectTransform.offsetMin = new Vector2(16f, 0f);
+            text.rectTransform.offsetMax = new Vector2(-16f, 0f);
+
+            var hint = CreateText("Sugerencia", background.transform, placeholder, fontSize, new Color(0.4f, 0.4f, 0.45f), TextAnchor.MiddleLeft);
+            Destroy(hint.GetComponent<Outline>());
+            hint.fontStyle = FontStyle.Italic;
+            hint.rectTransform.Stretch();
+            hint.rectTransform.offsetMin = new Vector2(16f, 0f);
+            hint.rectTransform.offsetMax = new Vector2(-16f, 0f);
+
+            input.textComponent = text;
+            input.placeholder = hint;
+            input.targetGraphic = background;
+            input.text = value;
+            return input;
+        }
+
+        static void Destroy(UnityEngine.Object obj)
+        {
+            if (obj != null) UnityEngine.Object.Destroy(obj);
+        }
+
         /// <summary>Barra horizontal: devuelve el rect del relleno, que se ajusta con SetBarFill.</summary>
         public static RectTransform CreateBar(string name, Transform parent, Color background, Color fill)
         {

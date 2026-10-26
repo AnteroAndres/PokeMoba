@@ -46,8 +46,8 @@ namespace PokeMoba.Combat
             return telegraph;
         }
 
-        public bool Contains(Vector3 position) =>
-            CombatQueries.FlatDistance(transform.position, position) <= Radius + CombatTuning.BodyRadius;
+        public bool Contains(Vector3 position, float bodyRadius = CombatTuning.BodyRadius) =>
+            CombatQueries.FlatDistance(transform.position, position) <= Radius + bodyRadius;
 
         void OnEnable() => Active.Add(this);
         void OnDisable() => Active.Remove(this);

@@ -9,6 +9,7 @@ namespace PokeMoba.Combat
         public float Stamina { get; private set; } = CombatTuning.MaxStamina;
         public Vector3 Facing { get; private set; } = Vector3.forward;
         public Vector3 MoveInput { get; private set; }
+        public Vector3 Velocity { get; private set; }
 
         public bool IsDodging => dodgeTimer > 0f;
         public bool IsInvulnerable => invulnerableTimer > 0f;
@@ -29,9 +30,11 @@ namespace PokeMoba.Combat
         void Start()
         {
             combatant = GetComponent<Combatant>();
-            model = transform.Find("Model");
+            RefreshModel();
             Facing = transform.forward;
         }
+
+        public void RefreshModel() => model = transform.Find("Model");
 
         /// <summary>Dirección en el mundo (XZ); magnitud 0–1.</summary>
         public void SetMoveInput(Vector3 direction)
@@ -50,12 +53,22 @@ namespace PokeMoba.Combat
 
         public void ApplyKnockback(Vector3 impulse) => knockback += impulse;
 
-        /// <summary>Desplazamiento forzado (embestidas). Respeta el borde de la arena.</summary>
-        public void Displace(Vector3 delta) => transform.position = ClampToArena(transform.position + delta);
+        /// <summary>Desplazamiento forzado (embestidas). Respeta límites y obstáculos.</summary>
+        public void Displace(Vector3 delta) =>
+            transform.position = PlayArea.Clamp(transform.position + delta, Radius);
+
+        /// <summary>Coloca al combatiente en un punto sin animación (reapariciones).</summary>
+        public void Teleport(Vector3 position)
+        {
+            knockback = Vector3.zero;
+            dodgeTimer = 0f;
+            transform.position = PlayArea.Clamp(position, Radius);
+        }
 
         public bool TryDodge(Vector3 direction)
         {
-            if (combatant.IsDead || IsDodging || dodgeCooldownTimer > 0f || Stamina < CombatTuning.DodgeCost)
+            if (combatant == null || combatant.IsDead || combatant.IsStructure || IsDodging
+                || dodgeCooldownTimer > 0f || Stamina < CombatTuning.DodgeCost)
                 return false;
 
             direction.y = 0f;
@@ -70,15 +83,23 @@ namespace PokeMoba.Combat
             return true;
         }
 
+        float Radius => combatant != null ? combatant.Radius : CombatTuning.BodyRadius;
+
         void Update()
         {
+            if (combatant == null) return;
+
             float dt = Time.deltaTime;
             dodgeTimer -= dt;
             invulnerableTimer -= dt;
             dodgeCooldownTimer -= dt;
             lockTimer -= dt;
 
-            if (combatant.IsDead) return;
+            if (combatant.IsDead || combatant.IsStructure)
+            {
+                Velocity = Vector3.zero;
+                return;
+            }
 
             if (!IsDodging)
                 Stamina = Mathf.Min(CombatTuning.MaxStamina, Stamina + CombatTuning.StaminaRegen * dt);
@@ -100,10 +121,11 @@ namespace PokeMoba.Combat
 
             velocity += knockback;
             knockback = Vector3.MoveTowards(knockback, Vector3.zero, CombatTuning.KnockbackDecay * dt);
+            Velocity = velocity;
 
             Vector3 position = transform.position + velocity * dt;
             if (!IsDodging) position = SeparateFromOthers(position);
-            transform.position = ClampToArena(position);
+            transform.position = PlayArea.Clamp(position, Radius);
 
             transform.rotation = Quaternion.Slerp(
                 transform.rotation, Quaternion.LookRotation(Facing), 1f - Mathf.Exp(-15f * dt));
@@ -139,24 +161,16 @@ namespace PokeMoba.Combat
 
         Vector3 SeparateFromOthers(Vector3 position)
         {
-            float minDistance = CombatTuning.BodyRadius * 2f;
             foreach (var other in Combatant.All)
             {
                 if (other == combatant || other.IsDead) continue;
+                float minDistance = Radius + other.Radius;
                 Vector3 offset = position - other.transform.position;
                 offset.y = 0f;
                 float distance = offset.magnitude;
                 if (distance < minDistance && distance > 0.0001f)
                     position = other.transform.position + offset / distance * minDistance;
             }
-            return position;
-        }
-
-        public static Vector3 ClampToArena(Vector3 position)
-        {
-            position.y = 0f;
-            float limit = CombatTuning.ArenaRadius - CombatTuning.BodyRadius;
-            if (position.magnitude > limit) position = position.normalized * limit;
             return position;
         }
     }

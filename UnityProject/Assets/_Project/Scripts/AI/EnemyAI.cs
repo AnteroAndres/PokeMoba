@@ -37,13 +37,25 @@ namespace PokeMoba.AI
             caster = GetComponent<AbilityCaster>();
         }
 
+        /// <summary>
+        /// Qué hacer sin objetivo (patrullar, seguir el carril…). Si es null, se queda quieto.
+        /// Lo usan los salvajes de la Aventura y los bots del MOBA.
+        /// </summary>
+        public System.Action IdleTick;
+
+        public Combatant Target => target;
+        public bool HasTarget => target != null && !target.IsDead;
+
         public void SetTarget(Combatant newTarget) => target = newTarget;
 
         void Update()
         {
-            if (self.IsDead || target == null || target.IsDead)
+            if (self.IsDead) return;
+
+            if (!HasTarget)
             {
-                motor.SetMoveInput(Vector3.zero);
+                if (IdleTick != null) IdleTick();
+                else motor.SetMoveInput(Vector3.zero);
                 return;
             }
 
@@ -91,7 +103,8 @@ namespace PokeMoba.AI
 
             var move = caster.GetMove(slot);
             float desired = DesiredRange(move);
-            if (distance > desired)
+            // Se mide hasta el borde del objetivo para que funcione igual con torres grandes.
+            if (distance - target.Radius > desired)
             {
                 motor.SetMoveInput(toTargetDir + strafe * 0.25f);
                 return;

@@ -7,16 +7,24 @@ using UnityEngine.UI;
 
 namespace PokeMoba.UI
 {
-    /// <summary>Cuadrícula desplazable con todas las especies para elegir una.</summary>
+    /// <summary>Cómo se muestra una especie en la cuadrícula.</summary>
+    public enum PickerState
+    {
+        Normal,   // nombre, tipos y color
+        Seen,     // nombre en gris (Pokédex: visto pero no capturado)
+        Unknown   // "???" (Pokédex: no visto); no se puede tocar
+    }
+
+    /// <summary>Cuadrícula desplazable con especies para elegir una (selección de Pokémon y Pokédex).</summary>
     public static class SpeciesPicker
     {
         const int Columns = 7;
         static readonly Vector2 CellSize = new Vector2(230f, 120f);
         static readonly Vector2 Spacing = new Vector2(14f, 14f);
 
-        /// <summary>Construye la cuadrícula dentro de <paramref name="parent"/>, ocupando el área indicada en píxeles del canvas.</summary>
-        public static RectTransform Build(Transform parent, IReadOnlyList<SpeciesData> species,
-            Action<SpeciesData> onPick, float top, float bottom)
+        /// <summary>Construye la cuadrícula dentro de <paramref name="parent"/>, dejando libres <paramref name="top"/> y <paramref name="bottom"/> píxeles del canvas.</summary>
+        public static RectTransform Build(Transform parent, IEnumerable<SpeciesData> species,
+            Action<SpeciesData> onPick, float top, float bottom, Func<SpeciesData, PickerState> stateOf = null)
         {
             float width = Columns * CellSize.x + (Columns - 1) * Spacing.x + 40f;
 
@@ -58,10 +66,30 @@ namespace PokeMoba.UI
             foreach (var s in species)
             {
                 var current = s;
+                var state = stateOf != null ? stateOf(s) : PickerState.Normal;
                 string types = string.Join(" / ", s.Types.Select(t => t.DisplayName()));
-                UIFactory.CreateButton(s.Key ?? s.Name, content,
-                    $"<size=20>#{s.DexNumber:000}</size>\n{s.Name}\n<size=18>{types}</size>", 28,
-                    Color.Lerp(s.Types[0].TypeColor(), Color.black, 0.15f), () => onPick(current));
+
+                string label;
+                Color color;
+                switch (state)
+                {
+                    case PickerState.Unknown:
+                        label = $"<size=20>#{s.DexNumber:000}</size>\n???";
+                        color = new Color(0.12f, 0.12f, 0.15f);
+                        break;
+                    case PickerState.Seen:
+                        label = $"<size=20>#{s.DexNumber:000}</size>\n{s.Name}\n<size=18>visto</size>";
+                        color = new Color(0.3f, 0.3f, 0.34f);
+                        break;
+                    default:
+                        label = $"<size=20>#{s.DexNumber:000}</size>\n{s.Name}\n<size=18>{types}</size>";
+                        color = Color.Lerp(s.Types[0].TypeColor(), Color.black, 0.15f);
+                        break;
+                }
+
+                var button = UIFactory.CreateButton(s.Key ?? s.Name, content, label, 28, color, () => onPick(current));
+                button.GetComponentInChildren<Text>().supportRichText = true;
+                button.interactable = state != PickerState.Unknown;
             }
 
             return viewportRect;

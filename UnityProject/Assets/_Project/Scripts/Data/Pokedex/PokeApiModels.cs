@@ -24,12 +24,32 @@ namespace PokeMoba.Data.Pokedex
         public List<string> Types;
         public RawStats BaseStats;
         public int CaptureRate;
+        public int? BaseExperience;
+        public string GrowthRate;
         public float HeightM;
         public float WeightKg;
+        public string Shape;   // forma del cuerpo de PokeAPI: quadruped, upright, wings…
+        public string Color;   // color principal de PokeAPI: red, blue, green…
         public bool IsLegendary;
         public bool IsMythical;
         public int? EvolvesFrom;
+        public List<RawEvolution> Evolutions;
         public RawLearnset Learnset;
+    }
+
+    [Preserve]
+    public class RawEvolution
+    {
+        public int Species;
+        public List<RawEvolutionMethod> Methods;
+    }
+
+    [Preserve]
+    public class RawEvolutionMethod
+    {
+        public string Trigger;   // level-up, use-item, trade…
+        public int? MinLevel;
+        public string Item;
     }
 
     [Preserve]

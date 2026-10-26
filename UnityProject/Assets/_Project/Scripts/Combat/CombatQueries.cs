@@ -23,7 +23,7 @@ namespace PokeMoba.Combat
             foreach (var other in Combatant.All)
             {
                 if (!IsEnemy(self, other)) continue;
-                float d = FlatDistance(self.transform.position, other.transform.position);
+                float d = FlatDistance(self.transform.position, other.transform.position) - other.Radius;
                 if (d < bestDistance)
                 {
                     bestDistance = d;
@@ -38,7 +38,7 @@ namespace PokeMoba.Combat
             var result = new List<Combatant>();
             foreach (var other in Combatant.All)
             {
-                if (IsEnemy(self, other) && FlatDistance(center, other.transform.position) <= radius + CombatTuning.BodyRadius)
+                if (IsEnemy(self, other) && FlatDistance(center, other.transform.position) <= radius + other.Radius)
                     result.Add(other);
             }
             return result;
@@ -53,8 +53,8 @@ namespace PokeMoba.Combat
                 if (!IsEnemy(self, other)) continue;
                 Vector3 offset = other.transform.position - origin;
                 offset.y = 0f;
-                if (offset.magnitude > range + CombatTuning.BodyRadius) continue;
-                if (offset.sqrMagnitude > 0.0001f && Vector3.Angle(direction, offset) > angleDegrees * 0.5f) continue;
+                if (offset.magnitude > range + other.Radius) continue;
+                if (offset.magnitude > other.Radius && Vector3.Angle(direction, offset) > angleDegrees * 0.5f) continue;
                 result.Add(other);
             }
             return result;

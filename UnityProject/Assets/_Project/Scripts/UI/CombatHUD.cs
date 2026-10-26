@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using PokeMoba.Combat;
 using PokeMoba.Data;
 using PokeMoba.Input;
@@ -6,7 +8,10 @@ using UnityEngine.UI;
 
 namespace PokeMoba.UI
 {
-    /// <summary>Interfaz de combate: barras de vida y estamina, joystick, botones de habilidad y esquiva.</summary>
+    /// <summary>
+    /// Interfaz de combate común a todos los modos: barras de vida y estamina, joystick, botones de
+    /// habilidad y esquiva, texto de estado, avisos y botones extra que añade cada modo.
+    /// </summary>
     public class CombatHUD : MonoBehaviour
     {
         public VirtualJoystick Joystick { get; private set; }
@@ -15,6 +20,7 @@ namespace PokeMoba.UI
 
         class Panel
         {
+            public GameObject Root;
             public Text Name;
             public Text Status;
             public Text HpText;
@@ -30,10 +36,15 @@ namespace PokeMoba.UI
             public Text CooldownText;
         }
 
+        RectTransform root;
         Panel playerPanel;
         Panel enemyPanel;
         SkillView[] skills;
         Image dodgeBackground;
+        Text statusText;
+        Text toastText;
+        float toastTimer;
+        readonly List<GameObject> extras = new List<GameObject>();
 
         Combatant player;
         Combatant enemy;
@@ -44,21 +55,26 @@ namespace PokeMoba.UI
 
         public static CombatHUD Create(Transform canvas, bool showKeyboardHint)
         {
-            var root = UIFactory.CreateRect("HUD", canvas).Stretch();
-            var hud = root.gameObject.AddComponent<CombatHUD>();
-            hud.Build(root, showKeyboardHint);
+            var rect = UIFactory.CreateRect("HUD", canvas).Stretch();
+            var hud = rect.gameObject.AddComponent<CombatHUD>();
+            hud.Build(rect, showKeyboardHint);
             return hud;
         }
 
+        /// <summary>Conecta el HUD con el Pokémon del jugador; <paramref name="enemy"/> puede ser null.</summary>
         public void Bind(Combatant player, Combatant enemy)
         {
             this.player = player;
-            this.enemy = enemy;
             playerCaster = player.GetComponent<AbilityCaster>();
+            RefreshPlayer();
+            SetEnemy(enemy);
+        }
 
+        /// <summary>Vuelve a leer nombre y movimientos (tras evolucionar o subir de nivel).</summary>
+        public void RefreshPlayer()
+        {
+            if (player == null) return;
             playerPanel.Name.text = Title(player);
-            enemyPanel.Name.text = Title(enemy);
-
             for (int i = 0; i < skills.Length; i++)
             {
                 var move = playerCaster.GetMove(i);
@@ -67,18 +83,61 @@ namespace PokeMoba.UI
             }
         }
 
+        public void SetEnemy(Combatant newEnemy)
+        {
+            enemy = newEnemy;
+            enemyPanel.Root.SetActive(enemy != null);
+            if (enemy != null) enemyPanel.Name.text = Title(enemy);
+        }
+
+        public void SetStatus(string text) => statusText.text = text ?? "";
+
+        /// <summary>Aviso grande en el centro de la pantalla durante unos segundos.</summary>
+        public void Toast(string text, float seconds = 2.5f)
+        {
+            toastText.text = text;
+            toastTimer = seconds;
+        }
+
+        /// <summary>Botón extra del modo (se borra con ClearExtras). Devuelve el botón para cambiar su texto.</summary>
+        public Button AddButton(string label, Color color, Vector2 anchor, Vector2 position, Vector2 size, Action onClick, int fontSize = 24)
+        {
+            var button = UIFactory.CreateButton(label, root, label, fontSize, color, onClick);
+            ((RectTransform)button.transform).Place(anchor, position, size);
+            extras.Add(button.gameObject);
+            return button;
+        }
+
+        public void ClearExtras()
+        {
+            foreach (var go in extras) if (go != null) Destroy(go);
+            extras.Clear();
+            SetStatus("");
+            toastTimer = 0f;
+            toastText.text = "";
+        }
+
         static string Title(Combatant c)
         {
-            string types = string.Join(" / ", System.Array.ConvertAll(c.Species.Types, t => t.DisplayName()));
-            return $"{c.Species.Name}  Nv. {c.Stats.Level}   <size=22>{types}</size>";
+            string types = string.Join(" / ", Array.ConvertAll(c.Species.Types, t => t.DisplayName()));
+            string shiny = c.Shiny ? " ★" : "";
+            return $"{c.DisplayName}{shiny}  Nv. {c.Stats.Level}   <size=22>{types}</size>";
         }
 
         void Update()
         {
-            if (player == null || enemy == null) return;
+            if (toastTimer > 0f)
+            {
+                toastTimer -= Time.unscaledDeltaTime;
+                var c = toastText.color;
+                c.a = Mathf.Clamp01(toastTimer * 2f);
+                toastText.color = c;
+            }
+
+            if (player == null) return;
 
             UpdatePanel(playerPanel, player);
-            UpdatePanel(enemyPanel, enemy);
+            if (enemy != null) UpdatePanel(enemyPanel, enemy);
 
             var motor = player.Motor;
             UIFactory.SetBarFill(playerPanel.StaminaFill, motor.Stamina / CombatTuning.MaxStamina);
@@ -88,8 +147,7 @@ namespace PokeMoba.UI
 
             for (int i = 0; i < skills.Length; i++)
             {
-                float fraction = playerCaster.CooldownFraction(i);
-                skills[i].Cooldown.fillAmount = fraction;
+                skills[i].Cooldown.fillAmount = playerCaster.CooldownFraction(i);
                 float remaining = playerCaster.CooldownRemaining(i);
                 skills[i].CooldownText.text = remaining > 0.95f ? Mathf.CeilToInt(remaining).ToString() : "";
             }
@@ -108,12 +166,21 @@ namespace PokeMoba.UI
 
         // --- Construcción ---
 
-        void Build(RectTransform root, bool showKeyboardHint)
+        void Build(RectTransform rect, bool showKeyboardHint)
         {
-            playerPanel = BuildPanel(root, new Vector2(0f, 1f), new Vector2(30f, -30f), withStamina: true);
-            enemyPanel = BuildPanel(root, new Vector2(1f, 1f), new Vector2(-30f, -30f), withStamina: false);
+            root = rect;
+            playerPanel = BuildPanel(rect, new Vector2(0f, 1f), new Vector2(30f, -30f), withStamina: true);
+            enemyPanel = BuildPanel(rect, new Vector2(1f, 1f), new Vector2(-30f, -30f), withStamina: false);
 
-            BuildJoystick(root);
+            statusText = UIFactory.CreateText("Estado", rect, "", 30, Color.white, TextAnchor.UpperCenter);
+            statusText.supportRichText = true;
+            statusText.rectTransform.Place(new Vector2(0.5f, 1f), new Vector2(0f, -30f), new Vector2(700f, 110f));
+
+            toastText = UIFactory.CreateText("Aviso", rect, "", 56, new Color(1f, 0.95f, 0.6f), TextAnchor.MiddleCenter);
+            toastText.supportRichText = true;
+            toastText.rectTransform.Place(new Vector2(0.5f, 0.5f), new Vector2(0f, 180f), new Vector2(1400f, 200f));
+
+            BuildJoystick(rect);
 
             var bottomRight = new Vector2(1f, 0f);
             AbilityButtons = new AbilityButton[AbilityCaster.SlotCount];
@@ -121,37 +188,37 @@ namespace PokeMoba.UI
             Vector2[] positions = { new Vector2(-110f, 90f), new Vector2(-400f, 70f), new Vector2(-370f, 330f) };
             float[] sizes = { 220f, 150f, 150f };
             for (int i = 0; i < AbilityCaster.SlotCount; i++)
-                AbilityButtons[i] = BuildSkillButton(root, i, bottomRight, positions[i], sizes[i]);
+                AbilityButtons[i] = BuildSkillButton(rect, i, bottomRight, positions[i], sizes[i]);
 
-            DodgeButton = BuildDodgeButton(root, bottomRight, new Vector2(-90f, 360f), 130f);
+            DodgeButton = BuildDodgeButton(rect, bottomRight, new Vector2(-90f, 360f), 130f);
 
             if (showKeyboardHint)
             {
-                var hint = UIFactory.CreateText("Ayuda teclado", root,
+                var hint = UIFactory.CreateText("Ayuda teclado", rect,
                     "WASD mover · J ataque · K / L habilidades · Espacio esquivar",
                     22, new Color(1f, 1f, 1f, 0.7f), TextAnchor.LowerCenter);
                 hint.rectTransform.Place(new Vector2(0.5f, 0f), new Vector2(0f, 12f), new Vector2(900f, 40f));
             }
         }
 
-        static Panel BuildPanel(RectTransform root, Vector2 anchor, Vector2 position, bool withStamina)
+        static Panel BuildPanel(RectTransform rect, Vector2 anchor, Vector2 position, bool withStamina)
         {
-            var bg = UIFactory.CreateImage("Panel", root, PanelColor);
+            var bg = UIFactory.CreateImage("Panel", rect, PanelColor);
             bg.raycastTarget = false;
-            var rect = bg.rectTransform.Place(anchor, position, new Vector2(560f, withStamina ? 140f : 110f));
+            var panelRect = bg.rectTransform.Place(anchor, position, new Vector2(560f, withStamina ? 140f : 110f));
 
-            var panel = new Panel();
+            var panel = new Panel { Root = bg.gameObject };
             var align = anchor.x < 0.5f ? TextAnchor.UpperLeft : TextAnchor.UpperRight;
 
-            panel.Name = UIFactory.CreateText("Nombre", rect, "", 32, Color.white, align);
+            panel.Name = UIFactory.CreateText("Nombre", panelRect, "", 32, Color.white, align);
             panel.Name.supportRichText = true;
             panel.Name.rectTransform.Place(new Vector2(anchor.x, 1f), new Vector2(anchor.x < 0.5f ? 16f : -16f, -10f), new Vector2(520f, 40f));
 
-            panel.Status = UIFactory.CreateText("Estado", rect, "", 24, new Color(1f, 0.55f, 0.3f),
+            panel.Status = UIFactory.CreateText("Estado", panelRect, "", 24, new Color(1f, 0.55f, 0.3f),
                 anchor.x < 0.5f ? TextAnchor.UpperRight : TextAnchor.UpperLeft);
             panel.Status.rectTransform.Place(new Vector2(anchor.x, 1f), new Vector2(anchor.x < 0.5f ? 16f : -16f, -14f), new Vector2(520f, 34f));
 
-            var hpBar = UIFactory.CreateBar("Vida", rect, BarBackground, Color.green);
+            var hpBar = UIFactory.CreateBar("Vida", panelRect, BarBackground, Color.green);
             panel.HpFill = hpBar;
             ((RectTransform)hpBar.parent).Place(new Vector2(0.5f, 1f), new Vector2(0f, -58f), new Vector2(528f, 32f));
             panel.HpText = UIFactory.CreateText("PS", hpBar.parent, "", 22, Color.white, TextAnchor.MiddleCenter);
@@ -159,7 +226,7 @@ namespace PokeMoba.UI
 
             if (withStamina)
             {
-                var stamina = UIFactory.CreateBar("Estamina", rect, BarBackground, new Color(0.35f, 0.75f, 1f));
+                var stamina = UIFactory.CreateBar("Estamina", panelRect, BarBackground, new Color(0.35f, 0.75f, 1f));
                 panel.StaminaFill = stamina;
                 ((RectTransform)stamina.parent).Place(new Vector2(0.5f, 1f), new Vector2(0f, -102f), new Vector2(528f, 16f));
             }
@@ -167,10 +234,10 @@ namespace PokeMoba.UI
             return panel;
         }
 
-        void BuildJoystick(RectTransform root)
+        void BuildJoystick(RectTransform rect)
         {
             // Zona invisible que recibe el toque: mitad izquierda, debajo de los paneles.
-            var zone = UIFactory.CreateImage("Zona joystick", root, new Color(0f, 0f, 0f, 0f));
+            var zone = UIFactory.CreateImage("Zona joystick", rect, new Color(0f, 0f, 0f, 0f));
             zone.rectTransform.anchorMin = Vector2.zero;
             zone.rectTransform.anchorMax = new Vector2(0.45f, 0.75f);
             zone.rectTransform.offsetMin = Vector2.zero;
@@ -191,9 +258,9 @@ namespace PokeMoba.UI
             Joystick.Setup(background.rectTransform, knob.rectTransform, radius);
         }
 
-        AbilityButton BuildSkillButton(RectTransform root, int slot, Vector2 anchor, Vector2 position, float size)
+        AbilityButton BuildSkillButton(RectTransform rect, int slot, Vector2 anchor, Vector2 position, float size)
         {
-            var bg = UIFactory.CreateImage($"Habilidad {slot}", root, Color.gray, UIFactory.Circle);
+            var bg = UIFactory.CreateImage($"Habilidad {slot}", rect, Color.gray, UIFactory.Circle);
             bg.alphaHitTestMinimumThreshold = 0.1f;
             bg.rectTransform.Place(anchor, position, Vector2.one * size);
 
@@ -216,9 +283,9 @@ namespace PokeMoba.UI
             return bg.gameObject.AddComponent<AbilityButton>();
         }
 
-        AbilityButton BuildDodgeButton(RectTransform root, Vector2 anchor, Vector2 position, float size)
+        AbilityButton BuildDodgeButton(RectTransform rect, Vector2 anchor, Vector2 position, float size)
         {
-            dodgeBackground = UIFactory.CreateImage("Esquiva", root, new Color(0.35f, 0.75f, 1f), UIFactory.Circle);
+            dodgeBackground = UIFactory.CreateImage("Esquiva", rect, new Color(0.35f, 0.75f, 1f), UIFactory.Circle);
             dodgeBackground.alphaHitTestMinimumThreshold = 0.1f;
             dodgeBackground.rectTransform.Place(anchor, position, Vector2.one * size);
 

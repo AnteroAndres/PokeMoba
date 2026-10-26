@@ -26,7 +26,12 @@ namespace PokeMoba.Combat
             motor = GetComponent<CreatureMotor>();
         }
 
-        public MoveData GetMove(int slot) => self.Species.Moves[slot];
+        public MoveData GetMove(int slot) => self.Moves[slot];
+
+        public void ResetCooldowns()
+        {
+            for (int i = 0; i < SlotCount; i++) cooldowns[i] = 0f;
+        }
 
         public float CooldownRemaining(int slot) => cooldowns[slot];
 
@@ -81,12 +86,12 @@ namespace PokeMoba.Combat
             switch (move.Shape)
             {
                 case MoveShape.Melee:
-                    HitAll(move, CombatQueries.EnemiesInCone(self, transform.position, direction, move.Range, CombatTuning.MeleeAngle));
-                    Vfx.Slash(transform.position + Vector3.up * 0.8f + direction * 1.3f, direction, Color.white, move.Radius * 1.4f);
+                    HitAll(move, CombatQueries.EnemiesInCone(self, transform.position, direction, move.Range + self.Radius, CombatTuning.MeleeAngle));
+                    Vfx.Slash(transform.position + Vector3.up * 0.8f + direction * (self.Radius + 0.7f), direction, Color.white, move.Radius * 1.4f);
                     break;
 
                 case MoveShape.Projectile:
-                    Projectile.Spawn(self, move, transform.position + Vector3.up * 0.8f + direction * 0.9f, direction);
+                    Projectile.Spawn(self, move, transform.position + Vector3.up * 0.8f + direction * (self.Radius + 0.3f), direction);
                     break;
 
                 case MoveShape.Cone:

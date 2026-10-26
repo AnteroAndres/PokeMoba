@@ -1,86 +1,67 @@
 using PokeMoba.Combat;
 using PokeMoba.Data;
+using PokeMoba.World;
 using UnityEngine;
 
 namespace PokeMoba.Prototype
 {
-    /// <summary>
-    /// Crea un Pokémon provisional con primitivas (cuerpo, cabeza, ojos y un detalle según su tipo).
-    /// En la fase de arte se sustituye por el prefab del modelo real.
-    /// </summary>
+    /// <summary>Crea Pokémon listos para pelear (modelo, anillo de equipo, combate y habilidades).</summary>
     public static class CreatureFactory
     {
-        static readonly Color PlayerRing = new Color(0.2f, 0.55f, 1f);
-        static readonly Color EnemyRing = new Color(1f, 0.25f, 0.2f);
+        public static readonly Color[] TeamColors =
+        {
+            new Color(0.2f, 0.55f, 1f),   // 0: jugador / equipo azul
+            new Color(1f, 0.25f, 0.2f),   // 1: rival / equipo rojo
+            new Color(0.95f, 0.85f, 0.3f) // 2: salvajes
+        };
 
-        public static Combatant Create(SpeciesData species, int team, Vector3 position, Vector3 facing, int level)
+        public static Combatant Create(SpeciesData species, int team, Vector3 position, Vector3 facing, int level,
+            bool shiny = false, MoveData[] moves = null, Transform parent = null)
         {
             var root = new GameObject($"{species.Name} (equipo {team})");
+            if (parent != null) root.transform.SetParent(parent, false);
             root.transform.position = position;
             root.transform.rotation = Quaternion.LookRotation(facing);
 
-            BuildModel(species, root.transform);
-
-            var ring = Vfx.Primitive(PrimitiveType.Cylinder, "Anillo de equipo", team == 0 ? PlayerRing : EnemyRing);
-            ring.transform.SetParent(root.transform, false);
-            ring.transform.localPosition = new Vector3(0f, 0.01f, 0f);
-            ring.transform.localScale = new Vector3(1.6f, 0.005f, 1.6f);
+            CreatureModelBuilder.Build(species, root.transform, shiny);
+            AddTeamRing(root.transform, team, species.Size);
 
             // El "Model" tiene que existir antes de añadir los componentes: lo buscan al iniciarse.
             var combatant = root.AddComponent<Combatant>();
-            combatant.Init(species, team, level);
+            combatant.Shiny = shiny;
+            combatant.Init(species, team, level, moves);
             root.AddComponent<AbilityCaster>();
+
+            if (shiny) Vfx.Burst(position + Vector3.up, new Color(1f, 0.9f, 0.3f), 2.5f);
             return combatant;
         }
 
-        static void BuildModel(SpeciesData species, Transform parent)
+        /// <summary>Cambia el modelo y los datos de un combatiente ya creado (evolución).</summary>
+        public static void Rebuild(Combatant combatant, SpeciesData species, int level, MoveData[] moves)
         {
-            var model = new GameObject("Model").transform;
-            model.SetParent(parent, false);
-            float s = species.Size;
-            Color bodyColor = Color.Lerp(species.Types[0].TypeColor(), Color.white, 0.15f);
-
-            var body = Vfx.Primitive(PrimitiveType.Capsule, "Cuerpo", bodyColor);
-            body.transform.SetParent(model, false);
-            body.transform.localPosition = new Vector3(0f, 0.8f * s, 0f);
-            body.transform.localScale = new Vector3(0.95f, 0.8f, 0.95f) * s;
-
-            var head = Vfx.Primitive(PrimitiveType.Sphere, "Cabeza", bodyColor);
-            head.transform.SetParent(model, false);
-            head.transform.localPosition = new Vector3(0f, 1.75f * s, 0.15f * s);
-            head.transform.localScale = Vector3.one * 0.85f * s;
-
-            for (int side = -1; side <= 1; side += 2)
+            var old = combatant.transform.Find("Model");
+            if (old != null)
             {
-                var eye = Vfx.Primitive(PrimitiveType.Sphere, "Ojo", Color.black);
-                eye.transform.SetParent(head.transform, false);
-                eye.transform.localPosition = new Vector3(0.2f * side, 0.1f, 0.42f);
-                eye.transform.localScale = Vector3.one * 0.16f;
+                old.name = "Model (antiguo)";
+                old.SetParent(null, false);
+                Object.Destroy(old.gameObject);
             }
 
-            switch (species.Types[0])
-            {
-                case PokemonType.Fuego:
-                    var tail = Vfx.Primitive(PrimitiveType.Sphere, "Llama de la cola", new Color(1f, 0.45f, 0.05f));
-                    tail.transform.SetParent(model, false);
-                    tail.transform.localPosition = new Vector3(0f, 0.9f * s, -0.85f * s);
-                    tail.transform.localScale = Vector3.one * 0.4f * s;
-                    break;
+            CreatureModelBuilder.Build(species, combatant.transform, combatant.Shiny);
+            combatant.name = $"{species.Name} (equipo {combatant.Team})";
+            combatant.Reinitialize(species, level, moves, combatant.MaxHp > 0f ? combatant.Hp / combatant.MaxHp : 1f);
+            combatant.Motor.RefreshModel();
+            combatant.GetComponent<AbilityCaster>().ResetCooldowns();
+            Vfx.Burst(combatant.transform.position + Vector3.up, Color.white, 3f);
+        }
 
-                case PokemonType.Agua:
-                    var shell = Vfx.Primitive(PrimitiveType.Sphere, "Caparazón", new Color(0.6f, 0.4f, 0.2f));
-                    shell.transform.SetParent(model, false);
-                    shell.transform.localPosition = new Vector3(0f, 0.85f * s, -0.3f * s);
-                    shell.transform.localScale = new Vector3(1.05f, 1.1f, 0.6f) * s;
-                    break;
-
-                case PokemonType.Planta:
-                    var bulb = Vfx.Primitive(PrimitiveType.Sphere, "Bulbo", new Color(0.2f, 0.55f, 0.25f));
-                    bulb.transform.SetParent(model, false);
-                    bulb.transform.localPosition = new Vector3(0f, 1.35f * s, -0.35f * s);
-                    bulb.transform.localScale = Vector3.one * 0.85f * s;
-                    break;
-            }
+        static void AddTeamRing(Transform root, int team, float size)
+        {
+            var ring = Vfx.Primitive(PrimitiveType.Cylinder, "Anillo de equipo", TeamColors[Mathf.Clamp(team, 0, TeamColors.Length - 1)]);
+            ring.transform.SetParent(root, false);
+            ring.transform.localPosition = new Vector3(0f, 0.01f, 0f);
+            float d = 1.6f * Mathf.Max(1f, size * 0.85f);
+            ring.transform.localScale = new Vector3(d, 0.005f, d);
         }
     }
 }
