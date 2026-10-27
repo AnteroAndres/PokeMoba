@@ -1,0 +1,130 @@
+{
+  "converterVersion": 3,
+  "dex": 78,
+  "key": "rapidash",
+  "sourceModel": "pokemon-master/public/models/078/model.glb",
+  "sha256": "403c1c8155cd89117bee2ccfa9cbdeab36999bd20847491a101daa7c309c943f",
+  "modelFile": "Model.fbx",
+  "fps": 30,
+  "clips": [
+    {
+      "name": "idle",
+      "firstFrame": 0,
+      "lastFrame": 98,
+      "loop": true
+    },
+    {
+      "name": "walk",
+      "firstFrame": 100,
+      "lastFrame": 202,
+      "loop": true
+    },
+    {
+      "name": "run",
+      "firstFrame": 204,
+      "lastFrame": 244,
+      "loop": true
+    },
+    {
+      "name": "attack",
+      "firstFrame": 246,
+      "lastFrame": 322,
+      "loop": false
+    },
+    {
+      "name": "happy",
+      "firstFrame": 324,
+      "lastFrame": 398,
+      "loop": false
+    },
+    {
+      "name": "sleep",
+      "firstFrame": 400,
+      "lastFrame": 474,
+      "loop": true
+    }
+  ],
+  "bindings": [
+    {
+      "material": "Body_gltf",
+      "texture": "tex/Body_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Eye_gltf",
+      "texture": "tex/Eye_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "FireCoreA_gltf",
+      "texture": "tex/FireCoreA_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "FireCoreB_gltf",
+      "texture": "tex/FireCoreB_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "FireCoreC_gltf",
+      "texture": "tex/FireCoreC_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "FireCoreD_gltf",
+      "texture": "tex/FireCoreD_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "FireCoreE_gltf",
+      "texture": "tex/FireCoreE_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "FireCoreF_gltf",
+      "texture": "tex/FireCoreF_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "FireCoreG_gltf",
+      "texture": "tex/FireCoreG_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "FireMaskA_gltf",
+      "texture": "tex/FireMaskA_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "FireMaskB_gltf",
+      "texture": "tex/FireMaskB_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "FireMaskC_gltf",
+      "texture": "tex/FireMaskC_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "FireMaskD_gltf",
+      "texture": "tex/FireMaskD_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "FireMaskE_gltf",
+      "texture": "tex/FireMaskE_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "FireMaskF_gltf",
+      "texture": "tex/FireMaskF_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "FireMaskG_gltf",
+      "texture": "tex/FireMaskG_gltf_base.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "textureCount": 30
+}

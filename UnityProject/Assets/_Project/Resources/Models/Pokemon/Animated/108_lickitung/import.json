@@ -1,0 +1,60 @@
+{
+  "converterVersion": 3,
+  "dex": 108,
+  "key": "lickitung",
+  "sourceModel": "pokemon-master/public/models/108/model.glb",
+  "sha256": "9000dc68f87492ef241966eb57a6547db2708375de1c22ed09349f5eefcc60b6",
+  "modelFile": "Model.fbx",
+  "fps": 30,
+  "clips": [
+    {
+      "name": "idle",
+      "firstFrame": 0,
+      "lastFrame": 30,
+      "loop": true
+    },
+    {
+      "name": "walk",
+      "firstFrame": 32,
+      "lastFrame": 130,
+      "loop": true
+    },
+    {
+      "name": "run",
+      "firstFrame": 132,
+      "lastFrame": 182,
+      "loop": true
+    },
+    {
+      "name": "attack",
+      "firstFrame": 184,
+      "lastFrame": 246,
+      "loop": false
+    },
+    {
+      "name": "happy",
+      "firstFrame": 248,
+      "lastFrame": 316,
+      "loop": false
+    },
+    {
+      "name": "sleep",
+      "firstFrame": 318,
+      "lastFrame": 392,
+      "loop": true
+    }
+  ],
+  "bindings": [
+    {
+      "material": "Body_gltf",
+      "texture": "tex/Body_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Eye_gltf",
+      "texture": "tex/Eye_gltf_base.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "textureCount": 2
+}

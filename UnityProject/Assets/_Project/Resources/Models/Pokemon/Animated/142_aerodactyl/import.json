@@ -1,0 +1,59 @@
+{
+  "converterVersion": 3,
+  "dex": 142,
+  "key": "aerodactyl",
+  "sourceModel": "pokemon-master/public/models/142/model.glb",
+  "sha256": "311bd8a0e399b97cee3e9746f70d43ce7827c05a5450d14dd937f7cc3f7c19a9",
+  "modelFile": "Model.fbx",
+  "fps": 30,
+  "clips": [
+    {
+      "name": "idle",
+      "firstFrame": 0,
+      "lastFrame": 50,
+      "loop": true
+    },
+    {
+      "name": "walk",
+      "firstFrame": 52,
+      "lastFrame": 150,
+      "loop": true
+    },
+    {
+      "name": "run",
+      "firstFrame": 152,
+      "lastFrame": 226,
+      "loop": true
+    },
+    {
+      "name": "attack",
+      "firstFrame": 228,
+      "lastFrame": 308,
+      "loop": false
+    },
+    {
+      "name": "happy",
+      "firstFrame": 310,
+      "lastFrame": 372,
+      "loop": false
+    }
+  ],
+  "bindings": [
+    {
+      "material": "BodyA_gltf",
+      "texture": "tex/BodyA_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyB_gltf",
+      "texture": "tex/BodyB_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Eye_gltf",
+      "texture": "tex/Eye_gltf_base.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "textureCount": 3
+}

@@ -107,6 +107,8 @@ namespace PokeMoba.Modes
 
             Ctx.Hud.gameObject.SetActive(true);
             Ctx.Hud.Bind(player.Unit, null);
+            Ctx.Hud.ExperienceSource = () => new Leveling.ExperienceProgress(player.Exp, ExpToNext(player.MatchLevel),
+                CombatLevel(Mathf.Min(MaxMatchLevel, player.MatchLevel + 1)), player.MatchLevel >= MaxMatchLevel);
             Ctx.Hud.AddButton("Rendirse", new Color(0.35f, 0.35f, 0.4f), new Vector2(1f, 1f), new Vector2(-30f, -160f), new Vector2(200f, 70f),
                 () => End(1), 22);
             Ctx.Follow.SetOffset(new Vector3(0f, 16f, -11.5f));

@@ -7,6 +7,28 @@ namespace PokeMoba.Data
     {
         public const int MaxLevel = 100;
 
+        public readonly struct ExperienceProgress
+        {
+            public readonly int Current, Required, NextLevel;
+            public readonly bool AtCap;
+            public int Remaining => Math.Max(0, Required - Current);
+            public float Fraction => AtCap ? 1f : Required > 0 ? (float)Current / Required : 0f;
+            public ExperienceProgress(int current, int required, int nextLevel, bool atCap = false)
+            {
+                Required = Math.Max(0, required);
+                Current = Math.Max(0, Math.Min(current, Required));
+                NextLevel = nextLevel;
+                AtCap = atCap;
+            }
+        }
+
+        public static ExperienceProgress Progress(string growthRate, int level, int totalExp)
+        {
+            if (level >= MaxLevel) return new ExperienceProgress(0, 0, MaxLevel, true);
+            int floor = ExpForLevel(growthRate, level);
+            return new ExperienceProgress(totalExp - floor, ExpForLevel(growthRate, level + 1) - floor, level + 1);
+        }
+
         /// <summary>Experiencia total necesaria para estar en <paramref name="level"/>.</summary>
         public static int ExpForLevel(string growthRate, int level)
         {

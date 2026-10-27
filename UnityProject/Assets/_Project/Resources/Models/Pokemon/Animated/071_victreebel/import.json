@@ -1,0 +1,90 @@
+{
+  "converterVersion": 3,
+  "dex": 71,
+  "key": "victreebel",
+  "sourceModel": "pokemon-master/public/models/071/model.glb",
+  "sha256": "ad85f7bc485e53336957f46eb7c387eb01b73020051ecbd69b044289575f68d9",
+  "modelFile": "Model.fbx",
+  "fps": 30,
+  "clips": [
+    {
+      "name": "idle",
+      "firstFrame": 0,
+      "lastFrame": 202,
+      "loop": true
+    },
+    {
+      "name": "walk",
+      "firstFrame": 204,
+      "lastFrame": 321,
+      "loop": true
+    },
+    {
+      "name": "run",
+      "firstFrame": 323,
+      "lastFrame": 400,
+      "loop": true
+    },
+    {
+      "name": "attack",
+      "firstFrame": 402,
+      "lastFrame": 566,
+      "loop": false
+    },
+    {
+      "name": "happy",
+      "firstFrame": 568,
+      "lastFrame": 695,
+      "loop": false
+    },
+    {
+      "name": "sleep",
+      "firstFrame": 697,
+      "lastFrame": 849,
+      "loop": true
+    }
+  ],
+  "bindings": [
+    {
+      "material": "body_a_gltf",
+      "texture": "tex/body_a_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "body_a_gltf",
+      "texture": "tex/body_a_gltf_normal.png",
+      "channel": "NormalMap"
+    },
+    {
+      "material": "body_b_gltf",
+      "texture": "tex/body_b_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "body_b_gltf",
+      "texture": "tex/body_b_gltf_normal.png",
+      "channel": "NormalMap"
+    },
+    {
+      "material": "l_eye_gltf",
+      "texture": "tex/l_eye_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "l_eye_gltf",
+      "texture": "tex/l_eye_gltf_normal.png",
+      "channel": "NormalMap"
+    },
+    {
+      "material": "r_eye_gltf",
+      "texture": "tex/r_eye_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "r_eye_gltf",
+      "texture": "tex/r_eye_gltf_normal.png",
+      "channel": "NormalMap"
+    }
+  ],
+  "textureCount": 10
+}

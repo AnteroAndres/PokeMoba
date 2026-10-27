@@ -23,6 +23,8 @@ namespace PokeMoba.World
             var prefab = Resources.Load<GameObject>($"{ModelsFolder}{species.DexNumber:000}_{species.Key}");
             bool fromArchive = prefab == null;
             if (prefab == null)
+                prefab = Resources.Load<GameObject>($"{ModelsFolder}Animated/{species.DexNumber:000}_{species.Key}/Model");
+            if (prefab == null)
                 prefab = Resources.Load<GameObject>($"{ModelsFolder}Imported/{species.DexNumber:000}_{species.Key}/Model");
             if (prefab != null)
             {

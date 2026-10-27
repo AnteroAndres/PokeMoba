@@ -11,11 +11,14 @@ namespace PokeMoba.Editor
     public class PokemonModelImporter : AssetPostprocessor
     {
         public const string Folder = "Assets/_Project/Resources/Models/Pokemon/Imported/";
+        public const string AnimatedFolder = "Assets/_Project/Resources/Models/Pokemon/Animated/";
+        [Serializable] public class Clip { public string name; public float firstFrame; public float lastFrame; public bool loop; }
         [Serializable] public class Binding { public string material; public string texture; public string channel; }
-        [Serializable] public class ImportInfo { public Binding[] bindings; public int dex; public string key; }
+        [Serializable] public class ImportInfo { public Binding[] bindings; public int dex; public string key; public Clip[] clips; }
         static readonly HashSet<string> Pending = new HashSet<string>();
-        public override uint GetVersion() => 1;
-        bool IsPokemon => assetPath.StartsWith(Folder, StringComparison.Ordinal);
+        public override uint GetVersion() => 2;
+        bool IsAnimated => assetPath.StartsWith(AnimatedFolder, StringComparison.Ordinal);
+        bool IsPokemon => IsAnimated || assetPath.StartsWith(Folder, StringComparison.Ordinal);
 
         void OnPreprocessModel()
         {
@@ -30,6 +33,23 @@ namespace PokeMoba.Editor
             importer.materialLocation = ModelImporterMaterialLocation.InPrefab;
             importer.materialSearch = ModelImporterMaterialSearch.Local;
             importer.meshCompression = ModelImporterMeshCompression.Off;
+            if (IsAnimated)
+            {
+                string infoPath = Path.GetDirectoryName(assetPath) + "/import.json";
+                if (File.Exists(infoPath))
+                {
+                    var info = JsonUtility.FromJson<ImportInfo>(File.ReadAllText(infoPath));
+                    if (info.clips != null)
+                    {
+                        var clips = new List<ModelImporterClipAnimation>();
+                        foreach (var clip in info.clips)
+                            clips.Add(new ModelImporterClipAnimation { name = clip.name, takeName = "Scene",
+                                firstFrame = clip.firstFrame, lastFrame = clip.lastFrame,
+                                loopTime = clip.loop, wrapMode = clip.loop ? WrapMode.Loop : WrapMode.Once });
+                        importer.clipAnimations = clips.ToArray();
+                    }
+                }
+            }
         }
 
         void OnPreprocessTexture()
@@ -46,6 +66,11 @@ namespace PokeMoba.Editor
             importer.wrapMode = TextureWrapMode.Repeat;
             importer.filterMode = FilterMode.Trilinear;
             importer.anisoLevel = 4;
+            if (IsAnimated && Path.GetFileNameWithoutExtension(assetPath).EndsWith("_normal", StringComparison.Ordinal))
+            {
+                importer.textureType = TextureImporterType.NormalMap;
+                importer.sRGBTexture = false;
+            }
         }
 
         void OnPostprocessMaterial(Material material)
@@ -56,7 +81,7 @@ namespace PokeMoba.Editor
             if (!File.Exists(infoPath)) return;
             var info = JsonUtility.FromJson<ImportInfo>(File.ReadAllText(infoPath));
             // Seaking's DAE has geometry and named regions, but the ZIP contains no skin texture.
-            if (info.dex == 119)
+            if (info.dex == 119 && !IsAnimated)
             {
                 material.shader = Shader.Find("Standard");
                 material.color = material.name.Contains("BodyA") ? new Color(1f, .43f, .12f)
@@ -67,6 +92,12 @@ namespace PokeMoba.Editor
             foreach (var binding in info.bindings)
             {
                 if (Normalize(binding.material) != Normalize(material.name)) continue;
+                if (binding.channel == "NormalMap")
+                {
+                    var normal = AssetDatabase.LoadAssetAtPath<Texture2D>(directory + "/" + binding.texture);
+                    if (normal != null) { material.SetTexture("_BumpMap", normal); material.EnableKeyword("_NORMALMAP"); }
+                    continue;
+                }
                 if (!binding.channel.Contains("Diffuse") && binding.channel.Length > 0) continue;
                 var texture = AssetDatabase.LoadAssetAtPath<Texture2D>(directory + "/" + binding.texture);
                 if (texture == null) continue;
@@ -88,7 +119,7 @@ namespace PokeMoba.Editor
                     material.SetOverrideTag("RenderType", "TransparentCutout");
                     material.renderQueue = (int)UnityEngine.Rendering.RenderQueue.AlphaTest;
                 }
-                break;
+                // Continue to also bind the normal-map entry for this material.
             }
         }
 
@@ -98,13 +129,15 @@ namespace PokeMoba.Editor
         {
             foreach (string path in imported)
             {
-                if (!path.StartsWith(Folder, StringComparison.Ordinal)) continue;
+                string sourceFolder = path.StartsWith(Folder, StringComparison.Ordinal) ? Folder
+                    : path.StartsWith(AnimatedFolder, StringComparison.Ordinal) ? AnimatedFolder : null;
+                if (sourceFolder == null) continue;
                 string extension = Path.GetExtension(path).ToLowerInvariant();
                 if (extension != ".png" && extension != ".tga" && extension != ".jpg" && extension != ".json") continue;
-                string relative = path.Substring(Folder.Length);
+                string relative = path.Substring(sourceFolder.Length);
                 int slash = relative.IndexOf('/');
                 if (slash < 0) continue;
-                Pending.Add(Folder + relative.Substring(0, slash));
+                Pending.Add(sourceFolder + relative.Substring(0, slash));
             }
             if (Pending.Count == 0) return;
             EditorApplication.delayCall -= RebindPending;

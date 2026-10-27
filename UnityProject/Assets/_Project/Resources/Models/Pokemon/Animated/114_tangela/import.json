@@ -1,0 +1,70 @@
+{
+  "converterVersion": 3,
+  "dex": 114,
+  "key": "tangela",
+  "sourceModel": "pokemon-master/public/models/114/model.glb",
+  "sha256": "a499167b9f2dec7c0d6a5e155fb1455ada8d2e6fafcc61c95a6f39905d33f08e",
+  "modelFile": "Model.fbx",
+  "fps": 30,
+  "clips": [
+    {
+      "name": "idle",
+      "firstFrame": 0,
+      "lastFrame": 69,
+      "loop": true
+    },
+    {
+      "name": "walk",
+      "firstFrame": 71,
+      "lastFrame": 145,
+      "loop": true
+    },
+    {
+      "name": "run",
+      "firstFrame": 147,
+      "lastFrame": 185,
+      "loop": true
+    },
+    {
+      "name": "attack",
+      "firstFrame": 187,
+      "lastFrame": 261,
+      "loop": false
+    },
+    {
+      "name": "happy",
+      "firstFrame": 263,
+      "lastFrame": 325,
+      "loop": false
+    },
+    {
+      "name": "sleep",
+      "firstFrame": 327,
+      "lastFrame": 401,
+      "loop": true
+    }
+  ],
+  "bindings": [
+    {
+      "material": "BodyA_gltf",
+      "texture": "tex/BodyA_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyB_gltf",
+      "texture": "tex/BodyB_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "EyeL_gltf",
+      "texture": "tex/EyeL_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "EyeR_gltf",
+      "texture": "tex/EyeR_gltf_base.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "textureCount": 4
+}

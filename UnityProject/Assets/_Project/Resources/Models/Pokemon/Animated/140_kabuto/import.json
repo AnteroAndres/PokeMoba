@@ -1,0 +1,54 @@
+{
+  "converterVersion": 3,
+  "dex": 140,
+  "key": "kabuto",
+  "sourceModel": "pokemon-master/public/models/140/model.glb",
+  "sha256": "76fdcf7d6753fe82ff99c6a631f7490e8a85bec0d8601aea714240330deeb4d5",
+  "modelFile": "Model.fbx",
+  "fps": 30,
+  "clips": [
+    {
+      "name": "idle",
+      "firstFrame": 0,
+      "lastFrame": 74,
+      "loop": true
+    },
+    {
+      "name": "walk",
+      "firstFrame": 76,
+      "lastFrame": 111,
+      "loop": true
+    },
+    {
+      "name": "run",
+      "firstFrame": 113,
+      "lastFrame": 151,
+      "loop": true
+    },
+    {
+      "name": "attack",
+      "firstFrame": 153,
+      "lastFrame": 227,
+      "loop": false
+    },
+    {
+      "name": "happy",
+      "firstFrame": 229,
+      "lastFrame": 295,
+      "loop": false
+    }
+  ],
+  "bindings": [
+    {
+      "material": "BodyA_gltf",
+      "texture": "tex/BodyA_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyB_gltf",
+      "texture": "tex/BodyB_gltf_base.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "textureCount": 2
+}

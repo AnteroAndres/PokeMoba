@@ -1,0 +1,100 @@
+{
+  "converterVersion": 3,
+  "dex": 77,
+  "key": "ponyta",
+  "sourceModel": "pokemon-master/public/models/077/model.glb",
+  "sha256": "ff2a1dc64f0a0e55f4c0f0c2bf745ee760314a1e07317357b144f33fffd35442",
+  "modelFile": "Model.fbx",
+  "fps": 30,
+  "clips": [
+    {
+      "name": "idle",
+      "firstFrame": 0,
+      "lastFrame": 62,
+      "loop": true
+    },
+    {
+      "name": "walk",
+      "firstFrame": 64,
+      "lastFrame": 138,
+      "loop": true
+    },
+    {
+      "name": "run",
+      "firstFrame": 140,
+      "lastFrame": 178,
+      "loop": true
+    },
+    {
+      "name": "attack",
+      "firstFrame": 180,
+      "lastFrame": 266,
+      "loop": false
+    },
+    {
+      "name": "happy",
+      "firstFrame": 268,
+      "lastFrame": 342,
+      "loop": false
+    },
+    {
+      "name": "sleep",
+      "firstFrame": 344,
+      "lastFrame": 418,
+      "loop": true
+    }
+  ],
+  "bindings": [
+    {
+      "material": "BodyA01_gltf",
+      "texture": "tex/BodyA01_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyA02_gltf",
+      "texture": "tex/BodyA02_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Eye_gltf",
+      "texture": "tex/Eye_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "FireCoreA_gltf",
+      "texture": "tex/FireCoreA_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "FireCoreB_gltf",
+      "texture": "tex/FireCoreB_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "FireCoreC_gltf",
+      "texture": "tex/FireCoreC_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "FireCoreD_gltf",
+      "texture": "tex/FireCoreD_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "FireCoreE_gltf",
+      "texture": "tex/FireCoreE_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "FireMaskA_gltf",
+      "texture": "tex/FireMaskA_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "FireMaskB_gltf",
+      "texture": "tex/FireMaskB_gltf_base.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "textureCount": 20
+}

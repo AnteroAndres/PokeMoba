@@ -53,6 +53,7 @@ namespace PokeMoba.Modes
 
             // El entrenador se queda detrás; su Pokémon sale delante.
             party = new PartyFighter(ctx, world, PlayerSpawn + Vector3.back * 3f, Vector3.forward);
+            party.Controller.BattleActive = true;
             party.AllFainted += () => Finish(false);
             party.Spawned += _ =>
             {

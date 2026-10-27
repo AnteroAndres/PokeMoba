@@ -1,0 +1,54 @@
+{
+  "converterVersion": 3,
+  "dex": 138,
+  "key": "omanyte",
+  "sourceModel": "pokemon-master/public/models/138/model.glb",
+  "sha256": "b20ab29e0ef8572d02bab5c231c4c3bb8313abd6e85c43ec60f4843557df011a",
+  "modelFile": "Model.fbx",
+  "fps": 30,
+  "clips": [
+    {
+      "name": "idle",
+      "firstFrame": 0,
+      "lastFrame": 98,
+      "loop": true
+    },
+    {
+      "name": "walk",
+      "firstFrame": 100,
+      "lastFrame": 174,
+      "loop": true
+    },
+    {
+      "name": "run",
+      "firstFrame": 176,
+      "lastFrame": 214,
+      "loop": true
+    },
+    {
+      "name": "attack",
+      "firstFrame": 216,
+      "lastFrame": 290,
+      "loop": false
+    },
+    {
+      "name": "happy",
+      "firstFrame": 292,
+      "lastFrame": 366,
+      "loop": false
+    }
+  ],
+  "bindings": [
+    {
+      "material": "Body_gltf",
+      "texture": "tex/Body_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Eye_gltf",
+      "texture": "tex/Eye_gltf_base.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "textureCount": 2
+}

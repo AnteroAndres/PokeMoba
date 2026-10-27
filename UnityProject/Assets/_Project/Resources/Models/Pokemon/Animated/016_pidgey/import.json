@@ -1,0 +1,60 @@
+{
+  "converterVersion": 3,
+  "dex": 16,
+  "key": "pidgey",
+  "sourceModel": "pokemon-master/public/models/016/model.glb",
+  "sha256": "5f7dafc0306e331b571fd3b28f58a83f6823d253348901aa3c03e6073bbecec5",
+  "modelFile": "Model.fbx",
+  "fps": 30,
+  "clips": [
+    {
+      "name": "idle",
+      "firstFrame": 0,
+      "lastFrame": 45,
+      "loop": true
+    },
+    {
+      "name": "walk",
+      "firstFrame": 47,
+      "lastFrame": 87,
+      "loop": true
+    },
+    {
+      "name": "run",
+      "firstFrame": 89,
+      "lastFrame": 119,
+      "loop": true
+    },
+    {
+      "name": "attack",
+      "firstFrame": 121,
+      "lastFrame": 183,
+      "loop": false
+    },
+    {
+      "name": "happy",
+      "firstFrame": 185,
+      "lastFrame": 265,
+      "loop": false
+    },
+    {
+      "name": "sleep",
+      "firstFrame": 267,
+      "lastFrame": 341,
+      "loop": true
+    }
+  ],
+  "bindings": [
+    {
+      "material": "Body_gltf",
+      "texture": "tex/Body_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Eye_gltf",
+      "texture": "tex/Eye_gltf_base.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "textureCount": 2
+}

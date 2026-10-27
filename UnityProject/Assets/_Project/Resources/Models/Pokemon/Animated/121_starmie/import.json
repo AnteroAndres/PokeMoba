@@ -1,0 +1,69 @@
+{
+  "converterVersion": 3,
+  "dex": 121,
+  "key": "starmie",
+  "sourceModel": "pokemon-master/public/models/121/model.glb",
+  "sha256": "b60ad9a10029afa1fc981357e107ad45548a3068846913394aa9bd1f922d3adf",
+  "modelFile": "Model.fbx",
+  "fps": 30,
+  "clips": [
+    {
+      "name": "idle",
+      "firstFrame": 0,
+      "lastFrame": 70,
+      "loop": true
+    },
+    {
+      "name": "walk",
+      "firstFrame": 72,
+      "lastFrame": 146,
+      "loop": true
+    },
+    {
+      "name": "run",
+      "firstFrame": 148,
+      "lastFrame": 222,
+      "loop": true
+    },
+    {
+      "name": "attack",
+      "firstFrame": 224,
+      "lastFrame": 288,
+      "loop": false
+    },
+    {
+      "name": "happy",
+      "firstFrame": 290,
+      "lastFrame": 346,
+      "loop": false
+    }
+  ],
+  "bindings": [
+    {
+      "material": "BodyA00_gltf",
+      "texture": "tex/BodyA00_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyA02_gltf",
+      "texture": "tex/BodyA02_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyB00_gltf",
+      "texture": "tex/BodyB00_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyB02_gltf",
+      "texture": "tex/BodyB02_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyB03_gltf",
+      "texture": "tex/BodyB03_gltf_base.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "textureCount": 5
+}

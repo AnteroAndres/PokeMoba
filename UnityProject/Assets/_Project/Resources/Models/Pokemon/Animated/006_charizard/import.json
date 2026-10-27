@@ -1,0 +1,95 @@
+{
+  "converterVersion": 3,
+  "dex": 6,
+  "key": "charizard",
+  "sourceModel": "pokemon-master/public/models/006/model.glb",
+  "sha256": "3282da7efe1e4a070d37a648d5af3d105365ec1a6320a4f572bb1b4307f5ba0a",
+  "modelFile": "Model.fbx",
+  "fps": 30,
+  "clips": [
+    {
+      "name": "idle",
+      "firstFrame": 0,
+      "lastFrame": 182,
+      "loop": true
+    },
+    {
+      "name": "walk",
+      "firstFrame": 184,
+      "lastFrame": 306,
+      "loop": true
+    },
+    {
+      "name": "run",
+      "firstFrame": 308,
+      "lastFrame": 372,
+      "loop": true
+    },
+    {
+      "name": "attack",
+      "firstFrame": 374,
+      "lastFrame": 538,
+      "loop": false
+    },
+    {
+      "name": "happy",
+      "firstFrame": 540,
+      "lastFrame": 717,
+      "loop": false
+    },
+    {
+      "name": "sleep",
+      "firstFrame": 719,
+      "lastFrame": 896,
+      "loop": true
+    }
+  ],
+  "bindings": [
+    {
+      "material": "body_a_gltf",
+      "texture": "tex/body_a_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "body_a_gltf",
+      "texture": "tex/body_a_gltf_normal.png",
+      "channel": "NormalMap"
+    },
+    {
+      "material": "body_b_gltf",
+      "texture": "tex/body_b_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "body_b_gltf",
+      "texture": "tex/body_b_gltf_normal.png",
+      "channel": "NormalMap"
+    },
+    {
+      "material": "fire_gltf",
+      "texture": "tex/fire_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "l_eye_gltf",
+      "texture": "tex/l_eye_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "l_eye_gltf",
+      "texture": "tex/l_eye_gltf_normal.png",
+      "channel": "NormalMap"
+    },
+    {
+      "material": "r_eye_gltf",
+      "texture": "tex/r_eye_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "r_eye_gltf",
+      "texture": "tex/r_eye_gltf_normal.png",
+      "channel": "NormalMap"
+    }
+  ],
+  "textureCount": 12
+}

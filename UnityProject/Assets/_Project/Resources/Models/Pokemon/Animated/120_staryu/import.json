@@ -1,0 +1,65 @@
+{
+  "converterVersion": 3,
+  "dex": 120,
+  "key": "staryu",
+  "sourceModel": "pokemon-master/public/models/120/model.glb",
+  "sha256": "89dbb0a25d277be916bf347e04b121a78b71b0dd9a502740114362abea3ab2f7",
+  "modelFile": "Model.fbx",
+  "fps": 30,
+  "clips": [
+    {
+      "name": "idle",
+      "firstFrame": 0,
+      "lastFrame": 74,
+      "loop": true
+    },
+    {
+      "name": "walk",
+      "firstFrame": 76,
+      "lastFrame": 150,
+      "loop": true
+    },
+    {
+      "name": "run",
+      "firstFrame": 152,
+      "lastFrame": 226,
+      "loop": true
+    },
+    {
+      "name": "attack",
+      "firstFrame": 228,
+      "lastFrame": 278,
+      "loop": false
+    },
+    {
+      "name": "happy",
+      "firstFrame": 280,
+      "lastFrame": 354,
+      "loop": false
+    },
+    {
+      "name": "sleep",
+      "firstFrame": 356,
+      "lastFrame": 430,
+      "loop": true
+    }
+  ],
+  "bindings": [
+    {
+      "material": "Body00_gltf",
+      "texture": "tex/Body00_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Body01_gltf",
+      "texture": "tex/Body01_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Body02_gltf",
+      "texture": "tex/Body02_gltf_base.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "textureCount": 3
+}

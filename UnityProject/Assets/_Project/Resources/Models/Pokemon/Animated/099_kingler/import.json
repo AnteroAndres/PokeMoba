@@ -1,0 +1,64 @@
+{
+  "converterVersion": 3,
+  "dex": 99,
+  "key": "kingler",
+  "sourceModel": "pokemon-master/public/models/099/model.glb",
+  "sha256": "96fb0bdbf4578cd44f52fe507606b60b0095f009d44b0fa81cbae7537e5134ba",
+  "modelFile": "Model.fbx",
+  "fps": 30,
+  "clips": [
+    {
+      "name": "idle",
+      "firstFrame": 0,
+      "lastFrame": 57,
+      "loop": true
+    },
+    {
+      "name": "walk",
+      "firstFrame": 59,
+      "lastFrame": 157,
+      "loop": true
+    },
+    {
+      "name": "run",
+      "firstFrame": 159,
+      "lastFrame": 209,
+      "loop": true
+    },
+    {
+      "name": "attack",
+      "firstFrame": 211,
+      "lastFrame": 294,
+      "loop": false
+    },
+    {
+      "name": "happy",
+      "firstFrame": 296,
+      "lastFrame": 365,
+      "loop": false
+    }
+  ],
+  "bindings": [
+    {
+      "material": "BodyA_gltf",
+      "texture": "tex/BodyA_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyB_gltf",
+      "texture": "tex/BodyB_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "EyeL_gltf",
+      "texture": "tex/EyeL_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "EyeR_gltf",
+      "texture": "tex/EyeR_gltf_base.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "textureCount": 4
+}

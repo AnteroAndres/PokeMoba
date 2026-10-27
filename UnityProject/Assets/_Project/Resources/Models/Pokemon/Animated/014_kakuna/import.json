@@ -1,0 +1,54 @@
+{
+  "converterVersion": 3,
+  "dex": 14,
+  "key": "kakuna",
+  "sourceModel": "pokemon-master/public/models/014/model.glb",
+  "sha256": "bbc9b8b3b5a19de61f8509e6c0788be165f7b09d3c2af3737b8d086b4a84903f",
+  "modelFile": "Model.fbx",
+  "fps": 30,
+  "clips": [
+    {
+      "name": "idle",
+      "firstFrame": 0,
+      "lastFrame": 92,
+      "loop": true
+    },
+    {
+      "name": "walk",
+      "firstFrame": 94,
+      "lastFrame": 168,
+      "loop": true
+    },
+    {
+      "name": "run",
+      "firstFrame": 170,
+      "lastFrame": 244,
+      "loop": true
+    },
+    {
+      "name": "attack",
+      "firstFrame": 246,
+      "lastFrame": 320,
+      "loop": false
+    },
+    {
+      "name": "happy",
+      "firstFrame": 322,
+      "lastFrame": 414,
+      "loop": false
+    }
+  ],
+  "bindings": [
+    {
+      "material": "Body_gltf",
+      "texture": "tex/Body_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Bug_gltf",
+      "texture": "tex/Bug_gltf_base.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "textureCount": 2
+}

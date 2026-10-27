@@ -1,0 +1,130 @@
+{
+  "converterVersion": 3,
+  "dex": 51,
+  "key": "dugtrio",
+  "sourceModel": "pokemon-master/public/models/051/model.glb",
+  "sha256": "122a6ead3e19615acc2985910fb30256bcff85727e17e0897e3580cadea91951",
+  "modelFile": "Model.fbx",
+  "fps": 30,
+  "clips": [
+    {
+      "name": "idle",
+      "firstFrame": 0,
+      "lastFrame": 121,
+      "loop": true
+    },
+    {
+      "name": "walk",
+      "firstFrame": 123,
+      "lastFrame": 244,
+      "loop": true
+    },
+    {
+      "name": "run",
+      "firstFrame": 246,
+      "lastFrame": 319,
+      "loop": true
+    },
+    {
+      "name": "attack",
+      "firstFrame": 321,
+      "lastFrame": 432,
+      "loop": false
+    },
+    {
+      "name": "happy",
+      "firstFrame": 434,
+      "lastFrame": 555,
+      "loop": false
+    },
+    {
+      "name": "sleep",
+      "firstFrame": 557,
+      "lastFrame": 678,
+      "loop": true
+    }
+  ],
+  "bindings": [
+    {
+      "material": "body_a_gltf",
+      "texture": "tex/body_a_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "body_a_gltf",
+      "texture": "tex/body_a_gltf_normal.png",
+      "channel": "NormalMap"
+    },
+    {
+      "material": "body_b_gltf",
+      "texture": "tex/body_b_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "body_b_gltf",
+      "texture": "tex/body_b_gltf_normal.png",
+      "channel": "NormalMap"
+    },
+    {
+      "material": "l_eye_00_gltf",
+      "texture": "tex/l_eye_00_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "l_eye_00_gltf",
+      "texture": "tex/l_eye_00_gltf_normal.png",
+      "channel": "NormalMap"
+    },
+    {
+      "material": "l_eye_01_gltf",
+      "texture": "tex/l_eye_01_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "l_eye_01_gltf",
+      "texture": "tex/l_eye_01_gltf_normal.png",
+      "channel": "NormalMap"
+    },
+    {
+      "material": "l_eye_02_gltf",
+      "texture": "tex/l_eye_02_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "l_eye_02_gltf",
+      "texture": "tex/l_eye_02_gltf_normal.png",
+      "channel": "NormalMap"
+    },
+    {
+      "material": "r_eye_00_gltf",
+      "texture": "tex/r_eye_00_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "r_eye_00_gltf",
+      "texture": "tex/r_eye_00_gltf_normal.png",
+      "channel": "NormalMap"
+    },
+    {
+      "material": "r_eye_01_gltf",
+      "texture": "tex/r_eye_01_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "r_eye_01_gltf",
+      "texture": "tex/r_eye_01_gltf_normal.png",
+      "channel": "NormalMap"
+    },
+    {
+      "material": "r_eye_02_gltf",
+      "texture": "tex/r_eye_02_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "r_eye_02_gltf",
+      "texture": "tex/r_eye_02_gltf_normal.png",
+      "channel": "NormalMap"
+    }
+  ],
+  "textureCount": 24
+}

@@ -164,6 +164,7 @@ namespace PokeMoba.Modes
                 var target = party.Controller.LockedTarget ?? (focus != null ? focus.GetComponent<Combatant>() : null);
                 bool danger = wilds.Any(w => w != null && w.Aggro && !w.GetComponent<Combatant>().IsDead &&
                     CombatQueries.FlatDistance(w.transform.position, trainer.transform.position) < 18f);
+                party.Controller.BattleActive = danger;
                 if (danger)
                 {
                     peaceTimer = 0f;

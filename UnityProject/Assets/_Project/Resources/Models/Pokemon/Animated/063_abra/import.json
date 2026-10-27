@@ -1,0 +1,49 @@
+{
+  "converterVersion": 3,
+  "dex": 63,
+  "key": "abra",
+  "sourceModel": "pokemon-master/public/models/063/model.glb",
+  "sha256": "e37e701b6ef6ec5a03023c3039811cfbfd8cdcfeecc0b895dc033dc62f0c7885",
+  "modelFile": "Model.fbx",
+  "fps": 30,
+  "clips": [
+    {
+      "name": "idle",
+      "firstFrame": 0,
+      "lastFrame": 98,
+      "loop": true
+    },
+    {
+      "name": "walk",
+      "firstFrame": 100,
+      "lastFrame": 210,
+      "loop": true
+    },
+    {
+      "name": "run",
+      "firstFrame": 212,
+      "lastFrame": 274,
+      "loop": true
+    },
+    {
+      "name": "attack",
+      "firstFrame": 276,
+      "lastFrame": 356,
+      "loop": false
+    },
+    {
+      "name": "happy",
+      "firstFrame": 358,
+      "lastFrame": 420,
+      "loop": false
+    }
+  ],
+  "bindings": [
+    {
+      "material": "Body_gltf",
+      "texture": "tex/Body_gltf_base.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "textureCount": 1
+}

@@ -1,0 +1,80 @@
+{
+  "converterVersion": 3,
+  "dex": 12,
+  "key": "butterfree",
+  "sourceModel": "pokemon-master/public/models/012/model.glb",
+  "sha256": "30287d72ac18bede9be36a217a517816c004d54ac668a42708f37d394058ff88",
+  "modelFile": "Model.fbx",
+  "fps": 30,
+  "clips": [
+    {
+      "name": "idle",
+      "firstFrame": 0,
+      "lastFrame": 78,
+      "loop": true
+    },
+    {
+      "name": "walk",
+      "firstFrame": 80,
+      "lastFrame": 211,
+      "loop": true
+    },
+    {
+      "name": "run",
+      "firstFrame": 213,
+      "lastFrame": 287,
+      "loop": true
+    },
+    {
+      "name": "attack",
+      "firstFrame": 289,
+      "lastFrame": 363,
+      "loop": false
+    },
+    {
+      "name": "happy",
+      "firstFrame": 365,
+      "lastFrame": 427,
+      "loop": false
+    },
+    {
+      "name": "sleep",
+      "firstFrame": 429,
+      "lastFrame": 539,
+      "loop": true
+    }
+  ],
+  "bindings": [
+    {
+      "material": "BodyA00_gltf",
+      "texture": "tex/BodyA00_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyA01_gltf",
+      "texture": "tex/BodyA01_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyASpc00_gltf",
+      "texture": "tex/BodyASpc00_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyASpc01_gltf",
+      "texture": "tex/BodyASpc01_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyCKurumiru_LeafVco00_gltf",
+      "texture": "tex/BodyCKurumiru_LeafVco00_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Bug_gltf",
+      "texture": "tex/Bug_gltf_base.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "textureCount": 6
+}

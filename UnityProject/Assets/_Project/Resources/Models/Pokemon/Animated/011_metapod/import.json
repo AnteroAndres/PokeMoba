@@ -1,0 +1,54 @@
+{
+  "converterVersion": 3,
+  "dex": 11,
+  "key": "metapod",
+  "sourceModel": "pokemon-master/public/models/011/model.glb",
+  "sha256": "78b530e70329456fc8bfb6b82c8c7354b33294aa60c5a1cd01d04cec70404f3e",
+  "modelFile": "Model.fbx",
+  "fps": 30,
+  "clips": [
+    {
+      "name": "idle",
+      "firstFrame": 0,
+      "lastFrame": 74,
+      "loop": true
+    },
+    {
+      "name": "walk",
+      "firstFrame": 76,
+      "lastFrame": 154,
+      "loop": true
+    },
+    {
+      "name": "run",
+      "firstFrame": 156,
+      "lastFrame": 234,
+      "loop": true
+    },
+    {
+      "name": "attack",
+      "firstFrame": 236,
+      "lastFrame": 286,
+      "loop": false
+    },
+    {
+      "name": "happy",
+      "firstFrame": 288,
+      "lastFrame": 362,
+      "loop": false
+    }
+  ],
+  "bindings": [
+    {
+      "material": "BodySpc_gltf",
+      "texture": "tex/BodySpc_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Eye_gltf",
+      "texture": "tex/Eye_gltf_base.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "textureCount": 2
+}

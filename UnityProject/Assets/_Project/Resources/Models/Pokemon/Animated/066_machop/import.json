@@ -1,0 +1,59 @@
+{
+  "converterVersion": 3,
+  "dex": 66,
+  "key": "machop",
+  "sourceModel": "pokemon-master/public/models/066/model.glb",
+  "sha256": "889b745b0ea48a8a2a1abd96c3a6dd58f3f9152955ad028325eac0180cfacd66",
+  "modelFile": "Model.fbx",
+  "fps": 30,
+  "clips": [
+    {
+      "name": "idle",
+      "firstFrame": 0,
+      "lastFrame": 74,
+      "loop": true
+    },
+    {
+      "name": "walk",
+      "firstFrame": 76,
+      "lastFrame": 145,
+      "loop": true
+    },
+    {
+      "name": "run",
+      "firstFrame": 147,
+      "lastFrame": 197,
+      "loop": true
+    },
+    {
+      "name": "attack",
+      "firstFrame": 199,
+      "lastFrame": 282,
+      "loop": false
+    },
+    {
+      "name": "happy",
+      "firstFrame": 284,
+      "lastFrame": 353,
+      "loop": false
+    }
+  ],
+  "bindings": [
+    {
+      "material": "Body_gltf",
+      "texture": "tex/Body_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "EyeL_gltf",
+      "texture": "tex/EyeL_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "EyeR_gltf",
+      "texture": "tex/EyeR_gltf_base.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "textureCount": 3
+}

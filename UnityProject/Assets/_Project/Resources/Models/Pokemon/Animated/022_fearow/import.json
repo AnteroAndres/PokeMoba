@@ -1,0 +1,59 @@
+{
+  "converterVersion": 3,
+  "dex": 22,
+  "key": "fearow",
+  "sourceModel": "pokemon-master/public/models/022/model.glb",
+  "sha256": "b6447283ee086d005c377165ced5b10d7e14fe59d22bf6dfc6697577021ada58",
+  "modelFile": "Model.fbx",
+  "fps": 30,
+  "clips": [
+    {
+      "name": "idle",
+      "firstFrame": 0,
+      "lastFrame": 61,
+      "loop": true
+    },
+    {
+      "name": "walk",
+      "firstFrame": 63,
+      "lastFrame": 124,
+      "loop": true
+    },
+    {
+      "name": "run",
+      "firstFrame": 126,
+      "lastFrame": 173,
+      "loop": true
+    },
+    {
+      "name": "attack",
+      "firstFrame": 175,
+      "lastFrame": 256,
+      "loop": false
+    },
+    {
+      "name": "happy",
+      "firstFrame": 258,
+      "lastFrame": 309,
+      "loop": false
+    }
+  ],
+  "bindings": [
+    {
+      "material": "BodyA_gltf",
+      "texture": "tex/BodyA_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "BodyB_gltf",
+      "texture": "tex/BodyB_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Eye_gltf",
+      "texture": "tex/Eye_gltf_base.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "textureCount": 3
+}

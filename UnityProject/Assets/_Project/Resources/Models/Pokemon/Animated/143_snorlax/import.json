@@ -1,0 +1,60 @@
+{
+  "converterVersion": 3,
+  "dex": 143,
+  "key": "snorlax",
+  "sourceModel": "pokemon-master/public/models/143/model.glb",
+  "sha256": "b49437acbb7485d092373940ca66425318660fe1237663160a6f8386ec5620ae",
+  "modelFile": "Model.fbx",
+  "fps": 30,
+  "clips": [
+    {
+      "name": "idle",
+      "firstFrame": 0,
+      "lastFrame": 189,
+      "loop": true
+    },
+    {
+      "name": "walk",
+      "firstFrame": 191,
+      "lastFrame": 380,
+      "loop": true
+    },
+    {
+      "name": "run",
+      "firstFrame": 382,
+      "lastFrame": 444,
+      "loop": true
+    },
+    {
+      "name": "attack",
+      "firstFrame": 446,
+      "lastFrame": 610,
+      "loop": false
+    },
+    {
+      "name": "happy",
+      "firstFrame": 612,
+      "lastFrame": 756,
+      "loop": false
+    },
+    {
+      "name": "sleep",
+      "firstFrame": 758,
+      "lastFrame": 910,
+      "loop": true
+    }
+  ],
+  "bindings": [
+    {
+      "material": "body_00_gltf",
+      "texture": "tex/body_00_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "body_00_gltf",
+      "texture": "tex/body_00_gltf_normal.png",
+      "channel": "NormalMap"
+    }
+  ],
+  "textureCount": 3
+}

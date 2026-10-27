@@ -10,8 +10,9 @@ namespace PokeMoba.Input
 {
     /// <summary>
     /// Control del entrenador en la Aventura (estilo Legends: Z-A): el joystick mueve al entrenador,
-    /// los 4 botones de movimiento dan órdenes al Pokémon compañero, Esquivar hace rodar al entrenador
-    /// y Fijar elige el objetivo (cada toque pasa al siguiente enemigo cercano; al final, lo suelta).
+    /// los 4 botones de movimiento dan órdenes al Pokémon compañero; Espacio ordena esquivar al Pokémon
+    /// en combate y hace saltar al entrenador durante la exploración.
+    /// Fijar elige el objetivo (cada toque pasa al siguiente enemigo cercano; al final, lo suelta).
     /// </summary>
     [RequireComponent(typeof(Combatant))]
     public class TrainerController : MonoBehaviour
@@ -22,6 +23,11 @@ namespace PokeMoba.Input
         /// <summary>Se llama al fijar o soltar un objetivo (para la cámara y el panel del rival).</summary>
         public event Action<Combatant> TargetChanged;
         public Func<bool> EnsureCompanion;
+        public Action<bool> ContextChanged;
+        public bool BattleActive { get; set; }
+        public bool IsInCombat => BattleActive || Time.time < combatUntil ||
+            (LockedTarget != null && !LockedTarget.IsDead && LockedTarget.gameObject.activeInHierarchy &&
+                CombatQueries.FlatDistance(LockedTarget.transform.position, transform.position) <= LockRange + 4f);
 
         Combatant self;
         CreatureMotor motor;
@@ -31,6 +37,8 @@ namespace PokeMoba.Input
         CompanionAI companion;
         Combatant lockedWithoutCompanion;
         TargetMarker marker;
+        Combatant companionUnit;
+        float combatUntil;
 
         void Awake()
         {
@@ -38,11 +46,14 @@ namespace PokeMoba.Input
             motor = GetComponent<CreatureMotor>();
             rig = GetComponentInChildren<TrainerRig>();
             marker = TargetMarker.Create();
+            self.HitBy += OnHit;
         }
 
         void OnDestroy()
         {
             if (marker != null) Destroy(marker.gameObject);
+            if (self != null) self.HitBy -= OnHit;
+            if (companionUnit != null) companionUnit.HitBy -= OnHit;
         }
 
         public void Bind(VirtualJoystick joystick, AbilityButton[] moveButtons, AbilityButton dodgeButton, Camera cam)
@@ -58,15 +69,18 @@ namespace PokeMoba.Input
                 moveButtons[i].AimReleased = _ => Order(slot);
             }
 
-            dodgeButton.Tapped = () => motor.TryDodge(motor.MoveInput);
+            dodgeButton.Tapped = () => PerformContextAction(motor.MoveInput);
             dodgeButton.AimChanged = null;
-            dodgeButton.AimReleased = aim => motor.TryDodge(ScreenToWorld(aim));
+            dodgeButton.AimReleased = aim => PerformContextAction(ScreenToWorld(aim));
         }
 
         /// <summary>Nuevo Pokémon compañero (al empezar o al cambiar): conserva el objetivo fijado.</summary>
         public void SetCompanion(Combatant pokemon)
         {
             var previous = LockedTarget;
+            if (companionUnit != null) companionUnit.HitBy -= OnHit;
+            companionUnit = pokemon;
+            if (companionUnit != null) companionUnit.HitBy += OnHit;
             companion = pokemon != null ? pokemon.GetComponent<CompanionAI>() : null;
             SetLock(previous);
         }
@@ -105,6 +119,17 @@ namespace PokeMoba.Input
                 if (nearest != null) SetLock(nearest);
             }
             companion.Command(slot);
+            if (LockedTarget != null) combatUntil = Time.time + 5f;
+        }
+
+        void OnHit(Combatant victim, Combatant attacker) => combatUntil = Time.time + 5f;
+
+        public bool PerformContextAction(Vector3 direction)
+        {
+            if (self == null || self.IsDead || Time.timeScale <= 0f || PokeMoba.UI.MenuScreens.AnyOpen) return false;
+            if (!IsInCombat) return motor.TryJump();
+            if (companion == null && (EnsureCompanion == null || !EnsureCompanion())) return false;
+            return companion != null && companion.Dodge(direction);
         }
 
         void Update()
@@ -112,6 +137,7 @@ namespace PokeMoba.Input
             // El objetivo murió o desapareció (capturado): soltarlo.
             var locked = LockedTarget;
             if (locked != null && (locked.IsDead || !locked.gameObject.activeInHierarchy)) SetLock(null);
+            ContextChanged?.Invoke(IsInCombat);
 
             if (self.IsDead || Time.timeScale <= 0f || PokeMoba.UI.MenuScreens.AnyOpen || (!Application.isMobilePlatform && Cursor.lockState != CursorLockMode.Locked))
             {
@@ -128,7 +154,7 @@ namespace PokeMoba.Input
             if (InputCompat.WasPressed(GameKey.Skill1)) Order(1);
             if (InputCompat.WasPressed(GameKey.Skill2)) Order(2);
             if (InputCompat.WasPressed(GameKey.Skill3)) Order(3);
-            if (InputCompat.WasPressed(GameKey.Dodge)) motor.TryDodge(motor.MoveInput);
+            if (InputCompat.WasPressed(GameKey.Dodge)) PerformContextAction(motor.MoveInput);
             if (InputCompat.WasPressed(GameKey.LockOn)) CycleLock();
 
             // Con objetivo fijado y quieto, el entrenador lo mira.

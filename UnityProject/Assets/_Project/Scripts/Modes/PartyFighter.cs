@@ -51,6 +51,8 @@ namespace PokeMoba.Modes
             Controller = Trainer.gameObject.AddComponent<TrainerController>();
             Controller.EnsureCompanion = () => Current != null && !Current.IsDead || SpawnFirstHealthy();
             Controller.Bind(ctx.Hud.Joystick, ctx.Hud.AbilityButtons, ctx.Hud.DodgeButton, ctx.Camera);
+            Controller.ContextChanged = ctx.Hud.SetCombatContext;
+            ctx.Hud.SetCombatContext(false);
             Controller.TargetChanged += target =>
             {
                 ctx.Hud.SetEnemy(target);
@@ -141,6 +143,7 @@ namespace PokeMoba.Modes
 
             Controller.SetCompanion(Current);
             ctx.Hud.Bind(Current, Controller.LockedTarget);
+            ctx.Hud.ExperienceSource = () => Leveling.Progress(Current.Species.GrowthRate, Instance.Level, Instance.Exp);
             Vfx.Burst(position + Vector3.up, Color.white, 1.8f);
             Spawned?.Invoke(Current);
         }
@@ -246,10 +249,10 @@ namespace PokeMoba.Modes
             var species = PokemonDatabase.Get(Instance.Key);
             int exp = Leveling.ExpYield(defeated.BaseExperience, defeatedLevel, fromTrainer);
             int trainerLevels = Save.AwardTrainerExperience(exp);
-            SaveService.Save();
             if (trainerLevels > 0)
                 ctx.Hud.Toast($"¡Entrenador nivel {Save.TrainerLevel}! Nuevo diseño de perfil desbloqueado.", 3f);
             int gained = Instance.AddExp(species, exp);
+            SaveService.Save();
             if (gained <= 0) return;
 
             ctx.Hud.Toast($"¡{Current.DisplayName} subió al nivel {Instance.Level}!", 2f);

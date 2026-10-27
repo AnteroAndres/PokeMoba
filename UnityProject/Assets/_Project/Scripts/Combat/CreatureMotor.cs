@@ -12,6 +12,7 @@ namespace PokeMoba.Combat
         public Vector3 Velocity { get; private set; }
 
         public bool IsDodging => dodgeTimer > 0f;
+        public bool IsJumping => jumpTimer > 0f;
         public bool IsInvulnerable => invulnerableTimer > 0f;
         public bool IsMovementLocked => lockTimer > 0f;
 
@@ -24,6 +25,17 @@ namespace PokeMoba.Combat
         float dodgeCooldownTimer;
         float lockTimer;
         float bobPhase;
+        const float JumpDuration = .75f;
+        const float JumpHeight = 1.2f;
+        float jumpTimer;
+
+        /// <summary>Salto de exploración: arco vertical sin invulnerabilidad ni coste de esquiva.</summary>
+        public bool TryJump()
+        {
+            if (combatant == null || combatant.IsDead || combatant.IsStructure || IsDodging || IsJumping) return false;
+            jumpTimer = JumpDuration;
+            return true;
+        }
 
         // Start y no Awake: Combatant añade este componente por RequireComponent
         // y en ese momento todavía no existe.
@@ -62,6 +74,7 @@ namespace PokeMoba.Combat
         {
             knockback = Vector3.zero;
             dodgeTimer = 0f;
+            jumpTimer = 0f;
             transform.position = PlayArea.Clamp(position, Radius);
         }
 
@@ -94,6 +107,7 @@ namespace PokeMoba.Combat
             invulnerableTimer -= dt;
             dodgeCooldownTimer -= dt;
             lockTimer -= dt;
+            jumpTimer = Mathf.Max(0f, jumpTimer - dt);
 
             if (combatant.IsDead || combatant.IsStructure)
             {
@@ -136,6 +150,14 @@ namespace PokeMoba.Combat
         void AnimateModel(float dt, Vector3 velocity)
         {
             if (model == null) return;
+
+            if (IsJumping && !IsDodging)
+            {
+                float t = 1f - jumpTimer / JumpDuration;
+                model.localRotation = Quaternion.identity;
+                model.localPosition = Vector3.up * (4f * JumpHeight * t * (1f - t));
+                return;
+            }
 
             if (IsDodging)
             {

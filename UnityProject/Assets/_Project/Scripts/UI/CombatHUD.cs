@@ -17,6 +17,7 @@ namespace PokeMoba.UI
         public VirtualJoystick Joystick { get; private set; }
         public AbilityButton[] AbilityButtons { get; private set; }
         public AbilityButton DodgeButton { get; private set; }
+        public Func<Leveling.ExperienceProgress> ExperienceSource { get; set; }
 
         class Panel
         {
@@ -26,6 +27,8 @@ namespace PokeMoba.UI
             public Text HpText;
             public RectTransform HpFill;
             public RectTransform StaminaFill;
+            public RectTransform ExperienceFill;
+            public Text ExperienceText;
         }
 
         class SkillView
@@ -41,6 +44,10 @@ namespace PokeMoba.UI
         Panel enemyPanel;
         SkillView[] skills;
         Image dodgeBackground;
+        Text dodgeLabel;
+        Text keyboardHint;
+        bool exploring;
+        bool contextInitialized;
         Text statusText;
         Text toastText;
         float toastTimer;
@@ -69,10 +76,24 @@ namespace PokeMoba.UI
         public void Bind(Combatant player, Combatant enemy)
         {
             this.player = player;
+            ExperienceSource = null;
             playerCaster = player != null ? player.GetComponent<AbilityCaster>() : null;
             playerPanel.Root.SetActive(player != null);
             RefreshPlayer();
             SetEnemy(enemy);
+        }
+
+        /// <summary>La misma acción táctil y Espacio cambian juntos al entrar o salir de combate.</summary>
+        public void SetCombatContext(bool inCombat)
+        {
+            if (contextInitialized && exploring == !inCombat) return;
+            contextInitialized = true;
+            exploring = !inCombat;
+            if (dodgeLabel != null) dodgeLabel.text = Application.isMobilePlatform
+                ? exploring ? "Saltar" : "Esquivar" : exploring ? "Saltar\nEspacio" : "Esquivar\nEspacio";
+            if (keyboardHint != null) keyboardHint.text =
+                "WASD / flechas mover · J K L I movimientos · Espacio " + (exploring ? "saltar" : "esquivar Pokémon") +
+                " · F objetivo · Q/E cámara · F1–F12 acciones";
         }
 
         /// <summary>Vuelve a leer nombre y movimientos (tras evolucionar o subir de nivel).</summary>
@@ -114,7 +135,7 @@ namespace PokeMoba.UI
         {
             var bg = UIFactory.CreateImage("Entrenador", rect, PanelColor);
             bg.raycastTarget = false;
-            var panelRect = bg.rectTransform.Place(new Vector2(0f, 1f), new Vector2(30f, -178f), new Vector2(400f, 52f));
+            var panelRect = bg.rectTransform.Place(new Vector2(0f, 1f), new Vector2(30f, -224f), new Vector2(400f, 52f));
             var panel = new TrainerPanel { Root = bg.gameObject };
 
             panel.Name = UIFactory.CreateText("Nombre", panelRect, "", 22, Color.white, TextAnchor.MiddleLeft);
@@ -171,6 +192,8 @@ namespace PokeMoba.UI
             extras.Clear();
             keyboardActions.Clear();
             SetTrainer(null);
+            ExperienceSource = null;
+            SetCombatContext(true);
             SetStatus("");
             toastTimer = 0f;
             toastText.text = "";
@@ -209,12 +232,13 @@ namespace PokeMoba.UI
             if (player == null) return;
 
             UpdatePanel(playerPanel, player);
+            UpdateExperience();
             if (enemy != null) UpdatePanel(enemyPanel, enemy);
             if (trainer != null) UpdateTrainerPanel();
 
             var motor = player.Motor;
             UIFactory.SetBarFill(playerPanel.StaminaFill, motor.Stamina / CombatTuning.MaxStamina);
-            dodgeBackground.color = motor.Stamina >= CombatTuning.DodgeCost
+            dodgeBackground.color = exploring || motor.Stamina >= CombatTuning.DodgeCost
                 ? new Color(0.35f, 0.75f, 1f)
                 : new Color(0.25f, 0.3f, 0.35f);
 
@@ -224,6 +248,20 @@ namespace PokeMoba.UI
                 float remaining = playerCaster.CooldownRemaining(i);
                 skills[i].CooldownText.text = remaining > 0.95f ? Mathf.CeilToInt(remaining).ToString() : "";
             }
+        }
+
+        void UpdateExperience()
+        {
+            if (ExperienceSource == null)
+            {
+                UIFactory.SetBarFill(playerPanel.ExperienceFill, 0);
+                playerPanel.ExperienceText.text = "XP · Nivel fijo en este modo";
+                return;
+            }
+            var progress = ExperienceSource();
+            UIFactory.SetBarFill(playerPanel.ExperienceFill, progress.Fraction);
+            playerPanel.ExperienceText.text = progress.AtCap ? "XP · NIVEL MÁXIMO"
+                : $"XP {progress.Current} / {progress.Required} · Faltan {progress.Remaining} para Nv. {progress.NextLevel}";
         }
 
         static void UpdatePanel(Panel panel, Combatant c)
@@ -287,10 +325,10 @@ namespace PokeMoba.UI
 
             if (showKeyboardHint)
             {
-                var hint = UIFactory.CreateText("Ayuda teclado", rect,
+                keyboardHint = UIFactory.CreateText("Ayuda teclado", rect,
                     "WASD / flechas mover · J K L I movimientos · Espacio esquivar · F objetivo · Q/E cámara · F1–F12 acciones",
                     22, new Color(1f, 1f, 1f, 0.7f), TextAnchor.LowerCenter);
-                hint.rectTransform.Place(new Vector2(0.5f, 0f), new Vector2(0f, 12f), new Vector2(1400f, 40f));
+                keyboardHint.rectTransform.Place(new Vector2(0.5f, 0f), new Vector2(0f, 12f), new Vector2(1600f, 40f));
             }
         }
 
@@ -298,7 +336,7 @@ namespace PokeMoba.UI
         {
             var bg = UIFactory.CreateImage("Panel", rect, PanelColor);
             bg.raycastTarget = false;
-            var panelRect = bg.rectTransform.Place(anchor, position, new Vector2(560f, withStamina ? 140f : 110f));
+            var panelRect = bg.rectTransform.Place(anchor, position, new Vector2(560f, withStamina ? 184f : 110f));
 
             var panel = new Panel { Root = bg.gameObject };
             var align = anchor.x < 0.5f ? TextAnchor.UpperLeft : TextAnchor.UpperRight;
@@ -322,6 +360,11 @@ namespace PokeMoba.UI
                 var stamina = UIFactory.CreateBar("Estamina", panelRect, BarBackground, new Color(0.35f, 0.75f, 1f));
                 panel.StaminaFill = stamina;
                 ((RectTransform)stamina.parent).Place(new Vector2(0.5f, 1f), new Vector2(0f, -102f), new Vector2(528f, 16f));
+                var xp = UIFactory.CreateBar("Experiencia", panelRect, BarBackground, new Color(.65f, .42f, 1f));
+                panel.ExperienceFill = xp;
+                ((RectTransform)xp.parent).Place(new Vector2(.5f, 1f), new Vector2(0f, -128f), new Vector2(528f, 10f));
+                panel.ExperienceText = UIFactory.CreateText("XP restante", panelRect, "", 20, new Color(.88f, .81f, 1f), TextAnchor.MiddleLeft);
+                panel.ExperienceText.rectTransform.Place(new Vector2(0f, 1f), new Vector2(16f, -145f), new Vector2(528f, 28f));
             }
 
             return panel;
@@ -382,8 +425,8 @@ namespace PokeMoba.UI
             dodgeBackground.alphaHitTestMinimumThreshold = 0.1f;
             dodgeBackground.rectTransform.Place(anchor, position, Vector2.one * size);
 
-            var label = UIFactory.CreateText("Texto", dodgeBackground.transform, Application.isMobilePlatform ? "Esquivar" : "Espacio", 24, Color.white, TextAnchor.MiddleCenter);
-            label.rectTransform.Stretch();
+            dodgeLabel = UIFactory.CreateText("Texto", dodgeBackground.transform, Application.isMobilePlatform ? "Esquivar" : "Esquivar\nEspacio", 24, Color.white, TextAnchor.MiddleCenter);
+            dodgeLabel.rectTransform.Stretch();
 
             return dodgeBackground.gameObject.AddComponent<AbilityButton>();
         }

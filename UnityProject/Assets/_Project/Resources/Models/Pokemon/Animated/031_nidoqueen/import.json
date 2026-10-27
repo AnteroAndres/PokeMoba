@@ -1,0 +1,54 @@
+{
+  "converterVersion": 3,
+  "dex": 31,
+  "key": "nidoqueen",
+  "sourceModel": "pokemon-master/public/models/031/model.glb",
+  "sha256": "30ed20188ccbed0b98baceec05d6ba27599473a0b5b00327b4b834c4320f51d1",
+  "modelFile": "Model.fbx",
+  "fps": 30,
+  "clips": [
+    {
+      "name": "idle",
+      "firstFrame": 0,
+      "lastFrame": 62,
+      "loop": true
+    },
+    {
+      "name": "walk",
+      "firstFrame": 64,
+      "lastFrame": 157,
+      "loop": true
+    },
+    {
+      "name": "run",
+      "firstFrame": 159,
+      "lastFrame": 206,
+      "loop": true
+    },
+    {
+      "name": "attack",
+      "firstFrame": 208,
+      "lastFrame": 276,
+      "loop": false
+    },
+    {
+      "name": "happy",
+      "firstFrame": 278,
+      "lastFrame": 343,
+      "loop": false
+    }
+  ],
+  "bindings": [
+    {
+      "material": "Body_gltf",
+      "texture": "tex/Body_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "Eye_gltf",
+      "texture": "tex/Eye_gltf_base.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "textureCount": 2
+}

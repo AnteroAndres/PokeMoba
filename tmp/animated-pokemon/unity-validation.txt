@@ -1,0 +1,1 @@
+PASS: 151 models at correct height and ground position; 869 clips with visible, bounded skinned geometry; walk sampling changed hierarchy for every species.

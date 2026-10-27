@@ -35,6 +35,16 @@ namespace PokeMoba.AI
 
         public bool HasPendingOrder => pendingSlot >= 0;
 
+        public bool Dodge(Vector3 direction)
+        {
+            if (self == null || self.IsDead) return false;
+            if (direction.sqrMagnitude < .001f && Target != null)
+                direction = Flat(transform.position - Target.transform.position);
+            if (!motor.TryDodge(direction)) return false;
+            pendingSlot = -1;
+            return true;
+        }
+
         /// <summary>Orden del entrenador: usar el movimiento de la ranura indicada.</summary>
         public void Command(int slot)
         {

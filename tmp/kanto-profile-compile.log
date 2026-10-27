@@ -1,0 +1,42 @@
+VBCSCompilerServerWatchdog: watching VBCSCompiler (PID 11552)
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.3/staging' branch; Version is '6000.3.27f1 (672d562a42a7) revision 6761814'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-andres" at "2026-10-26T21:29:55.9435099Z"
+OS: 'Windows 11  (10.0.26300) Professional' Language: 'es' Physical Memory: 16329 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-10-26T21:29:55Z
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 22748, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.3+d7ffd15
+  Session Id:              2dfe53ed47994ae69b040ca99e549d5e
+  Correlation Id:          d42f3b72d6594bd5668f39fa94f65ed9
+  External correlation Id: 5298842337052713127
+  Machine Id:              +q4Csd0Wcwg5L2yTzXfWavgjZxM=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-andres" (connect: 0.00s, validation: 0.00s, handshake: 0.05s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-andres-notifications" at "2026-10-26T21:29:55.9953638Z"
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 4674133869493-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.00
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 0.06s
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.3.27f1\Editor\Unity.exe
+-batchmode
+-nographics
+-quit
+-projectPath
+C:/Users/andres/Documents/PokeMoba/UnityProject
+-logFile
+C:/Users/andres/Documents/PokeMoba/tmp/kanto-profile-compile.log
+Successfully changed project path to: C:/Users/andres/Documents/PokeMoba/UnityProject
+C:/Users/andres/Documents/PokeMoba/UnityProject
+Exiting without the bug reporter. Application will terminate with return code 1

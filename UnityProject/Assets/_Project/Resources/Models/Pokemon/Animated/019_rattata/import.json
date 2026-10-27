@@ -1,0 +1,59 @@
+{
+  "converterVersion": 3,
+  "dex": 19,
+  "key": "rattata",
+  "sourceModel": "pokemon-master/public/models/019/model.glb",
+  "sha256": "ec58dbf872c9f1c33677cbd63729a2817346aa2a4d61940e7278bf74ac08070e",
+  "modelFile": "Model.fbx",
+  "fps": 30,
+  "clips": [
+    {
+      "name": "idle",
+      "firstFrame": 0,
+      "lastFrame": 50,
+      "loop": true
+    },
+    {
+      "name": "walk",
+      "firstFrame": 52,
+      "lastFrame": 102,
+      "loop": true
+    },
+    {
+      "name": "run",
+      "firstFrame": 104,
+      "lastFrame": 130,
+      "loop": true
+    },
+    {
+      "name": "attack",
+      "firstFrame": 132,
+      "lastFrame": 202,
+      "loop": false
+    },
+    {
+      "name": "happy",
+      "firstFrame": 204,
+      "lastFrame": 272,
+      "loop": false
+    }
+  ],
+  "bindings": [
+    {
+      "material": "Body_gltf",
+      "texture": "tex/Body_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "EyeL_gltf",
+      "texture": "tex/EyeL_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "EyeR_gltf",
+      "texture": "tex/EyeR_gltf_base.png",
+      "channel": "DiffuseColor"
+    }
+  ],
+  "textureCount": 3
+}

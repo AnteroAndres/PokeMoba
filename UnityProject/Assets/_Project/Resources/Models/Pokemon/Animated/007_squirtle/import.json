@@ -1,0 +1,100 @@
+{
+  "converterVersion": 3,
+  "dex": 7,
+  "key": "squirtle",
+  "sourceModel": "pokemon-master/public/models/007/model.glb",
+  "sha256": "aaafb1ac704552e781765fadd8adf3ade1a94587ab1c1a418295579390f944e9",
+  "modelFile": "Model.fbx",
+  "fps": 30,
+  "clips": [
+    {
+      "name": "idle",
+      "firstFrame": 0,
+      "lastFrame": 102,
+      "loop": true
+    },
+    {
+      "name": "walk",
+      "firstFrame": 104,
+      "lastFrame": 166,
+      "loop": true
+    },
+    {
+      "name": "run",
+      "firstFrame": 168,
+      "lastFrame": 207,
+      "loop": true
+    },
+    {
+      "name": "attack",
+      "firstFrame": 209,
+      "lastFrame": 348,
+      "loop": false
+    },
+    {
+      "name": "happy",
+      "firstFrame": 350,
+      "lastFrame": 464,
+      "loop": false
+    },
+    {
+      "name": "sleep",
+      "firstFrame": 466,
+      "lastFrame": 643,
+      "loop": true
+    }
+  ],
+  "bindings": [
+    {
+      "material": "body_a_gltf",
+      "texture": "tex/body_a_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "body_a_gltf",
+      "texture": "tex/body_a_gltf_normal.png",
+      "channel": "NormalMap"
+    },
+    {
+      "material": "body_b_00_gltf",
+      "texture": "tex/body_b_00_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "body_b_00_gltf",
+      "texture": "tex/body_b_00_gltf_normal.png",
+      "channel": "NormalMap"
+    },
+    {
+      "material": "body_b_01_gltf",
+      "texture": "tex/body_b_01_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "body_b_01_gltf",
+      "texture": "tex/body_b_01_gltf_normal.png",
+      "channel": "NormalMap"
+    },
+    {
+      "material": "l_eye_gltf",
+      "texture": "tex/l_eye_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "l_eye_gltf",
+      "texture": "tex/l_eye_gltf_normal.png",
+      "channel": "NormalMap"
+    },
+    {
+      "material": "r_eye_gltf",
+      "texture": "tex/r_eye_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "r_eye_gltf",
+      "texture": "tex/r_eye_gltf_normal.png",
+      "channel": "NormalMap"
+    }
+  ],
+  "textureCount": 13
+}

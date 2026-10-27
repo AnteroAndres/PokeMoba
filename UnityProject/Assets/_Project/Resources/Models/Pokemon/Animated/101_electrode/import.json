@@ -1,0 +1,70 @@
+{
+  "converterVersion": 3,
+  "dex": 101,
+  "key": "electrode",
+  "sourceModel": "pokemon-master/public/models/101/model.glb",
+  "sha256": "df88564c63ccbe2316004b5da3bc7914e924cedfdb66bd76179a57754321d450",
+  "modelFile": "Model.fbx",
+  "fps": 30,
+  "clips": [
+    {
+      "name": "idle",
+      "firstFrame": 0,
+      "lastFrame": 227,
+      "loop": true
+    },
+    {
+      "name": "walk",
+      "firstFrame": 229,
+      "lastFrame": 331,
+      "loop": true
+    },
+    {
+      "name": "run",
+      "firstFrame": 333,
+      "lastFrame": 410,
+      "loop": true
+    },
+    {
+      "name": "attack",
+      "firstFrame": 412,
+      "lastFrame": 526,
+      "loop": false
+    },
+    {
+      "name": "happy",
+      "firstFrame": 528,
+      "lastFrame": 655,
+      "loop": false
+    },
+    {
+      "name": "sleep",
+      "firstFrame": 657,
+      "lastFrame": 884,
+      "loop": true
+    }
+  ],
+  "bindings": [
+    {
+      "material": "body_a_gltf",
+      "texture": "tex/body_a_gltf_base.png",
+      "channel": "DiffuseColor"
+    },
+    {
+      "material": "body_a_gltf",
+      "texture": "tex/body_a_gltf_normal.png",
+      "channel": "NormalMap"
+    },
+    {
+      "material": "l_eye_gltf",
+      "texture": "tex/l_eye_gltf_normal.png",
+      "channel": "NormalMap"
+    },
+    {
+      "material": "r_eye_gltf",
+      "texture": "tex/r_eye_gltf_normal.png",
+      "channel": "NormalMap"
+    }
+  ],
+  "textureCount": 5
+}

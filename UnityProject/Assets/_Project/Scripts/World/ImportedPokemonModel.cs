@@ -55,6 +55,15 @@ namespace PokeMoba.World
 
         public static void Configure(GameObject instance, float height, bool shiny, bool animateFallback)
         {
+            // Establish the imported skeleton's pose before measuring its skinned geometry.
+            foreach (var animation in instance.GetComponentsInChildren<Animation>())
+            {
+                if (animation["idle"] == null) continue;
+                animation.Stop();
+                animation.Play("idle");
+                animation["idle"].time = 0;
+                animation.Sample();
+            }
             // Measure in the gameplay parent's coordinates: team/world rotation cannot alter the size.
             var parent = instance.transform.parent;
             var renderers = instance.GetComponentsInChildren<Renderer>(true);
@@ -87,8 +96,8 @@ namespace PokeMoba.World
                     renderer.sharedMaterials = slots;
                 }
             }
-            bool hasClip = false;
-            foreach (var animation in instance.GetComponentsInChildren<Animation>())
+            bool hasClip = PokemonAnimationDriver.TryAttach(instance);
+            if (!hasClip) foreach (var animation in instance.GetComponentsInChildren<Animation>())
             {
                 AnimationState first = null;
                 foreach (AnimationState state in animation)
@@ -115,7 +124,9 @@ namespace PokeMoba.World
                 if (renderer is SkinnedMeshRenderer skin)
                 {
                     var baked = new Mesh();
-                    skin.BakeMesh(baked);
+                    // BakeMesh(mesh) retains the skin's scale in its vertices. We apply the
+                    // transform matrix below, so request scale compensation to avoid squaring it.
+                    skin.BakeMesh(baked, true);
                     var skinMatrix = parent.worldToLocalMatrix * skin.transform.localToWorldMatrix;
                     foreach (var vertex in baked.vertices)
                     {
@@ -123,7 +134,8 @@ namespace PokeMoba.World
                         if (!initialized) { result = new Bounds(point, Vector3.zero); initialized = true; }
                         else result.Encapsulate(point);
                     }
-                    Object.Destroy(baked);
+                    if (Application.isPlaying) Object.Destroy(baked);
+                    else Object.DestroyImmediate(baked);
                     continue;
                 }
                 var local = renderer.localBounds;
