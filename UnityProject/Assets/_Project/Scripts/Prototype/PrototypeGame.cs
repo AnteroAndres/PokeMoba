@@ -162,7 +162,7 @@ namespace PokeMoba.Prototype
     /// así la escena Prototype.unity solo necesita un objeto con este componente.
     /// (Se llama PrototypeGame por compatibilidad con la escena ya creada.)
     /// </summary>
-    public class PrototypeGame : MonoBehaviour
+    public partial class PrototypeGame : MonoBehaviour
     {
         GameContext ctx;
         readonly Dictionary<string, Sprite> menuCardSprites = new Dictionary<string, Sprite>();
@@ -229,7 +229,7 @@ namespace PokeMoba.Prototype
         void AddMainMenuProfileHitArea(RectTransform panel)
         {
             MenuScreens.Button(panel, "", new Color(1f, 1f, 1f, 0f), new Vector2(0f, 1f),
-                KantoTrainerProfile.Position, KantoTrainerProfile.Size, () => new AdventureMode(ctx).OpenCustomization(), 1);
+                KantoTrainerProfile.Position, KantoTrainerProfile.Size, () => new ProfileEditor(ctx, ShowMainMenu).Open(), 1);
         }
 
         void AddLobbyStatusBar(RectTransform panel)

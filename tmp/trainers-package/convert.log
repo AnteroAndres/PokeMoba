@@ -1,0 +1,2882 @@
+SKIP tr0002_00_doctor_b
+Blender 4.5.3 LTS (hash 67807e1800cc built 2025-09-09 01:33:33)
+Fra:1 Mem:106.68M (Peak 109.44M) | Time:80:07:37.85 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | Body
+Fra:1 Mem:108.38M (Peak 109.44M) | Time:80:07:37.86 | Mem:0.00M, Peak:0.00M | Scene | Initializing
+Fra:1 Mem:108.37M (Peak 109.44M) | Time:80:07:37.86 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading fresnel_prb.png
+Fra:1 Mem:108.37M (Peak 109.44M) | Time:80:07:37.86 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading hairstyle_baked
+Fra:1 Mem:112.90M (Peak 112.90M) | Time:80:07:37.86 | Mem:1.00M, Peak:1.00M | Scene | Updating Images | Loading eye_baked
+Fra:1 Mem:113.90M (Peak 113.90M) | Time:80:07:37.86 | Mem:2.00M, Peak:2.00M | Scene | Updating Images | Loading face_baked
+Fra:1 Mem:114.90M (Peak 114.90M) | Time:80:07:37.86 | Mem:3.00M, Peak:3.00M | Scene | Updating Images | Loading face_skin_baked
+Fra:1 Mem:115.90M (Peak 115.90M) | Time:80:07:37.86 | Mem:4.00M, Peak:4.00M | Scene | Updating Images | Loading body_skin_baked
+Fra:1 Mem:116.90M (Peak 116.90M) | Time:80:07:37.86 | Mem:5.00M, Peak:5.00M | Scene | Updating Images | Loading body_baked
+Fra:1 Mem:117.90M (Peak 117.90M) | Time:80:07:37.86 | Mem:6.00M, Peak:6.00M | Scene | Updating Images | Loading default_mega_flow.png.001
+Fra:1 Mem:117.96M (Peak 117.96M) | Time:80:07:37.86 | Mem:6.06M, Peak:6.06M | Scene | Updating Images | Loading default_mega_color.png.001
+Fra:1 Mem:117.97M (Peak 117.97M) | Time:80:07:37.86 | Mem:6.07M, Peak:6.07M | Scene | Updating Images | Loading poke_default_metal_prb.png
+Extensions: writing cache failed ([Errno 13] Permission denied: 'C:\\Users\\andres\\AppData\\Roaming\\Blender Foundation\\Blender\\4.5\\extensions\\.cache\\compat.dat').
+BaseColorMap tr0003_00_body_alb.bntx
+WeatherLayerMaskMap tr0003_00_body_wlm.bntx
+NormalMap tr0003_00_body_nrm.bntx
+MetallicMap tr0003_00_body_mtl.bntx
+RoughnessMap tr0003_00_body_rgn.bntx
+AOMap tr0003_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0003_00_body_alb.bntx
+NormalMap tr0003_00_body_nrm.bntx
+MetallicMap tr0003_00_body_mtl.bntx
+RoughnessMap tr0003_00_body_rgn.bntx
+AOMap tr0003_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0003_00_face_alb.bntx
+NormalMap tr0003_00_face_nrm.bntx
+MetallicMap tr0003_00_face_mtl.bntx
+RoughnessMap tr0003_00_face_rgn.bntx
+AOMap tr0003_00_face_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0003_00_face_alb.bntx
+NormalMap tr0003_00_face_nrm.bntx
+MetallicMap tr0003_00_face_mtl.bntx
+RoughnessMap tr0003_00_face_rgn.bntx
+AOMap tr0003_00_face_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0003_00_eye_alb.bntx
+EmissionColorMap tr0003_00_eye_emv.bntx
+AOMap tr0003_00_eye_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 1.0
+EmissionIntensity 0.800000011920929
+BaseColorMap tr0003_00_hairstyle_alb.bntx
+WeatherLayerMaskMap tr0003_00_hairstyle_wlm.bntx
+NormalMap tr0003_00_hairstyle_nrm.bntx
+MetallicMap tr0003_00_hairstyle_mtl.bntx
+RoughnessMap tr0003_00_hairstyle_rgn.bntx
+AOMap tr0003_00_hairstyle_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+Offline Mode
+! Loaded shader blend file.
+Parsing TRMSH...
+Parsing TRMBF...
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+
+FBX export starting... 'C:\\Users\\andres\\Documents\\PokeMoba\\UnityProject\\Assets\\_Project\\Resources\\Models\\Trainers\\Package\\tr0003_00_ouji\\Model.fbx'
+(bpy.data.armatures['tr0003_00_ouji'], 'POSE')
+export finished in 0.0872 sec.
+CONVERTED tr0003_00_ouji 6 materials 8147 vertices
+Fra:1 Mem:135.28M (Peak 151.76M) | Time:80:07:39.47 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | Body
+Fra:1 Mem:136.91M (Peak 151.76M) | Time:80:07:39.47 | Mem:0.00M, Peak:0.00M | Scene | Initializing
+Fra:1 Mem:136.91M (Peak 151.76M) | Time:80:07:39.47 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading fresnel_prb.png
+Fra:1 Mem:136.91M (Peak 151.76M) | Time:80:07:39.47 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading obj_baked
+Fra:1 Mem:141.44M (Peak 151.76M) | Time:80:07:39.48 | Mem:1.00M, Peak:1.00M | Scene | Updating Images | Loading body_skin_baked
+Fra:1 Mem:142.44M (Peak 151.76M) | Time:80:07:39.48 | Mem:2.00M, Peak:2.00M | Scene | Updating Images | Loading body_baked
+Fra:1 Mem:143.44M (Peak 151.76M) | Time:80:07:39.48 | Mem:3.00M, Peak:3.00M | Scene | Updating Images | Loading eye_baked
+Fra:1 Mem:144.44M (Peak 151.76M) | Time:80:07:39.48 | Mem:4.00M, Peak:4.00M | Scene | Updating Images | Loading face_baked
+Fra:1 Mem:145.44M (Peak 151.76M) | Time:80:07:39.48 | Mem:5.00M, Peak:5.00M | Scene | Updating Images | Loading face_skin_baked
+Fra:1 Mem:146.44M (Peak 151.76M) | Time:80:07:39.48 | Mem:6.00M, Peak:6.00M | Scene | Updating Images | Loading hairstyle_baked
+Fra:1 Mem:147.44M (Peak 151.76M) | Time:80:07:39.48 | Mem:7.00M, Peak:7.00M | Scene | Updating Images | Loading hairstyle_obj_baked
+Fra:1 Mem:148.44M (Peak 151.76M) | Time:80:07:39.48 | Mem:8.00M, Peak:8.00M | Scene | Updating Images | Loading default_mega_flow.png.001
+Fra:1 Mem:152.02M (Peak 152.02M) | Time:80:07:39.48 | Mem:8.06M, Peak:8.06M | Scene | Updating Images | Loading default_mega_color.png.001
+Fra:1 Mem:152.03M (Peak 152.03M) | Time:80:07:39.48 | Mem:8.07M, Peak:8.07M | Scene | Updating Images | Loading poke_default_metal_prb.png
+Extensions: writing cache failed ([Errno 13] Permission denied: 'C:\\Users\\andres\\AppData\\Roaming\\Blender Foundation\\Blender\\4.5\\extensions\\.cache\\compat.dat').
+BaseColorMap tr0004_00_hairstyle_alb.bntx
+WeatherLayerMaskMap tr0004_00_hairstyle_wlm.bntx
+NormalMap tr0004_00_hairstyle_nrm.bntx
+MetallicMap tr0004_00_hairstyle_mtl.bntx
+RoughnessMap tr0004_00_hairstyle_rgn.bntx
+AOMap tr0004_00_hairstyle_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0004_00_hairstyle_alb.bntx
+WeatherLayerMaskMap tr0004_00_hairstyle_wlm.bntx
+NormalMap tr0004_00_hairstyle_nrm.bntx
+MetallicMap tr0004_00_hairstyle_mtl.bntx
+RoughnessMap tr0004_00_hairstyle_rgn.bntx
+AOMap tr0004_00_hairstyle_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0004_00_face_alb.bntx
+AOMap tr0004_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0004_00_face_alb.bntx
+AOMap tr0004_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0004_00_eye_alb.bntx
+EmissionColorMap tr0004_00_eye_emv.bntx
+AOMap tr0004_00_eye_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 1.0
+EmissionIntensity 0.800000011920929
+BaseColorMap tr0004_00_body_alb.bntx
+WeatherLayerMaskMap tr0004_00_body_wlm.bntx
+NormalMap tr0004_00_body_nrm.bntx
+MetallicMap tr0004_00_body_mtl.bntx
+RoughnessMap tr0004_00_body_rgn.bntx
+AOMap tr0004_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0004_00_body_alb.bntx
+WeatherLayerMaskMap tr0004_00_body_wlm.bntx
+NormalMap tr0004_00_body_nrm.bntx
+MetallicMap tr0004_00_body_mtl.bntx
+RoughnessMap tr0004_00_body_rgn.bntx
+AOMap tr0004_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0004_00_obj_alb.bntx
+WeatherLayerMaskMap tr0004_00_obj_wlm.bntx
+NormalMap tr0004_00_obj_nrm.bntx
+MetallicMap tr0004_00_obj_mtl.bntx
+RoughnessMap tr0004_00_obj_rgn.bntx
+AOMap tr0004_00_obj_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+Offline Mode
+! Loaded shader blend file.
+Parsing TRMSH...
+Parsing TRMBF...
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+
+FBX export starting... 'C:\\Users\\andres\\Documents\\PokeMoba\\UnityProject\\Assets\\_Project\\Resources\\Models\\Trainers\\Package\\tr0004_00_hime\\Model.fbx'
+(bpy.data.armatures['tr0004_00_hime'], 'POSE')
+export finished in 0.1314 sec.
+CONVERTED tr0004_00_hime 8 materials 7582 vertices
+Fra:1 Mem:120.54M (Peak 180.47M) | Time:80:07:41.43 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | Body
+Fra:1 Mem:121.92M (Peak 180.47M) | Time:80:07:41.43 | Mem:0.00M, Peak:0.00M | Scene | Initializing
+Fra:1 Mem:121.92M (Peak 180.47M) | Time:80:07:41.43 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading fresnel_prb.png
+Fra:1 Mem:121.92M (Peak 180.47M) | Time:80:07:41.43 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading obj_baked
+Fra:1 Mem:126.45M (Peak 180.47M) | Time:80:07:41.43 | Mem:1.00M, Peak:1.00M | Scene | Updating Images | Loading body_baked
+Fra:1 Mem:127.45M (Peak 180.47M) | Time:80:07:41.43 | Mem:2.00M, Peak:2.00M | Scene | Updating Images | Loading body_skin_baked
+Fra:1 Mem:128.45M (Peak 180.47M) | Time:80:07:41.44 | Mem:3.00M, Peak:3.00M | Scene | Updating Images | Loading hairstyle_baked
+Fra:1 Mem:129.45M (Peak 180.47M) | Time:80:07:41.44 | Mem:4.00M, Peak:4.00M | Scene | Updating Images | Loading face_skin_baked
+Fra:1 Mem:130.45M (Peak 180.47M) | Time:80:07:41.44 | Mem:5.00M, Peak:5.00M | Scene | Updating Images | Loading eye_baked
+Fra:1 Mem:131.45M (Peak 180.47M) | Time:80:07:41.44 | Mem:6.00M, Peak:6.00M | Scene | Updating Images | Loading face_baked
+Fra:1 Mem:132.45M (Peak 180.47M) | Time:80:07:41.44 | Mem:7.00M, Peak:7.00M | Scene | Updating Images | Loading default_mega_flow.png.001
+Fra:1 Mem:132.51M (Peak 180.47M) | Time:80:07:41.44 | Mem:7.06M, Peak:7.06M | Scene | Updating Images | Loading default_mega_color.png.001
+Fra:1 Mem:132.51M (Peak 180.47M) | Time:80:07:41.44 | Mem:7.07M, Peak:7.07M | Scene | Updating Images | Loading poke_default_metal_prb.png
+Extensions: writing cache failed ([Errno 13] Permission denied: 'C:\\Users\\andres\\AppData\\Roaming\\Blender Foundation\\Blender\\4.5\\extensions\\.cache\\compat.dat').
+BaseColorMap tr0005_00_face_alb.bntx
+AOMap tr0005_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0005_00_eye_alb.bntx
+EmissionColorMap tr0005_00_eye_emv.bntx
+AOMap tr0005_00_eye_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 1.0
+EmissionIntensity 0.800000011920929
+BaseColorMap tr0005_00_face_alb.bntx
+AOMap tr0005_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0005_00_hairstyle_alb.bntx
+WeatherLayerMaskMap tr0005_00_hairstyle_wlm.bntx
+NormalMap tr0005_00_hairstyle_nrm.bntx
+AOMap tr0005_00_hairstyle_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.4099999964237213
+Roughness 0.6499999761581421
+EmissionIntensity 0.0
+BaseColorMap tr0005_00_body_alb.bntx
+WeatherLayerMaskMap tr0005_00_body_wlm.bntx
+NormalMap tr0005_00_body_nrm.bntx
+MetallicMap tr0005_00_body_mtl.bntx
+RoughnessMap tr0005_00_body_rgn.bntx
+AOMap tr0005_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0005_00_body_alb.bntx
+WeatherLayerMaskMap tr0005_00_body_wlm.bntx
+NormalMap tr0005_00_body_nrm.bntx
+MetallicMap tr0005_00_body_mtl.bntx
+RoughnessMap tr0005_00_body_rgn.bntx
+AOMap tr0005_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0005_00_obj_alb.bntx
+WeatherLayerMaskMap tr0005_00_obj_wlm.bntx
+NormalMap tr0005_00_obj_nrm.bntx
+MetallicMap tr0005_00_obj_mtl.bntx
+RoughnessMap tr0005_00_obj_rgn.bntx
+AOMap tr0005_00_obj_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+Offline Mode
+! Loaded shader blend file.
+Parsing TRMSH...
+Parsing TRMBF...
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+
+FBX export starting... 'C:\\Users\\andres\\Documents\\PokeMoba\\UnityProject\\Assets\\_Project\\Resources\\Models\\Trainers\\Package\\tr0005_00_boss1\\Model.fbx'
+(bpy.data.armatures['tr0005_00_boss1'], 'POSE')
+export finished in 0.0822 sec.
+CONVERTED tr0005_00_boss1 7 materials 6580 vertices
+Fra:1 Mem:121.55M (Peak 180.47M) | Time:80:07:43.47 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | Body
+Fra:1 Mem:123.31M (Peak 180.47M) | Time:80:07:43.48 | Mem:0.00M, Peak:0.00M | Scene | Initializing
+Fra:1 Mem:123.30M (Peak 180.47M) | Time:80:07:43.48 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading fresnel_prb.png
+Fra:1 Mem:123.30M (Peak 180.47M) | Time:80:07:43.48 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading obj_baked
+Fra:1 Mem:127.83M (Peak 180.47M) | Time:80:07:43.48 | Mem:1.00M, Peak:1.00M | Scene | Updating Images | Loading body_baked
+Fra:1 Mem:128.83M (Peak 180.47M) | Time:80:07:43.48 | Mem:2.00M, Peak:2.00M | Scene | Updating Images | Loading hairstyle_baked
+Fra:1 Mem:129.83M (Peak 180.47M) | Time:80:07:43.48 | Mem:3.00M, Peak:3.00M | Scene | Updating Images | Loading face_skin_baked
+Fra:1 Mem:130.83M (Peak 180.47M) | Time:80:07:43.48 | Mem:4.00M, Peak:4.00M | Scene | Updating Images | Loading eye_baked
+Fra:1 Mem:131.83M (Peak 180.47M) | Time:80:07:43.48 | Mem:5.00M, Peak:5.00M | Scene | Updating Images | Loading face_baked
+Fra:1 Mem:132.83M (Peak 180.47M) | Time:80:07:43.48 | Mem:6.00M, Peak:6.00M | Scene | Updating Images | Loading body_skin_baked
+Fra:1 Mem:133.83M (Peak 180.47M) | Time:80:07:43.48 | Mem:7.00M, Peak:7.00M | Scene | Updating Images | Loading default_mega_flow.png.001
+Fra:1 Mem:133.90M (Peak 180.47M) | Time:80:07:43.48 | Mem:7.06M, Peak:7.06M | Scene | Updating Images | Loading default_mega_color.png.001
+Fra:1 Mem:137.42M (Peak 180.47M) | Time:80:07:43.48 | Mem:7.07M, Peak:7.07M | Scene | Updating Images | Loading poke_default_metal_prb.png
+Extensions: writing cache failed ([Errno 13] Permission denied: 'C:\\Users\\andres\\AppData\\Roaming\\Blender Foundation\\Blender\\4.5\\extensions\\.cache\\compat.dat').
+BaseColorMap tr0006_00_body_alb.bntx
+AOMap tr0006_00_body_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0006_00_face_alb.bntx
+AOMap tr0006_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0006_00_eye_alb.bntx
+EmissionColorMap tr0006_00_eye_emv.bntx
+AOMap tr0006_00_eye_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 1.0
+EmissionIntensity 0.800000011920929
+BaseColorMap tr0006_00_face_alb.bntx
+AOMap tr0006_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0006_00_hairstyle_alb.bntx
+WeatherLayerMaskMap tr0006_00_hairstyle_wlm.bntx
+NormalMap tr0006_00_hairstyle_nrm.bntx
+AOMap tr0006_00_hairstyle_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.4099999964237213
+Roughness 0.6499999761581421
+EmissionIntensity 0.0
+BaseColorMap tr0006_00_body_alb.bntx
+WeatherLayerMaskMap tr0006_00_body_wlm.bntx
+NormalMap tr0006_00_body_nrm.bntx
+MetallicMap tr0006_00_body_mtl.bntx
+RoughnessMap tr0006_00_body_rgn.bntx
+AOMap tr0006_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0006_00_obj_alb.bntx
+WeatherLayerMaskMap tr0006_00_obj_wlm.bntx
+NormalMap tr0006_00_obj_nrm.bntx
+MetallicMap tr0006_00_obj_mtl.bntx
+RoughnessMap tr0006_00_obj_rgn.bntx
+AOMap tr0006_00_obj_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+Offline Mode
+! Loaded shader blend file.
+Parsing TRMSH...
+Parsing TRMBF...
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+
+FBX export starting... 'C:\\Users\\andres\\Documents\\PokeMoba\\UnityProject\\Assets\\_Project\\Resources\\Models\\Trainers\\Package\\tr0006_00_boss2\\Model.fbx'
+(bpy.data.armatures['tr0006_00_boss2'], 'POSE')
+export finished in 0.1035 sec.
+CONVERTED tr0006_00_boss2 7 materials 8843 vertices
+Fra:1 Mem:120.73M (Peak 180.47M) | Time:80:07:45.52 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | Body
+Fra:1 Mem:122.22M (Peak 180.47M) | Time:80:07:45.52 | Mem:0.00M, Peak:0.00M | Scene | Initializing
+Fra:1 Mem:122.22M (Peak 180.47M) | Time:80:07:45.52 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading body_skin_baked
+Fra:1 Mem:126.75M (Peak 180.47M) | Time:80:07:45.52 | Mem:1.00M, Peak:1.00M | Scene | Updating Images | Loading face_baked
+Fra:1 Mem:127.75M (Peak 180.47M) | Time:80:07:45.52 | Mem:2.00M, Peak:2.00M | Scene | Updating Images | Loading obj_baked
+Fra:1 Mem:128.75M (Peak 180.47M) | Time:80:07:45.52 | Mem:3.00M, Peak:3.00M | Scene | Updating Images | Loading hairstyle_baked
+Fra:1 Mem:129.75M (Peak 180.47M) | Time:80:07:45.52 | Mem:4.00M, Peak:4.00M | Scene | Updating Images | Loading face_skin_baked
+Fra:1 Mem:130.75M (Peak 180.47M) | Time:80:07:45.52 | Mem:5.00M, Peak:5.00M | Scene | Updating Images | Loading eye_baked
+Fra:1 Mem:131.75M (Peak 180.47M) | Time:80:07:45.53 | Mem:6.00M, Peak:6.00M | Scene | Updating Images | Loading body_baked
+Fra:1 Mem:132.75M (Peak 180.47M) | Time:80:07:45.53 | Mem:7.00M, Peak:7.00M | Scene | Updating Images | Loading default_mega_flow.png.001
+Fra:1 Mem:132.81M (Peak 180.47M) | Time:80:07:45.53 | Mem:7.06M, Peak:7.06M | Scene | Updating Images | Loading default_mega_color.png.001
+Fra:1 Mem:132.82M (Peak 180.47M) | Time:80:07:45.53 | Mem:7.07M, Peak:7.07M | Scene | Updating Images | Loading poke_default_metal_prb.png
+Extensions: writing cache failed ([Errno 13] Permission denied: 'C:\\Users\\andres\\AppData\\Roaming\\Blender Foundation\\Blender\\4.5\\extensions\\.cache\\compat.dat').
+BaseColorMap tr0007_00_body_alb.bntx
+WeatherLayerMaskMap tr0007_00_body_wlm.bntx
+NormalMap tr0007_00_body_nrm.bntx
+MetallicMap tr0007_00_body_mtl.bntx
+RoughnessMap tr0007_00_body_rgn.bntx
+AOMap tr0007_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0007_00_eye_alb.bntx
+EmissionColorMap tr0007_00_eye_emv.bntx
+AOMap tr0007_00_eye_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 1.0
+EmissionIntensity 0.800000011920929
+BaseColorMap tr0007_00_face_alb.bntx
+AOMap tr0007_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0007_00_hairstyle_alb.bntx
+WeatherLayerMaskMap tr0007_00_hairstyle_wlm.bntx
+NormalMap tr0007_00_hairstyle_nrm.bntx
+AOMap tr0007_00_hairstyle_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.25
+Roughness 0.6499999761581421
+EmissionIntensity 0.0
+BaseColorMap tr0007_00_obj_alb.bntx
+WeatherLayerMaskMap tr0007_00_obj_wlm.bntx
+NormalMap tr0007_00_obj_nrm.bntx
+MetallicMap tr0007_00_obj_mtl.bntx
+RoughnessMap tr0007_00_obj_rgn.bntx
+AOMap tr0007_00_obj_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0007_00_face_alb.bntx
+AOMap tr0007_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0007_00_body_alb.bntx
+WeatherLayerMaskMap tr0007_00_body_wlm.bntx
+NormalMap tr0007_00_body_nrm.bntx
+MetallicMap tr0007_00_body_mtl.bntx
+RoughnessMap tr0007_00_body_rgn.bntx
+AOMap tr0007_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+Offline Mode
+! Loaded shader blend file.
+Parsing TRMSH...
+Parsing TRMBF...
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+
+FBX export starting... 'C:\\Users\\andres\\Documents\\PokeMoba\\UnityProject\\Assets\\_Project\\Resources\\Models\\Trainers\\Package\\tr0007_00_si1\\Model.fbx'
+(bpy.data.armatures['tr0007_00_si1'], 'POSE')
+export finished in 0.1110 sec.
+CONVERTED tr0007_00_si1 7 materials 7296 vertices
+Fra:1 Mem:106.23M (Peak 180.47M) | Time:80:07:47.62 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | Body
+Fra:1 Mem:107.62M (Peak 180.47M) | Time:80:07:47.62 | Mem:0.00M, Peak:0.00M | Scene | Initializing
+Fra:1 Mem:107.61M (Peak 180.47M) | Time:80:07:47.63 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading fresnel_prb.png
+Fra:1 Mem:107.61M (Peak 180.47M) | Time:80:07:47.63 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading body_baked
+Fra:1 Mem:112.14M (Peak 180.47M) | Time:80:07:47.63 | Mem:1.00M, Peak:1.00M | Scene | Updating Images | Loading body_skin_baked
+Fra:1 Mem:113.14M (Peak 180.47M) | Time:80:07:47.63 | Mem:2.00M, Peak:2.00M | Scene | Updating Images | Loading hairstyle_baked
+Fra:1 Mem:114.14M (Peak 180.47M) | Time:80:07:47.63 | Mem:3.00M, Peak:3.00M | Scene | Updating Images | Loading face_baked
+Fra:1 Mem:115.14M (Peak 180.47M) | Time:80:07:47.63 | Mem:4.00M, Peak:4.00M | Scene | Updating Images | Loading eye_baked
+Fra:1 Mem:116.14M (Peak 180.47M) | Time:80:07:47.63 | Mem:5.00M, Peak:5.00M | Scene | Updating Images | Loading face_skin_baked
+Fra:1 Mem:117.14M (Peak 180.47M) | Time:80:07:47.63 | Mem:6.00M, Peak:6.00M | Scene | Updating Images | Loading default_mega_flow.png.001
+Fra:1 Mem:117.20M (Peak 180.47M) | Time:80:07:47.63 | Mem:6.06M, Peak:6.06M | Scene | Updating Images | Loading default_mega_color.png.001
+Fra:1 Mem:117.21M (Peak 180.47M) | Time:80:07:47.63 | Mem:6.07M, Peak:6.07M | Scene | Updating Images | Loading poke_default_metal_prb.png
+Extensions: writing cache failed ([Errno 13] Permission denied: 'C:\\Users\\andres\\AppData\\Roaming\\Blender Foundation\\Blender\\4.5\\extensions\\.cache\\compat.dat').
+BaseColorMap tr0008_00_face_alb.bntx
+AOMap tr0008_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0008_00_eye_alb.bntx
+EmissionColorMap tr0008_00_eye_emv.bntx
+AOMap tr0008_00_eye_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 1.0
+EmissionIntensity 0.800000011920929
+BaseColorMap tr0008_00_face_alb.bntx
+AOMap tr0008_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0008_00_hairstyle_alb.bntx
+WeatherLayerMaskMap tr0008_00_hairstyle_wlm.bntx
+NormalMap tr0008_00_hairstyle_nrm.bntx
+AOMap tr0008_00_hairstyle_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.25
+Roughness 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0008_00_body_alb.bntx
+WeatherLayerMaskMap tr0008_00_body_wlm.bntx
+NormalMap tr0008_00_body_nrm.bntx
+MetallicMap tr0008_00_body_mtl.bntx
+RoughnessMap tr0008_00_body_rgn.bntx
+AOMap tr0008_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0008_00_body_alb.bntx
+WeatherLayerMaskMap tr0008_00_body_wlm.bntx
+NormalMap tr0008_00_body_nrm.bntx
+MetallicMap tr0008_00_body_mtl.bntx
+RoughnessMap tr0008_00_body_rgn.bntx
+AOMap tr0008_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+Offline Mode
+! Loaded shader blend file.
+Parsing TRMSH...
+Parsing TRMBF...
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+
+FBX export starting... 'C:\\Users\\andres\\Documents\\PokeMoba\\UnityProject\\Assets\\_Project\\Resources\\Models\\Trainers\\Package\\tr0008_00_si2\\Model.fbx'
+(bpy.data.armatures['tr0008_00_si2'], 'POSE')
+export finished in 0.1367 sec.
+CONVERTED tr0008_00_si2 6 materials 6769 vertices
+Fra:1 Mem:119.80M (Peak 180.47M) | Time:80:07:49.57 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | Body
+Fra:1 Mem:121.05M (Peak 180.47M) | Time:80:07:49.58 | Mem:0.00M, Peak:0.00M | Scene | Initializing
+Fra:1 Mem:121.04M (Peak 180.47M) | Time:80:07:49.58 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading fresnel_prb.png
+Fra:1 Mem:121.04M (Peak 180.47M) | Time:80:07:49.58 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading obj_baked
+Fra:1 Mem:125.57M (Peak 180.47M) | Time:80:07:49.58 | Mem:1.00M, Peak:1.00M | Scene | Updating Images | Loading body_baked
+Fra:1 Mem:126.57M (Peak 180.47M) | Time:80:07:49.58 | Mem:2.00M, Peak:2.00M | Scene | Updating Images | Loading body_skin_baked
+Fra:1 Mem:127.57M (Peak 180.47M) | Time:80:07:49.58 | Mem:3.00M, Peak:3.00M | Scene | Updating Images | Loading eye_baked
+Fra:1 Mem:128.57M (Peak 180.47M) | Time:80:07:49.58 | Mem:4.00M, Peak:4.00M | Scene | Updating Images | Loading face_baked
+Fra:1 Mem:129.57M (Peak 180.47M) | Time:80:07:49.58 | Mem:5.00M, Peak:5.00M | Scene | Updating Images | Loading face_skin_baked
+Fra:1 Mem:130.57M (Peak 180.47M) | Time:80:07:49.58 | Mem:6.00M, Peak:6.00M | Scene | Updating Images | Loading hairstyle_baked
+Fra:1 Mem:131.57M (Peak 180.47M) | Time:80:07:49.58 | Mem:7.00M, Peak:7.00M | Scene | Updating Images | Loading default_mega_flow.png.001
+Fra:1 Mem:131.63M (Peak 180.47M) | Time:80:07:49.58 | Mem:7.06M, Peak:7.06M | Scene | Updating Images | Loading default_mega_color.png.001
+Fra:1 Mem:131.64M (Peak 180.47M) | Time:80:07:49.58 | Mem:7.07M, Peak:7.07M | Scene | Updating Images | Loading poke_default_metal_prb.png
+Extensions: writing cache failed ([Errno 13] Permission denied: 'C:\\Users\\andres\\AppData\\Roaming\\Blender Foundation\\Blender\\4.5\\extensions\\.cache\\compat.dat').
+BaseColorMap tr0009_00_hairstyle_alb.bntx
+WeatherLayerMaskMap tr0009_00_hairstyle_wlm.bntx
+NormalMap tr0009_00_hairstyle_nrm.bntx
+MetallicMap tr0009_00_hairstyle_mtl.bntx
+RoughnessMap tr0009_00_hairstyle_rgn.bntx
+AOMap tr0009_00_hairstyle_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0009_00_face_alb.bntx
+AOMap tr0009_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0009_00_face_alb.bntx
+AOMap tr0009_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0009_00_eye_alb.bntx
+EmissionColorMap tr0009_00_eye_emv.bntx
+AOMap tr0009_00_eye_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 1.0
+EmissionIntensity 0.800000011920929
+BaseColorMap tr0009_00_body_alb.bntx
+WeatherLayerMaskMap tr0009_00_body_wlm.bntx
+RoughnessMap tr0009_00_body_rgn.bntx
+AOMap tr0009_00_body_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+EmissionIntensity 0.0
+BaseColorMap tr0009_00_body_alb.bntx
+WeatherLayerMaskMap tr0009_00_body_wlm.bntx
+NormalMap tr0009_00_body_nrm.bntx
+RoughnessMap tr0009_00_body_rgn.bntx
+AOMap tr0009_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.0
+EmissionIntensity 0.0
+BaseColorMap tr0009_00_obj_alb.bntx
+WeatherLayerMaskMap tr0009_00_obj_wlm.bntx
+NormalMap tr0009_00_obj_nrm.bntx
+RoughnessMap tr0009_00_obj_rgn.bntx
+AOMap tr0009_00_obj_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.0
+EmissionIntensity 0.0
+Offline Mode
+! Loaded shader blend file.
+Parsing TRMSH...
+Parsing TRMBF...
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+
+FBX export starting... 'C:\\Users\\andres\\Documents\\PokeMoba\\UnityProject\\Assets\\_Project\\Resources\\Models\\Trainers\\Package\\tr0009_00_ninja1\\Model.fbx'
+(bpy.data.armatures['tr0009_00_ninja1'], 'POSE')
+export finished in 0.1744 sec.
+CONVERTED tr0009_00_ninja1 7 materials 6401 vertices
+Fra:1 Mem:120.82M (Peak 180.47M) | Time:80:07:52.13 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | Body
+Fra:1 Mem:122.56M (Peak 180.47M) | Time:80:07:52.14 | Mem:0.00M, Peak:0.00M | Scene | Initializing
+Fra:1 Mem:122.56M (Peak 180.47M) | Time:80:07:52.14 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading fresnel_prb.png
+Fra:1 Mem:122.56M (Peak 180.47M) | Time:80:07:52.14 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading body_skin_baked
+Fra:1 Mem:127.09M (Peak 180.47M) | Time:80:07:52.14 | Mem:1.00M, Peak:1.00M | Scene | Updating Images | Loading body_baked
+Fra:1 Mem:128.09M (Peak 180.47M) | Time:80:07:52.14 | Mem:2.00M, Peak:2.00M | Scene | Updating Images | Loading obj_baked
+Fra:1 Mem:129.09M (Peak 180.47M) | Time:80:07:52.14 | Mem:3.00M, Peak:3.00M | Scene | Updating Images | Loading hairstyle_baked
+Fra:1 Mem:130.09M (Peak 180.47M) | Time:80:07:52.14 | Mem:4.00M, Peak:4.00M | Scene | Updating Images | Loading eye_baked
+Fra:1 Mem:131.09M (Peak 180.47M) | Time:80:07:52.14 | Mem:5.00M, Peak:5.00M | Scene | Updating Images | Loading face_baked
+Fra:1 Mem:132.09M (Peak 180.47M) | Time:80:07:52.15 | Mem:6.00M, Peak:6.00M | Scene | Updating Images | Loading face_skin_baked
+Fra:1 Mem:133.09M (Peak 180.47M) | Time:80:07:52.15 | Mem:7.00M, Peak:7.00M | Scene | Updating Images | Loading default_mega_flow.png.001
+Fra:1 Mem:133.15M (Peak 180.47M) | Time:80:07:52.15 | Mem:7.06M, Peak:7.06M | Scene | Updating Images | Loading default_mega_color.png.001
+Fra:1 Mem:133.16M (Peak 180.47M) | Time:80:07:52.15 | Mem:7.07M, Peak:7.07M | Scene | Updating Images | Loading poke_default_metal_prb.png
+Extensions: writing cache failed ([Errno 13] Permission denied: 'C:\\Users\\andres\\AppData\\Roaming\\Blender Foundation\\Blender\\4.5\\extensions\\.cache\\compat.dat').
+BaseColorMap tr0010_00_face_alb.bntx
+AOMap tr0010_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.6980000138282776
+EmissionIntensity 0.0
+BaseColorMap tr0010_00_face_alb.bntx
+AOMap tr0010_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0010_00_eye_alb.bntx
+EmissionColorMap tr0010_00_eye_emv.bntx
+AOMap tr0010_00_eye_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 1.0
+EmissionIntensity 0.800000011920929
+BaseColorMap tr0010_00_hairstyle_alb.bntx
+WeatherLayerMaskMap tr0010_00_hairstyle_wlm.bntx
+NormalMap tr0010_00_hairstyle_nrm.bntx
+AOMap tr0010_00_hairstyle_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.25
+Roughness 0.6499999761581421
+EmissionIntensity 0.0
+BaseColorMap tr0010_00_obj_alb.bntx
+WeatherLayerMaskMap tr0010_00_obj_wlm.bntx
+NormalMap tr0010_00_obj_nrm.bntx
+MetallicMap tr0010_00_obj_mtl.bntx
+RoughnessMap tr0010_00_obj_rgn.bntx
+AOMap tr0010_00_obj_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0010_00_body_alb.bntx
+WeatherLayerMaskMap tr0010_00_body_wlm.bntx
+NormalMap tr0010_00_body_nrm.bntx
+MetallicMap tr0010_00_body_mtl.bntx
+RoughnessMap tr0010_00_body_rgn.bntx
+AOMap tr0010_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0010_00_body_alb.bntx
+WeatherLayerMaskMap tr0010_00_body_wlm.bntx
+NormalMap tr0010_00_body_nrm.bntx
+MetallicMap tr0010_00_body_mtl.bntx
+RoughnessMap tr0010_00_body_rgn.bntx
+AOMap tr0010_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+Offline Mode
+! Loaded shader blend file.
+Parsing TRMSH...
+Parsing TRMBF...
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+
+FBX export starting... 'C:\\Users\\andres\\Documents\\PokeMoba\\UnityProject\\Assets\\_Project\\Resources\\Models\\Trainers\\Package\\tr0010_00_ninja2\\Model.fbx'
+(bpy.data.armatures['tr0010_00_ninja2'], 'POSE')
+export finished in 0.2212 sec.
+CONVERTED tr0010_00_ninja2 7 materials 8978 vertices
+Fra:1 Mem:149.03M (Peak 180.47M) | Time:80:07:54.79 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | Body
+Fra:1 Mem:150.57M (Peak 180.47M) | Time:80:07:54.79 | Mem:0.00M, Peak:0.00M | Scene | Initializing
+Fra:1 Mem:150.57M (Peak 180.47M) | Time:80:07:54.79 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading fresnel_prb.png
+Fra:1 Mem:150.57M (Peak 180.47M) | Time:80:07:54.79 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading obj02_tra_baked
+Fra:1 Mem:155.10M (Peak 180.47M) | Time:80:07:54.79 | Mem:1.00M, Peak:1.00M | Scene | Updating Images | Loading face_baked
+Fra:1 Mem:156.10M (Peak 180.47M) | Time:80:07:54.80 | Mem:2.00M, Peak:2.00M | Scene | Updating Images | Loading eye_baked
+Fra:1 Mem:157.10M (Peak 180.47M) | Time:80:07:54.80 | Mem:3.00M, Peak:3.00M | Scene | Updating Images | Loading face_skin_baked
+Fra:1 Mem:158.10M (Peak 180.47M) | Time:80:07:54.80 | Mem:4.00M, Peak:4.00M | Scene | Updating Images | Loading hairstyle_baked
+Fra:1 Mem:159.10M (Peak 180.47M) | Time:80:07:54.80 | Mem:5.00M, Peak:5.00M | Scene | Updating Images | Loading obj02_baked
+Fra:1 Mem:160.10M (Peak 180.47M) | Time:80:07:54.80 | Mem:6.00M, Peak:6.00M | Scene | Updating Images | Loading obj01_baked
+Fra:1 Mem:161.10M (Peak 180.47M) | Time:80:07:54.80 | Mem:7.00M, Peak:7.00M | Scene | Updating Images | Loading body_skin_baked
+Fra:1 Mem:162.10M (Peak 180.47M) | Time:80:07:54.80 | Mem:8.00M, Peak:8.00M | Scene | Updating Images | Loading body_baked
+Fra:1 Mem:166.62M (Peak 180.47M) | Time:80:07:54.81 | Mem:9.00M, Peak:9.00M | Scene | Updating Images | Loading default_mega_flow.png.001
+Fra:1 Mem:166.69M (Peak 180.47M) | Time:80:07:54.81 | Mem:9.06M, Peak:9.06M | Scene | Updating Images | Loading default_mega_color.png.001
+Fra:1 Mem:166.69M (Peak 180.47M) | Time:80:07:54.81 | Mem:9.07M, Peak:9.07M | Scene | Updating Images | Loading poke_default_metal_prb.png
+Extensions: writing cache failed ([Errno 13] Permission denied: 'C:\\Users\\andres\\AppData\\Roaming\\Blender Foundation\\Blender\\4.5\\extensions\\.cache\\compat.dat').
+BaseColorMap tr0011_00_body_alb.bntx
+WeatherLayerMaskMap tr0011_00_body_wlm.bntx
+NormalMap tr0011_00_body_nrm.bntx
+RoughnessMap tr0011_00_body_rgn.bntx
+AOMap tr0011_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.0
+EmissionIntensity 0.0
+BaseColorMap tr0011_00_body_alb.bntx
+WeatherLayerMaskMap tr0011_00_body_wlm.bntx
+NormalMap tr0011_00_body_nrm.bntx
+RoughnessMap tr0011_00_body_rgn.bntx
+AOMap tr0011_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.0
+EmissionIntensity 0.0
+BaseColorMap tr0011_00_obj01_alb.bntx
+WeatherLayerMaskMap tr0011_00_obj01_wlm.bntx
+NormalMap tr0011_00_obj01_nrm.bntx
+MetallicMap tr0011_00_obj01_mtl.bntx
+RoughnessMap tr0011_00_obj01_rgn.bntx
+AOMap tr0011_00_obj01_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0011_00_obj02_alb.bntx
+WeatherLayerMaskMap tr0011_00_obj02_wlm.bntx
+NormalMap tr0011_00_obj02_nrm.bntx
+RoughnessMap tr0011_00_obj02_rgn.bntx
+AOMap tr0011_00_obj02_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.0
+EmissionIntensity 0.0
+BaseColorMap tr0011_00_hairstyle_alb.bntx
+WeatherLayerMaskMap tr0011_00_hairstyle_wlm.bntx
+NormalMap tr0011_00_hairstyle_nrm.bntx
+AOMap tr0011_00_hairstyle_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.25
+Roughness 0.6499999761581421
+EmissionIntensity 0.0
+BaseColorMap tr0011_00_face_alb.bntx
+AOMap tr0011_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0011_00_eye_alb.bntx
+EmissionColorMap tr0011_00_eye_emv.bntx
+AOMap tr0011_00_eye_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 1.0
+EmissionIntensity 0.800000011920929
+BaseColorMap tr0011_00_face_alb.bntx
+AOMap tr0011_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0011_00_obj02_alb.bntx
+NormalMap tr0011_00_obj02_nrm.bntx
+MetallicMap tr0011_00_obj02_mtl.bntx
+RoughnessMap tr0011_00_obj02_rgn.bntx
+AOMap tr0011_00_obj02_ao.bntx
+WeatherLayerMaskMap tr0011_00_obj02_wlm.bntx
+NormalHeight 1.0
+Reflectance 0.03999999910593033
+EmissionIntensity 0.0
+Offline Mode
+! Loaded shader blend file.
+Parsing TRMSH...
+Parsing TRMBF...
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+
+FBX export starting... 'C:\\Users\\andres\\Documents\\PokeMoba\\UnityProject\\Assets\\_Project\\Resources\\Models\\Trainers\\Package\\tr0011_00_miko\\Model.fbx'
+(bpy.data.armatures['tr0011_00_miko'], 'POSE')
+export finished in 0.2498 sec.
+CONVERTED tr0011_00_miko 9 materials 7134 vertices
+Fra:1 Mem:134.31M (Peak 194.22M) | Time:80:07:57.77 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | Body
+Fra:1 Mem:135.82M (Peak 194.22M) | Time:80:07:57.77 | Mem:0.00M, Peak:0.00M | Scene | Initializing
+Fra:1 Mem:135.82M (Peak 194.22M) | Time:80:07:57.77 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading fresnel_prb.png
+Fra:1 Mem:135.82M (Peak 194.22M) | Time:80:07:57.77 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading ring_baked
+Fra:1 Mem:140.35M (Peak 194.22M) | Time:80:07:57.77 | Mem:1.00M, Peak:1.00M | Scene | Updating Images | Loading hairstyle_baked
+Fra:1 Mem:141.35M (Peak 194.22M) | Time:80:07:57.77 | Mem:2.00M, Peak:2.00M | Scene | Updating Images | Loading face_skin_baked
+Fra:1 Mem:142.35M (Peak 194.22M) | Time:80:07:57.77 | Mem:3.00M, Peak:3.00M | Scene | Updating Images | Loading face_baked
+Fra:1 Mem:143.35M (Peak 194.22M) | Time:80:07:57.78 | Mem:4.00M, Peak:4.00M | Scene | Updating Images | Loading eye_baked
+Fra:1 Mem:144.35M (Peak 194.22M) | Time:80:07:57.78 | Mem:5.00M, Peak:5.00M | Scene | Updating Images | Loading obj_baked
+Fra:1 Mem:145.35M (Peak 194.22M) | Time:80:07:57.78 | Mem:6.00M, Peak:6.00M | Scene | Updating Images | Loading body_skin_baked
+Fra:1 Mem:146.35M (Peak 194.22M) | Time:80:07:57.78 | Mem:7.00M, Peak:7.00M | Scene | Updating Images | Loading body_baked
+Fra:1 Mem:147.35M (Peak 194.22M) | Time:80:07:57.78 | Mem:8.00M, Peak:8.00M | Scene | Updating Images | Loading default_mega_flow.png.001
+Fra:1 Mem:147.41M (Peak 194.22M) | Time:80:07:57.78 | Mem:8.06M, Peak:8.06M | Scene | Updating Images | Loading default_mega_color.png.001
+Fra:1 Mem:147.41M (Peak 194.22M) | Time:80:07:57.78 | Mem:8.07M, Peak:8.07M | Scene | Updating Images | Loading poke_default_metal_prb.png
+Extensions: writing cache failed ([Errno 13] Permission denied: 'C:\\Users\\andres\\AppData\\Roaming\\Blender Foundation\\Blender\\4.5\\extensions\\.cache\\compat.dat').
+BaseColorMap tr0012_00_body_alb.bntx
+WeatherLayerMaskMap tr0012_00_body_wlm.bntx
+NormalMap tr0012_00_body_nrm.bntx
+RoughnessMap tr0012_00_body_rgn.bntx
+AOMap tr0012_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.0
+EmissionIntensity 0.0
+BaseColorMap tr0012_00_body_alb.bntx
+WeatherLayerMaskMap tr0012_00_body_wlm.bntx
+RoughnessMap tr0012_00_body_rgn.bntx
+AOMap tr0012_00_body_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+EmissionIntensity 0.0
+BaseColorMap tr0012_00_obj_alb.bntx
+WeatherLayerMaskMap tr0012_00_obj_wlm.bntx
+NormalMap tr0012_00_obj_nrm.bntx
+RoughnessMap tr0012_00_obj_rgn.bntx
+AOMap tr0012_00_obj_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.0
+EmissionIntensity 0.0
+BaseColorMap tr0012_00_eye_alb.bntx
+EmissionColorMap tr0012_00_eye_emv.bntx
+AOMap tr0012_00_eye_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 1.0
+EmissionIntensity 0.800000011920929
+BaseColorMap tr0012_00_face_alb.bntx
+RoughnessMap tr0012_00_face_rgn.bntx
+AOMap tr0012_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+EmissionIntensity 0.0
+BaseColorMap tr0012_00_face_alb.bntx
+RoughnessMap tr0012_00_face_rgn.bntx
+AOMap tr0012_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+EmissionIntensity 0.0
+BaseColorMap tr0012_00_hairstyle_alb.bntx
+WeatherLayerMaskMap tr0012_00_hairstyle_wlm.bntx
+NormalMap tr0012_00_hairstyle_nrm.bntx
+MetallicMap tr0012_00_hairstyle_mtl.bntx
+RoughnessMap tr0012_00_hairstyle_rgn.bntx
+AOMap tr0012_00_hairstyle_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0012_00_ring_alb.bntx
+WeatherLayerMaskMap tr0012_00_ring_wlm.bntx
+NormalMap tr0012_00_ring_nrm.bntx
+MetallicMap tr0012_00_ring_mtl.bntx
+RoughnessMap tr0012_00_ring_rgn.bntx
+AOMap tr0012_00_ring_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+Offline Mode
+! Loaded shader blend file.
+Parsing TRMSH...
+Parsing TRMBF...
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+
+FBX export starting... 'C:\\Users\\andres\\Documents\\PokeMoba\\UnityProject\\Assets\\_Project\\Resources\\Models\\Trainers\\Package\\tr0012_00_captain1\\Model.fbx'
+(bpy.data.armatures['tr0012_00_captain1'], 'POSE')
+export finished in 0.1310 sec.
+CONVERTED tr0012_00_captain1 8 materials 7276 vertices
+Fra:1 Mem:134.44M (Peak 194.22M) | Time:80:08:00.59 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | Body
+Fra:1 Mem:135.80M (Peak 194.22M) | Time:80:08:00.60 | Mem:0.00M, Peak:0.00M | Scene | Initializing
+Fra:1 Mem:135.80M (Peak 194.22M) | Time:80:08:00.60 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading fresnel_prb.png
+Fra:1 Mem:135.80M (Peak 194.22M) | Time:80:08:00.60 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading ring_baked
+Fra:1 Mem:140.33M (Peak 194.22M) | Time:80:08:00.60 | Mem:1.00M, Peak:1.00M | Scene | Updating Images | Loading obj_baked
+Fra:1 Mem:141.33M (Peak 194.22M) | Time:80:08:00.60 | Mem:2.00M, Peak:2.00M | Scene | Updating Images | Loading body_skin_baked
+Fra:1 Mem:142.33M (Peak 194.22M) | Time:80:08:00.60 | Mem:3.00M, Peak:3.00M | Scene | Updating Images | Loading body_baked
+Fra:1 Mem:143.33M (Peak 194.22M) | Time:80:08:00.60 | Mem:4.00M, Peak:4.00M | Scene | Updating Images | Loading hairstyle_baked
+Fra:1 Mem:144.33M (Peak 194.22M) | Time:80:08:00.60 | Mem:5.00M, Peak:5.00M | Scene | Updating Images | Loading face_skin_baked
+Fra:1 Mem:145.33M (Peak 194.22M) | Time:80:08:00.60 | Mem:6.00M, Peak:6.00M | Scene | Updating Images | Loading face_baked
+Fra:1 Mem:146.33M (Peak 194.22M) | Time:80:08:00.60 | Mem:7.00M, Peak:7.00M | Scene | Updating Images | Loading eye_baked
+Fra:1 Mem:147.33M (Peak 194.22M) | Time:80:08:00.60 | Mem:8.00M, Peak:8.00M | Scene | Updating Images | Loading default_mega_flow.png.001
+Fra:1 Mem:147.39M (Peak 194.22M) | Time:80:08:00.60 | Mem:8.06M, Peak:8.06M | Scene | Updating Images | Loading default_mega_color.png.001
+Fra:1 Mem:147.40M (Peak 194.22M) | Time:80:08:00.60 | Mem:8.07M, Peak:8.07M | Scene | Updating Images | Loading poke_default_metal_prb.png
+Extensions: writing cache failed ([Errno 13] Permission denied: 'C:\\Users\\andres\\AppData\\Roaming\\Blender Foundation\\Blender\\4.5\\extensions\\.cache\\compat.dat').
+BaseColorMap tr0013_00_eye_alb.bntx
+EmissionColorMap tr0013_00_eye_emv.bntx
+AOMap tr0013_00_eye_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 1.0
+EmissionIntensity 0.800000011920929
+BaseColorMap tr0013_00_face_alb.bntx
+AOMap tr0013_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0013_00_face_alb.bntx
+AOMap tr0013_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0013_00_hairstyle_alb.bntx
+WeatherLayerMaskMap tr0013_00_hairstyle_wlm.bntx
+NormalMap tr0013_00_hairstyle_nrm.bntx
+MetallicMap tr0013_00_hairstyle_mtl.bntx
+RoughnessMap tr0013_00_hairstyle_rgn.bntx
+AOMap tr0013_00_hairstyle_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0013_00_body_alb.bntx
+WeatherLayerMaskMap tr0013_00_body_wlm.bntx
+NormalMap tr0013_00_body_nrm.bntx
+MetallicMap tr0013_00_body_mtl.bntx
+RoughnessMap tr0013_00_body_rgn.bntx
+AOMap tr0013_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0013_00_body_alb.bntx
+WeatherLayerMaskMap tr0013_00_body_wlm.bntx
+NormalMap tr0013_00_body_nrm.bntx
+MetallicMap tr0013_00_body_mtl.bntx
+RoughnessMap tr0013_00_body_rgn.bntx
+AOMap tr0013_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0013_00_obj_alb.bntx
+WeatherLayerMaskMap tr0013_00_obj_wlm.bntx
+NormalMap tr0013_00_obj_nrm.bntx
+MetallicMap tr0013_00_obj_mtl.bntx
+RoughnessMap tr0013_00_obj_rgn.bntx
+AOMap tr0013_00_obj_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0013_00_ring_alb.bntx
+WeatherLayerMaskMap tr0013_00_ring_wlm.bntx
+NormalMap tr0013_00_ring_nrm.bntx
+RoughnessMap tr0013_00_ring_rgn.bntx
+AOMap tr0013_00_ring_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.0
+EmissionIntensity 0.0
+Offline Mode
+! Loaded shader blend file.
+Parsing TRMSH...
+Parsing TRMBF...
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+
+FBX export starting... 'C:\\Users\\andres\\Documents\\PokeMoba\\UnityProject\\Assets\\_Project\\Resources\\Models\\Trainers\\Package\\tr0013_00_captain2\\Model.fbx'
+(bpy.data.armatures['tr0013_00_captain2'], 'POSE')
+export finished in 0.1188 sec.
+CONVERTED tr0013_00_captain2 8 materials 6590 vertices
+Fra:1 Mem:150.16M (Peak 194.22M) | Time:80:08:03.31 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | Body
+Fra:1 Mem:151.88M (Peak 194.22M) | Time:80:08:03.31 | Mem:0.00M, Peak:0.00M | Scene | Initializing
+Fra:1 Mem:151.88M (Peak 194.22M) | Time:80:08:03.31 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading fresnel_prb.png
+Fra:1 Mem:151.88M (Peak 194.22M) | Time:80:08:03.31 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading ring_baked
+Fra:1 Mem:156.41M (Peak 194.22M) | Time:80:08:03.31 | Mem:1.00M, Peak:1.00M | Scene | Updating Images | Loading obj_02_baked
+Fra:1 Mem:157.41M (Peak 194.22M) | Time:80:08:03.31 | Mem:2.00M, Peak:2.00M | Scene | Updating Images | Loading obj_01_baked
+Fra:1 Mem:158.41M (Peak 194.22M) | Time:80:08:03.32 | Mem:3.00M, Peak:3.00M | Scene | Updating Images | Loading body_skin_baked
+Fra:1 Mem:159.41M (Peak 194.22M) | Time:80:08:03.32 | Mem:4.00M, Peak:4.00M | Scene | Updating Images | Loading body_baked
+Fra:1 Mem:160.41M (Peak 194.22M) | Time:80:08:03.32 | Mem:5.00M, Peak:5.00M | Scene | Updating Images | Loading hairstyle_baked
+Fra:1 Mem:161.41M (Peak 194.22M) | Time:80:08:03.32 | Mem:6.00M, Peak:6.00M | Scene | Updating Images | Loading face_skin_baked
+Fra:1 Mem:162.41M (Peak 194.22M) | Time:80:08:03.32 | Mem:7.00M, Peak:7.00M | Scene | Updating Images | Loading face_baked
+Fra:1 Mem:163.41M (Peak 194.22M) | Time:80:08:03.32 | Mem:8.00M, Peak:8.00M | Scene | Updating Images | Loading eye_baked
+Fra:1 Mem:164.41M (Peak 194.22M) | Time:80:08:03.32 | Mem:9.00M, Peak:9.00M | Scene | Updating Images | Loading default_mega_flow.png.001
+Fra:1 Mem:164.47M (Peak 194.22M) | Time:80:08:03.32 | Mem:9.06M, Peak:9.06M | Scene | Updating Images | Loading default_mega_color.png.001
+Fra:1 Mem:168.00M (Peak 194.22M) | Time:80:08:03.32 | Mem:9.07M, Peak:9.07M | Scene | Updating Images | Loading poke_default_metal_prb.png
+Extensions: writing cache failed ([Errno 13] Permission denied: 'C:\\Users\\andres\\AppData\\Roaming\\Blender Foundation\\Blender\\4.5\\extensions\\.cache\\compat.dat').
+BaseColorMap tr0014_00_eye_alb.bntx
+EmissionColorMap tr0014_00_eye_emv.bntx
+AOMap tr0014_00_eye_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 1.0
+EmissionIntensity 0.800000011920929
+BaseColorMap tr0014_00_face_alb.bntx
+AOMap tr0014_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0014_00_face_alb.bntx
+AOMap tr0014_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0014_00_hairstyle_alb.bntx
+WeatherLayerMaskMap tr0014_00_hairstyle_wlm.bntx
+NormalMap tr0014_00_hairstyle_nrm.bntx
+AOMap tr0014_00_hairstyle_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.25
+Roughness 0.6499999761581421
+EmissionIntensity 0.0
+BaseColorMap tr0014_00_body_alb.bntx
+WeatherLayerMaskMap tr0014_00_body_wlm.bntx
+NormalMap tr0014_00_body_nrm.bntx
+MetallicMap tr0014_00_body_mtl.bntx
+RoughnessMap tr0014_00_body_rgn.bntx
+AOMap tr0014_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0014_00_body_alb.bntx
+WeatherLayerMaskMap tr0014_00_body_wlm.bntx
+NormalMap tr0014_00_body_nrm.bntx
+RoughnessMap tr0014_00_body_rgn.bntx
+AOMap tr0014_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.0
+EmissionIntensity 0.0
+BaseColorMap tr0014_00_obj_01_alb.bntx
+WeatherLayerMaskMap tr0014_00_obj_01_wlm.bntx
+NormalMap tr0014_00_obj_01_nrm.bntx
+RoughnessMap tr0014_00_obj_01_rgn.bntx
+AOMap tr0014_00_obj_01_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.0
+EmissionIntensity 0.0
+BaseColorMap tr0014_00_obj_02_alb.bntx
+WeatherLayerMaskMap tr0014_00_obj_02_wlm.bntx
+NormalMap tr0014_00_obj_02_nrm.bntx
+RoughnessMap tr0014_00_obj_02_rgn.bntx
+AOMap tr0014_00_obj_02_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.0
+EmissionIntensity 0.0
+BaseColorMap tr0014_00_ring_alb.bntx
+WeatherLayerMaskMap tr0014_00_ring_wlm.bntx
+NormalMap tr0014_00_ring_nrm.bntx
+RoughnessMap tr0014_00_ring_rgn.bntx
+AOMap tr0014_00_ring_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.0
+EmissionIntensity 0.0
+Offline Mode
+! Loaded shader blend file.
+Parsing TRMSH...
+Parsing TRMBF...
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+
+FBX export starting... 'C:\\Users\\andres\\Documents\\PokeMoba\\UnityProject\\Assets\\_Project\\Resources\\Models\\Trainers\\Package\\tr0014_00_captain3\\Model.fbx'
+(bpy.data.armatures['tr0014_00_captain3'], 'POSE')
+export finished in 0.1390 sec.
+CONVERTED tr0014_00_captain3 9 materials 9105 vertices
+Fra:1 Mem:134.43M (Peak 196.03M) | Time:80:08:06.21 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | Body
+Fra:1 Mem:135.84M (Peak 196.03M) | Time:80:08:06.21 | Mem:0.00M, Peak:0.00M | Scene | Initializing
+Fra:1 Mem:135.84M (Peak 196.03M) | Time:80:08:06.21 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading fresnel_prb.png
+Fra:1 Mem:135.84M (Peak 196.03M) | Time:80:08:06.21 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading ring_baked
+Fra:1 Mem:140.37M (Peak 196.03M) | Time:80:08:06.21 | Mem:1.00M, Peak:1.00M | Scene | Updating Images | Loading obj_baked
+Fra:1 Mem:141.37M (Peak 196.03M) | Time:80:08:06.21 | Mem:2.00M, Peak:2.00M | Scene | Updating Images | Loading body_skin_baked
+Fra:1 Mem:142.37M (Peak 196.03M) | Time:80:08:06.21 | Mem:3.00M, Peak:3.00M | Scene | Updating Images | Loading body_baked
+Fra:1 Mem:143.37M (Peak 196.03M) | Time:80:08:06.21 | Mem:4.00M, Peak:4.00M | Scene | Updating Images | Loading hairstyle_baked
+Fra:1 Mem:144.37M (Peak 196.03M) | Time:80:08:06.22 | Mem:5.00M, Peak:5.00M | Scene | Updating Images | Loading face_skin_baked
+Fra:1 Mem:145.37M (Peak 196.03M) | Time:80:08:06.22 | Mem:6.00M, Peak:6.00M | Scene | Updating Images | Loading face_baked
+Fra:1 Mem:146.37M (Peak 196.03M) | Time:80:08:06.22 | Mem:7.00M, Peak:7.00M | Scene | Updating Images | Loading eye_baked
+Fra:1 Mem:147.37M (Peak 196.03M) | Time:80:08:06.22 | Mem:8.00M, Peak:8.00M | Scene | Updating Images | Loading default_mega_flow.png.001
+Fra:1 Mem:147.43M (Peak 196.03M) | Time:80:08:06.22 | Mem:8.06M, Peak:8.06M | Scene | Updating Images | Loading default_mega_color.png.001
+Fra:1 Mem:147.44M (Peak 196.03M) | Time:80:08:06.22 | Mem:8.07M, Peak:8.07M | Scene | Updating Images | Loading poke_default_metal_prb.png
+Extensions: writing cache failed ([Errno 13] Permission denied: 'C:\\Users\\andres\\AppData\\Roaming\\Blender Foundation\\Blender\\4.5\\extensions\\.cache\\compat.dat').
+BaseColorMap tr0015_00_eye_alb.bntx
+EmissionColorMap tr0015_00_eye_emv.bntx
+AOMap tr0015_00_eye_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 1.0
+EmissionIntensity 0.800000011920929
+BaseColorMap tr0015_00_face_alb.bntx
+AOMap tr0015_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0015_00_face_alb.bntx
+AOMap tr0015_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0015_00_hairstyle_alb.bntx
+WeatherLayerMaskMap tr0015_00_hairstyle_wlm.bntx
+NormalMap tr0015_00_hairstyle_nrm.bntx
+AOMap tr0015_00_hairstyle_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.0
+Roughness 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0015_00_body_alb.bntx
+WeatherLayerMaskMap tr0015_00_body_wlm.bntx
+NormalMap tr0015_00_body_nrm.bntx
+RoughnessMap tr0015_00_body_rgn.bntx
+AOMap tr0015_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.0
+EmissionIntensity 0.0
+BaseColorMap tr0015_00_body_alb.bntx
+WeatherLayerMaskMap tr0015_00_body_wlm.bntx
+NormalMap tr0015_00_body_nrm.bntx
+RoughnessMap tr0015_00_body_rgn.bntx
+AOMap tr0015_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.0
+EmissionIntensity 0.0
+BaseColorMap tr0015_00_obj_alb.bntx
+WeatherLayerMaskMap tr0015_00_obj_wlm.bntx
+NormalMap tr0015_00_obj_nrm.bntx
+MetallicMap tr0015_00_obj_mtl.bntx
+RoughnessMap tr0015_00_obj_rgn.bntx
+AOMap tr0015_00_obj_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0015_00_ring_alb.bntx
+WeatherLayerMaskMap tr0015_00_ring_wlm.bntx
+NormalMap tr0015_00_ring_nrm.bntx
+RoughnessMap tr0015_00_ring_rgn.bntx
+AOMap tr0015_00_ring_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.0
+EmissionIntensity 0.0
+Offline Mode
+! Loaded shader blend file.
+Parsing TRMSH...
+Parsing TRMBF...
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+
+FBX export starting... 'C:\\Users\\andres\\Documents\\PokeMoba\\UnityProject\\Assets\\_Project\\Resources\\Models\\Trainers\\Package\\tr0015_00_captain4\\Model.fbx'
+(bpy.data.armatures['tr0015_00_captain4'], 'POSE')
+export finished in 0.2010 sec.
+CONVERTED tr0015_00_captain4 8 materials 6685 vertices
+Fra:1 Mem:133.94M (Peak 196.03M) | Time:80:08:08.90 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | Body
+Fra:1 Mem:135.12M (Peak 196.03M) | Time:80:08:08.90 | Mem:0.00M, Peak:0.00M | Scene | Initializing
+Fra:1 Mem:135.12M (Peak 196.03M) | Time:80:08:08.90 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading fresnel_prb.png
+Fra:1 Mem:135.12M (Peak 196.03M) | Time:80:08:08.90 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading eye_baked
+Fra:1 Mem:139.65M (Peak 196.03M) | Time:80:08:08.90 | Mem:1.00M, Peak:1.00M | Scene | Updating Images | Loading face_baked
+Fra:1 Mem:140.65M (Peak 196.03M) | Time:80:08:08.90 | Mem:2.00M, Peak:2.00M | Scene | Updating Images | Loading hairstyle_baked
+Fra:1 Mem:141.65M (Peak 196.03M) | Time:80:08:08.90 | Mem:3.00M, Peak:3.00M | Scene | Updating Images | Loading face_skin_baked
+Fra:1 Mem:142.65M (Peak 196.03M) | Time:80:08:08.91 | Mem:4.00M, Peak:4.00M | Scene | Updating Images | Loading obj_baked
+Fra:1 Mem:143.65M (Peak 196.03M) | Time:80:08:08.91 | Mem:5.00M, Peak:5.00M | Scene | Updating Images | Loading ring_baked
+Fra:1 Mem:144.65M (Peak 196.03M) | Time:80:08:08.91 | Mem:6.00M, Peak:6.00M | Scene | Updating Images | Loading body_skin_baked
+Fra:1 Mem:145.65M (Peak 196.03M) | Time:80:08:08.91 | Mem:7.00M, Peak:7.00M | Scene | Updating Images | Loading body_baked
+Fra:1 Mem:146.65M (Peak 196.03M) | Time:80:08:08.91 | Mem:8.00M, Peak:8.00M | Scene | Updating Images | Loading default_mega_flow.png.001
+Fra:1 Mem:150.23M (Peak 196.03M) | Time:80:08:08.91 | Mem:8.06M, Peak:8.06M | Scene | Updating Images | Loading default_mega_color.png.001
+Fra:1 Mem:150.24M (Peak 196.03M) | Time:80:08:08.91 | Mem:8.07M, Peak:8.07M | Scene | Updating Images | Loading poke_default_metal_prb.png
+Extensions: writing cache failed ([Errno 13] Permission denied: 'C:\\Users\\andres\\AppData\\Roaming\\Blender Foundation\\Blender\\4.5\\extensions\\.cache\\compat.dat').
+BaseColorMap tr0016_00_body_alb.bntx
+WeatherLayerMaskMap tr0016_00_body_wlm.bntx
+NormalMap tr0016_00_body_nrm.bntx
+MetallicMap tr0016_00_body_mtl.bntx
+RoughnessMap tr0016_00_body_rgn.bntx
+AOMap tr0016_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0016_00_body_alb.bntx
+WeatherLayerMaskMap tr0016_00_body_wlm.bntx
+NormalMap tr0016_00_body_nrm.bntx
+MetallicMap tr0016_00_body_mtl.bntx
+RoughnessMap tr0016_00_body_rgn.bntx
+AOMap tr0016_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0016_00_ring_alb.bntx
+WeatherLayerMaskMap tr0016_00_ring_wlm.bntx
+NormalMap tr0016_00_ring_nrm.bntx
+RoughnessMap tr0016_00_ring_rgn.bntx
+AOMap tr0016_00_ring_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.0
+EmissionIntensity 0.0
+BaseColorMap tr0016_00_obj_alb.bntx
+WeatherLayerMaskMap tr0016_00_obj_wlm.bntx
+NormalMap tr0016_00_obj_nrm.bntx
+RoughnessMap tr0016_00_obj_rgn.bntx
+AOMap tr0016_00_obj_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.0
+EmissionIntensity 0.0
+BaseColorMap tr0016_00_face_alb.bntx
+WeatherLayerMaskMap tr0016_00_face_wlm.bntx
+AOMap tr0016_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0016_00_hairstyle_alb.bntx
+WeatherLayerMaskMap tr0016_00_hairstyle_wlm.bntx
+NormalMap tr0016_00_hairstyle_nrm.bntx
+AOMap tr0016_00_hairstyle_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0016_00_face_alb.bntx
+WeatherLayerMaskMap tr0016_00_face_wlm.bntx
+AOMap tr0016_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0016_00_eye_alb.bntx
+EmissionColorMap tr0016_00_eye_emv.bntx
+AOMap tr0016_00_eye_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 1.0
+EmissionIntensity 0.800000011920929
+Offline Mode
+! Loaded shader blend file.
+Parsing TRMSH...
+Parsing TRMBF...
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+
+FBX export starting... 'C:\\Users\\andres\\Documents\\PokeMoba\\UnityProject\\Assets\\_Project\\Resources\\Models\\Trainers\\Package\\tr0016_00_captain5\\Model.fbx'
+(bpy.data.armatures['tr0016_00_captain5'], 'POSE')
+export finished in 0.1109 sec.
+CONVERTED tr0016_00_captain5 8 materials 5753 vertices
+Fra:1 Mem:149.85M (Peak 196.03M) | Time:80:08:11.56 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | Body
+Fra:1 Mem:151.55M (Peak 196.03M) | Time:80:08:11.57 | Mem:0.00M, Peak:0.00M | Scene | Initializing
+Fra:1 Mem:151.55M (Peak 196.03M) | Time:80:08:11.57 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading fresnel_prb.png
+Fra:1 Mem:151.55M (Peak 196.03M) | Time:80:08:11.57 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading ring_baked
+Fra:1 Mem:156.08M (Peak 196.03M) | Time:80:08:11.57 | Mem:1.00M, Peak:1.00M | Scene | Updating Images | Loading obj_baked
+Fra:1 Mem:157.08M (Peak 196.03M) | Time:80:08:11.57 | Mem:2.00M, Peak:2.00M | Scene | Updating Images | Loading body_skin_baked
+Fra:1 Mem:158.08M (Peak 196.03M) | Time:80:08:11.57 | Mem:3.00M, Peak:3.00M | Scene | Updating Images | Loading body_baked
+Fra:1 Mem:159.08M (Peak 196.03M) | Time:80:08:11.57 | Mem:4.00M, Peak:4.00M | Scene | Updating Images | Loading eye_baked
+Fra:1 Mem:160.08M (Peak 196.03M) | Time:80:08:11.57 | Mem:5.00M, Peak:5.00M | Scene | Updating Images | Loading face_baked
+Fra:1 Mem:161.08M (Peak 196.03M) | Time:80:08:11.57 | Mem:6.00M, Peak:6.00M | Scene | Updating Images | Loading face_skin_baked
+Fra:1 Mem:162.08M (Peak 196.03M) | Time:80:08:11.57 | Mem:7.00M, Peak:7.00M | Scene | Updating Images | Loading hairstyle_baked
+Fra:1 Mem:163.08M (Peak 196.03M) | Time:80:08:11.57 | Mem:8.00M, Peak:8.00M | Scene | Updating Images | Loading obj_tra_baked
+Fra:1 Mem:164.08M (Peak 196.03M) | Time:80:08:11.58 | Mem:9.00M, Peak:9.00M | Scene | Updating Images | Loading default_mega_flow.png.001
+Fra:1 Mem:167.67M (Peak 196.03M) | Time:80:08:11.58 | Mem:9.06M, Peak:9.06M | Scene | Updating Images | Loading default_mega_color.png.001
+Fra:1 Mem:167.67M (Peak 196.03M) | Time:80:08:11.58 | Mem:9.07M, Peak:9.07M | Scene | Updating Images | Loading poke_default_metal_prb.png
+Extensions: writing cache failed ([Errno 13] Permission denied: 'C:\\Users\\andres\\AppData\\Roaming\\Blender Foundation\\Blender\\4.5\\extensions\\.cache\\compat.dat').
+BaseColorMap tr0017_00_obj_alb.bntx
+NormalMap tr0017_00_obj_nrm.bntx
+MetallicMap tr0017_00_obj_mtl.bntx
+RoughnessMap tr0017_00_obj_rgn.bntx
+AOMap tr0017_00_obj_ao.bntx
+WeatherLayerMaskMap tr0017_00_obj_wlm.bntx
+NormalHeight 1.0
+Reflectance 0.03999999910593033
+EmissionIntensity 0.0
+BaseColorMap tr0017_00_hairstyle_alb.bntx
+WeatherLayerMaskMap tr0017_00_hairstyle_wlm.bntx
+NormalMap tr0017_00_hairstyle_nrm.bntx
+MetallicMap tr0017_00_hairstyle_mtl.bntx
+RoughnessMap tr0017_00_hairstyle_rgn.bntx
+AOMap tr0017_00_hairstyle_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0017_00_face_alb.bntx
+RoughnessMap tr0017_00_face_rgn.bntx
+AOMap tr0017_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+EmissionIntensity 0.0
+BaseColorMap tr0017_00_face_alb.bntx
+RoughnessMap tr0017_00_face_rgn.bntx
+AOMap tr0017_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+EmissionIntensity 0.0
+BaseColorMap tr0017_00_eye_alb.bntx
+EmissionColorMap tr0017_00_eye_emv.bntx
+AOMap tr0017_00_eye_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 1.0
+EmissionIntensity 0.800000011920929
+BaseColorMap tr0017_00_body_alb.bntx
+WeatherLayerMaskMap tr0017_00_body_wlm.bntx
+NormalMap tr0017_00_body_nrm.bntx
+RoughnessMap tr0017_00_body_rgn.bntx
+AOMap tr0017_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.0
+EmissionIntensity 0.0
+BaseColorMap tr0017_00_body_alb.bntx
+WeatherLayerMaskMap tr0017_00_body_wlm.bntx
+NormalMap tr0017_00_body_nrm.bntx
+RoughnessMap tr0017_00_body_rgn.bntx
+AOMap tr0017_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.0
+EmissionIntensity 0.0
+BaseColorMap tr0017_00_obj_alb.bntx
+WeatherLayerMaskMap tr0017_00_obj_wlm.bntx
+NormalMap tr0017_00_obj_nrm.bntx
+MetallicMap tr0017_00_obj_mtl.bntx
+RoughnessMap tr0017_00_obj_rgn.bntx
+AOMap tr0017_00_obj_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0017_00_ring_alb.bntx
+WeatherLayerMaskMap tr0017_00_ring_wlm.bntx
+NormalMap tr0017_00_ring_nrm.bntx
+RoughnessMap tr0017_00_ring_rgn.bntx
+AOMap tr0017_00_ring_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.0
+EmissionIntensity 0.0
+Offline Mode
+! Loaded shader blend file.
+Parsing TRMSH...
+Parsing TRMBF...
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+
+FBX export starting... 'C:\\Users\\andres\\Documents\\PokeMoba\\UnityProject\\Assets\\_Project\\Resources\\Models\\Trainers\\Package\\tr0017_00_captain6\\Model.fbx'
+(bpy.data.armatures['tr0017_00_captain6'], 'POSE')
+export finished in 0.1400 sec.
+CONVERTED tr0017_00_captain6 9 materials 8745 vertices
+Fra:1 Mem:135.18M (Peak 196.03M) | Time:80:08:14.40 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | Body
+Fra:1 Mem:136.75M (Peak 196.03M) | Time:80:08:14.41 | Mem:0.00M, Peak:0.00M | Scene | Initializing
+Fra:1 Mem:136.75M (Peak 196.03M) | Time:80:08:14.41 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading fresnel_prb.png
+Fra:1 Mem:136.75M (Peak 196.03M) | Time:80:08:14.41 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading ring_baked
+Fra:1 Mem:141.28M (Peak 196.03M) | Time:80:08:14.41 | Mem:1.00M, Peak:1.00M | Scene | Updating Images | Loading body_skin_baked
+Fra:1 Mem:142.28M (Peak 196.03M) | Time:80:08:14.41 | Mem:2.00M, Peak:2.00M | Scene | Updating Images | Loading body_baked
+Fra:1 Mem:143.28M (Peak 196.03M) | Time:80:08:14.41 | Mem:3.00M, Peak:3.00M | Scene | Updating Images | Loading hairstyle_baked
+Fra:1 Mem:144.28M (Peak 196.03M) | Time:80:08:14.41 | Mem:4.00M, Peak:4.00M | Scene | Updating Images | Loading obj_baked
+Fra:1 Mem:145.28M (Peak 196.03M) | Time:80:08:14.42 | Mem:5.00M, Peak:5.00M | Scene | Updating Images | Loading face_skin_baked
+Fra:1 Mem:146.28M (Peak 196.03M) | Time:80:08:14.42 | Mem:6.00M, Peak:6.00M | Scene | Updating Images | Loading face_baked
+Fra:1 Mem:147.28M (Peak 196.03M) | Time:80:08:14.42 | Mem:7.00M, Peak:7.00M | Scene | Updating Images | Loading eye_baked
+Fra:1 Mem:148.28M (Peak 196.03M) | Time:80:08:14.42 | Mem:8.00M, Peak:8.00M | Scene | Updating Images | Loading default_mega_flow.png.001
+Fra:1 Mem:148.34M (Peak 196.03M) | Time:80:08:14.42 | Mem:8.06M, Peak:8.06M | Scene | Updating Images | Loading default_mega_color.png.001
+Fra:1 Mem:148.34M (Peak 196.03M) | Time:80:08:14.42 | Mem:8.07M, Peak:8.07M | Scene | Updating Images | Loading poke_default_metal_prb.png
+Extensions: writing cache failed ([Errno 13] Permission denied: 'C:\\Users\\andres\\AppData\\Roaming\\Blender Foundation\\Blender\\4.5\\extensions\\.cache\\compat.dat').
+BaseColorMap tr0018_00_eye_alb.bntx
+EmissionColorMap tr0018_00_eye_emv.bntx
+AOMap tr0018_00_eye_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 1.0
+EmissionIntensity 0.800000011920929
+BaseColorMap tr0018_00_face_alb.bntx
+AOMap tr0018_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0018_00_face_alb.bntx
+AOMap tr0018_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0018_00_obj_alb.bntx
+WeatherLayerMaskMap tr0018_00_obj_wlm.bntx
+NormalMap tr0018_00_obj_nrm.bntx
+RoughnessMap tr0018_00_obj_rgn.bntx
+AOMap tr0018_00_obj_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.0
+EmissionIntensity 0.0
+BaseColorMap tr0018_00_hairstyle_alb.bntx
+WeatherLayerMaskMap tr0018_00_hairstyle_wlm.bntx
+NormalMap tr0018_00_hairstyle_nrm.bntx
+AOMap tr0018_00_hairstyle_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.25
+Roughness 0.6499999761581421
+EmissionIntensity 0.0
+BaseColorMap tr0018_00_body_alb.bntx
+WeatherLayerMaskMap tr0018_00_body_wlm.bntx
+NormalMap tr0018_00_body_nrm.bntx
+MetallicMap tr0018_00_body_mtl.bntx
+RoughnessMap tr0018_00_body_rgn.bntx
+AOMap tr0018_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0018_00_body_alb.bntx
+WeatherLayerMaskMap tr0018_00_body_wlm.bntx
+NormalMap tr0018_00_body_nrm.bntx
+MetallicMap tr0018_00_body_mtl.bntx
+RoughnessMap tr0018_00_body_rgn.bntx
+AOMap tr0018_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0018_00_ring_alb.bntx
+WeatherLayerMaskMap tr0018_00_ring_wlm.bntx
+NormalMap tr0018_00_ring_nrm.bntx
+RoughnessMap tr0018_00_ring_rgn.bntx
+AOMap tr0018_00_ring_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.0
+EmissionIntensity 0.0
+Offline Mode
+! Loaded shader blend file.
+Parsing TRMSH...
+Parsing TRMBF...
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+
+FBX export starting... 'C:\\Users\\andres\\Documents\\PokeMoba\\UnityProject\\Assets\\_Project\\Resources\\Models\\Trainers\\Package\\tr0018_00_captain7\\Model.fbx'
+(bpy.data.armatures['tr0018_00_captain7'], 'POSE')
+export finished in 0.1301 sec.
+CONVERTED tr0018_00_captain7 8 materials 8141 vertices
+Fra:1 Mem:134.61M (Peak 196.03M) | Time:80:08:17.04 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | Body
+Fra:1 Mem:136.05M (Peak 196.03M) | Time:80:08:17.05 | Mem:0.00M, Peak:0.00M | Scene | Initializing
+Fra:1 Mem:136.05M (Peak 196.03M) | Time:80:08:17.05 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading ring_baked
+Fra:1 Mem:137.05M (Peak 196.03M) | Time:80:08:17.05 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading fresnel_prb.png
+Fra:1 Mem:140.58M (Peak 196.03M) | Time:80:08:17.05 | Mem:1.00M, Peak:1.00M | Scene | Updating Images | Loading body_skin_baked
+Fra:1 Mem:141.58M (Peak 196.03M) | Time:80:08:17.05 | Mem:2.00M, Peak:2.00M | Scene | Updating Images | Loading body_baked
+Fra:1 Mem:142.58M (Peak 196.03M) | Time:80:08:17.05 | Mem:3.00M, Peak:3.00M | Scene | Updating Images | Loading eye_baked
+Fra:1 Mem:143.58M (Peak 196.03M) | Time:80:08:17.05 | Mem:4.00M, Peak:4.00M | Scene | Updating Images | Loading face_skin_baked
+Fra:1 Mem:144.58M (Peak 196.03M) | Time:80:08:17.05 | Mem:5.00M, Peak:5.00M | Scene | Updating Images | Loading face_baked
+Fra:1 Mem:145.58M (Peak 196.03M) | Time:80:08:17.05 | Mem:6.00M, Peak:6.00M | Scene | Updating Images | Loading hairstyle_baked
+Fra:1 Mem:146.58M (Peak 196.03M) | Time:80:08:17.05 | Mem:7.00M, Peak:7.00M | Scene | Updating Images | Loading obj_baked
+Fra:1 Mem:147.58M (Peak 196.03M) | Time:80:08:17.05 | Mem:8.00M, Peak:8.00M | Scene | Updating Images | Loading default_mega_flow.png.001
+Fra:1 Mem:151.16M (Peak 196.03M) | Time:80:08:17.05 | Mem:8.06M, Peak:8.06M | Scene | Updating Images | Loading default_mega_color.png.001
+Fra:1 Mem:151.17M (Peak 196.03M) | Time:80:08:17.06 | Mem:8.07M, Peak:8.07M | Scene | Updating Images | Loading poke_default_metal_prb.png
+Extensions: writing cache failed ([Errno 13] Permission denied: 'C:\\Users\\andres\\AppData\\Roaming\\Blender Foundation\\Blender\\4.5\\extensions\\.cache\\compat.dat').
+BaseColorMap tr0019_00_obj_alb.bntx
+WeatherLayerMaskMap tr0019_00_obj_wlm.bntx
+NormalMap tr0019_00_obj_nrm.bntx
+RoughnessMap tr0019_00_obj_rgn.bntx
+AOMap tr0019_00_obj_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.0
+EmissionIntensity 0.0
+BaseColorMap tr0019_00_hairstyle_alb.bntx
+WeatherLayerMaskMap tr0019_00_hairstyle_wlm.bntx
+NormalMap tr0019_00_hairstyle_nrm.bntx
+AOMap tr0019_00_hairstyle_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.25
+Roughness 0.6499999761581421
+EmissionIntensity 0.0
+BaseColorMap tr0019_00_face_alb.bntx
+AOMap tr0019_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0019_00_face_alb.bntx
+AOMap tr0019_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0019_00_eye_alb.bntx
+EmissionColorMap tr0019_00_eye_emv.bntx
+AOMap tr0019_00_eye_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 1.0
+EmissionIntensity 0.800000011920929
+BaseColorMap tr0019_00_body_alb.bntx
+WeatherLayerMaskMap tr0019_00_body_wlm.bntx
+NormalMap tr0019_00_body_nrm.bntx
+MetallicMap tr0019_00_body_mtl.bntx
+RoughnessMap tr0019_00_body_rgn.bntx
+AOMap tr0019_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0019_00_body_alb.bntx
+WeatherLayerMaskMap tr0019_00_body_wlm.bntx
+NormalMap tr0019_00_body_nrm.bntx
+MetallicMap tr0019_00_body_mtl.bntx
+RoughnessMap tr0019_00_body_rgn.bntx
+AOMap tr0019_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0019_00_ring_alb.bntx
+WeatherLayerMaskMap tr0019_00_ring_wlm.bntx
+NormalMap tr0019_00_ring_nrm.bntx
+RoughnessMap tr0019_00_ring_rgn.bntx
+AOMap tr0019_00_ring_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.0
+EmissionIntensity 0.0
+Offline Mode
+! Loaded shader blend file.
+Parsing TRMSH...
+Parsing TRMBF...
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+
+FBX export starting... 'C:\\Users\\andres\\Documents\\PokeMoba\\UnityProject\\Assets\\_Project\\Resources\\Models\\Trainers\\Package\\tr0019_00_captain8\\Model.fbx'
+(bpy.data.armatures['tr0019_00_captain8'], 'POSE')
+export finished in 0.1013 sec.
+CONVERTED tr0019_00_captain8 8 materials 6925 vertices
+Fra:1 Mem:119.95M (Peak 196.03M) | Time:80:08:19.40 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | Body
+Fra:1 Mem:121.28M (Peak 196.03M) | Time:80:08:19.40 | Mem:0.00M, Peak:0.00M | Scene | Initializing
+Fra:1 Mem:121.28M (Peak 196.03M) | Time:80:08:19.40 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading fresnel_prb.png
+Fra:1 Mem:121.28M (Peak 196.03M) | Time:80:08:19.40 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading eye_baked
+Fra:1 Mem:125.81M (Peak 196.03M) | Time:80:08:19.40 | Mem:1.00M, Peak:1.00M | Scene | Updating Images | Loading hairstyle_baked
+Fra:1 Mem:126.81M (Peak 196.03M) | Time:80:08:19.40 | Mem:2.00M, Peak:2.00M | Scene | Updating Images | Loading face_baked
+Fra:1 Mem:127.81M (Peak 196.03M) | Time:80:08:19.41 | Mem:3.00M, Peak:3.00M | Scene | Updating Images | Loading face_skin_baked
+Fra:1 Mem:128.81M (Peak 196.03M) | Time:80:08:19.41 | Mem:4.00M, Peak:4.00M | Scene | Updating Images | Loading body_skin_baked
+Fra:1 Mem:129.81M (Peak 196.03M) | Time:80:08:19.41 | Mem:5.00M, Peak:5.00M | Scene | Updating Images | Loading body_baked
+Fra:1 Mem:130.81M (Peak 196.03M) | Time:80:08:19.41 | Mem:6.00M, Peak:6.00M | Scene | Updating Images | Loading ring_baked
+Fra:1 Mem:131.81M (Peak 196.03M) | Time:80:08:19.41 | Mem:7.00M, Peak:7.00M | Scene | Updating Images | Loading default_mega_flow.png.001
+Fra:1 Mem:131.87M (Peak 196.03M) | Time:80:08:19.41 | Mem:7.06M, Peak:7.06M | Scene | Updating Images | Loading default_mega_color.png.001
+Fra:1 Mem:131.87M (Peak 196.03M) | Time:80:08:19.41 | Mem:7.07M, Peak:7.07M | Scene | Updating Images | Loading poke_default_metal_prb.png
+Extensions: writing cache failed ([Errno 13] Permission denied: 'C:\\Users\\andres\\AppData\\Roaming\\Blender Foundation\\Blender\\4.5\\extensions\\.cache\\compat.dat').
+BaseColorMap tr0020_00_ring_alb.bntx
+WeatherLayerMaskMap tr0020_00_ring_wlm.bntx
+NormalMap tr0020_00_ring_nrm.bntx
+RoughnessMap tr0020_00_ring_rgn.bntx
+AOMap tr0020_00_ring_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.0
+EmissionIntensity 0.0
+BaseColorMap tr0020_00_body_alb.bntx
+WeatherLayerMaskMap tr0020_00_body_wlm.bntx
+NormalMap tr0020_00_body_nrm.bntx
+MetallicMap tr0020_00_body_mtl.bntx
+RoughnessMap tr0020_00_body_rgn.bntx
+AOMap tr0020_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0020_00_body_alb.bntx
+WeatherLayerMaskMap tr0020_00_body_wlm.bntx
+NormalMap tr0020_00_body_nrm.bntx
+MetallicMap tr0020_00_body_mtl.bntx
+RoughnessMap tr0020_00_body_rgn.bntx
+AOMap tr0020_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0020_00_face_alb.bntx
+RoughnessMap tr0020_00_face_rgn.bntx
+AOMap tr0020_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+EmissionIntensity 0.0
+BaseColorMap tr0020_00_face_alb.bntx
+RoughnessMap tr0020_00_face_rgn.bntx
+AOMap tr0020_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+EmissionIntensity 0.0
+BaseColorMap tr0020_00_hairstyle_alb.bntx
+WeatherLayerMaskMap tr0020_00_hairstyle_wlm.bntx
+NormalMap tr0020_00_hairstyle_nrm.bntx
+AOMap tr0020_00_hairstyle_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.25
+Roughness 0.6499999761581421
+EmissionIntensity 0.0
+BaseColorMap tr0020_00_eye_alb.bntx
+EmissionColorMap tr0020_00_eye_emv.bntx
+AOMap tr0020_00_eye_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 1.0
+EmissionIntensity 0.800000011920929
+Offline Mode
+! Loaded shader blend file.
+Parsing TRMSH...
+Parsing TRMBF...
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+
+FBX export starting... 'C:\\Users\\andres\\Documents\\PokeMoba\\UnityProject\\Assets\\_Project\\Resources\\Models\\Trainers\\Package\\tr0020_00_captain9\\Model.fbx'
+(bpy.data.armatures['tr0020_00_captain9'], 'POSE')
+export finished in 0.1314 sec.
+CONVERTED tr0020_00_captain9 7 materials 6579 vertices
+Fra:1 Mem:134.69M (Peak 196.03M) | Time:80:08:21.86 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | Body
+Fra:1 Mem:136.23M (Peak 196.03M) | Time:80:08:21.87 | Mem:0.00M, Peak:0.00M | Scene | Initializing
+Fra:1 Mem:136.23M (Peak 196.03M) | Time:80:08:21.87 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading fresnel_prb.png
+Fra:1 Mem:136.23M (Peak 196.03M) | Time:80:08:21.87 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading ring_baked
+Fra:1 Mem:140.76M (Peak 196.03M) | Time:80:08:21.87 | Mem:1.00M, Peak:1.00M | Scene | Updating Images | Loading body_skin_baked
+Fra:1 Mem:141.76M (Peak 196.03M) | Time:80:08:21.87 | Mem:2.00M, Peak:2.00M | Scene | Updating Images | Loading body_baked
+Fra:1 Mem:142.76M (Peak 196.03M) | Time:80:08:21.87 | Mem:3.00M, Peak:3.00M | Scene | Updating Images | Loading obj_baked
+Fra:1 Mem:143.76M (Peak 196.03M) | Time:80:08:21.87 | Mem:4.00M, Peak:4.00M | Scene | Updating Images | Loading face_skin_baked
+Fra:1 Mem:144.76M (Peak 196.03M) | Time:80:08:21.87 | Mem:5.00M, Peak:5.00M | Scene | Updating Images | Loading eye_baked
+Fra:1 Mem:145.76M (Peak 196.03M) | Time:80:08:21.87 | Mem:6.00M, Peak:6.00M | Scene | Updating Images | Loading face_baked
+Fra:1 Mem:146.76M (Peak 196.03M) | Time:80:08:21.87 | Mem:7.00M, Peak:7.00M | Scene | Updating Images | Loading hairstyle_baked
+Fra:1 Mem:147.76M (Peak 196.03M) | Time:80:08:21.87 | Mem:8.00M, Peak:8.00M | Scene | Updating Images | Loading default_mega_flow.png.001
+Fra:1 Mem:147.82M (Peak 196.03M) | Time:80:08:21.87 | Mem:8.06M, Peak:8.06M | Scene | Updating Images | Loading default_mega_color.png.001
+Fra:1 Mem:147.82M (Peak 196.03M) | Time:80:08:21.87 | Mem:8.07M, Peak:8.07M | Scene | Updating Images | Loading poke_default_metal_prb.png
+Extensions: writing cache failed ([Errno 13] Permission denied: 'C:\\Users\\andres\\AppData\\Roaming\\Blender Foundation\\Blender\\4.5\\extensions\\.cache\\compat.dat').
+BaseColorMap tr0021_00_hairstyle_alb.bntx
+WeatherLayerMaskMap tr0021_00_hairstyle_wlm.bntx
+NormalMap tr0021_00_hairstyle_nrm.bntx
+MetallicMap tr0021_00_hairstyle_mtl.bntx
+RoughnessMap tr0021_00_hairstyle_rgn.bntx
+AOMap tr0021_00_hairstyle_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0021_00_face_alb.bntx
+AOMap tr0021_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.6980000138282776
+EmissionIntensity 0.0
+BaseColorMap tr0021_00_eye_alb.bntx
+EmissionColorMap tr0021_00_eye_emv.bntx
+AOMap tr0021_00_eye_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 1.0
+EmissionIntensity 0.800000011920929
+BaseColorMap tr0021_00_face_alb.bntx
+AOMap tr0021_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.6980000138282776
+EmissionIntensity 0.0
+BaseColorMap tr0021_00_obj_alb.bntx
+WeatherLayerMaskMap tr0021_00_obj_wlm.bntx
+NormalMap tr0021_00_obj_nrm.bntx
+RoughnessMap tr0021_00_obj_rgn.bntx
+AOMap tr0021_00_obj_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.0
+EmissionIntensity 0.0
+BaseColorMap tr0021_00_body_alb.bntx
+WeatherLayerMaskMap tr0021_00_body_wlm.bntx
+NormalMap tr0021_00_body_nrm.bntx
+MetallicMap tr0021_00_body_mtl.bntx
+RoughnessMap tr0021_00_body_rgn.bntx
+AOMap tr0021_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0021_00_body_alb.bntx
+WeatherLayerMaskMap tr0021_00_body_wlm.bntx
+NormalMap tr0021_00_body_nrm.bntx
+MetallicMap tr0021_00_body_mtl.bntx
+RoughnessMap tr0021_00_body_rgn.bntx
+AOMap tr0021_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0021_00_ring_alb.bntx
+WeatherLayerMaskMap tr0021_00_ring_wlm.bntx
+NormalMap tr0021_00_ring_nrm.bntx
+RoughnessMap tr0021_00_ring_rgn.bntx
+AOMap tr0021_00_ring_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.0
+EmissionIntensity 0.0
+Offline Mode
+! Loaded shader blend file.
+Parsing TRMSH...
+Parsing TRMBF...
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+
+FBX export starting... 'C:\\Users\\andres\\Documents\\PokeMoba\\UnityProject\\Assets\\_Project\\Resources\\Models\\Trainers\\Package\\tr0021_00_captain10\\Model.fbx'
+(bpy.data.armatures['tr0021_00_captain10'], 'POSE')
+export finished in 0.1482 sec.
+CONVERTED tr0021_00_captain10 8 materials 10798 vertices
+Fra:1 Mem:120.58M (Peak 196.03M) | Time:80:08:24.68 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | Body
+Fra:1 Mem:122.15M (Peak 196.03M) | Time:80:08:24.69 | Mem:0.00M, Peak:0.00M | Scene | Initializing
+Fra:1 Mem:122.14M (Peak 196.03M) | Time:80:08:24.69 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading fresnel_prb.png
+Fra:1 Mem:122.14M (Peak 196.03M) | Time:80:08:24.69 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading body_skin_baked
+Fra:1 Mem:126.67M (Peak 196.03M) | Time:80:08:24.69 | Mem:1.00M, Peak:1.00M | Scene | Updating Images | Loading obj_baked
+Fra:1 Mem:127.67M (Peak 196.03M) | Time:80:08:24.69 | Mem:2.00M, Peak:2.00M | Scene | Updating Images | Loading body_baked
+Fra:1 Mem:128.67M (Peak 196.03M) | Time:80:08:24.69 | Mem:3.00M, Peak:3.00M | Scene | Updating Images | Loading hairstyle_baked
+Fra:1 Mem:129.67M (Peak 196.03M) | Time:80:08:24.69 | Mem:4.00M, Peak:4.00M | Scene | Updating Images | Loading face_skin_baked
+Fra:1 Mem:130.67M (Peak 196.03M) | Time:80:08:24.69 | Mem:5.00M, Peak:5.00M | Scene | Updating Images | Loading face_baked
+Fra:1 Mem:131.67M (Peak 196.03M) | Time:80:08:24.70 | Mem:6.00M, Peak:6.00M | Scene | Updating Images | Loading eye_baked
+Fra:1 Mem:132.67M (Peak 196.03M) | Time:80:08:24.70 | Mem:7.00M, Peak:7.00M | Scene | Updating Images | Loading default_mega_flow.png.001
+Fra:1 Mem:132.73M (Peak 196.03M) | Time:80:08:24.70 | Mem:7.06M, Peak:7.06M | Scene | Updating Images | Loading default_mega_color.png.001
+Fra:1 Mem:132.74M (Peak 196.03M) | Time:80:08:24.70 | Mem:7.07M, Peak:7.07M | Scene | Updating Images | Loading poke_default_metal_prb.png
+Extensions: writing cache failed ([Errno 13] Permission denied: 'C:\\Users\\andres\\AppData\\Roaming\\Blender Foundation\\Blender\\4.5\\extensions\\.cache\\compat.dat').
+BaseColorMap tr0022_00_eye_alb.bntx
+EmissionColorMap tr0022_00_eye_emv.bntx
+AOMap tr0022_00_eye_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 1.0
+EmissionIntensity 0.800000011920929
+BaseColorMap tr0022_00_face_alb.bntx
+AOMap tr0022_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.30000001192092896
+BaseColorMap tr0022_00_face_alb.bntx
+AOMap tr0022_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0022_00_hairstyle_alb.bntx
+WeatherLayerMaskMap tr0022_00_hairstyle_wlm.bntx
+NormalMap tr0022_00_hairstyle_nrm.bntx
+MetallicMap tr0022_00_hairstyle_mtl.bntx
+RoughnessMap tr0022_00_hairstyle_rgn.bntx
+AOMap tr0022_00_hairstyle_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.30000001192092896
+BaseColorMap tr0022_00_body_alb.bntx
+WeatherLayerMaskMap tr0022_00_body_wlm.bntx
+NormalMap tr0022_00_body_nrm.bntx
+MetallicMap tr0022_00_body_mtl.bntx
+RoughnessMap tr0022_00_body_rgn.bntx
+AOMap tr0022_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.30000001192092896
+BaseColorMap tr0022_00_obj_alb.bntx
+WeatherLayerMaskMap tr0022_00_obj_wlm.bntx
+NormalMap tr0022_00_obj_nrm.bntx
+MetallicMap tr0022_00_obj_mtl.bntx
+RoughnessMap tr0022_00_obj_rgn.bntx
+AOMap tr0022_00_obj_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0022_00_body_alb.bntx
+NormalMap tr0022_00_body_nrm.bntx
+MetallicMap tr0022_00_body_mtl.bntx
+RoughnessMap tr0022_00_body_rgn.bntx
+AOMap tr0022_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.30000001192092896
+Offline Mode
+! Loaded shader blend file.
+Parsing TRMSH...
+Parsing TRMBF...
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+
+FBX export starting... 'C:\\Users\\andres\\Documents\\PokeMoba\\UnityProject\\Assets\\_Project\\Resources\\Models\\Trainers\\Package\\tr0022_00_guard_leader\\Model.fbx'
+(bpy.data.armatures['tr0022_00_guard_leader'], 'POSE')
+export finished in 0.1378 sec.
+CONVERTED tr0022_00_guard_leader 7 materials 7574 vertices
+Fra:1 Mem:120.45M (Peak 196.03M) | Time:80:08:27.08 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | Body
+Fra:1 Mem:121.98M (Peak 196.03M) | Time:80:08:27.09 | Mem:0.00M, Peak:0.00M | Scene | Initializing
+Fra:1 Mem:121.98M (Peak 196.03M) | Time:80:08:27.09 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading fresnel_prb.png
+Fra:1 Mem:121.98M (Peak 196.03M) | Time:80:08:27.09 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading body_skin_baked
+Fra:1 Mem:126.51M (Peak 196.03M) | Time:80:08:27.09 | Mem:1.00M, Peak:1.00M | Scene | Updating Images | Loading body_baked
+Fra:1 Mem:127.51M (Peak 196.03M) | Time:80:08:27.09 | Mem:2.00M, Peak:2.00M | Scene | Updating Images | Loading face_skin_baked
+Fra:1 Mem:128.51M (Peak 196.03M) | Time:80:08:27.09 | Mem:3.00M, Peak:3.00M | Scene | Updating Images | Loading eye_baked
+Fra:1 Mem:129.51M (Peak 196.03M) | Time:80:08:27.10 | Mem:4.00M, Peak:4.00M | Scene | Updating Images | Loading face_baked
+Fra:1 Mem:130.51M (Peak 196.03M) | Time:80:08:27.10 | Mem:5.00M, Peak:5.00M | Scene | Updating Images | Loading hairstyle_baked
+Fra:1 Mem:131.51M (Peak 196.03M) | Time:80:08:27.10 | Mem:6.00M, Peak:6.00M | Scene | Updating Images | Loading obj_baked
+Fra:1 Mem:132.51M (Peak 196.03M) | Time:80:08:27.10 | Mem:7.00M, Peak:7.00M | Scene | Updating Images | Loading default_mega_flow.png.001
+Fra:1 Mem:132.57M (Peak 196.03M) | Time:80:08:27.10 | Mem:7.06M, Peak:7.06M | Scene | Updating Images | Loading default_mega_color.png.001
+Fra:1 Mem:132.58M (Peak 196.03M) | Time:80:08:27.10 | Mem:7.07M, Peak:7.07M | Scene | Updating Images | Loading poke_default_metal_prb.png
+Extensions: writing cache failed ([Errno 13] Permission denied: 'C:\\Users\\andres\\AppData\\Roaming\\Blender Foundation\\Blender\\4.5\\extensions\\.cache\\compat.dat').
+BaseColorMap tr0023_00_obj_alb.bntx
+WeatherLayerMaskMap tr0023_00_obj_wlm.bntx
+NormalMap tr0023_00_obj_nrm.bntx
+MetallicMap tr0023_00_obj_mtl.bntx
+RoughnessMap tr0023_00_obj_rgn.bntx
+AOMap tr0023_00_obj_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0023_00_hairstyle_alb.bntx
+WeatherLayerMaskMap tr0023_00_hairstyle_wlm.bntx
+NormalMap tr0023_00_hairstyle_nrm.bntx
+AOMap tr0023_00_hairstyle_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.25
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0023_00_face_alb.bntx
+AOMap tr0023_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0023_00_eye_alb.bntx
+EmissionColorMap tr0023_00_eye_emv.bntx
+AOMap tr0023_00_eye_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 1.0
+EmissionIntensity 0.800000011920929
+BaseColorMap tr0023_00_face_alb.bntx
+AOMap tr0023_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0023_00_body_alb.bntx
+WeatherLayerMaskMap tr0023_00_body_wlm.bntx
+NormalMap tr0023_00_body_nrm.bntx
+MetallicMap tr0023_00_body_mtl.bntx
+RoughnessMap tr0023_00_body_rgn.bntx
+AOMap tr0023_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0023_00_body_alb.bntx
+WeatherLayerMaskMap tr0023_00_body_wlm.bntx
+NormalMap tr0023_00_body_nrm.bntx
+MetallicMap tr0023_00_body_mtl.bntx
+RoughnessMap tr0023_00_body_rgn.bntx
+AOMap tr0023_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+Offline Mode
+! Loaded shader blend file.
+Parsing TRMSH...
+Parsing TRMBF...
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+
+FBX export starting... 'C:\\Users\\andres\\Documents\\PokeMoba\\UnityProject\\Assets\\_Project\\Resources\\Models\\Trainers\\Package\\tr0023_00_guard_lower_m\\Model.fbx'
+(bpy.data.armatures['tr0023_00_guard_lower_m'], 'POSE')
+export finished in 0.2030 sec.
+CONVERTED tr0023_00_guard_lower_m 7 materials 7332 vertices
+Fra:1 Mem:120.99M (Peak 196.03M) | Time:80:08:29.68 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | Body
+Fra:1 Mem:122.63M (Peak 196.03M) | Time:80:08:29.69 | Mem:0.00M, Peak:0.00M | Scene | Initializing
+Fra:1 Mem:122.63M (Peak 196.03M) | Time:80:08:29.69 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading fresnel_prb.png
+Fra:1 Mem:122.63M (Peak 196.03M) | Time:80:08:29.69 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading face_skin_baked
+Fra:1 Mem:127.15M (Peak 196.03M) | Time:80:08:29.69 | Mem:1.00M, Peak:1.00M | Scene | Updating Images | Loading eye_baked
+Fra:1 Mem:128.15M (Peak 196.03M) | Time:80:08:29.69 | Mem:2.00M, Peak:2.00M | Scene | Updating Images | Loading face_baked
+Fra:1 Mem:129.15M (Peak 196.03M) | Time:80:08:29.69 | Mem:3.00M, Peak:3.00M | Scene | Updating Images | Loading hairstyle_baked
+Fra:1 Mem:130.15M (Peak 196.03M) | Time:80:08:29.69 | Mem:4.00M, Peak:4.00M | Scene | Updating Images | Loading obj_baked
+Fra:1 Mem:131.15M (Peak 196.03M) | Time:80:08:29.69 | Mem:5.00M, Peak:5.00M | Scene | Updating Images | Loading body_skin_baked
+Fra:1 Mem:132.15M (Peak 196.03M) | Time:80:08:29.69 | Mem:6.00M, Peak:6.00M | Scene | Updating Images | Loading body_baked
+Fra:1 Mem:133.15M (Peak 196.03M) | Time:80:08:29.69 | Mem:7.00M, Peak:7.00M | Scene | Updating Images | Loading default_mega_flow.png.001
+Fra:1 Mem:133.22M (Peak 196.03M) | Time:80:08:29.70 | Mem:7.06M, Peak:7.06M | Scene | Updating Images | Loading default_mega_color.png.001
+Fra:1 Mem:133.22M (Peak 196.03M) | Time:80:08:29.70 | Mem:7.07M, Peak:7.07M | Scene | Updating Images | Loading poke_default_metal_prb.png
+Extensions: writing cache failed ([Errno 13] Permission denied: 'C:\\Users\\andres\\AppData\\Roaming\\Blender Foundation\\Blender\\4.5\\extensions\\.cache\\compat.dat').
+BaseColorMap tr0024_00_body_alb.bntx
+WeatherLayerMaskMap tr0024_00_body_wlm.bntx
+NormalMap tr0024_00_body_nrm.bntx
+MetallicMap tr0024_00_body_mtl.bntx
+RoughnessMap tr0024_00_body_rgn.bntx
+AOMap tr0024_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0024_00_body_alb.bntx
+WeatherLayerMaskMap tr0024_00_body_wlm.bntx
+NormalMap tr0024_00_body_nrm.bntx
+MetallicMap tr0024_00_body_mtl.bntx
+RoughnessMap tr0024_00_body_rgn.bntx
+AOMap tr0024_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0024_00_obj_alb.bntx
+WeatherLayerMaskMap tr0024_00_obj_wlm.bntx
+NormalMap tr0024_00_obj_nrm.bntx
+MetallicMap tr0024_00_obj_mtl.bntx
+RoughnessMap tr0024_00_obj_rgn.bntx
+AOMap tr0024_00_obj_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0024_00_hairstyle_alb.bntx
+WeatherLayerMaskMap tr0024_00_hairstyle_wlm.bntx
+NormalMap tr0024_00_hairstyle_nrm.bntx
+RoughnessMap tr0024_00_hairstyle_rgn.bntx
+AOMap tr0024_00_hairstyle_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.25
+EmissionIntensity 0.0
+BaseColorMap tr0024_00_face_alb.bntx
+AOMap tr0024_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0024_00_eye_alb.bntx
+EmissionColorMap tr0024_00_eye_emv.bntx
+AOMap tr0024_00_eye_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 1.0
+EmissionIntensity 0.800000011920929
+BaseColorMap tr0024_00_face_alb.bntx
+AOMap tr0024_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+Offline Mode
+! Loaded shader blend file.
+Parsing TRMSH...
+Parsing TRMBF...
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+
+FBX export starting... 'C:\\Users\\andres\\Documents\\PokeMoba\\UnityProject\\Assets\\_Project\\Resources\\Models\\Trainers\\Package\\tr0024_00_guard_lower_f\\Model.fbx'
+(bpy.data.armatures['tr0024_00_guard_lower_f'], 'POSE')
+export finished in 0.1498 sec.
+CONVERTED tr0024_00_guard_lower_f 7 materials 7889 vertices
+Fra:1 Mem:120.53M (Peak 196.03M) | Time:80:08:32.32 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | Body
+Fra:1 Mem:122.04M (Peak 196.03M) | Time:80:08:32.32 | Mem:0.00M, Peak:0.00M | Scene | Initializing
+Fra:1 Mem:122.04M (Peak 196.03M) | Time:80:08:32.32 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading fresnel_prb.png
+Fra:1 Mem:122.04M (Peak 196.03M) | Time:80:08:32.32 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading body_skin_baked
+Fra:1 Mem:126.57M (Peak 196.03M) | Time:80:08:32.32 | Mem:1.00M, Peak:1.00M | Scene | Updating Images | Loading body_baked
+Fra:1 Mem:127.57M (Peak 196.03M) | Time:80:08:32.32 | Mem:2.00M, Peak:2.00M | Scene | Updating Images | Loading obj_baked
+Fra:1 Mem:128.57M (Peak 196.03M) | Time:80:08:32.32 | Mem:3.00M, Peak:3.00M | Scene | Updating Images | Loading hairstyle_baked
+Fra:1 Mem:129.57M (Peak 196.03M) | Time:80:08:32.32 | Mem:4.00M, Peak:4.00M | Scene | Updating Images | Loading eye_baked
+Fra:1 Mem:130.57M (Peak 196.03M) | Time:80:08:32.32 | Mem:5.00M, Peak:5.00M | Scene | Updating Images | Loading face_skin_baked
+Fra:1 Mem:131.57M (Peak 196.03M) | Time:80:08:32.33 | Mem:6.00M, Peak:6.00M | Scene | Updating Images | Loading face_baked
+Fra:1 Mem:132.57M (Peak 196.03M) | Time:80:08:32.33 | Mem:7.00M, Peak:7.00M | Scene | Updating Images | Loading default_mega_flow.png.001
+Fra:1 Mem:132.63M (Peak 196.03M) | Time:80:08:32.33 | Mem:7.06M, Peak:7.06M | Scene | Updating Images | Loading default_mega_color.png.001
+Fra:1 Mem:132.63M (Peak 196.03M) | Time:80:08:32.33 | Mem:7.07M, Peak:7.07M | Scene | Updating Images | Loading poke_default_metal_prb.png
+Extensions: writing cache failed ([Errno 13] Permission denied: 'C:\\Users\\andres\\AppData\\Roaming\\Blender Foundation\\Blender\\4.5\\extensions\\.cache\\compat.dat').
+BaseColorMap tr0025_00_face_alb.bntx
+AOMap tr0025_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0025_00_face_alb.bntx
+AOMap tr0025_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0025_00_eye_alb.bntx
+EmissionColorMap tr0025_00_eye_emv.bntx
+AOMap tr0025_00_eye_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 1.0
+EmissionIntensity 0.800000011920929
+BaseColorMap tr0025_00_hairstyle_alb.bntx
+WeatherLayerMaskMap tr0025_00_hairstyle_wlm.bntx
+NormalMap tr0025_00_hairstyle_nrm.bntx
+AOMap tr0025_00_hairstyle_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.25
+Roughness 0.6499999761581421
+EmissionIntensity 0.0
+BaseColorMap tr0025_00_obj_alb.bntx
+WeatherLayerMaskMap tr0025_00_obj_wlm.bntx
+NormalMap tr0025_00_obj_nrm.bntx
+MetallicMap tr0025_00_obj_mtl.bntx
+RoughnessMap tr0025_00_obj_rgn.bntx
+AOMap tr0025_00_obj_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0025_00_body_alb.bntx
+WeatherLayerMaskMap tr0025_00_body_wlm.bntx
+NormalMap tr0025_00_body_nrm.bntx
+MetallicMap tr0025_00_body_mtl.bntx
+RoughnessMap tr0025_00_body_rgn.bntx
+AOMap tr0025_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0025_00_body_alb.bntx
+WeatherLayerMaskMap tr0025_00_body_wlm.bntx
+NormalMap tr0025_00_body_nrm.bntx
+MetallicMap tr0025_00_body_mtl.bntx
+RoughnessMap tr0025_00_body_rgn.bntx
+AOMap tr0025_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+Offline Mode
+! Loaded shader blend file.
+Parsing TRMSH...
+Parsing TRMBF...
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+
+FBX export starting... 'C:\\Users\\andres\\Documents\\PokeMoba\\UnityProject\\Assets\\_Project\\Resources\\Models\\Trainers\\Package\\tr0025_00_trade_boss\\Model.fbx'
+(bpy.data.armatures['tr0025_00_trade_boss'], 'POSE')
+export finished in 0.1503 sec.
+CONVERTED tr0025_00_trade_boss 7 materials 7474 vertices
+Fra:1 Mem:119.54M (Peak 196.03M) | Time:80:08:34.86 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | Body
+Fra:1 Mem:120.79M (Peak 196.03M) | Time:80:08:34.87 | Mem:0.00M, Peak:0.00M | Scene | Initializing
+Fra:1 Mem:120.78M (Peak 196.03M) | Time:80:08:34.87 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading fresnel_prb.png
+Fra:1 Mem:120.78M (Peak 196.03M) | Time:80:08:34.87 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading eye_baked
+Fra:1 Mem:125.31M (Peak 196.03M) | Time:80:08:34.87 | Mem:1.00M, Peak:1.00M | Scene | Updating Images | Loading face_baked
+Fra:1 Mem:126.31M (Peak 196.03M) | Time:80:08:34.87 | Mem:2.00M, Peak:2.00M | Scene | Updating Images | Loading face_skin_baked
+Fra:1 Mem:127.31M (Peak 196.03M) | Time:80:08:34.87 | Mem:3.00M, Peak:3.00M | Scene | Updating Images | Loading hairstyle_baked
+Fra:1 Mem:128.31M (Peak 196.03M) | Time:80:08:34.87 | Mem:4.00M, Peak:4.00M | Scene | Updating Images | Loading obj_baked
+Fra:1 Mem:129.31M (Peak 196.03M) | Time:80:08:34.87 | Mem:5.00M, Peak:5.00M | Scene | Updating Images | Loading body_skin_baked
+Fra:1 Mem:130.31M (Peak 196.03M) | Time:80:08:34.87 | Mem:6.00M, Peak:6.00M | Scene | Updating Images | Loading body_baked
+Fra:1 Mem:131.31M (Peak 196.03M) | Time:80:08:34.87 | Mem:7.00M, Peak:7.00M | Scene | Updating Images | Loading default_mega_flow.png.001
+Fra:1 Mem:131.38M (Peak 196.03M) | Time:80:08:34.87 | Mem:7.06M, Peak:7.06M | Scene | Updating Images | Loading default_mega_color.png.001
+Fra:1 Mem:131.38M (Peak 196.03M) | Time:80:08:34.87 | Mem:7.07M, Peak:7.07M | Scene | Updating Images | Loading poke_default_metal_prb.png
+Extensions: writing cache failed ([Errno 13] Permission denied: 'C:\\Users\\andres\\AppData\\Roaming\\Blender Foundation\\Blender\\4.5\\extensions\\.cache\\compat.dat').
+BaseColorMap tr0027_00_body_alb.bntx
+WeatherLayerMaskMap tr0027_00_body_wlm.bntx
+NormalMap tr0027_00_body_nrm.bntx
+RoughnessMap tr0027_00_body_rgn.bntx
+AOMap tr0027_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.0
+EmissionIntensity 0.0
+BaseColorMap tr0027_00_body_alb.bntx
+WeatherLayerMaskMap tr0027_00_body_wlm.bntx
+RoughnessMap tr0027_00_body_rgn.bntx
+AOMap tr0027_00_body_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+EmissionIntensity 0.0
+BaseColorMap tr0027_00_obj_alb.bntx
+WeatherLayerMaskMap tr0027_00_obj_wlm.bntx
+NormalMap tr0027_00_obj_nrm.bntx
+MetallicMap tr0027_00_obj_mtl.bntx
+RoughnessMap tr0027_00_obj_rgn.bntx
+AOMap tr0027_00_obj_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0027_00_hairstyle_alb.bntx
+WeatherLayerMaskMap tr0027_00_hairstyle_wlm.bntx
+NormalMap tr0027_00_hairstyle_nrm.bntx
+MetallicMap tr0027_00_hairstyle_mtl.bntx
+RoughnessMap tr0027_00_hairstyle_rgn.bntx
+AOMap tr0027_00_hairstyle_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0027_00_face_alb.bntx
+AOMap tr0027_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0027_00_face_alb.bntx
+AOMap tr0027_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0027_00_eye_alb.bntx
+EmissionColorMap tr0027_00_eye_emv.bntx
+AOMap tr0027_00_eye_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 1.0
+EmissionIntensity 0.800000011920929
+Offline Mode
+! Loaded shader blend file.
+Parsing TRMSH...
+Parsing TRMBF...
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+
+FBX export starting... 'C:\\Users\\andres\\Documents\\PokeMoba\\UnityProject\\Assets\\_Project\\Resources\\Models\\Trainers\\Package\\tr0027_00_me_leader\\Model.fbx'
+(bpy.data.armatures['tr0027_00_me_leader'], 'POSE')
+export finished in 0.1373 sec.
+CONVERTED tr0027_00_me_leader 7 materials 6049 vertices
+Fra:1 Mem:120.32M (Peak 196.03M) | Time:80:08:37.44 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | Body
+Fra:1 Mem:121.76M (Peak 196.03M) | Time:80:08:37.44 | Mem:0.00M, Peak:0.00M | Scene | Initializing
+Fra:1 Mem:121.75M (Peak 196.03M) | Time:80:08:37.44 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading fresnel_prb.png
+Fra:1 Mem:121.75M (Peak 196.03M) | Time:80:08:37.44 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading body_skin_baked
+Fra:1 Mem:126.28M (Peak 196.03M) | Time:80:08:37.44 | Mem:1.00M, Peak:1.00M | Scene | Updating Images | Loading obj_baked
+Fra:1 Mem:127.28M (Peak 196.03M) | Time:80:08:37.44 | Mem:2.00M, Peak:2.00M | Scene | Updating Images | Loading body_baked
+Fra:1 Mem:128.28M (Peak 196.03M) | Time:80:08:37.44 | Mem:3.00M, Peak:3.00M | Scene | Updating Images | Loading face_baked
+Fra:1 Mem:129.28M (Peak 196.03M) | Time:80:08:37.45 | Mem:4.00M, Peak:4.00M | Scene | Updating Images | Loading hairstyle_baked
+Fra:1 Mem:130.28M (Peak 196.03M) | Time:80:08:37.45 | Mem:5.00M, Peak:5.00M | Scene | Updating Images | Loading eye_baked
+Fra:1 Mem:131.28M (Peak 196.03M) | Time:80:08:37.45 | Mem:6.00M, Peak:6.00M | Scene | Updating Images | Loading face_skin_baked
+Fra:1 Mem:132.28M (Peak 196.03M) | Time:80:08:37.45 | Mem:7.00M, Peak:7.00M | Scene | Updating Images | Loading default_mega_flow.png.001
+Fra:1 Mem:132.34M (Peak 196.03M) | Time:80:08:37.45 | Mem:7.06M, Peak:7.06M | Scene | Updating Images | Loading default_mega_color.png.001
+Fra:1 Mem:132.35M (Peak 196.03M) | Time:80:08:37.45 | Mem:7.07M, Peak:7.07M | Scene | Updating Images | Loading poke_default_metal_prb.png
+Extensions: writing cache failed ([Errno 13] Permission denied: 'C:\\Users\\andres\\AppData\\Roaming\\Blender Foundation\\Blender\\4.5\\extensions\\.cache\\compat.dat').
+BaseColorMap tr0031_00_face_alb.bntx
+AOMap tr0031_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0031_00_eye_alb.bntx
+EmissionColorMap tr0031_00_eye_emv.bntx
+AOMap tr0031_00_eye_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 1.0
+EmissionIntensity 0.800000011920929
+BaseColorMap tr0031_00_hairstyle_alb.bntx
+WeatherLayerMaskMap tr0031_00_hairstyle_wlm.bntx
+NormalMap tr0031_00_hairstyle_nrm.bntx
+AOMap tr0031_00_hairstyle_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.25
+Roughness 0.6499999761581421
+EmissionIntensity 0.0
+BaseColorMap tr0031_00_face_alb.bntx
+AOMap tr0031_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0031_00_body_alb.bntx
+WeatherLayerMaskMap tr0031_00_body_wlm.bntx
+NormalMap tr0031_00_body_nrm.bntx
+MetallicMap tr0031_00_body_mtl.bntx
+RoughnessMap tr0031_00_body_rgn.bntx
+AOMap tr0031_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0031_00_obj_alb.bntx
+WeatherLayerMaskMap tr0031_00_obj_wlm.bntx
+NormalMap tr0031_00_obj_nrm.bntx
+MetallicMap tr0031_00_obj_mtl.bntx
+RoughnessMap tr0031_00_obj_rgn.bntx
+AOMap tr0031_00_obj_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0031_00_body_alb.bntx
+WeatherLayerMaskMap tr0031_00_body_wlm.bntx
+NormalMap tr0031_00_body_nrm.bntx
+MetallicMap tr0031_00_body_mtl.bntx
+RoughnessMap tr0031_00_body_rgn.bntx
+AOMap tr0031_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+Offline Mode
+! Loaded shader blend file.
+Parsing TRMSH...
+Parsing TRMBF...
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+
+FBX export starting... 'C:\\Users\\andres\\Documents\\PokeMoba\\UnityProject\\Assets\\_Project\\Resources\\Models\\Trainers\\Package\\tr0031_00_trade_m\\Model.fbx'
+(bpy.data.armatures['tr0031_00_trade_m'], 'POSE')
+export finished in 0.1268 sec.
+CONVERTED tr0031_00_trade_m 7 materials 7024 vertices
+Fra:1 Mem:120.46M (Peak 196.03M) | Time:80:08:40.12 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | Body
+Fra:1 Mem:121.91M (Peak 196.03M) | Time:80:08:40.13 | Mem:0.00M, Peak:0.00M | Scene | Initializing
+Fra:1 Mem:121.90M (Peak 196.03M) | Time:80:08:40.13 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading fresnel_prb.png
+Fra:1 Mem:121.90M (Peak 196.03M) | Time:80:08:40.13 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading hairstyle_baked
+Fra:1 Mem:126.43M (Peak 196.03M) | Time:80:08:40.13 | Mem:1.00M, Peak:1.00M | Scene | Updating Images | Loading obj_baked
+Fra:1 Mem:127.43M (Peak 196.03M) | Time:80:08:40.13 | Mem:2.00M, Peak:2.00M | Scene | Updating Images | Loading body_skin_baked
+Fra:1 Mem:128.43M (Peak 196.03M) | Time:80:08:40.13 | Mem:3.00M, Peak:3.00M | Scene | Updating Images | Loading body_baked
+Fra:1 Mem:129.43M (Peak 196.03M) | Time:80:08:40.13 | Mem:4.00M, Peak:4.00M | Scene | Updating Images | Loading eye_baked
+Fra:1 Mem:130.43M (Peak 196.03M) | Time:80:08:40.13 | Mem:5.00M, Peak:5.00M | Scene | Updating Images | Loading face_skin_baked
+Fra:1 Mem:131.43M (Peak 196.03M) | Time:80:08:40.14 | Mem:6.00M, Peak:6.00M | Scene | Updating Images | Loading face_baked
+Fra:1 Mem:132.43M (Peak 196.03M) | Time:80:08:40.14 | Mem:7.00M, Peak:7.00M | Scene | Updating Images | Loading default_mega_flow.png.001
+Fra:1 Mem:132.50M (Peak 196.03M) | Time:80:08:40.14 | Mem:7.06M, Peak:7.06M | Scene | Updating Images | Loading default_mega_color.png.001
+Fra:1 Mem:132.50M (Peak 196.03M) | Time:80:08:40.14 | Mem:7.07M, Peak:7.07M | Scene | Updating Images | Loading poke_default_metal_prb.png
+Extensions: writing cache failed ([Errno 13] Permission denied: 'C:\\Users\\andres\\AppData\\Roaming\\Blender Foundation\\Blender\\4.5\\extensions\\.cache\\compat.dat').
+BaseColorMap tr0032_00_face_alb.bntx
+AOMap tr0032_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.30000001192092896
+BaseColorMap tr0032_00_face_alb.bntx
+AOMap tr0032_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0032_00_eye_alb.bntx
+EmissionColorMap tr0032_00_eye_emv.bntx
+AOMap tr0032_00_eye_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 1.0
+EmissionIntensity 0.800000011920929
+BaseColorMap tr0032_00_body_alb.bntx
+WeatherLayerMaskMap tr0032_00_body_wlm.bntx
+NormalMap tr0032_00_body_nrm.bntx
+MetallicMap tr0032_00_body_mtl.bntx
+RoughnessMap tr0032_00_body_rgn.bntx
+AOMap tr0032_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.30000001192092896
+BaseColorMap tr0032_00_body_alb.bntx
+WeatherLayerMaskMap tr0032_00_body_wlm.bntx
+NormalMap tr0032_00_body_nrm.bntx
+MetallicMap tr0032_00_body_mtl.bntx
+RoughnessMap tr0032_00_body_rgn.bntx
+AOMap tr0032_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.30000001192092896
+BaseColorMap tr0032_00_obj_alb.bntx
+WeatherLayerMaskMap tr0032_00_obj_wlm.bntx
+NormalMap tr0032_00_obj_nrm.bntx
+MetallicMap tr0032_00_obj_mtl.bntx
+RoughnessMap tr0032_00_obj_rgn.bntx
+AOMap tr0032_00_obj_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.30000001192092896
+BaseColorMap tr0032_00_hairstyle_alb.bntx
+WeatherLayerMaskMap tr0032_00_hairstyle_wlm.bntx
+NormalMap tr0032_00_hairstyle_nrm.bntx
+AOMap tr0032_00_hairstyle_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.25
+Roughness 0.6499999761581421
+EmissionIntensity 0.30000001192092896
+Offline Mode
+! Loaded shader blend file.
+Parsing TRMSH...
+Parsing TRMBF...
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+
+FBX export starting... 'C:\\Users\\andres\\Documents\\PokeMoba\\UnityProject\\Assets\\_Project\\Resources\\Models\\Trainers\\Package\\tr0032_00_trade_f\\Model.fbx'
+(bpy.data.armatures['tr0032_00_trade_f'], 'POSE')
+export finished in 0.2399 sec.
+CONVERTED tr0032_00_trade_f 7 materials 7087 vertices
+Fra:1 Mem:120.54M (Peak 196.03M) | Time:80:08:42.81 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | Body
+Fra:1 Mem:122.09M (Peak 196.03M) | Time:80:08:42.81 | Mem:0.00M, Peak:0.00M | Scene | Initializing
+Fra:1 Mem:122.08M (Peak 196.03M) | Time:80:08:42.81 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading obj_baked
+Fra:1 Mem:126.61M (Peak 196.03M) | Time:80:08:42.81 | Mem:1.00M, Peak:1.00M | Scene | Updating Images | Loading body_skin_baked
+Fra:1 Mem:127.61M (Peak 196.03M) | Time:80:08:42.81 | Mem:2.00M, Peak:2.00M | Scene | Updating Images | Loading body_baked
+Fra:1 Mem:128.61M (Peak 196.03M) | Time:80:08:42.81 | Mem:3.00M, Peak:3.00M | Scene | Updating Images | Loading eye_baked
+Fra:1 Mem:129.61M (Peak 196.03M) | Time:80:08:42.81 | Mem:4.00M, Peak:4.00M | Scene | Updating Images | Loading face_baked
+Fra:1 Mem:130.61M (Peak 196.03M) | Time:80:08:42.82 | Mem:5.00M, Peak:5.00M | Scene | Updating Images | Loading face_skin_baked
+Fra:1 Mem:131.61M (Peak 196.03M) | Time:80:08:42.82 | Mem:6.00M, Peak:6.00M | Scene | Updating Images | Loading hairstyle_baked
+Fra:1 Mem:132.61M (Peak 196.03M) | Time:80:08:42.82 | Mem:7.00M, Peak:7.00M | Scene | Updating Images | Loading default_mega_flow.png.001
+Fra:1 Mem:132.68M (Peak 196.03M) | Time:80:08:42.82 | Mem:7.06M, Peak:7.06M | Scene | Updating Images | Loading default_mega_color.png.001
+Fra:1 Mem:132.68M (Peak 196.03M) | Time:80:08:42.82 | Mem:7.07M, Peak:7.07M | Scene | Updating Images | Loading poke_default_metal_prb.png
+Extensions: writing cache failed ([Errno 13] Permission denied: 'C:\\Users\\andres\\AppData\\Roaming\\Blender Foundation\\Blender\\4.5\\extensions\\.cache\\compat.dat').
+BaseColorMap tr0033_00_hairstyle_alb.bntx
+WeatherLayerMaskMap tr0033_00_hairstyle_wlm.bntx
+NormalMap tr0033_00_hairstyle_nrm.bntx
+AOMap tr0033_00_hairstyle_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.0
+Roughness 0.6499999761581421
+EmissionIntensity 0.0
+BaseColorMap tr0033_00_face_alb.bntx
+AOMap tr0033_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0033_00_face_alb.bntx
+AOMap tr0033_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0033_00_eye_alb.bntx
+EmissionColorMap tr0033_00_eye_emv.bntx
+AOMap tr0033_00_eye_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 1.0
+EmissionIntensity 0.800000011920929
+BaseColorMap tr0033_00_body_alb.bntx
+WeatherLayerMaskMap tr0033_00_body_wlm.bntx
+NormalMap tr0033_00_body_nrm.bntx
+MetallicMap tr0033_00_body_mtl.bntx
+RoughnessMap tr0033_00_body_rgn.bntx
+AOMap tr0033_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0033_00_body_alb.bntx
+WeatherLayerMaskMap tr0033_00_body_wlm.bntx
+NormalMap tr0033_00_body_nrm.bntx
+MetallicMap tr0033_00_body_mtl.bntx
+RoughnessMap tr0033_00_body_rgn.bntx
+AOMap tr0033_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0033_00_obj_alb.bntx
+WeatherLayerMaskMap tr0033_00_obj_wlm.bntx
+NormalMap tr0033_00_obj_nrm.bntx
+MetallicMap tr0033_00_obj_mtl.bntx
+RoughnessMap tr0033_00_obj_rgn.bntx
+AOMap tr0033_00_obj_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+Offline Mode
+! Loaded shader blend file.
+Parsing TRMSH...
+Parsing TRMBF...
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+
+FBX export starting... 'C:\\Users\\andres\\Documents\\PokeMoba\\UnityProject\\Assets\\_Project\\Resources\\Models\\Trainers\\Package\\tr0033_00_bandit_first\\Model.fbx'
+(bpy.data.armatures['tr0033_00_bandit_first'], 'POSE')
+export finished in 0.1557 sec.
+CONVERTED tr0033_00_bandit_first 7 materials 7447 vertices
+Fra:1 Mem:120.29M (Peak 196.03M) | Time:80:08:45.26 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | Body
+Fra:1 Mem:121.68M (Peak 196.03M) | Time:80:08:45.27 | Mem:0.00M, Peak:0.00M | Scene | Initializing
+Fra:1 Mem:121.67M (Peak 196.03M) | Time:80:08:45.27 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading fresnel_prb.png
+Fra:1 Mem:121.67M (Peak 196.03M) | Time:80:08:45.27 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading obi_baked
+Fra:1 Mem:126.20M (Peak 196.03M) | Time:80:08:45.27 | Mem:1.00M, Peak:1.00M | Scene | Updating Images | Loading body_baked
+Fra:1 Mem:127.20M (Peak 196.03M) | Time:80:08:45.27 | Mem:2.00M, Peak:2.00M | Scene | Updating Images | Loading body_skin_baked
+Fra:1 Mem:128.20M (Peak 196.03M) | Time:80:08:45.27 | Mem:3.00M, Peak:3.00M | Scene | Updating Images | Loading face_baked
+Fra:1 Mem:129.20M (Peak 196.03M) | Time:80:08:45.27 | Mem:4.00M, Peak:4.00M | Scene | Updating Images | Loading eye_baked
+Fra:1 Mem:130.20M (Peak 196.03M) | Time:80:08:45.27 | Mem:5.00M, Peak:5.00M | Scene | Updating Images | Loading face_skin_baked
+Fra:1 Mem:131.20M (Peak 196.03M) | Time:80:08:45.27 | Mem:6.00M, Peak:6.00M | Scene | Updating Images | Loading hairstyle_baked
+Fra:1 Mem:132.20M (Peak 196.03M) | Time:80:08:45.28 | Mem:7.00M, Peak:7.00M | Scene | Updating Images | Loading default_mega_flow.png.001
+Fra:1 Mem:132.27M (Peak 196.03M) | Time:80:08:45.28 | Mem:7.06M, Peak:7.06M | Scene | Updating Images | Loading default_mega_color.png.001
+Fra:1 Mem:132.27M (Peak 196.03M) | Time:80:08:45.28 | Mem:7.07M, Peak:7.07M | Scene | Updating Images | Loading poke_default_metal_prb.png
+Extensions: writing cache failed ([Errno 13] Permission denied: 'C:\\Users\\andres\\AppData\\Roaming\\Blender Foundation\\Blender\\4.5\\extensions\\.cache\\compat.dat').
+BaseColorMap tr0034_00_hairstyle_alb.bntx
+WeatherLayerMaskMap tr0034_00_hairstyle_wlm.bntx
+NormalMap tr0034_00_hairstyle_nrm.bntx
+MetallicMap tr0034_00_hairstyle_mtl.bntx
+RoughnessMap tr0034_00_hairstyle_rgn.bntx
+AOMap tr0034_00_hairstyle_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0034_00_face_alb.bntx
+AOMap tr0034_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0034_00_eye_alb.bntx
+EmissionColorMap tr0034_00_eye_emv.bntx
+AOMap tr0034_00_eye_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 1.0
+EmissionIntensity 0.800000011920929
+BaseColorMap tr0034_00_face_alb.bntx
+AOMap tr0034_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0034_00_body_alb.bntx
+WeatherLayerMaskMap tr0034_00_body_wlm.bntx
+NormalMap tr0034_00_body_nrm.bntx
+MetallicMap tr0034_00_body_mtl.bntx
+RoughnessMap tr0034_00_body_rgn.bntx
+AOMap tr0034_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0034_00_body_alb.bntx
+WeatherLayerMaskMap tr0034_00_body_wlm.bntx
+NormalMap tr0034_00_body_nrm.bntx
+MetallicMap tr0034_00_body_mtl.bntx
+RoughnessMap tr0034_00_body_rgn.bntx
+AOMap tr0034_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0034_00_obi_alb.bntx
+WeatherLayerMaskMap tr0034_00_obi_wlm.bntx
+NormalMap tr0034_00_obi_nrm.bntx
+MetallicMap tr0034_00_obi_mtl.bntx
+RoughnessMap tr0034_00_obi_rgn.bntx
+AOMap tr0034_00_obi_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+Offline Mode
+! Loaded shader blend file.
+Parsing TRMSH...
+Parsing TRMBF...
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+
+FBX export starting... 'C:\\Users\\andres\\Documents\\PokeMoba\\UnityProject\\Assets\\_Project\\Resources\\Models\\Trainers\\Package\\tr0034_00_bandit_second\\Model.fbx'
+(bpy.data.armatures['tr0034_00_bandit_second'], 'POSE')
+export finished in 0.1330 sec.
+CONVERTED tr0034_00_bandit_second 7 materials 6656 vertices
+Fra:1 Mem:121.11M (Peak 196.03M) | Time:80:08:47.78 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | Body
+Fra:1 Mem:122.72M (Peak 196.03M) | Time:80:08:47.79 | Mem:0.00M, Peak:0.00M | Scene | Initializing
+Fra:1 Mem:122.71M (Peak 196.03M) | Time:80:08:47.79 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading fresnel_prb.png
+Fra:1 Mem:122.71M (Peak 196.03M) | Time:80:08:47.79 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading obj_baked
+Fra:1 Mem:123.73M (Peak 196.03M) | Time:80:08:47.79 | Mem:1.00M, Peak:1.00M | Scene | Updating Images | Loading body_skin_baked
+Fra:1 Mem:128.24M (Peak 196.03M) | Time:80:08:47.79 | Mem:2.00M, Peak:2.00M | Scene | Updating Images | Loading body_baked
+Fra:1 Mem:129.24M (Peak 196.03M) | Time:80:08:47.79 | Mem:3.00M, Peak:3.00M | Scene | Updating Images | Loading eye_baked
+Fra:1 Mem:130.24M (Peak 196.03M) | Time:80:08:47.79 | Mem:4.00M, Peak:4.00M | Scene | Updating Images | Loading face_skin_baked
+Fra:1 Mem:131.24M (Peak 196.03M) | Time:80:08:47.79 | Mem:5.00M, Peak:5.00M | Scene | Updating Images | Loading face_baked
+Fra:1 Mem:132.24M (Peak 196.03M) | Time:80:08:47.79 | Mem:6.00M, Peak:6.00M | Scene | Updating Images | Loading hairstyle_baked
+Fra:1 Mem:133.24M (Peak 196.03M) | Time:80:08:47.79 | Mem:7.00M, Peak:7.00M | Scene | Updating Images | Loading default_mega_flow.png.001
+Fra:1 Mem:133.31M (Peak 196.03M) | Time:80:08:47.79 | Mem:7.06M, Peak:7.06M | Scene | Updating Images | Loading default_mega_color.png.001
+Fra:1 Mem:133.31M (Peak 196.03M) | Time:80:08:47.80 | Mem:7.07M, Peak:7.07M | Scene | Updating Images | Loading poke_default_metal_prb.png
+Extensions: writing cache failed ([Errno 13] Permission denied: 'C:\\Users\\andres\\AppData\\Roaming\\Blender Foundation\\Blender\\4.5\\extensions\\.cache\\compat.dat').
+BaseColorMap tr0035_00_hairstyle_alb.bntx
+WeatherLayerMaskMap tr0035_00_hairstyle_wlm.bntx
+NormalMap tr0035_00_hairstyle_nrm.bntx
+AOMap tr0035_00_hairstyle_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.25
+Roughness 0.6499999761581421
+EmissionIntensity 0.0
+BaseColorMap tr0035_00_face_alb.bntx
+AOMap tr0035_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0035_00_face_alb.bntx
+AOMap tr0035_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0035_00_eye_alb.bntx
+EmissionColorMap tr0035_00_eye_emv.bntx
+AOMap tr0035_00_eye_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 1.0
+EmissionIntensity 0.800000011920929
+BaseColorMap tr0035_00_body_alb.bntx
+WeatherLayerMaskMap tr0035_00_body_wlm.bntx
+NormalMap tr0035_00_body_nrm.bntx
+MetallicMap tr0035_00_body_mtl.bntx
+RoughnessMap tr0035_00_body_rgn.bntx
+AOMap tr0035_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0035_00_body_alb.bntx
+WeatherLayerMaskMap tr0035_00_body_wlm.bntx
+NormalMap tr0035_00_body_nrm.bntx
+MetallicMap tr0035_00_body_mtl.bntx
+RoughnessMap tr0035_00_body_rgn.bntx
+AOMap tr0035_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0035_00_obj_alb.bntx
+WeatherLayerMaskMap tr0035_00_obj_wlm.bntx
+NormalMap tr0035_00_obj_nrm.bntx
+MetallicMap tr0035_00_obj_mtl.bntx
+RoughnessMap tr0035_00_obj_rgn.bntx
+AOMap tr0035_00_obj_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+Offline Mode
+! Loaded shader blend file.
+Parsing TRMSH...
+Parsing TRMBF...
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+
+FBX export starting... 'C:\\Users\\andres\\Documents\\PokeMoba\\UnityProject\\Assets\\_Project\\Resources\\Models\\Trainers\\Package\\tr0035_00_bandit_third\\Model.fbx'
+(bpy.data.armatures['tr0035_00_bandit_third'], 'POSE')
+export finished in 0.1447 sec.
+CONVERTED tr0035_00_bandit_third 7 materials 8194 vertices
+Fra:1 Mem:149.17M (Peak 196.03M) | Time:80:08:50.27 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | Body
+Fra:1 Mem:150.68M (Peak 196.03M) | Time:80:08:50.28 | Mem:0.00M, Peak:0.00M | Scene | Initializing
+Fra:1 Mem:150.67M (Peak 196.03M) | Time:80:08:50.28 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading fresnel_prb.png
+Fra:1 Mem:150.67M (Peak 196.03M) | Time:80:08:50.28 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading shoes_baked
+Fra:1 Mem:155.20M (Peak 196.03M) | Time:80:08:50.28 | Mem:1.00M, Peak:1.00M | Scene | Updating Images | Loading baggage_baked
+Fra:1 Mem:156.20M (Peak 196.03M) | Time:80:08:50.28 | Mem:2.00M, Peak:2.00M | Scene | Updating Images | Loading body_skin_baked
+Fra:1 Mem:157.20M (Peak 196.03M) | Time:80:08:50.28 | Mem:3.00M, Peak:3.00M | Scene | Updating Images | Loading body_baked
+Fra:1 Mem:158.20M (Peak 196.03M) | Time:80:08:50.28 | Mem:4.00M, Peak:4.00M | Scene | Updating Images | Loading face_baked
+Fra:1 Mem:159.20M (Peak 196.03M) | Time:80:08:50.28 | Mem:5.00M, Peak:5.00M | Scene | Updating Images | Loading face_skin_baked
+Fra:1 Mem:160.20M (Peak 196.03M) | Time:80:08:50.28 | Mem:6.00M, Peak:6.00M | Scene | Updating Images | Loading eye_baked
+Fra:1 Mem:161.20M (Peak 196.03M) | Time:80:08:50.28 | Mem:7.00M, Peak:7.00M | Scene | Updating Images | Loading hairstyle_baked
+Fra:1 Mem:162.20M (Peak 196.03M) | Time:80:08:50.28 | Mem:8.00M, Peak:8.00M | Scene | Updating Images | Loading cap_baked
+Fra:1 Mem:163.20M (Peak 196.03M) | Time:80:08:50.29 | Mem:9.00M, Peak:9.00M | Scene | Updating Images | Loading default_mega_flow.png.001
+Fra:1 Mem:163.27M (Peak 196.03M) | Time:80:08:50.29 | Mem:9.06M, Peak:9.06M | Scene | Updating Images | Loading default_mega_color.png.001
+Fra:1 Mem:166.79M (Peak 196.03M) | Time:80:08:50.29 | Mem:9.07M, Peak:9.07M | Scene | Updating Images | Loading poke_default_metal_prb.png
+Extensions: writing cache failed ([Errno 13] Permission denied: 'C:\\Users\\andres\\AppData\\Roaming\\Blender Foundation\\Blender\\4.5\\extensions\\.cache\\compat.dat').
+BaseColorMap tr0036_00_cap_alb.bntx
+WeatherLayerMaskMap tr0036_00_cap_wlm.bntx
+NormalMap tr0036_00_cap_nrm.bntx
+RoughnessMap tr0036_00_cap_rgn.bntx
+AOMap tr0036_00_cap_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.0
+EmissionIntensity 0.0
+BaseColorMap tr0036_00_hairstyle_alb.bntx
+WeatherLayerMaskMap tr0036_00_hairstyle_wlm.bntx
+NormalMap tr0036_00_hairstyle_nrm.bntx
+RoughnessMap tr0036_00_hairstyle_rgn.bntx
+AOMap tr0036_00_hairstyle_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.10000000149011612
+EmissionIntensity 0.0
+BaseColorMap tr0036_00_face_alb.bntx
+RoughnessMap tr0036_00_face_rgn.bntx
+AOMap tr0036_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+EmissionIntensity 0.0
+BaseColorMap tr0036_00_eye_alb.bntx
+EmissionColorMap tr0036_00_eye_emv.bntx
+AOMap tr0036_00_eye_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 1.0
+EmissionIntensity 0.800000011920929
+BaseColorMap tr0036_00_face_alb.bntx
+RoughnessMap tr0036_00_face_rgn.bntx
+AOMap tr0036_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+EmissionIntensity 0.0
+BaseColorMap tr0036_00_body_alb.bntx
+WeatherLayerMaskMap tr0036_00_body_wlm.bntx
+NormalMap tr0036_00_body_nrm.bntx
+MetallicMap tr0036_00_body_mtl.bntx
+RoughnessMap tr0036_00_body_rgn.bntx
+AOMap tr0036_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0036_00_body_alb.bntx
+WeatherLayerMaskMap tr0036_00_body_wlm.bntx
+NormalMap tr0036_00_body_nrm.bntx
+MetallicMap tr0036_00_body_mtl.bntx
+RoughnessMap tr0036_00_body_rgn.bntx
+AOMap tr0036_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0036_00_baggage_alb.bntx
+WeatherLayerMaskMap tr0036_00_baggage_wlm.bntx
+NormalMap tr0036_00_baggage_nrm.bntx
+MetallicMap tr0036_00_baggage_mtl.bntx
+RoughnessMap tr0036_00_baggage_rgn.bntx
+AOMap tr0036_00_baggage_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0036_00_shoes_alb.bntx
+WeatherLayerMaskMap tr0036_00_shoes_wlm.bntx
+NormalMap tr0036_00_shoes_nrm.bntx
+RoughnessMap tr0036_00_shoes_rgn.bntx
+AOMap tr0036_00_shoes_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.0
+EmissionIntensity 0.0
+Offline Mode
+! Loaded shader blend file.
+Parsing TRMSH...
+Parsing TRMBF...
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+
+FBX export starting... 'C:\\Users\\andres\\Documents\\PokeMoba\\UnityProject\\Assets\\_Project\\Resources\\Models\\Trainers\\Package\\tr0036_00_senpai_m\\Model.fbx'
+(bpy.data.armatures['tr0036_00_senpai_m'], 'POSE')
+export finished in 0.1436 sec.
+CONVERTED tr0036_00_senpai_m 9 materials 6898 vertices
+Fra:1 Mem:149.51M (Peak 196.03M) | Time:80:08:53.48 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | Body
+Fra:1 Mem:151.02M (Peak 196.03M) | Time:80:08:53.49 | Mem:0.00M, Peak:0.00M | Scene | Initializing
+Fra:1 Mem:151.02M (Peak 196.03M) | Time:80:08:53.49 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading fresnel_prb.png
+Fra:1 Mem:151.02M (Peak 196.03M) | Time:80:08:53.49 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading shoes_baked
+Fra:1 Mem:155.55M (Peak 196.03M) | Time:80:08:53.49 | Mem:1.00M, Peak:1.00M | Scene | Updating Images | Loading baggage_baked
+Fra:1 Mem:156.55M (Peak 196.03M) | Time:80:08:53.49 | Mem:2.00M, Peak:2.00M | Scene | Updating Images | Loading body_skin_baked
+Fra:1 Mem:157.55M (Peak 196.03M) | Time:80:08:53.49 | Mem:3.00M, Peak:3.00M | Scene | Updating Images | Loading body_baked
+Fra:1 Mem:158.55M (Peak 196.03M) | Time:80:08:53.49 | Mem:4.00M, Peak:4.00M | Scene | Updating Images | Loading face_baked
+Fra:1 Mem:159.55M (Peak 196.03M) | Time:80:08:53.49 | Mem:5.00M, Peak:5.00M | Scene | Updating Images | Loading face_skin_baked
+Fra:1 Mem:160.55M (Peak 196.03M) | Time:80:08:53.50 | Mem:6.00M, Peak:6.00M | Scene | Updating Images | Loading eye_baked
+Fra:1 Mem:161.55M (Peak 196.03M) | Time:80:08:53.50 | Mem:7.00M, Peak:7.00M | Scene | Updating Images | Loading hairstyle_obj_baked
+Fra:1 Mem:162.55M (Peak 196.03M) | Time:80:08:53.50 | Mem:8.00M, Peak:8.00M | Scene | Updating Images | Loading hairstyle_baked
+Fra:1 Mem:167.08M (Peak 196.03M) | Time:80:08:53.50 | Mem:9.00M, Peak:9.00M | Scene | Updating Images | Loading default_mega_flow.png.001
+Fra:1 Mem:167.14M (Peak 196.03M) | Time:80:08:53.50 | Mem:9.06M, Peak:9.06M | Scene | Updating Images | Loading default_mega_color.png.001
+Fra:1 Mem:167.14M (Peak 196.03M) | Time:80:08:53.50 | Mem:9.07M, Peak:9.07M | Scene | Updating Images | Loading poke_default_metal_prb.png
+Extensions: writing cache failed ([Errno 13] Permission denied: 'C:\\Users\\andres\\AppData\\Roaming\\Blender Foundation\\Blender\\4.5\\extensions\\.cache\\compat.dat').
+BaseColorMap tr0037_00_hairstyle_alb.bntx
+WeatherLayerMaskMap tr0037_00_hairstyle_wlm.bntx
+NormalMap tr0037_00_hairstyle_nrm.bntx
+MetallicMap tr0037_00_hairstyle_mtl.bntx
+RoughnessMap tr0037_00_hairstyle_rgn.bntx
+AOMap tr0037_00_hairstyle_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0037_00_hairstyle_alb.bntx
+WeatherLayerMaskMap tr0037_00_hairstyle_wlm.bntx
+NormalMap tr0037_00_hairstyle_nrm.bntx
+MetallicMap tr0037_00_hairstyle_mtl.bntx
+RoughnessMap tr0037_00_hairstyle_rgn.bntx
+AOMap tr0037_00_hairstyle_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0037_00_face_alb.bntx
+RoughnessMap tr0037_00_face_rgn.bntx
+AOMap tr0037_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+EmissionIntensity 0.0
+BaseColorMap tr0037_00_eye_alb.bntx
+EmissionColorMap tr0037_00_eye_emv.bntx
+AOMap tr0037_00_eye_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 1.0
+EmissionIntensity 0.800000011920929
+BaseColorMap tr0037_00_face_alb.bntx
+RoughnessMap tr0037_00_face_rgn.bntx
+AOMap tr0037_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+EmissionIntensity 0.0
+BaseColorMap tr0037_00_body_alb.bntx
+WeatherLayerMaskMap tr0037_00_body_wlm.bntx
+NormalMap tr0037_00_body_nrm.bntx
+MetallicMap tr0037_00_body_mtl.bntx
+RoughnessMap tr0037_00_body_rgn.bntx
+AOMap tr0037_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0037_00_body_alb.bntx
+WeatherLayerMaskMap tr0037_00_body_wlm.bntx
+NormalMap tr0037_00_body_nrm.bntx
+MetallicMap tr0037_00_body_mtl.bntx
+RoughnessMap tr0037_00_body_rgn.bntx
+AOMap tr0037_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0037_00_baggage_alb.bntx
+WeatherLayerMaskMap tr0037_00_baggage_wlm.bntx
+NormalMap tr0037_00_baggage_nrm.bntx
+MetallicMap tr0037_00_baggage_mtl.bntx
+RoughnessMap tr0037_00_baggage_rgn.bntx
+AOMap tr0037_00_baggage_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0037_00_shoes_alb.bntx
+WeatherLayerMaskMap tr0037_00_shoes_wlm.bntx
+NormalMap tr0037_00_shoes_nrm.bntx
+RoughnessMap tr0037_00_shoes_rgn.bntx
+AOMap tr0037_00_shoes_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+Metallic 0.0
+EmissionIntensity 0.0
+Offline Mode
+! Loaded shader blend file.
+Parsing TRMSH...
+Parsing TRMBF...
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+
+FBX export starting... 'C:\\Users\\andres\\Documents\\PokeMoba\\UnityProject\\Assets\\_Project\\Resources\\Models\\Trainers\\Package\\tr0037_00_senpai_f\\Model.fbx'
+(bpy.data.armatures['tr0037_00_senpai_f'], 'POSE')
+export finished in 0.2613 sec.
+CONVERTED tr0037_00_senpai_f 9 materials 7073 vertices
+Fra:1 Mem:104.99M (Peak 196.03M) | Time:80:08:56.76 | Mem:0.00M, Peak:0.00M | Scene | Synchronizing object | Body
+Fra:1 Mem:106.17M (Peak 196.03M) | Time:80:08:56.77 | Mem:0.00M, Peak:0.00M | Scene | Initializing
+Fra:1 Mem:106.16M (Peak 196.03M) | Time:80:08:56.77 | Mem:0.00M, Peak:0.00M | Scene | Updating Images | Loading hairstyle_baked
+Fra:1 Mem:110.69M (Peak 196.03M) | Time:80:08:56.77 | Mem:1.00M, Peak:1.00M | Scene | Updating Images | Loading face_skin_baked
+Fra:1 Mem:111.69M (Peak 196.03M) | Time:80:08:56.77 | Mem:2.00M, Peak:2.00M | Scene | Updating Images | Loading face_baked
+Fra:1 Mem:112.69M (Peak 196.03M) | Time:80:08:56.77 | Mem:3.00M, Peak:3.00M | Scene | Updating Images | Loading eye_baked
+Fra:1 Mem:113.69M (Peak 196.03M) | Time:80:08:56.77 | Mem:4.00M, Peak:4.00M | Scene | Updating Images | Loading body_skin_baked
+Fra:1 Mem:114.69M (Peak 196.03M) | Time:80:08:56.77 | Mem:5.00M, Peak:5.00M | Scene | Updating Images | Loading body_baked
+Fra:1 Mem:115.69M (Peak 196.03M) | Time:80:08:56.77 | Mem:6.00M, Peak:6.00M | Scene | Updating Images | Loading default_mega_flow.png.001
+Fra:1 Mem:115.75M (Peak 196.03M) | Time:80:08:56.77 | Mem:6.06M, Peak:6.06M | Scene | Updating Images | Loading default_mega_color.png.001
+Fra:1 Mem:115.76M (Peak 196.03M) | Time:80:08:56.77 | Mem:6.07M, Peak:6.07M | Scene | Updating Images | Loading poke_default_metal_prb.png
+Extensions: writing cache failed ([Errno 13] Permission denied: 'C:\\Users\\andres\\AppData\\Roaming\\Blender Foundation\\Blender\\4.5\\extensions\\.cache\\compat.dat').
+BaseColorMap tr0038_00_body_alb.bntx
+WeatherLayerMaskMap tr0038_00_body_wlm.bntx
+NormalMap tr0038_00_body_nrm.bntx
+MetallicMap tr0038_00_body_mtl.bntx
+RoughnessMap tr0038_00_body_rgn.bntx
+AOMap tr0038_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0038_00_body_alb.bntx
+WeatherLayerMaskMap tr0038_00_body_wlm.bntx
+NormalMap tr0038_00_body_nrm.bntx
+MetallicMap tr0038_00_body_mtl.bntx
+RoughnessMap tr0038_00_body_rgn.bntx
+AOMap tr0038_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0038_00_eye_alb.bntx
+EmissionColorMap tr0038_00_eye_emv.bntx
+AOMap tr0038_00_eye_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 1.0
+EmissionIntensity 0.800000011920929
+BaseColorMap tr0038_00_face_alb.bntx
+AOMap tr0038_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0038_00_face_alb.bntx
+AOMap tr0038_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0038_00_hairstyle_alb.bntx
+WeatherLayerMaskMap tr0038_00_hairstyle_wlm.bntx
+NormalMap tr0038_00_hairstyle_nrm.bntx
+MetallicMap tr0038_00_hairstyle_mtl.bntx
+RoughnessMap tr0038_00_hairstyle_rgn.bntx
+AOMap tr0038_00_hairstyle_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+Offline Mode
+! Loaded shader blend file.
+Parsing TRMSH...
+Parsing TRMBF...
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+
+FBX export starting... 'C:\\Users\\andres\\Documents\\PokeMoba\\UnityProject\\Assets\\_Project\\Resources\\Models\\Trainers\\Package\\tr0038_00_bu_leader_f\\Model.fbx'
+(bpy.data.armatures['tr0038_00_bu_leader_f'], 'POSE')
+export finished in 0.1195 sec.
+CONVERTED tr0038_00_bu_leader_f 6 materials 5382 vertices
+COMPLETE 33
+
+Blender quit

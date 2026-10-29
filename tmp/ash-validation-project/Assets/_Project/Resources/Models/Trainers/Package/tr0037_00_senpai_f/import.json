@@ -1,0 +1,46 @@
+{
+  "key": "Package/tr0037_00_senpai_f",
+  "source": "tr0037_00_senpai_f/tr0037_00_senpai_f.trmdl",
+  "sha256": "a9584bff85d9c567a2cfad42b2a3459812168b8af1d7ef8a30cd5f29c4550fd2",
+  "bindings": [
+    {
+      "material": "hairstyle",
+      "texture": "tex/hairstyle.png"
+    },
+    {
+      "material": "hairstyle_obj",
+      "texture": "tex/hairstyle_obj.png"
+    },
+    {
+      "material": "eye",
+      "texture": "tex/eye.png"
+    },
+    {
+      "material": "face_skin",
+      "texture": "tex/face_skin.png"
+    },
+    {
+      "material": "face",
+      "texture": "tex/face.png"
+    },
+    {
+      "material": "body",
+      "texture": "tex/body.png"
+    },
+    {
+      "material": "body_skin",
+      "texture": "tex/body_skin.png"
+    },
+    {
+      "material": "baggage",
+      "texture": "tex/baggage.png"
+    },
+    {
+      "material": "shoes",
+      "texture": "tex/shoes.png"
+    }
+  ],
+  "vertices": 7073,
+  "bones": 228,
+  "bakedAlbedo": true
+}

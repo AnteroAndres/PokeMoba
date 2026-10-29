@@ -1,0 +1,42 @@
+{
+  "key": "Package/tr0002_00_doctor_b",
+  "source": "tr0002_00_doctor_b/tr0002_00_doctor_b.trmdl",
+  "sha256": "28534e76e06a545467ee98006798266453ee762e4dd545ff6d18d1ba7a470777",
+  "bindings": [
+    {
+      "material": "obj",
+      "texture": "tex/obj.png"
+    },
+    {
+      "material": "body",
+      "texture": "tex/body.png"
+    },
+    {
+      "material": "body_skin",
+      "texture": "tex/body_skin.png"
+    },
+    {
+      "material": "eye",
+      "texture": "tex/eye.png"
+    },
+    {
+      "material": "face_skin",
+      "texture": "tex/face_skin.png"
+    },
+    {
+      "material": "hairstyle",
+      "texture": "tex/hairstyle.png"
+    },
+    {
+      "material": "face",
+      "texture": "tex/face.png"
+    },
+    {
+      "material": "hairstyle_obj",
+      "texture": "tex/hairstyle_obj.png"
+    }
+  ],
+  "vertices": 8028,
+  "bones": 190,
+  "bakedAlbedo": true
+}

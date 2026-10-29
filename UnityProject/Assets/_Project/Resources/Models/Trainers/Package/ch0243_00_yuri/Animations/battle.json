@@ -1,0 +1,10 @@
+{
+  "name": "battle",
+  "source": "ch0243_00_yuri_110_start_battle.lmd",
+  "sha256": "9a102b5a27ceb803f41970741d1381829131f016beedccbd1d55bb0cb513673f",
+  "fps": 30,
+  "frames": 70,
+  "duration": 2.3330001831054688,
+  "matchedBones": 99,
+  "movementDelta": 0.4896901801444118
+}

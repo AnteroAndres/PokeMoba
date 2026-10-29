@@ -1,0 +1,38 @@
+{
+  "key": "Package/tr0033_00_bandit_first",
+  "source": "tr0033_00_bandit_first/tr0033_00_bandit_first.trmdl",
+  "sha256": "27cb0338f8f844bbefde987d5efc15af370824eb17afa3429f0eab36c152a14b",
+  "bindings": [
+    {
+      "material": "hairstyle",
+      "texture": "tex/hairstyle.png"
+    },
+    {
+      "material": "face_skin",
+      "texture": "tex/face_skin.png"
+    },
+    {
+      "material": "face",
+      "texture": "tex/face.png"
+    },
+    {
+      "material": "eye",
+      "texture": "tex/eye.png"
+    },
+    {
+      "material": "body",
+      "texture": "tex/body.png"
+    },
+    {
+      "material": "body_skin",
+      "texture": "tex/body_skin.png"
+    },
+    {
+      "material": "obj",
+      "texture": "tex/obj.png"
+    }
+  ],
+  "vertices": 7447,
+  "bones": 200,
+  "bakedAlbedo": true
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "source": "Standing Idle.fbx",
+    "file": "Ash.fbx",
+    "sha256": "c60d7e80a1b0ee8d63c8b63219b93f2cee5b3c311f0b6220a6d8a93c32d4f336"
+  },
+  {
+    "source": "Slow Run.fbx",
+    "file": "Run.fbx",
+    "sha256": "093000c854e7269272da2024e0023614314ecbbac767c00d21aba29ddf4a0a2f"
+  },
+  {
+    "source": "Ash_arms_hat_hair.png",
+    "file": "Ash_arms_hat_hair.png",
+    "sha256": "2736974e82f2af0028060490927a9d5f1d976bc23762ea1968b82139572c7024"
+  },
+  {
+    "source": "PokeTra_Ash_face.png",
+    "file": "PokeTra_Ash_face.png",
+    "sha256": "7e1a0fc2733bcd9930f4edf6424438892c777243e70eb701bf1e614d088ce639"
+  },
+  {
+    "source": "trAsh_00_body_col.png",
+    "file": "trAsh_00_body_col.png",
+    "sha256": "c3b3af1c721bc3ff1ac38ab7fb217da4046feb88be26266b82019098f3f9e461"
+  }
+]

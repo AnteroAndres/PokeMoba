@@ -1,0 +1,38 @@
+{
+  "key": "Package/tr0009_00_ninja1",
+  "source": "tr0009_00_ninja1/tr0009_00_ninja1.trmdl",
+  "sha256": "a711c0e12fad45ddeed32c7f1f729f6e0e10de72e2d1e3861fbf2119c2937937",
+  "bindings": [
+    {
+      "material": "hairstyle",
+      "texture": "tex/hairstyle.png"
+    },
+    {
+      "material": "face_skin",
+      "texture": "tex/face_skin.png"
+    },
+    {
+      "material": "face",
+      "texture": "tex/face.png"
+    },
+    {
+      "material": "eye",
+      "texture": "tex/eye.png"
+    },
+    {
+      "material": "body_skin",
+      "texture": "tex/body_skin.png"
+    },
+    {
+      "material": "body",
+      "texture": "tex/body.png"
+    },
+    {
+      "material": "obj",
+      "texture": "tex/obj.png"
+    }
+  ],
+  "vertices": 6401,
+  "bones": 188,
+  "bakedAlbedo": true
+}

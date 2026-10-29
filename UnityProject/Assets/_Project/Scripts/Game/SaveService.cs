@@ -57,6 +57,11 @@ namespace PokeMoba.Game
                             current.TrainerCharacter = SaveData.DefaultTrainerCharacter;
                             Save();
                         }
+                        if (!current.HasCustomProfileName && current.TrainerName != current.SelectedCharacterName)
+                        {
+                            current.TrainerName = current.SelectedCharacterName;
+                            Save();
+                        }
                         return;
                     }
                 }

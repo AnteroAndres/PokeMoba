@@ -1,0 +1,34 @@
+{
+  "key": "Package/tr0038_00_bu_leader_f",
+  "source": "tr0038_00_bu_leader_f/tr0038_00_bu_leader_f.trmdl",
+  "sha256": "9e8a084400c9e1011afa9a2b56939894c466868d0d33e82e7f81fd52fb3e236b",
+  "bindings": [
+    {
+      "material": "body",
+      "texture": "tex/body.png"
+    },
+    {
+      "material": "body_skin",
+      "texture": "tex/body_skin.png"
+    },
+    {
+      "material": "eye",
+      "texture": "tex/eye.png"
+    },
+    {
+      "material": "face",
+      "texture": "tex/face.png"
+    },
+    {
+      "material": "face_skin",
+      "texture": "tex/face_skin.png"
+    },
+    {
+      "material": "hairstyle",
+      "texture": "tex/hairstyle.png"
+    }
+  ],
+  "vertices": 5382,
+  "bones": 182,
+  "bakedAlbedo": true
+}

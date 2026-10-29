@@ -1,0 +1,38 @@
+{
+  "key": "Package/tr0022_00_guard_leader",
+  "source": "tr0022_00_guard_leader/tr0022_00_guard_leader.trmdl",
+  "sha256": "e774b7b15e4adcb124442ec708174b8d43c6068602e42d5697c8cbc07ca5c66a",
+  "bindings": [
+    {
+      "material": "eye",
+      "texture": "tex/eye.png"
+    },
+    {
+      "material": "face",
+      "texture": "tex/face.png"
+    },
+    {
+      "material": "face_skin",
+      "texture": "tex/face_skin.png"
+    },
+    {
+      "material": "hairstyle",
+      "texture": "tex/hairstyle.png"
+    },
+    {
+      "material": "body",
+      "texture": "tex/body.png"
+    },
+    {
+      "material": "obj",
+      "texture": "tex/obj.png"
+    },
+    {
+      "material": "body_skin",
+      "texture": "tex/body_skin.png"
+    }
+  ],
+  "vertices": 7574,
+  "bones": 185,
+  "bakedAlbedo": true
+}

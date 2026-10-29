@@ -22,6 +22,7 @@ namespace PokeMoba.Combat
         public event Action<Combatant, Combatant> HitBy;
 
         public SpeciesData Species { get; private set; }
+        [NonSerialized] public PokemonInstance OwnedInstance;
         public CombatStats Stats { get; private set; }
         public MoveData[] Moves { get; private set; }
         public int Team { get; private set; }
@@ -159,6 +160,19 @@ namespace PokeMoba.Combat
                 model.localPosition = Vector3.zero;
             }
         }
+
+#if UNITY_EDITOR
+        /// <summary>Only compiled in the owner's Unity Editor, never in a player build.</summary>
+        public void SetCreatorVitals(float maximum, float fraction, bool immune)
+        {
+            maximum = Mathf.Clamp(maximum, 1f, 1000000000f);
+            if (MaxHp > 0f) HpScale *= maximum / MaxHp;
+            MaxHp = maximum;
+            if (IsDead) Revive();
+            Hp = maximum * Mathf.Clamp(fraction, .01f, 1f);
+            DamageImmune = immune;
+        }
+#endif
 
         void ApplyDamage(float amount)
         {

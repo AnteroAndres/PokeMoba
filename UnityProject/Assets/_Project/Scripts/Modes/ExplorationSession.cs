@@ -69,6 +69,15 @@ namespace PokeMoba.Modes
             if (Save.FirstHealthy() == null) Save.HealAll();
             ctx.Hud.Bind(null, null);
 
+            var pause = world.gameObject.AddComponent<PokeMoba.UI.AdventurePauseMenu>();
+            pause.Setup(ctx, () => !capturing && !leaving && party.Trainer != null && !party.Trainer.IsDead,
+                Leave, () =>
+                {
+                    leaving = true;
+                    party.SyncHp();
+                    SaveService.Save();
+                    ctx.ReturnToMainMenu();
+                });
             BuildButtons();
             ctx.Hud.Toast(zone.Name, 2.5f);
 

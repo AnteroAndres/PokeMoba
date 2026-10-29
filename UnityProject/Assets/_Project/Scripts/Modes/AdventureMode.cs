@@ -65,6 +65,7 @@ namespace PokeMoba.Modes
                 key =>
                 {
                     appearance.TrainerCharacter = key;
+                    appearance.TrainerName = SaveData.CharacterName(key);
                     RebuildTrainerPreview(world);
                     packageCustomizer.SetCharacterRoot(trainerPreview);
                 });
@@ -81,6 +82,7 @@ namespace PokeMoba.Modes
             appearance.HairStyle = packageCustomizer.SelectedHair;
             appearance.HairColor = packageCustomizer.SelectedHairColor;
             appearance.TrainerCharacter = packageCustomizer.SelectedCharacter;
+            appearance.TrainerName = SaveData.CharacterName(appearance.TrainerCharacter);
             appearance.HasChosenTrainerCharacter = true;
             appearance.AvatarStyle = packageCustomizer.SelectedRole == "Exploradora" ? 1 : packageCustomizer.SelectedRole == "Sabio" ? 2 : 0;
             appearance.TrainerName = string.IsNullOrWhiteSpace(appearance.TrainerName) ? "Entrenador" : appearance.TrainerName.Trim();

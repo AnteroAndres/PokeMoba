@@ -1,0 +1,38 @@
+{
+  "key": "Package/tr0005_00_boss1",
+  "source": "tr0005_00_boss1/tr0005_00_boss1.trmdl",
+  "sha256": "acdee45b54bab4a6b7ebec9ec36d1266d623afe2ab0335379be2c0c50eb4b34f",
+  "bindings": [
+    {
+      "material": "face",
+      "texture": "tex/face.png"
+    },
+    {
+      "material": "eye",
+      "texture": "tex/eye.png"
+    },
+    {
+      "material": "face_skin",
+      "texture": "tex/face_skin.png"
+    },
+    {
+      "material": "hairstyle",
+      "texture": "tex/hairstyle.png"
+    },
+    {
+      "material": "body_skin",
+      "texture": "tex/body_skin.png"
+    },
+    {
+      "material": "body",
+      "texture": "tex/body.png"
+    },
+    {
+      "material": "obj",
+      "texture": "tex/obj.png"
+    }
+  ],
+  "vertices": 6580,
+  "bones": 204,
+  "bakedAlbedo": true
+}

@@ -1,0 +1,1 @@
+PASS: all 41 Roshi/Ash files and Ash animation/import scripts match their original SHA-256 hashes.

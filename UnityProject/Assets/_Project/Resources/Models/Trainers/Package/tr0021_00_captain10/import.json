@@ -1,0 +1,42 @@
+{
+  "key": "Package/tr0021_00_captain10",
+  "source": "tr0021_00_captain10/tr0021_00_captain10.trmdl",
+  "sha256": "69d71201dd3ab041ba7e20d17f8549c0aa4c134ced7a1c5e7c17025c63a71224",
+  "bindings": [
+    {
+      "material": "hairstyle",
+      "texture": "tex/hairstyle.png"
+    },
+    {
+      "material": "face",
+      "texture": "tex/face.png"
+    },
+    {
+      "material": "eye",
+      "texture": "tex/eye.png"
+    },
+    {
+      "material": "face_skin",
+      "texture": "tex/face_skin.png"
+    },
+    {
+      "material": "obj",
+      "texture": "tex/obj.png"
+    },
+    {
+      "material": "body",
+      "texture": "tex/body.png"
+    },
+    {
+      "material": "body_skin",
+      "texture": "tex/body_skin.png"
+    },
+    {
+      "material": "ring",
+      "texture": "tex/ring.png"
+    }
+  ],
+  "vertices": 10798,
+  "bones": 191,
+  "bakedAlbedo": true
+}

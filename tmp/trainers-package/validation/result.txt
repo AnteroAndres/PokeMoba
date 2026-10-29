@@ -1,0 +1,1 @@
+PASS: 33 new trainers, skeletons, textured materials, 1.95m height, ground placement, locomotion and generated icons. 35 selector entries including unchanged Roshi/Ash keys.

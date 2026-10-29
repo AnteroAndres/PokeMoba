@@ -1,0 +1,38 @@
+{
+  "key": "Package/tr0032_00_trade_f",
+  "source": "tr0032_00_trade_f/tr0032_00_trade_f.trmdl",
+  "sha256": "60613159446dc427fb43ccfcb32cf339665481ea361d44ab4c25a27028e62a15",
+  "bindings": [
+    {
+      "material": "face",
+      "texture": "tex/face.png"
+    },
+    {
+      "material": "face_skin",
+      "texture": "tex/face_skin.png"
+    },
+    {
+      "material": "eye",
+      "texture": "tex/eye.png"
+    },
+    {
+      "material": "body",
+      "texture": "tex/body.png"
+    },
+    {
+      "material": "body_skin",
+      "texture": "tex/body_skin.png"
+    },
+    {
+      "material": "obj",
+      "texture": "tex/obj.png"
+    },
+    {
+      "material": "hairstyle",
+      "texture": "tex/hairstyle.png"
+    }
+  ],
+  "vertices": 7087,
+  "bones": 201,
+  "bakedAlbedo": true
+}

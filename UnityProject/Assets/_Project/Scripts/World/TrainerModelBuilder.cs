@@ -50,7 +50,8 @@ namespace PokeMoba.World
             var root = new GameObject("Entrenador").transform;
             root.SetParent(parent, false);
 
-            if (appearance != null && ((!string.IsNullOrEmpty(appearance.TrainerCharacter) && appearance.TrainerCharacter != "Procedural") || appearance.AvatarStyle == 2))
+            // La entrada histórica "Procedural" del selector es Roshi. Su modelo no depende del rol elegido.
+            if (appearance != null && !string.IsNullOrEmpty(appearance.TrainerCharacter))
             {
                 var imported = appearance.TrainerCharacter != "Procedural"
                     ? ImportedTrainerModel.TryBuild(root, appearance.TrainerCharacter)

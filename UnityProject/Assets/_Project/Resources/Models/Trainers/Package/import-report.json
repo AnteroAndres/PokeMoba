@@ -1,0 +1,1320 @@
+[
+  {
+    "key": "Package/tr0002_00_doctor_b",
+    "source": "tr0002_00_doctor_b/tr0002_00_doctor_b.trmdl",
+    "sha256": "28534e76e06a545467ee98006798266453ee762e4dd545ff6d18d1ba7a470777",
+    "bindings": [
+      {
+        "material": "obj",
+        "texture": "tex/obj.png"
+      },
+      {
+        "material": "body",
+        "texture": "tex/body.png"
+      },
+      {
+        "material": "body_skin",
+        "texture": "tex/body_skin.png"
+      },
+      {
+        "material": "eye",
+        "texture": "tex/eye.png"
+      },
+      {
+        "material": "face_skin",
+        "texture": "tex/face_skin.png"
+      },
+      {
+        "material": "hairstyle",
+        "texture": "tex/hairstyle.png"
+      },
+      {
+        "material": "face",
+        "texture": "tex/face.png"
+      },
+      {
+        "material": "hairstyle_obj",
+        "texture": "tex/hairstyle_obj.png"
+      }
+    ],
+    "vertices": 8028,
+    "bones": 190,
+    "bakedAlbedo": true
+  },
+  {
+    "key": "Package/tr0003_00_ouji",
+    "source": "tr0003_00_ouji/tr0003_00_ouji.trmdl",
+    "sha256": "1e4060622c88e9332200bceb7920e9189d682e1e5559373261d08aa1c0089a8a",
+    "bindings": [
+      {
+        "material": "body",
+        "texture": "tex/body.png"
+      },
+      {
+        "material": "body_skin",
+        "texture": "tex/body_skin.png"
+      },
+      {
+        "material": "face_skin",
+        "texture": "tex/face_skin.png"
+      },
+      {
+        "material": "face",
+        "texture": "tex/face.png"
+      },
+      {
+        "material": "eye",
+        "texture": "tex/eye.png"
+      },
+      {
+        "material": "hairstyle",
+        "texture": "tex/hairstyle.png"
+      }
+    ],
+    "vertices": 8147,
+    "bones": 220,
+    "bakedAlbedo": true
+  },
+  {
+    "key": "Package/tr0004_00_hime",
+    "source": "tr0004_00_hime/tr0004_00_hime.trmdl",
+    "sha256": "539f3c1718b2f18cc829b186f0eb2fb058c86dee3b130360647c4ee212c2c313",
+    "bindings": [
+      {
+        "material": "hairstyle_obj",
+        "texture": "tex/hairstyle_obj.png"
+      },
+      {
+        "material": "hairstyle",
+        "texture": "tex/hairstyle.png"
+      },
+      {
+        "material": "face_skin",
+        "texture": "tex/face_skin.png"
+      },
+      {
+        "material": "face",
+        "texture": "tex/face.png"
+      },
+      {
+        "material": "eye",
+        "texture": "tex/eye.png"
+      },
+      {
+        "material": "body",
+        "texture": "tex/body.png"
+      },
+      {
+        "material": "body_skin",
+        "texture": "tex/body_skin.png"
+      },
+      {
+        "material": "obj",
+        "texture": "tex/obj.png"
+      }
+    ],
+    "vertices": 7582,
+    "bones": 210,
+    "bakedAlbedo": true
+  },
+  {
+    "key": "Package/tr0005_00_boss1",
+    "source": "tr0005_00_boss1/tr0005_00_boss1.trmdl",
+    "sha256": "acdee45b54bab4a6b7ebec9ec36d1266d623afe2ab0335379be2c0c50eb4b34f",
+    "bindings": [
+      {
+        "material": "face",
+        "texture": "tex/face.png"
+      },
+      {
+        "material": "eye",
+        "texture": "tex/eye.png"
+      },
+      {
+        "material": "face_skin",
+        "texture": "tex/face_skin.png"
+      },
+      {
+        "material": "hairstyle",
+        "texture": "tex/hairstyle.png"
+      },
+      {
+        "material": "body_skin",
+        "texture": "tex/body_skin.png"
+      },
+      {
+        "material": "body",
+        "texture": "tex/body.png"
+      },
+      {
+        "material": "obj",
+        "texture": "tex/obj.png"
+      }
+    ],
+    "vertices": 6580,
+    "bones": 204,
+    "bakedAlbedo": true
+  },
+  {
+    "key": "Package/tr0006_00_boss2",
+    "source": "tr0006_00_boss2/tr0006_00_boss2.trmdl",
+    "sha256": "58f7d5d759016576df1b2d50b33575b9743ce372a50583b3012e61235a1c5ddd",
+    "bindings": [
+      {
+        "material": "body_skin",
+        "texture": "tex/body_skin.png"
+      },
+      {
+        "material": "face",
+        "texture": "tex/face.png"
+      },
+      {
+        "material": "eye",
+        "texture": "tex/eye.png"
+      },
+      {
+        "material": "face_skin",
+        "texture": "tex/face_skin.png"
+      },
+      {
+        "material": "hairstyle",
+        "texture": "tex/hairstyle.png"
+      },
+      {
+        "material": "body",
+        "texture": "tex/body.png"
+      },
+      {
+        "material": "obj",
+        "texture": "tex/obj.png"
+      }
+    ],
+    "vertices": 8843,
+    "bones": 218,
+    "bakedAlbedo": true
+  },
+  {
+    "key": "Package/tr0007_00_si1",
+    "source": "tr0007_00_si1/tr0007_00_si1.trmdl",
+    "sha256": "c8c2c8b10ce36ae96a19a0b653c62b0ec407139bf59a4bcb77dff0268580b647",
+    "bindings": [
+      {
+        "material": "body",
+        "texture": "tex/body.png"
+      },
+      {
+        "material": "eye",
+        "texture": "tex/eye.png"
+      },
+      {
+        "material": "face_skin",
+        "texture": "tex/face_skin.png"
+      },
+      {
+        "material": "hairstyle",
+        "texture": "tex/hairstyle.png"
+      },
+      {
+        "material": "obj",
+        "texture": "tex/obj.png"
+      },
+      {
+        "material": "face",
+        "texture": "tex/face.png"
+      },
+      {
+        "material": "body_skin",
+        "texture": "tex/body_skin.png"
+      }
+    ],
+    "vertices": 7296,
+    "bones": 201,
+    "bakedAlbedo": true
+  },
+  {
+    "key": "Package/tr0008_00_si2",
+    "source": "tr0008_00_si2/tr0008_00_si2.trmdl",
+    "sha256": "50a257d753934a497994e3dd1dad516f7e2659bc3abd6d55ef03219f8f4b0b77",
+    "bindings": [
+      {
+        "material": "face_skin",
+        "texture": "tex/face_skin.png"
+      },
+      {
+        "material": "eye",
+        "texture": "tex/eye.png"
+      },
+      {
+        "material": "face",
+        "texture": "tex/face.png"
+      },
+      {
+        "material": "hairstyle",
+        "texture": "tex/hairstyle.png"
+      },
+      {
+        "material": "body_skin",
+        "texture": "tex/body_skin.png"
+      },
+      {
+        "material": "body",
+        "texture": "tex/body.png"
+      }
+    ],
+    "vertices": 6769,
+    "bones": 199,
+    "bakedAlbedo": true
+  },
+  {
+    "key": "Package/tr0009_00_ninja1",
+    "source": "tr0009_00_ninja1/tr0009_00_ninja1.trmdl",
+    "sha256": "a711c0e12fad45ddeed32c7f1f729f6e0e10de72e2d1e3861fbf2119c2937937",
+    "bindings": [
+      {
+        "material": "hairstyle",
+        "texture": "tex/hairstyle.png"
+      },
+      {
+        "material": "face_skin",
+        "texture": "tex/face_skin.png"
+      },
+      {
+        "material": "face",
+        "texture": "tex/face.png"
+      },
+      {
+        "material": "eye",
+        "texture": "tex/eye.png"
+      },
+      {
+        "material": "body_skin",
+        "texture": "tex/body_skin.png"
+      },
+      {
+        "material": "body",
+        "texture": "tex/body.png"
+      },
+      {
+        "material": "obj",
+        "texture": "tex/obj.png"
+      }
+    ],
+    "vertices": 6401,
+    "bones": 188,
+    "bakedAlbedo": true
+  },
+  {
+    "key": "Package/tr0010_00_ninja2",
+    "source": "tr0010_00_ninja2/tr0010_00_ninja2.trmdl",
+    "sha256": "b5ea555d21f031dbd7aea778ad7a67ba7b2029163b8b18064d06cb88c6206121",
+    "bindings": [
+      {
+        "material": "face_skin",
+        "texture": "tex/face_skin.png"
+      },
+      {
+        "material": "face",
+        "texture": "tex/face.png"
+      },
+      {
+        "material": "eye",
+        "texture": "tex/eye.png"
+      },
+      {
+        "material": "hairstyle",
+        "texture": "tex/hairstyle.png"
+      },
+      {
+        "material": "obj",
+        "texture": "tex/obj.png"
+      },
+      {
+        "material": "body",
+        "texture": "tex/body.png"
+      },
+      {
+        "material": "body_skin",
+        "texture": "tex/body_skin.png"
+      }
+    ],
+    "vertices": 8978,
+    "bones": 168,
+    "bakedAlbedo": true
+  },
+  {
+    "key": "Package/tr0011_00_miko",
+    "source": "tr0011_00_miko/tr0011_00_miko.trmdl",
+    "sha256": "03598478168a9e252227b5ecbdb7ad79e7968eb3479906a39b4b59945f3c0473",
+    "bindings": [
+      {
+        "material": "body",
+        "texture": "tex/body.png"
+      },
+      {
+        "material": "body_skin",
+        "texture": "tex/body_skin.png"
+      },
+      {
+        "material": "obj01",
+        "texture": "tex/obj01.png"
+      },
+      {
+        "material": "obj02",
+        "texture": "tex/obj02.png"
+      },
+      {
+        "material": "hairstyle",
+        "texture": "tex/hairstyle.png"
+      },
+      {
+        "material": "face_skin",
+        "texture": "tex/face_skin.png"
+      },
+      {
+        "material": "eye",
+        "texture": "tex/eye.png"
+      },
+      {
+        "material": "face",
+        "texture": "tex/face.png"
+      },
+      {
+        "material": "obj02_tra",
+        "texture": "tex/obj02_tra.png"
+      }
+    ],
+    "vertices": 7134,
+    "bones": 224,
+    "bakedAlbedo": true
+  },
+  {
+    "key": "Package/tr0012_00_captain1",
+    "source": "tr0012_00_captain1/tr0012_00_captain1.trmdl",
+    "sha256": "c3e5912473882ee5e62024461087a98cf11d42674a6f915c3b051ec757c7502a",
+    "bindings": [
+      {
+        "material": "body",
+        "texture": "tex/body.png"
+      },
+      {
+        "material": "body_skin",
+        "texture": "tex/body_skin.png"
+      },
+      {
+        "material": "obj",
+        "texture": "tex/obj.png"
+      },
+      {
+        "material": "eye",
+        "texture": "tex/eye.png"
+      },
+      {
+        "material": "face",
+        "texture": "tex/face.png"
+      },
+      {
+        "material": "face_skin",
+        "texture": "tex/face_skin.png"
+      },
+      {
+        "material": "hairstyle",
+        "texture": "tex/hairstyle.png"
+      },
+      {
+        "material": "ring",
+        "texture": "tex/ring.png"
+      }
+    ],
+    "vertices": 7276,
+    "bones": 186,
+    "bakedAlbedo": true
+  },
+  {
+    "key": "Package/tr0013_00_captain2",
+    "source": "tr0013_00_captain2/tr0013_00_captain2.trmdl",
+    "sha256": "75292132961be5c7ae5e2d758a518810d32c61a2b3393d49985634f91d9486e0",
+    "bindings": [
+      {
+        "material": "eye",
+        "texture": "tex/eye.png"
+      },
+      {
+        "material": "face",
+        "texture": "tex/face.png"
+      },
+      {
+        "material": "face_skin",
+        "texture": "tex/face_skin.png"
+      },
+      {
+        "material": "hairstyle",
+        "texture": "tex/hairstyle.png"
+      },
+      {
+        "material": "body",
+        "texture": "tex/body.png"
+      },
+      {
+        "material": "body_skin",
+        "texture": "tex/body_skin.png"
+      },
+      {
+        "material": "obj",
+        "texture": "tex/obj.png"
+      },
+      {
+        "material": "ring",
+        "texture": "tex/ring.png"
+      }
+    ],
+    "vertices": 6590,
+    "bones": 185,
+    "bakedAlbedo": true
+  },
+  {
+    "key": "Package/tr0014_00_captain3",
+    "source": "tr0014_00_captain3/tr0014_00_captain3.trmdl",
+    "sha256": "fa3c1a920701dd66f5d3563572f90bcdabd94f264402526b884ef3eff3f86d3a",
+    "bindings": [
+      {
+        "material": "eye",
+        "texture": "tex/eye.png"
+      },
+      {
+        "material": "face",
+        "texture": "tex/face.png"
+      },
+      {
+        "material": "face_skin",
+        "texture": "tex/face_skin.png"
+      },
+      {
+        "material": "hairstyle",
+        "texture": "tex/hairstyle.png"
+      },
+      {
+        "material": "body",
+        "texture": "tex/body.png"
+      },
+      {
+        "material": "body_skin",
+        "texture": "tex/body_skin.png"
+      },
+      {
+        "material": "obj_01",
+        "texture": "tex/obj_01.png"
+      },
+      {
+        "material": "obj_02",
+        "texture": "tex/obj_02.png"
+      },
+      {
+        "material": "ring",
+        "texture": "tex/ring.png"
+      }
+    ],
+    "vertices": 9105,
+    "bones": 219,
+    "bakedAlbedo": true
+  },
+  {
+    "key": "Package/tr0015_00_captain4",
+    "source": "tr0015_00_captain4/tr0015_00_captain4.trmdl",
+    "sha256": "ef1461ba6d68ef4344e1f2ac2f8edb48f50dbf94c8f9d1c94a931a8f94ecd935",
+    "bindings": [
+      {
+        "material": "eye",
+        "texture": "tex/eye.png"
+      },
+      {
+        "material": "face",
+        "texture": "tex/face.png"
+      },
+      {
+        "material": "face_skin",
+        "texture": "tex/face_skin.png"
+      },
+      {
+        "material": "hairstyle",
+        "texture": "tex/hairstyle.png"
+      },
+      {
+        "material": "body",
+        "texture": "tex/body.png"
+      },
+      {
+        "material": "body_skin",
+        "texture": "tex/body_skin.png"
+      },
+      {
+        "material": "obj",
+        "texture": "tex/obj.png"
+      },
+      {
+        "material": "ring",
+        "texture": "tex/ring.png"
+      }
+    ],
+    "vertices": 6685,
+    "bones": 180,
+    "bakedAlbedo": true
+  },
+  {
+    "key": "Package/tr0016_00_captain5",
+    "source": "tr0016_00_captain5/tr0016_00_captain5.trmdl",
+    "sha256": "e7d48e113f637cf26a2f3c57183aa67a7134e075a6a92cb51f713389704f9614",
+    "bindings": [
+      {
+        "material": "body",
+        "texture": "tex/body.png"
+      },
+      {
+        "material": "body_skin",
+        "texture": "tex/body_skin.png"
+      },
+      {
+        "material": "ring",
+        "texture": "tex/ring.png"
+      },
+      {
+        "material": "obj",
+        "texture": "tex/obj.png"
+      },
+      {
+        "material": "face_skin",
+        "texture": "tex/face_skin.png"
+      },
+      {
+        "material": "hairstyle",
+        "texture": "tex/hairstyle.png"
+      },
+      {
+        "material": "face",
+        "texture": "tex/face.png"
+      },
+      {
+        "material": "eye",
+        "texture": "tex/eye.png"
+      }
+    ],
+    "vertices": 5753,
+    "bones": 180,
+    "bakedAlbedo": true
+  },
+  {
+    "key": "Package/tr0017_00_captain6",
+    "source": "tr0017_00_captain6/tr0017_00_captain6.trmdl",
+    "sha256": "70cc0624b74780c39807bcda1449f7877a040673ee78958c3174246e823157ba",
+    "bindings": [
+      {
+        "material": "obj_tra",
+        "texture": "tex/obj_tra.png"
+      },
+      {
+        "material": "hairstyle",
+        "texture": "tex/hairstyle.png"
+      },
+      {
+        "material": "face_skin",
+        "texture": "tex/face_skin.png"
+      },
+      {
+        "material": "face",
+        "texture": "tex/face.png"
+      },
+      {
+        "material": "eye",
+        "texture": "tex/eye.png"
+      },
+      {
+        "material": "body",
+        "texture": "tex/body.png"
+      },
+      {
+        "material": "body_skin",
+        "texture": "tex/body_skin.png"
+      },
+      {
+        "material": "obj",
+        "texture": "tex/obj.png"
+      },
+      {
+        "material": "ring",
+        "texture": "tex/ring.png"
+      }
+    ],
+    "vertices": 8745,
+    "bones": 203,
+    "bakedAlbedo": true
+  },
+  {
+    "key": "Package/tr0018_00_captain7",
+    "source": "tr0018_00_captain7/tr0018_00_captain7.trmdl",
+    "sha256": "8f81ad4b92a0a7eb904003956e8f4aa3d4e96285c7476edc14b6a310db9801fd",
+    "bindings": [
+      {
+        "material": "eye",
+        "texture": "tex/eye.png"
+      },
+      {
+        "material": "face",
+        "texture": "tex/face.png"
+      },
+      {
+        "material": "face_skin",
+        "texture": "tex/face_skin.png"
+      },
+      {
+        "material": "obj",
+        "texture": "tex/obj.png"
+      },
+      {
+        "material": "hairstyle",
+        "texture": "tex/hairstyle.png"
+      },
+      {
+        "material": "body",
+        "texture": "tex/body.png"
+      },
+      {
+        "material": "body_skin",
+        "texture": "tex/body_skin.png"
+      },
+      {
+        "material": "ring",
+        "texture": "tex/ring.png"
+      }
+    ],
+    "vertices": 8141,
+    "bones": 188,
+    "bakedAlbedo": true
+  },
+  {
+    "key": "Package/tr0019_00_captain8",
+    "source": "tr0019_00_captain8/tr0019_00_captain8.trmdl",
+    "sha256": "934f90a0c3819de2bdfdfcb97f21acac014e77aa25526135ff6c938607734562",
+    "bindings": [
+      {
+        "material": "obj",
+        "texture": "tex/obj.png"
+      },
+      {
+        "material": "hairstyle",
+        "texture": "tex/hairstyle.png"
+      },
+      {
+        "material": "face",
+        "texture": "tex/face.png"
+      },
+      {
+        "material": "face_skin",
+        "texture": "tex/face_skin.png"
+      },
+      {
+        "material": "eye",
+        "texture": "tex/eye.png"
+      },
+      {
+        "material": "body",
+        "texture": "tex/body.png"
+      },
+      {
+        "material": "body_skin",
+        "texture": "tex/body_skin.png"
+      },
+      {
+        "material": "ring",
+        "texture": "tex/ring.png"
+      }
+    ],
+    "vertices": 6925,
+    "bones": 195,
+    "bakedAlbedo": true
+  },
+  {
+    "key": "Package/tr0020_00_captain9",
+    "source": "tr0020_00_captain9/tr0020_00_captain9.trmdl",
+    "sha256": "a16ffe35c5510ba3e4e200f41ef3e08924238570a943c1ad54e04ede4c34ee41",
+    "bindings": [
+      {
+        "material": "ring",
+        "texture": "tex/ring.png"
+      },
+      {
+        "material": "body",
+        "texture": "tex/body.png"
+      },
+      {
+        "material": "body_skin",
+        "texture": "tex/body_skin.png"
+      },
+      {
+        "material": "face_skin",
+        "texture": "tex/face_skin.png"
+      },
+      {
+        "material": "face",
+        "texture": "tex/face.png"
+      },
+      {
+        "material": "hairstyle",
+        "texture": "tex/hairstyle.png"
+      },
+      {
+        "material": "eye",
+        "texture": "tex/eye.png"
+      }
+    ],
+    "vertices": 6579,
+    "bones": 179,
+    "bakedAlbedo": true
+  },
+  {
+    "key": "Package/tr0021_00_captain10",
+    "source": "tr0021_00_captain10/tr0021_00_captain10.trmdl",
+    "sha256": "69d71201dd3ab041ba7e20d17f8549c0aa4c134ced7a1c5e7c17025c63a71224",
+    "bindings": [
+      {
+        "material": "hairstyle",
+        "texture": "tex/hairstyle.png"
+      },
+      {
+        "material": "face",
+        "texture": "tex/face.png"
+      },
+      {
+        "material": "eye",
+        "texture": "tex/eye.png"
+      },
+      {
+        "material": "face_skin",
+        "texture": "tex/face_skin.png"
+      },
+      {
+        "material": "obj",
+        "texture": "tex/obj.png"
+      },
+      {
+        "material": "body",
+        "texture": "tex/body.png"
+      },
+      {
+        "material": "body_skin",
+        "texture": "tex/body_skin.png"
+      },
+      {
+        "material": "ring",
+        "texture": "tex/ring.png"
+      }
+    ],
+    "vertices": 10798,
+    "bones": 191,
+    "bakedAlbedo": true
+  },
+  {
+    "key": "Package/tr0022_00_guard_leader",
+    "source": "tr0022_00_guard_leader/tr0022_00_guard_leader.trmdl",
+    "sha256": "e774b7b15e4adcb124442ec708174b8d43c6068602e42d5697c8cbc07ca5c66a",
+    "bindings": [
+      {
+        "material": "eye",
+        "texture": "tex/eye.png"
+      },
+      {
+        "material": "face",
+        "texture": "tex/face.png"
+      },
+      {
+        "material": "face_skin",
+        "texture": "tex/face_skin.png"
+      },
+      {
+        "material": "hairstyle",
+        "texture": "tex/hairstyle.png"
+      },
+      {
+        "material": "body",
+        "texture": "tex/body.png"
+      },
+      {
+        "material": "obj",
+        "texture": "tex/obj.png"
+      },
+      {
+        "material": "body_skin",
+        "texture": "tex/body_skin.png"
+      }
+    ],
+    "vertices": 7574,
+    "bones": 185,
+    "bakedAlbedo": true
+  },
+  {
+    "key": "Package/tr0023_00_guard_lower_m",
+    "source": "tr0023_00_guard_lower_m/tr0023_00_guard_lower_m.trmdl",
+    "sha256": "1ea217573fde14074fdc347a5d384b64ca67c60b5cd607a5d51faf2f50740d4a",
+    "bindings": [
+      {
+        "material": "obj",
+        "texture": "tex/obj.png"
+      },
+      {
+        "material": "hairstyle",
+        "texture": "tex/hairstyle.png"
+      },
+      {
+        "material": "face",
+        "texture": "tex/face.png"
+      },
+      {
+        "material": "eye",
+        "texture": "tex/eye.png"
+      },
+      {
+        "material": "face_skin",
+        "texture": "tex/face_skin.png"
+      },
+      {
+        "material": "body",
+        "texture": "tex/body.png"
+      },
+      {
+        "material": "body_skin",
+        "texture": "tex/body_skin.png"
+      }
+    ],
+    "vertices": 7332,
+    "bones": 188,
+    "bakedAlbedo": true
+  },
+  {
+    "key": "Package/tr0024_00_guard_lower_f",
+    "source": "tr0024_00_guard_lower_f/tr0024_00_guard_lower_f.trmdl",
+    "sha256": "99c3ae9b9230e27e9101b064b60cfc236034094e4a19f0574e2a81b56e907bb8",
+    "bindings": [
+      {
+        "material": "body",
+        "texture": "tex/body.png"
+      },
+      {
+        "material": "body_skin",
+        "texture": "tex/body_skin.png"
+      },
+      {
+        "material": "obj",
+        "texture": "tex/obj.png"
+      },
+      {
+        "material": "hairstyle",
+        "texture": "tex/hairstyle.png"
+      },
+      {
+        "material": "face",
+        "texture": "tex/face.png"
+      },
+      {
+        "material": "eye",
+        "texture": "tex/eye.png"
+      },
+      {
+        "material": "face_skin",
+        "texture": "tex/face_skin.png"
+      }
+    ],
+    "vertices": 7889,
+    "bones": 203,
+    "bakedAlbedo": true
+  },
+  {
+    "key": "Package/tr0025_00_trade_boss",
+    "source": "tr0025_00_trade_boss/tr0025_00_trade_boss.trmdl",
+    "sha256": "b181dbff365782513990a18f1745a1c141d659ea6c974bec00bc2429700622b4",
+    "bindings": [
+      {
+        "material": "face",
+        "texture": "tex/face.png"
+      },
+      {
+        "material": "face_skin",
+        "texture": "tex/face_skin.png"
+      },
+      {
+        "material": "eye",
+        "texture": "tex/eye.png"
+      },
+      {
+        "material": "hairstyle",
+        "texture": "tex/hairstyle.png"
+      },
+      {
+        "material": "obj",
+        "texture": "tex/obj.png"
+      },
+      {
+        "material": "body",
+        "texture": "tex/body.png"
+      },
+      {
+        "material": "body_skin",
+        "texture": "tex/body_skin.png"
+      }
+    ],
+    "vertices": 7474,
+    "bones": 197,
+    "bakedAlbedo": true
+  },
+  {
+    "key": "Package/tr0027_00_me_leader",
+    "source": "tr0027_00_me_leader/tr0027_00_me_leader.trmdl",
+    "sha256": "d6f9d564ab7d0804955e537ba5ed64a42761d407abbbad504639d04e03e6f0d5",
+    "bindings": [
+      {
+        "material": "body",
+        "texture": "tex/body.png"
+      },
+      {
+        "material": "body_skin",
+        "texture": "tex/body_skin.png"
+      },
+      {
+        "material": "obj",
+        "texture": "tex/obj.png"
+      },
+      {
+        "material": "hairstyle",
+        "texture": "tex/hairstyle.png"
+      },
+      {
+        "material": "face_skin",
+        "texture": "tex/face_skin.png"
+      },
+      {
+        "material": "face",
+        "texture": "tex/face.png"
+      },
+      {
+        "material": "eye",
+        "texture": "tex/eye.png"
+      }
+    ],
+    "vertices": 6049,
+    "bones": 194,
+    "bakedAlbedo": true
+  },
+  {
+    "key": "Package/tr0031_00_trade_m",
+    "source": "tr0031_00_trade_m/tr0031_00_trade_m.trmdl",
+    "sha256": "2f0c25938491633eba0d55346602df14c923bd0a93b003a85ea869f84109ebd0",
+    "bindings": [
+      {
+        "material": "face_skin",
+        "texture": "tex/face_skin.png"
+      },
+      {
+        "material": "eye",
+        "texture": "tex/eye.png"
+      },
+      {
+        "material": "hairstyle",
+        "texture": "tex/hairstyle.png"
+      },
+      {
+        "material": "face",
+        "texture": "tex/face.png"
+      },
+      {
+        "material": "body",
+        "texture": "tex/body.png"
+      },
+      {
+        "material": "obj",
+        "texture": "tex/obj.png"
+      },
+      {
+        "material": "body_skin",
+        "texture": "tex/body_skin.png"
+      }
+    ],
+    "vertices": 7024,
+    "bones": 189,
+    "bakedAlbedo": true
+  },
+  {
+    "key": "Package/tr0032_00_trade_f",
+    "source": "tr0032_00_trade_f/tr0032_00_trade_f.trmdl",
+    "sha256": "60613159446dc427fb43ccfcb32cf339665481ea361d44ab4c25a27028e62a15",
+    "bindings": [
+      {
+        "material": "face",
+        "texture": "tex/face.png"
+      },
+      {
+        "material": "face_skin",
+        "texture": "tex/face_skin.png"
+      },
+      {
+        "material": "eye",
+        "texture": "tex/eye.png"
+      },
+      {
+        "material": "body",
+        "texture": "tex/body.png"
+      },
+      {
+        "material": "body_skin",
+        "texture": "tex/body_skin.png"
+      },
+      {
+        "material": "obj",
+        "texture": "tex/obj.png"
+      },
+      {
+        "material": "hairstyle",
+        "texture": "tex/hairstyle.png"
+      }
+    ],
+    "vertices": 7087,
+    "bones": 201,
+    "bakedAlbedo": true
+  },
+  {
+    "key": "Package/tr0033_00_bandit_first",
+    "source": "tr0033_00_bandit_first/tr0033_00_bandit_first.trmdl",
+    "sha256": "27cb0338f8f844bbefde987d5efc15af370824eb17afa3429f0eab36c152a14b",
+    "bindings": [
+      {
+        "material": "hairstyle",
+        "texture": "tex/hairstyle.png"
+      },
+      {
+        "material": "face_skin",
+        "texture": "tex/face_skin.png"
+      },
+      {
+        "material": "face",
+        "texture": "tex/face.png"
+      },
+      {
+        "material": "eye",
+        "texture": "tex/eye.png"
+      },
+      {
+        "material": "body",
+        "texture": "tex/body.png"
+      },
+      {
+        "material": "body_skin",
+        "texture": "tex/body_skin.png"
+      },
+      {
+        "material": "obj",
+        "texture": "tex/obj.png"
+      }
+    ],
+    "vertices": 7447,
+    "bones": 200,
+    "bakedAlbedo": true
+  },
+  {
+    "key": "Package/tr0034_00_bandit_second",
+    "source": "tr0034_00_bandit_second/tr0034_00_bandit_second.trmdl",
+    "sha256": "f080f4affef99380f0ada21e4e5284fba5048be2e95d1f43b242c4b389f9c26a",
+    "bindings": [
+      {
+        "material": "hairstyle",
+        "texture": "tex/hairstyle.png"
+      },
+      {
+        "material": "face_skin",
+        "texture": "tex/face_skin.png"
+      },
+      {
+        "material": "eye",
+        "texture": "tex/eye.png"
+      },
+      {
+        "material": "face",
+        "texture": "tex/face.png"
+      },
+      {
+        "material": "body_skin",
+        "texture": "tex/body_skin.png"
+      },
+      {
+        "material": "body",
+        "texture": "tex/body.png"
+      },
+      {
+        "material": "obi",
+        "texture": "tex/obi.png"
+      }
+    ],
+    "vertices": 6656,
+    "bones": 196,
+    "bakedAlbedo": true
+  },
+  {
+    "key": "Package/tr0035_00_bandit_third",
+    "source": "tr0035_00_bandit_third/tr0035_00_bandit_third.trmdl",
+    "sha256": "2eb69a0920bd4cdcd4457ecd9ec44cb63b90c921cd9c203abb45566bbb6bf829",
+    "bindings": [
+      {
+        "material": "hairstyle",
+        "texture": "tex/hairstyle.png"
+      },
+      {
+        "material": "face",
+        "texture": "tex/face.png"
+      },
+      {
+        "material": "face_skin",
+        "texture": "tex/face_skin.png"
+      },
+      {
+        "material": "eye",
+        "texture": "tex/eye.png"
+      },
+      {
+        "material": "body",
+        "texture": "tex/body.png"
+      },
+      {
+        "material": "body_skin",
+        "texture": "tex/body_skin.png"
+      },
+      {
+        "material": "obj",
+        "texture": "tex/obj.png"
+      }
+    ],
+    "vertices": 8194,
+    "bones": 191,
+    "bakedAlbedo": true
+  },
+  {
+    "key": "Package/tr0036_00_senpai_m",
+    "source": "tr0036_00_senpai_m/tr0036_00_senpai_m.trmdl",
+    "sha256": "d046251a69f3581ad4c6ac1db69688bfc66f4dbe5b8e5b7cdd07851e178289b8",
+    "bindings": [
+      {
+        "material": "cap",
+        "texture": "tex/cap.png"
+      },
+      {
+        "material": "hairstyle",
+        "texture": "tex/hairstyle.png"
+      },
+      {
+        "material": "eye",
+        "texture": "tex/eye.png"
+      },
+      {
+        "material": "face_skin",
+        "texture": "tex/face_skin.png"
+      },
+      {
+        "material": "face",
+        "texture": "tex/face.png"
+      },
+      {
+        "material": "body",
+        "texture": "tex/body.png"
+      },
+      {
+        "material": "body_skin",
+        "texture": "tex/body_skin.png"
+      },
+      {
+        "material": "baggage",
+        "texture": "tex/baggage.png"
+      },
+      {
+        "material": "shoes",
+        "texture": "tex/shoes.png"
+      }
+    ],
+    "vertices": 6898,
+    "bones": 191,
+    "bakedAlbedo": true
+  },
+  {
+    "key": "Package/tr0037_00_senpai_f",
+    "source": "tr0037_00_senpai_f/tr0037_00_senpai_f.trmdl",
+    "sha256": "a9584bff85d9c567a2cfad42b2a3459812168b8af1d7ef8a30cd5f29c4550fd2",
+    "bindings": [
+      {
+        "material": "hairstyle",
+        "texture": "tex/hairstyle.png"
+      },
+      {
+        "material": "hairstyle_obj",
+        "texture": "tex/hairstyle_obj.png"
+      },
+      {
+        "material": "eye",
+        "texture": "tex/eye.png"
+      },
+      {
+        "material": "face_skin",
+        "texture": "tex/face_skin.png"
+      },
+      {
+        "material": "face",
+        "texture": "tex/face.png"
+      },
+      {
+        "material": "body",
+        "texture": "tex/body.png"
+      },
+      {
+        "material": "body_skin",
+        "texture": "tex/body_skin.png"
+      },
+      {
+        "material": "baggage",
+        "texture": "tex/baggage.png"
+      },
+      {
+        "material": "shoes",
+        "texture": "tex/shoes.png"
+      }
+    ],
+    "vertices": 7073,
+    "bones": 228,
+    "bakedAlbedo": true
+  },
+  {
+    "key": "Package/tr0038_00_bu_leader_f",
+    "source": "tr0038_00_bu_leader_f/tr0038_00_bu_leader_f.trmdl",
+    "sha256": "9e8a084400c9e1011afa9a2b56939894c466868d0d33e82e7f81fd52fb3e236b",
+    "bindings": [
+      {
+        "material": "body",
+        "texture": "tex/body.png"
+      },
+      {
+        "material": "body_skin",
+        "texture": "tex/body_skin.png"
+      },
+      {
+        "material": "eye",
+        "texture": "tex/eye.png"
+      },
+      {
+        "material": "face",
+        "texture": "tex/face.png"
+      },
+      {
+        "material": "face_skin",
+        "texture": "tex/face_skin.png"
+      },
+      {
+        "material": "hairstyle",
+        "texture": "tex/hairstyle.png"
+      }
+    ],
+    "vertices": 5382,
+    "bones": 182,
+    "bakedAlbedo": true
+  }
+]

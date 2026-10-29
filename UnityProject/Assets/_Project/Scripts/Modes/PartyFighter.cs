@@ -136,6 +136,7 @@ namespace PokeMoba.Modes
             Current = CreatureFactory.Create(species, 0, position, Trainer.transform.forward, instance.Level, instance.Shiny,
                 PokemonDatabase.MovesAt(species, instance.Level), world);
             Current.SetHpFraction(instance.HpFraction);
+            Current.OwnedInstance = instance;
             var teamRing = Current.transform.Find("Anillo de equipo");
             if (teamRing != null) teamRing.gameObject.SetActive(false);
             Current.gameObject.AddComponent<CompanionAI>().Setup(Trainer.transform);

@@ -1,0 +1,10 @@
+{
+  "name": "greeting",
+  "source": "ch0243_00_yuri_221_greeting_1.lmd",
+  "sha256": "6e506e9ad781726d42d3d3f61e2f2e8fe6e1ae0ab0491d827c54f940102158f1",
+  "fps": 30,
+  "frames": 60,
+  "duration": 2.0,
+  "matchedBones": 95,
+  "movementDelta": 0.6725684674782605
+}

@@ -1,0 +1,52 @@
+FBX version: 7400
+
+FBX export starting... 'C:\\Users\\andres\\Documents\\PokeMoba\\UnityProject\\Assets\\_Project\\Resources\\Models\\Trainers\\Package\\ch0130_00_serena\\Model.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+(bpy.data.armatures['Armature'], 'POSE')
+(bpy.data.armatures['Armature'], 'POSE')
+(bpy.data.armatures['Armature'], 'POSE')
+(bpy.data.armatures['Armature'], 'POSE')
+(bpy.data.armatures['Armature'], 'POSE')
+(bpy.data.armatures['Armature'], 'POSE')
+(bpy.data.armatures['Armature'], 'POSE')
+(bpy.data.armatures['Armature'], 'POSE')
+(bpy.data.armatures['Armature'], 'POSE')
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.1513 sec.
+CONVERTED ch0130_00_serena bones 102 materials 5
+FBX version: 7400
+
+FBX export starting... 'C:\\Users\\andres\\Documents\\PokeMoba\\UnityProject\\Assets\\_Project\\Resources\\Models\\Trainers\\Package\\ch0120_00_lusamine\\Model.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+(bpy.data.armatures['Armature'], 'POSE')
+(bpy.data.armatures['Armature'], 'POSE')
+(bpy.data.armatures['Armature'], 'POSE')
+(bpy.data.armatures['Armature'], 'POSE')
+(bpy.data.armatures['Armature'], 'POSE')
+(bpy.data.armatures['Armature'], 'POSE')
+(bpy.data.armatures['Armature'], 'POSE')
+(bpy.data.armatures['Armature'], 'POSE')
+(bpy.data.armatures['Armature'], 'POSE')
+(bpy.data.armatures['Armature'], 'POSE')
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.1934 sec.
+CONVERTED ch0120_00_lusamine bones 107 materials 7
+FBX version: 7400
+
+FBX export starting... 'C:\\Users\\andres\\Documents\\PokeMoba\\UnityProject\\Assets\\_Project\\Resources\\Models\\Trainers\\Package\\ch0125_00_guzma\\Model.fbx'
+(bpy.data.armatures['Armature'], 'POSE')
+(bpy.data.armatures['Armature'], 'POSE')
+(bpy.data.armatures['Armature'], 'POSE')
+(bpy.data.armatures['Armature'], 'POSE')
+(bpy.data.armatures['Armature'], 'POSE')
+(bpy.data.armatures['Armature'], 'POSE')
+(bpy.data.armatures['Armature'], 'POSE')
+(bpy.data.armatures['Armature'], 'POSE')
+(bpy.data.armatures['Armature'], 'POSE')
+(bpy.data.armatures['Armature'], 'POSE')
+export finished in 0.1612 sec.
+CONVERTED ch0125_00_guzma bones 118 materials 5
+COMPLETE 30
+Blender 4.5.3 LTS (hash 67807e1800cc built 2025-09-09 01:33:33)
+
+Blender quit

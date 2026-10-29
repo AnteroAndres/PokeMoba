@@ -1,0 +1,34 @@
+{
+  "key": "Package/tr0008_00_si2",
+  "source": "tr0008_00_si2/tr0008_00_si2.trmdl",
+  "sha256": "50a257d753934a497994e3dd1dad516f7e2659bc3abd6d55ef03219f8f4b0b77",
+  "bindings": [
+    {
+      "material": "face_skin",
+      "texture": "tex/face_skin.png"
+    },
+    {
+      "material": "eye",
+      "texture": "tex/eye.png"
+    },
+    {
+      "material": "face",
+      "texture": "tex/face.png"
+    },
+    {
+      "material": "hairstyle",
+      "texture": "tex/hairstyle.png"
+    },
+    {
+      "material": "body_skin",
+      "texture": "tex/body_skin.png"
+    },
+    {
+      "material": "body",
+      "texture": "tex/body.png"
+    }
+  ],
+  "vertices": 6769,
+  "bones": 199,
+  "bakedAlbedo": true
+}

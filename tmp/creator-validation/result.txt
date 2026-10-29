@@ -1,0 +1,1 @@
+PASS: inventario, límites, nivel/XP, equipo/PC y vida/invulnerabilidad. Partida real intacta.

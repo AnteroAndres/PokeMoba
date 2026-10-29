@@ -1,0 +1,10 @@
+{
+  "name": "walk",
+  "source": "ch0243_00_yuri_220_walk_1.lmd",
+  "sha256": "6c9cf5f32bd999f0138472c5f4db06f23e7c90882682c1de11ec5500c9982a0c",
+  "fps": 30,
+  "frames": 33,
+  "duration": 1.100000023841858,
+  "matchedBones": 99,
+  "movementDelta": 0.3954137478089145
+}

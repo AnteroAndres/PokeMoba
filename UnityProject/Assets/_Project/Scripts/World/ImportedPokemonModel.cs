@@ -53,7 +53,7 @@ namespace PokeMoba.World
             }
         }
 
-        public static void Configure(GameObject instance, float height, bool shiny, bool animateFallback)
+        public static void FitToHeight(GameObject instance, float height)
         {
             // Establish the imported skeleton's pose before measuring its skinned geometry.
             foreach (var animation in instance.GetComponentsInChildren<Animation>())
@@ -72,6 +72,13 @@ namespace PokeMoba.World
             if (bounds.size.y > .001f) instance.transform.localScale *= height / bounds.size.y;
             bounds = BoundsInParent(parent, renderers);
             instance.transform.localPosition -= new Vector3(bounds.center.x, bounds.min.y, bounds.center.z);
+        }
+
+        public static void Configure(GameObject instance, float height, bool shiny, bool animateFallback)
+        {
+            FitToHeight(instance, height);
+            var renderers = instance.GetComponentsInChildren<Renderer>(true);
+            if (renderers.Length == 0) return;
 
             var adapter = instance.AddComponent<ImportedPokemonModel>();
             adapter.restScale = instance.transform.localScale;

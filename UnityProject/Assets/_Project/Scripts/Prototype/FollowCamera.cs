@@ -12,6 +12,13 @@ namespace PokeMoba.Prototype
         const float Smoothing = 6f;
 
         public bool ThirdPerson { get; private set; }
+        int pointerCapturedFrame = -1;
+        public void CapturePointer()
+        {
+            mouseReleased = false;
+            pointerCapturedFrame = Time.frameCount;
+            if (!Application.isMobilePlatform) { Cursor.lockState = CursorLockMode.Locked; Cursor.visible = false; }
+        }
         bool mouseReleased;
         float yaw;
         float pitch = 10f;
@@ -79,7 +86,7 @@ namespace PokeMoba.Prototype
                 {
                     if (PokeMoba.UI.MenuScreens.AnyOpen || Time.timeScale <= 0f)
                     { Cursor.lockState = CursorLockMode.None; Cursor.visible = true; return; }
-                    if (InputCompat.ReleaseMouse()) mouseReleased = true;
+                    if (InputCompat.ReleaseMouse() && pointerCapturedFrame != Time.frameCount) mouseReleased = true;
                     else if (InputCompat.CaptureMouse()) mouseReleased = false;
                     Cursor.lockState = mouseReleased ? CursorLockMode.None : CursorLockMode.Locked;
                     Cursor.visible = mouseReleased;

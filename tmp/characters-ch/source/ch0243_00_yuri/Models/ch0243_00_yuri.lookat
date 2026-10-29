@@ -1,0 +1,39 @@
+["SerializableResourceJsonFormat. !DO NOT EDIT THIS LINE!",
+[
+	2,
+	false,
+	{
+		"<type>": "s:NaLookAtData",
+		"<version>": "u:0",
+		"NaSerializableResource": {
+			"<version>": "u:0"
+		},
+		"m_Bones": [
+			"s:Head",
+			{
+				"<version>": "u:0",
+				"weight": "f:20",
+				"limitAngle": "f:0.34906584"
+			},
+			"s:Neck",
+			{
+				"<version>": "u:0",
+				"weight": "f:10",
+				"limitAngle": "f:0.17453292"
+			},
+			"s:Spine0",
+			{
+				"<version>": "u:0",
+				"weight": "f:10",
+				"limitAngle": "f:0.17453292"
+			},
+			"s:Spine1",
+			{
+				"<version>": "u:0",
+				"weight": "f:10",
+				"limitAngle": "f:0.17453292"
+			}
+		]
+	},
+	[]
+]]

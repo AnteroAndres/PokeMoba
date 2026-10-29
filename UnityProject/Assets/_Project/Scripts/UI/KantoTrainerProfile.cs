@@ -13,7 +13,7 @@ namespace PokeMoba.UI
         public static readonly Vector2 Position = new Vector2(20, -20);
         public static readonly Vector2 Size = new Vector2(640, 216);
         static readonly Dictionary<int, Material> themes = new Dictionary<int, Material>();
-        static Sprite frame, squarePortrait, pill;
+        static Sprite frame, squarePortrait, selectedPortrait, pill;
         static readonly Dictionary<int, Sprite> pokemonArt = new Dictionary<int, Sprite>();
 
         public static int DexForLevel(int level)
@@ -24,6 +24,13 @@ namespace PokeMoba.UI
 
         public static void Build(RectTransform panel, SaveData save, Sprite portrait)
         {
+            if (!string.IsNullOrEmpty(save.ProfilePortraitResource))
+            {
+                var photo = Resources.Load<Texture2D>(save.ProfilePortraitResource);
+                if (photo != null && (selectedPortrait == null || selectedPortrait.texture != photo))
+                    selectedPortrait = Sprite.Create(photo, new Rect(0, 0, photo.width, photo.height), new Vector2(.5f, .5f), 100);
+                if (photo != null) portrait = selectedPortrait;
+            }
             int level = Mathf.Clamp(save.TrainerLevel, 1, 151);
             int dex = DexForLevel(level);
             var species = PokemonDatabase.Get(dex);
@@ -79,7 +86,7 @@ namespace PokeMoba.UI
             if (artwork != null)
                 AddImage(card, "Pokémon del perfil · " + name, Color.white, artwork, 506, 56, 103, 103).preserveAspect = true;
 
-            Label(card, string.IsNullOrWhiteSpace(save.TrainerName) ? "Entrenador" : save.TrainerName,
+            Label(card, save.ProfileDisplayName,
                 30, 228, 44, 275, 34, Color.white);
             Label(card, $"Nivel {level}", 22, 228, 77, 150, 27, Color.Lerp(accent, Color.white, .35f));
             Label(card, $"{name} · {type.DisplayName()}", 14, 366, 80, 140, 22, Color.Lerp(accent, Color.white, .35f));

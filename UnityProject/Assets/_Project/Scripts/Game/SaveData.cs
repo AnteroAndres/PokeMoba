@@ -17,6 +17,18 @@ namespace PokeMoba.Game
 
         // Entrenador (GDD §12: personalización básica)
         public string TrainerName = "Rojo";
+        public string ProfileId = Guid.NewGuid().ToString("N");
+        public bool HasCustomProfileName;
+        public string ProfilePortraitResource;
+        [JsonIgnore] public string ProfileDisplayName => HasCustomProfileName ? TrainerName : SelectedCharacterName;
+
+        public static string CharacterName(string key)
+        {
+            return TrainerCharacterCatalog.Label(key);
+        }
+
+        [JsonIgnore] public string SelectedCharacterName => CharacterName(TrainerCharacter);
+
         public int TrainerLevel = 1;
         public int TrainerExperience;
 
@@ -54,7 +66,7 @@ namespace PokeMoba.Game
 
         public void CopyAppearanceFrom(SaveData source)
         {
-            TrainerName = source.TrainerName;
+            if (!HasCustomProfileName) TrainerName = source.TrainerName;
             TrainerCharacter = source.TrainerCharacter;
             HasChosenTrainerCharacter = source.HasChosenTrainerCharacter;
             AvatarStyle = source.AvatarStyle; HairStyle = source.HairStyle; EyeColor = source.EyeColor;

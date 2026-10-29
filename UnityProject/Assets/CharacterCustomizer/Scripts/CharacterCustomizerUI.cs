@@ -43,14 +43,7 @@ namespace CharacterCustomizer
         private Vector2 lastPointer;
         private bool dragging;
 
-        static readonly string[] Characters =
-        {
-            "Procedural", "tr0037_Akari/Akari", "tr0036_Rei/Rei", "tr0003_Adaman/Adaman",
-            "tr0004_Irida/Irida", "tr0002_Laventon/Laventon", "tr0005_Kamado/Kamado1",
-            "tr0006_Komado/Komado_Samurai", "tr0007_Volo/Volo", "tr0008_Volo/Volo2",
-            "tr0011_Cogita/Cogita", "tr0018_Ingo/Ingo", "tr0025_Ginter/Ginter",
-            "tr0033_Charm/Charm", "tr0034_Clover/Clover", "tr0035_Coin/Coin"
-        };
+        static readonly string[] Characters = PokeMoba.Game.TrainerCharacterCatalog.Keys;
 
         public int SelectedSkin => selectedSkin;
         public int SelectedHair => selectedHair;
@@ -107,7 +100,7 @@ namespace CharacterCustomizer
             selectedHair = Mathf.Max(0, hairStyle);
             selectedHairColor = Mathf.Max(0, hairColor);
             selectedRole = string.IsNullOrEmpty(role) ? "Explorador" : role;
-            selectedCharacter = string.IsNullOrEmpty(characterKey) ? "Procedural" : characterKey;
+            selectedCharacter = string.IsNullOrEmpty(characterKey) ? "Procedural" : PokeMoba.Game.TrainerCharacterCatalog.Resolve(characterKey);
             characterChanged = onCharacterChanged;
             onSave = new UnityEvent();
             onCancel = new UnityEvent();
@@ -121,12 +114,7 @@ namespace CharacterCustomizer
             Build();
         }
 
-        static string CharacterLabel(string key)
-        {
-            if (key == "Procedural") return "Roshi";
-            int slash = key.IndexOf('/');
-            return slash >= 0 ? key.Substring(slash + 1) : key;
-        }
+        static string CharacterLabel(string key) => PokeMoba.Game.SaveData.CharacterName(key);
         private void Build()
         {
             if (panel != null) return;
@@ -195,22 +183,37 @@ namespace CharacterCustomizer
             Label(characterPicker, "Elige tu personaje", 30, Color.white, TextAnchor.MiddleCenter,
                 new Vector2(.04f, .90f), new Vector2(.96f, .99f), Vector2.zero, Vector2.zero);
 
-            for (int i = 0; i < Characters.Length; i++)
+            var scrollObject = new GameObject("Lista de personajes");
+            var scrollRect = Rect(scrollObject, characterPicker, new Vector2(.03f,.15f), new Vector2(.97f,.88f), Vector2.zero, Vector2.zero);
+            Image(scrollObject, C("#102A43"));
+            var viewportObject = new GameObject("Viewport");
+            var viewport = Rect(viewportObject, scrollRect, Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero);
+            viewportObject.AddComponent<RectMask2D>();
+            var contentObject = new GameObject("Contenido");
+            var content = Rect(contentObject, viewport, new Vector2(0,1), Vector2.one, Vector2.zero, Vector2.zero);
+            content.pivot = new Vector2(.5f,1);
+            int rows = Mathf.CeilToInt(Characters.Length/4f);
+            content.sizeDelta = new Vector2(0,rows*160f+20f);
+            var grid = contentObject.AddComponent<GridLayoutGroup>();
+            grid.constraint = GridLayoutGroup.Constraint.FixedColumnCount; grid.constraintCount = 4;
+            grid.spacing = new Vector2(12,12); grid.padding = new RectOffset(12,12,12,12);
+            Canvas.ForceUpdateCanvases();
+            grid.cellSize = new Vector2(Mathf.Max(120,(viewport.rect.width-60)/4),148);
+            var scroll = scrollObject.AddComponent<ScrollRect>();
+            scroll.viewport=viewport;scroll.content=content;scroll.horizontal=false;scroll.vertical=true;
+            scroll.movementType=ScrollRect.MovementType.Clamped;scroll.scrollSensitivity=30;
+            for(int i=0;i<Characters.Length;i++)
             {
-                int index = i;
-                int column = i % 4;
-                int row = i / 4;
-                float x = .04f + column * .235f;
-                float top = .84f - row * .18f;
-                Label(characterPicker, CharacterLabel(Characters[i]), 12, Color.white, TextAnchor.MiddleCenter,
-                    new Vector2(x, top - .03f), new Vector2(x + .215f, top + .08f), Vector2.zero, Vector2.zero);
-                var button = Button(characterPicker, "",
-                    Characters[i] == selectedCharacter ? C("#3189BF") : C("#24466E"),
-                    () => SelectCharacter(Characters[index]), new Vector2(x, top - .18f),
-                    new Vector2(x + .215f, top - .03f), Vector2.zero, Vector2.zero, 1);
-                button.interactable = true;
-                SetCharacterIcon(button, Characters[i]);
+                int index=i;
+                var button=Button(content,"",C("#24466E"),()=>SelectCharacter(Characters[index]),Vector2.zero,Vector2.zero,Vector2.zero,Vector2.zero,1);
+                SetCharacterIcon(button,Characters[i]);
+                var outline=button.gameObject.AddComponent<Outline>();
+                outline.effectColor=Characters[i]==selectedCharacter?C("#54C9FF"):C("#16365C");outline.effectDistance=new Vector2(2,2);
+                Label(button.transform,CharacterLabel(Characters[i]),18,Color.white,TextAnchor.LowerCenter,
+                    Vector2.zero,new Vector2(1,.23f),new Vector2(4,3),new Vector2(-4,-2));
             }
+            Label(characterPicker,"Desliza o usa la rueda para ver más personajes",14,C("#BFD7ED"),TextAnchor.MiddleLeft,
+                new Vector2(.04f,.02f),new Vector2(.38f,.12f),Vector2.zero,Vector2.zero);
 
             Button(characterPicker, "Cancelar", C("#3B4A5C"), () =>
             {

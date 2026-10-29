@@ -1,0 +1,42 @@
+{
+  "key": "Package/tr0015_00_captain4",
+  "source": "tr0015_00_captain4/tr0015_00_captain4.trmdl",
+  "sha256": "ef1461ba6d68ef4344e1f2ac2f8edb48f50dbf94c8f9d1c94a931a8f94ecd935",
+  "bindings": [
+    {
+      "material": "eye",
+      "texture": "tex/eye.png"
+    },
+    {
+      "material": "face",
+      "texture": "tex/face.png"
+    },
+    {
+      "material": "face_skin",
+      "texture": "tex/face_skin.png"
+    },
+    {
+      "material": "hairstyle",
+      "texture": "tex/hairstyle.png"
+    },
+    {
+      "material": "body",
+      "texture": "tex/body.png"
+    },
+    {
+      "material": "body_skin",
+      "texture": "tex/body_skin.png"
+    },
+    {
+      "material": "obj",
+      "texture": "tex/obj.png"
+    },
+    {
+      "material": "ring",
+      "texture": "tex/ring.png"
+    }
+  ],
+  "vertices": 6685,
+  "bones": 180,
+  "bakedAlbedo": true
+}

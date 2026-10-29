@@ -1,0 +1,339 @@
+VBCSCompilerServerWatchdog: watching VBCSCompiler (PID 15116)
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.3/staging' branch; Version is '6000.3.27f1 (672d562a42a7) revision 6761814'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-andres" at "2026-10-29T01:00:46.9755907Z"
+OS: 'Windows 11  (10.0.26300) Professional' Language: 'es' Physical Memory: 16329 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-10-29T01:00:46Z
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 21744, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.3+d7ffd15
+  Session Id:              4ab9c4e49f3843d6a149a77fe1c47c15
+  Correlation Id:          d4c4a0ab8d354cc57f6f06f0cc97ef2b
+  External correlation Id: 3591213894308310245
+  Machine Id:              +q4Csd0Wcwg5L2yTzXfWavgjZxM=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-andres" (connect: 0.00s, validation: 0.00s, handshake: 0.07s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-andres-notifications" at "2026-10-29T01:00:47.0437723Z"
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 4674133869493-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.00
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 0.08s
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.3.27f1\Editor\Unity.exe
+-batchmode
+-quit
+-projectPath
+C:/Users/andres/Documents/PokeMoba/tmp/ash-validation-project
+-executeMethod
+PokeMoba.Editor.CreatorValidation.Run
+-logFile
+C:/Users/andres/Documents/PokeMoba/tmp/creator-unity.log
+Successfully changed project path to: C:/Users/andres/Documents/PokeMoba/tmp/ash-validation-project
+C:/Users/andres/Documents/PokeMoba/tmp/ash-validation-project
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-remapper-allocator-initial-capacity=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+Player connection [7956]  Target information:
+
+Player connection [7956]  * "[IP] 192.168.18.2 [Port] 55505 [Flags] 2 [Guid] 3806673763 [EditorId] 3806673763 [Version] 1048832 [Id] WindowsEditor(7,antero) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [7956]  * "[IP] 172.22.160.1 [Port] 55505 [Flags] 2 [Guid] 3806673763 [EditorId] 3806673763 [Version] 1048832 [Id] WindowsEditor(7,antero) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [7956] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [7956] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Package Manager] Connected to IPC stream "Upm-14116" after 0.2 seconds.
+[Licensing::Client] Successfully resolved entitlement details
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 0.09 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.3.27f1 (672d562a42a7)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.27f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/andres/Documents/PokeMoba/tmp/ash-validation-project/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+d3d12: failed to query info queue interface (0x80004002).
+Direct3D:
+    Version:         Direct3D 12 [level 12.2]
+    Renderer:        NVIDIA GeForce RTX 2060 (ID=0x1e89)
+    Vendor:          NVIDIA
+    VRAM:            5945 MB
+    App VRAM Budget: 5177 MB
+    Driver:          32.0.16.1742
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.27f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.27f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56116
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.27f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+[Licensing::Client] Successfully resolved entitlement details
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.27f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Registered in 0.007075 seconds.
+- Loaded All Assemblies, in  0.401 seconds
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:False
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.374 seconds
+Domain Reload Profiling: 770ms
+	BeginReloadAssembly (138ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (13ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (58ms)
+	LoadAllAssembliesAndSetupDomain (156ms)
+		LoadAssemblies (121ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (152ms)
+			TypeCache.Refresh (151ms)
+				TypeCache.ScanAssembly (138ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (375ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (338ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (52ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (73ms)
+			ProcessInitializeOnLoadAttributes (120ms)
+			ProcessInitializeOnLoadMethodAttributes (90ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 16 packages:
+  Packages from [https://packages.unity.com]:
+    com.unity.inputsystem@1.20.1 (location: C:\Users\andres\Documents\PokeMoba\tmp\ash-validation-project\Library\PackageCache\com.unity.inputsystem@2436e68c60c4)
+    com.unity.nuget.newtonsoft-json@3.2.2 (location: C:\Users\andres\Documents\PokeMoba\tmp\ash-validation-project\Library\PackageCache\com.unity.nuget.newtonsoft-json@4dfd81071c64)
+  Built-in packages:
+    com.unity.ugui@2.0.0 (location: C:\Users\andres\Documents\PokeMoba\tmp\ash-validation-project\Library\PackageCache\com.unity.ugui@c0ef89c047f6)
+    com.unity.modules.adaptiveperformance@1.0.0 (location: C:\Users\andres\Documents\PokeMoba\tmp\ash-validation-project\Library\PackageCache\com.unity.modules.adaptiveperformance)
+    com.unity.modules.animation@1.0.0 (location: C:\Users\andres\Documents\PokeMoba\tmp\ash-validation-project\Library\PackageCache\com.unity.modules.animation)
+    com.unity.modules.audio@1.0.0 (location: C:\Users\andres\Documents\PokeMoba\tmp\ash-validation-project\Library\PackageCache\com.unity.modules.audio)
+    com.unity.modules.imgui@1.0.0 (location: C:\Users\andres\Documents\PokeMoba\tmp\ash-validation-project\Library\PackageCache\com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: C:\Users\andres\Documents\PokeMoba\tmp\ash-validation-project\Library\PackageCache\com.unity.modules.jsonserialize)
+    com.unity.modules.particlesystem@1.0.0 (location: C:\Users\andres\Documents\PokeMoba\tmp\ash-validation-project\Library\PackageCache\com.unity.modules.particlesystem)
+    com.unity.modules.physics@1.0.0 (location: C:\Users\andres\Documents\PokeMoba\tmp\ash-validation-project\Library\PackageCache\com.unity.modules.physics)
+    com.unity.modules.ui@1.0.0 (location: C:\Users\andres\Documents\PokeMoba\tmp\ash-validation-project\Library\PackageCache\com.unity.modules.ui)
+    com.unity.modules.uielements@1.0.0 (location: C:\Users\andres\Documents\PokeMoba\tmp\ash-validation-project\Library\PackageCache\com.unity.modules.uielements)
+    com.unity.modules.vectorgraphics@1.0.0 (location: C:\Users\andres\Documents\PokeMoba\tmp\ash-validation-project\Library\PackageCache\com.unity.modules.vectorgraphics)
+    com.unity.modules.imageconversion@1.0.0 (location: C:\Users\andres\Documents\PokeMoba\tmp\ash-validation-project\Library\PackageCache\com.unity.modules.imageconversion)
+    com.unity.modules.hierarchycore@1.0.0 (location: C:\Users\andres\Documents\PokeMoba\tmp\ash-validation-project\Library\PackageCache\com.unity.modules.hierarchycore)
+    com.unity.modules.subsystems@1.0.0 (location: C:\Users\andres\Documents\PokeMoba\tmp\ash-validation-project\Library\PackageCache\com.unity.modules.subsystems)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.03 seconds
+[ScriptCompilation] Requested script compilation because: Assetdatabase observed changes in script compilation related files
+Starting: C:\Program Files\Unity\Hub\Editor\6000.3.27f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: C:/Users/andres/Documents/PokeMoba/tmp/ash-validation-project
+DisplayProgressbar: Compiling Scripts
+ExitCode: 0 Duration: 1s774ms
+[241/247    1s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll (+2 others)
+[242/247    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.dll
+[243/247    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.pdb
+[244/247    0s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll (+2 others)
+[245/247    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb
+[246/247    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+*** Tundra build success (1.66 seconds), 6 items updated, 247 evaluated
+AssetDatabase: script compilation time: 2.268086s
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.638 seconds
+Start importing Assets/_Project/Resources/Data using Guid(d5766cc9147cf83488bf825672dd4496) (DefaultImporter) -> (artifact id: '02b0a372a6f2d740e6042902ce9f10c0') in 0.033288 seconds
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.551 seconds
+Domain Reload Profiling: 1183ms
+	BeginReloadAssembly (336ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (30ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (140ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (32ms)
+	LoadAllAssembliesAndSetupDomain (217ms)
+		LoadAssemblies (285ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (56ms)
+			TypeCache.Refresh (43ms)
+				TypeCache.ScanAssembly (32ms)
+			BuildScriptInfoCaches (7ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (552ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (421ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (47ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (148ms)
+			ProcessInitializeOnLoadAttributes (160ms)
+			ProcessInitializeOnLoadMethodAttributes (49ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (24ms)
+Start importing Assets/_Project/Resources/Data/pokeapi_001-151.json using Guid(f9ea0077dae887449b03039898c86027) (TextScriptImporter) -> (artifact id: 'cf76cb7c03703ba203e9c35ca7b0997b') in 0.0087462 seconds
+Start importing Assets/_Project/Resources/Data/overrides.json using Guid(5e07617ea016cc94dba4fbab0dff4280) (TextScriptImporter) -> (artifact id: 'a9c13cd2014821c7a4dde75e2d6f66da') in 0.0030215 seconds
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=2de451f311ff21a4a92617d82115addd): Total: 3.880 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	Summary:
+		Imports: total=3 (actual=3, local cache=0, cache server=0)
+		Asset DB Process Time: managed=4 ms, native=835 ms
+		Asset DB Callback time: managed=75 ms, native=34 ms
+		Scripting: domain reloads=1, domain reload time=638 ms, compile time=2270 ms, other=21 ms
+		Project Asset Count: scripts=312, non-scripts=562
+		Asset File Changes: new=0, changed=1, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokeCustomDependenciesCallbacks: 0.002ms
+	InvokePackagesCallback: 33.736ms
+	ApplyChangesToAssetFolders: 0.463ms
+	Scan: 59.887ms
+	OnSourceAssetsModified: 1.015ms
+	CategorizeAssetsWithTransientArtifact: 3.781ms
+	ProcessAssetsWithTransientArtifactChanges: 16.936ms
+	CategorizeAssets: 11.297ms
+	ImportOutOfDateAssets: 608.015ms (-1716.465ms without children)
+		ImportManagerImport: 52.876ms (6.900ms without children)
+			ImportInProcess: 45.932ms
+			UpdateCategorizedAssets: 0.044ms
+		CompileScripts: 2269.926ms
+		ReloadNativeAssets: 0.001ms
+		UnloadImportedAssets: 1.292ms
+		ReloadImportedAssets: 0.001ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.095ms
+		InitializingProgressBar: 0.009ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.000ms
+		OnDemandSchedulerStart: 0.281ms
+	PostProcessAllAssets: 75.835ms
+	Hotreload: 1.752ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.002ms
+	UnloadStreamsBegin: 1.097ms
+	PersistCurrentRevisions: 0.073ms
+	UnloadStreamsEnd: 0.001ms
+	GenerateScriptTypeHashes: 2.696ms
+	Untracked: 3065.900ms
+
+Application.AssetDatabase Initial Refresh End
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Scanning for USB devices : 9.920ms
+Initializing Unity extensions:
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-ash-validation-project
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 918 unused Assets / (0.9 MB). Loaded Objects now: 1551.
+Memory consumption went from 106.8 MB to 105.9 MB.
+Total: 6.882000 ms (FindLiveObjects: 0.135800 ms CreateObjectMapping: 0.039900 ms MarkObjects: 5.987600 ms  DeleteObjects: 0.717400 ms)
+
+PokeMoba: 151 especies cargadas.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+PokeMoba.Data.Pokedex.PokemonDatabase:Load () (at Assets/_Project/Scripts/Data/Pokedex/PokemonDatabase.cs:54)
+PokeMoba.Data.Pokedex.PokemonDatabase:get_Dex () (at Assets/_Project/Scripts/Data/Pokedex/PokemonDatabase.cs:26)
+PokeMoba.Data.Pokedex.PokemonDatabase:Get (int) (at Assets/_Project/Scripts/Data/Pokedex/PokemonDatabase.cs:33)
+PokeMoba.Prototype.CreatorOptions:GivePokemon (PokeMoba.Game.SaveData) (at Assets/_Project/Scripts/Prototype/CreatorOptions.cs:66)
+PokeMoba.Editor.CreatorValidation:Run () (at Assets/_Project/Scripts/Editor/CreatorValidation.cs:24)
+
+(Filename: Assets/_Project/Scripts/Data/Pokedex/PokemonDatabase.cs Line: 54)
+
+PASS: inventario, límites, nivel/XP, equipo/PC y vida/invulnerabilidad. Partida real intacta.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+PokeMoba.Editor.CreatorValidation:Run () (at Assets/_Project/Scripts/Editor/CreatorValidation.cs:44)
+
+(Filename: Assets/_Project/Scripts/Editor/CreatorValidation.cs Line: 44)
+
+Batchmode quit successfully invoked - shutting down!
+Curl error 42: Callback aborted
+Killing ADB server in 2.1387322 seconds.
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input System polling thread exited.
+Input System module state changed to: Shutdown.
+[Licensing::IpcConnector] LicenseClient-andres-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-andres channel disconnected successfully.
+AcceleratorClientConnectionCallback - disconnected - :0
+Cleanup mono
+Exiting batchmode successfully now!
+Exiting without the bug reporter. Application will terminate with return code 0

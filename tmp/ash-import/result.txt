@@ -1,0 +1,1 @@
+PASS: Ash builds through the character selector path; idle 5.72s; run 0.72s; height 1.950m; all materials textured; run vertex displacement 0.605m; horizontal root motion constrained.

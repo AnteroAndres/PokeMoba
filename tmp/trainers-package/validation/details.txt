@@ -1,0 +1,33 @@
+PASS Package/tr0002_00_doctor_b: Laventon; 7984 vertices; height 1.950; locomotion delta 0.4578
+PASS Package/tr0003_00_ouji: Adaman; 8147 vertices; height 1.950; locomotion delta 0.4769
+PASS Package/tr0004_00_hime: Irida; 7543 vertices; height 1.950; locomotion delta 0.5210
+PASS Package/tr0005_00_boss1: Kamado; 6581 vertices; height 1.950; locomotion delta 0.5086
+PASS Package/tr0006_00_boss2: Kamado samurái; 8816 vertices; height 1.950; locomotion delta 0.5171
+PASS Package/tr0007_00_si1: Volo; 7206 vertices; height 1.950; locomotion delta 0.4826
+PASS Package/tr0008_00_si2: Volo ceremonial; 6822 vertices; height 1.950; locomotion delta 0.4783
+PASS Package/tr0009_00_ninja1: Ninja 1; 6368 vertices; height 1.950; locomotion delta 0.5085
+PASS Package/tr0010_00_ninja2: Ninja 2; 8972 vertices; height 1.950; locomotion delta 0.4874
+PASS Package/tr0011_00_miko: Cogita; 7121 vertices; height 1.950; locomotion delta 0.5144
+PASS Package/tr0012_00_captain1: Guardián 1; 7150 vertices; height 1.950; locomotion delta 0.5096
+PASS Package/tr0013_00_captain2: Guardián 2; 6592 vertices; height 1.950; locomotion delta 0.4384
+PASS Package/tr0014_00_captain3: Guardián 3; 9067 vertices; height 1.950; locomotion delta 0.3876
+PASS Package/tr0015_00_captain4: Guardián 4; 6685 vertices; height 1.950; locomotion delta 0.5075
+PASS Package/tr0016_00_captain5: Guardián 5; 5748 vertices; height 1.950; locomotion delta 0.4994
+PASS Package/tr0017_00_captain6: Guardián 6; 8741 vertices; height 1.950; locomotion delta 0.5082
+PASS Package/tr0018_00_captain7: Ingo; 8128 vertices; height 1.950; locomotion delta 0.4984
+PASS Package/tr0019_00_captain8: Guardián 8; 6929 vertices; height 1.950; locomotion delta 0.4543
+PASS Package/tr0020_00_captain9: Guardián 9; 6449 vertices; height 1.950; locomotion delta 0.5029
+PASS Package/tr0021_00_captain10: Guardián 10; 8585 vertices; height 1.950; locomotion delta 0.4064
+PASS Package/tr0022_00_guard_leader: Jefa de guardia; 7574 vertices; height 1.950; locomotion delta 0.4937
+PASS Package/tr0023_00_guard_lower_m: Guardia; 7345 vertices; height 1.950; locomotion delta 0.4732
+PASS Package/tr0024_00_guard_lower_f: Guardia femenina; 7895 vertices; height 1.950; locomotion delta 0.4930
+PASS Package/tr0025_00_trade_boss: Ginter; 7462 vertices; height 1.950; locomotion delta 0.4961
+PASS Package/tr0027_00_me_leader: Jefe de aldea; 6034 vertices; height 1.950; locomotion delta 0.4942
+PASS Package/tr0031_00_trade_m: Comerciante; 7025 vertices; height 1.950; locomotion delta 0.5129
+PASS Package/tr0032_00_trade_f: Comerciante femenina; 7095 vertices; height 1.950; locomotion delta 0.5048
+PASS Package/tr0033_00_bandit_first: Charm; 7451 vertices; height 1.950; locomotion delta 0.4985
+PASS Package/tr0034_00_bandit_second: Clover; 6659 vertices; height 1.950; locomotion delta 0.4990
+PASS Package/tr0035_00_bandit_third: Coin; 8164 vertices; height 1.950; locomotion delta 0.4808
+PASS Package/tr0036_00_senpai_m: Rei; 6900 vertices; height 1.950; locomotion delta 0.4873
+PASS Package/tr0037_00_senpai_f: Akari; 7083 vertices; height 1.950; locomotion delta 0.4878
+PASS Package/tr0038_00_bu_leader_f: Aldeana; 5375 vertices; height 1.950; locomotion delta 0.5055

@@ -12,6 +12,8 @@ namespace PokeMoba.World
         readonly List<Quaternion> rest = new List<Quaternion>();
         readonly List<float> amplitudes = new List<float>();
         float phase;
+        AshTrainerMotion animatedAsh;
+        PackageTrainerMotion packageMotion;
 
         public static ImportedTrainerModel TryBuild(Transform root)
         {
@@ -20,13 +22,32 @@ namespace PokeMoba.World
 
         public static ImportedTrainerModel TryBuild(Transform root, string modelPath)
         {
-            var asset = Resources.Load<GameObject>("Models/Trainers/ImportedFbx/" + modelPath);
+            modelPath = PokeMoba.Game.TrainerCharacterCatalog.Resolve(modelPath);
+            bool fromPackage = modelPath != null && modelPath.StartsWith("Package/", System.StringComparison.Ordinal);
+            var asset = fromPackage ? Resources.Load<GameObject>("Models/Trainers/" + modelPath + "/Model")
+                : Resources.Load<GameObject>("Models/Trainers/ImportedFbx/" + modelPath);
             if (asset == null && modelPath == "MasterRoshi/N02_321out")
                 asset = Resources.Load<GameObject>(Folder + "N02_321out");
             if (asset == null) return null;
             var adapter = root.gameObject.AddComponent<ImportedTrainerModel>();
             var model = Instantiate(asset, root);
             model.name = modelPath;
+            if (fromPackage)
+            {
+                adapter.packageMotion = PackageTrainerMotion.Configure(model);
+                return adapter;
+            }
+            if (modelPath == AshTrainerMotion.CharacterKey)
+            {
+                adapter.animatedAsh = AshTrainerMotion.Configure(model);
+                if (adapter.animatedAsh == null)
+                {
+                    Destroy(model);
+                    Destroy(adapter);
+                    return null;
+                }
+                return adapter;
+            }
             adapter.Configure(model.transform, modelPath);
             return adapter;
         }
@@ -199,6 +220,8 @@ namespace PokeMoba.World
 
         public void Animate(float walking)
         {
+            if (packageMotion != null) { packageMotion.Animate(walking); return; }
+            if (animatedAsh != null) { animatedAsh.Animate(walking); return; }
             float speed = Mathf.Clamp01(walking);
             phase += Time.deltaTime * 8f * speed;
             for (int i = 0; i < joints.Count; i++)

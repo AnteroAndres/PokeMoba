@@ -1,0 +1,38 @@
+{
+  "key": "Package/tr0024_00_guard_lower_f",
+  "source": "tr0024_00_guard_lower_f/tr0024_00_guard_lower_f.trmdl",
+  "sha256": "99c3ae9b9230e27e9101b064b60cfc236034094e4a19f0574e2a81b56e907bb8",
+  "bindings": [
+    {
+      "material": "body",
+      "texture": "tex/body.png"
+    },
+    {
+      "material": "body_skin",
+      "texture": "tex/body_skin.png"
+    },
+    {
+      "material": "obj",
+      "texture": "tex/obj.png"
+    },
+    {
+      "material": "hairstyle",
+      "texture": "tex/hairstyle.png"
+    },
+    {
+      "material": "face",
+      "texture": "tex/face.png"
+    },
+    {
+      "material": "eye",
+      "texture": "tex/eye.png"
+    },
+    {
+      "material": "face_skin",
+      "texture": "tex/face_skin.png"
+    }
+  ],
+  "vertices": 7889,
+  "bones": 203,
+  "bakedAlbedo": true
+}

@@ -1,0 +1,38 @@
+{
+  "key": "Package/tr0034_00_bandit_second",
+  "source": "tr0034_00_bandit_second/tr0034_00_bandit_second.trmdl",
+  "sha256": "f080f4affef99380f0ada21e4e5284fba5048be2e95d1f43b242c4b389f9c26a",
+  "bindings": [
+    {
+      "material": "hairstyle",
+      "texture": "tex/hairstyle.png"
+    },
+    {
+      "material": "face_skin",
+      "texture": "tex/face_skin.png"
+    },
+    {
+      "material": "eye",
+      "texture": "tex/eye.png"
+    },
+    {
+      "material": "face",
+      "texture": "tex/face.png"
+    },
+    {
+      "material": "body_skin",
+      "texture": "tex/body_skin.png"
+    },
+    {
+      "material": "body",
+      "texture": "tex/body.png"
+    },
+    {
+      "material": "obi",
+      "texture": "tex/obi.png"
+    }
+  ],
+  "vertices": 6656,
+  "bones": 196,
+  "bakedAlbedo": true
+}

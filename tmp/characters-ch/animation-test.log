@@ -1,0 +1,46 @@
+FBX version: 7400
+ch0243_00_yuri_110_idle.lmd
+CHECK idle duration 2.0 frames 60 action idle slots 1 delta 0.03262225617041602
+
+FBX export starting... 'C:\\Users\\andres\\Documents\\PokeMoba\\UnityProject\\Assets\\_Project\\Resources\\Models\\Trainers\\Package\\ch0243_00_yuri\\Animations\\idle.fbx'
+export finished in 0.2987 sec.
+ANIMATED ch0243_00_yuri idle 60 frames 95 bones
+FBX version: 7400
+ch0243_00_yuri_220_walk_1.lmd
+CHECK walk duration 1.100000023841858 frames 33 action walk slots 1 delta 0.3954137478089145
+
+FBX export starting... 'C:\\Users\\andres\\Documents\\PokeMoba\\UnityProject\\Assets\\_Project\\Resources\\Models\\Trainers\\Package\\ch0243_00_yuri\\Animations\\walk.fbx'
+export finished in 0.2128 sec.
+ANIMATED ch0243_00_yuri walk 33 frames 99 bones
+FBX version: 7400
+ch0243_00_yuri_110_direct.lmd
+CHECK command duration 2.0 frames 60 action command slots 1 delta 0.6217486396792731
+
+FBX export starting... 'C:\\Users\\andres\\Documents\\PokeMoba\\UnityProject\\Assets\\_Project\\Resources\\Models\\Trainers\\Package\\ch0243_00_yuri\\Animations\\command.fbx'
+export finished in 0.3751 sec.
+ANIMATED ch0243_00_yuri command 60 frames 95 bones
+FBX version: 7400
+ch0243_00_yuri_110_start_battle.lmd
+CHECK battle duration 2.3330001831054688 frames 70 action battle slots 1 delta 0.4896901801444118
+
+FBX export starting... 'C:\\Users\\andres\\Documents\\PokeMoba\\UnityProject\\Assets\\_Project\\Resources\\Models\\Trainers\\Package\\ch0243_00_yuri\\Animations\\battle.fbx'
+export finished in 0.3268 sec.
+ANIMATED ch0243_00_yuri battle 70 frames 99 bones
+FBX version: 7400
+ch0243_00_yuri_221_greeting_1.lmd
+CHECK greeting duration 2.0 frames 60 action greeting slots 1 delta 0.6725684674782605
+
+FBX export starting... 'C:\\Users\\andres\\Documents\\PokeMoba\\UnityProject\\Assets\\_Project\\Resources\\Models\\Trainers\\Package\\ch0243_00_yuri\\Animations\\greeting.fbx'
+export finished in 0.3185 sec.
+ANIMATED ch0243_00_yuri greeting 60 frames 95 bones
+FBX version: 7400
+ch0243_00_yuri_110_join.lmd
+CHECK throw duration 1.1340000629425049 frames 34 action throw slots 1 delta 0.4790660807697903
+
+FBX export starting... 'C:\\Users\\andres\\Documents\\PokeMoba\\UnityProject\\Assets\\_Project\\Resources\\Models\\Trainers\\Package\\ch0243_00_yuri\\Animations\\throw.fbx'
+export finished in 0.3054 sec.
+ANIMATED ch0243_00_yuri throw 34 frames 99 bones
+COMPLETE
+Blender 4.5.3 LTS (hash 67807e1800cc built 2025-09-09 01:33:33)
+
+Blender quit

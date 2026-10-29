@@ -1,0 +1,10 @@
+{
+  "name": "idle",
+  "source": "ch0243_00_yuri_110_idle.lmd",
+  "sha256": "0578507a70af4de6487b913c87a0e77f5526da1ade0a6a9b1237395151d97ae4",
+  "fps": 30,
+  "frames": 60,
+  "duration": 2.0,
+  "matchedBones": 95,
+  "movementDelta": 0.03262225617041602
+}

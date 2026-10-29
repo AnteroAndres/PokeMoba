@@ -1,0 +1,42 @@
+{
+  "key": "Package/tr0019_00_captain8",
+  "source": "tr0019_00_captain8/tr0019_00_captain8.trmdl",
+  "sha256": "934f90a0c3819de2bdfdfcb97f21acac014e77aa25526135ff6c938607734562",
+  "bindings": [
+    {
+      "material": "obj",
+      "texture": "tex/obj.png"
+    },
+    {
+      "material": "hairstyle",
+      "texture": "tex/hairstyle.png"
+    },
+    {
+      "material": "face",
+      "texture": "tex/face.png"
+    },
+    {
+      "material": "face_skin",
+      "texture": "tex/face_skin.png"
+    },
+    {
+      "material": "eye",
+      "texture": "tex/eye.png"
+    },
+    {
+      "material": "body",
+      "texture": "tex/body.png"
+    },
+    {
+      "material": "body_skin",
+      "texture": "tex/body_skin.png"
+    },
+    {
+      "material": "ring",
+      "texture": "tex/ring.png"
+    }
+  ],
+  "vertices": 6925,
+  "bones": 195,
+  "bakedAlbedo": true
+}

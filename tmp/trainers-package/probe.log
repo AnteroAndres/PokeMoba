@@ -1,0 +1,83 @@
+Extensions: writing cache failed ([Errno 13] Permission denied: 'C:\\Users\\andres\\AppData\\Roaming\\Blender Foundation\\Blender\\4.5\\extensions\\.cache\\compat.dat').
+BaseColorMap tr0002_00_obj_alb.bntx
+WeatherLayerMaskMap tr0002_00_obj_wlm.bntx
+NormalMap tr0002_00_obj_nrm.bntx
+MetallicMap tr0002_00_obj_mtl.bntx
+RoughnessMap tr0002_00_obj_rgn.bntx
+AOMap tr0002_00_obj_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0002_00_body_alb.bntx
+WeatherLayerMaskMap tr0002_00_body_wlm.bntx
+NormalMap tr0002_00_body_nrm.bntx
+MetallicMap tr0002_00_body_mtl.bntx
+RoughnessMap tr0002_00_body_rgn.bntx
+AOMap tr0002_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0002_00_body_alb.bntx
+WeatherLayerMaskMap tr0002_00_body_wlm.bntx
+NormalMap tr0002_00_body_nrm.bntx
+MetallicMap tr0002_00_body_mtl.bntx
+RoughnessMap tr0002_00_body_rgn.bntx
+AOMap tr0002_00_body_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0002_00_face_alb.bntx
+AOMap tr0002_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0002_00_eye_alb.bntx
+EmissionColorMap tr0002_00_eye_emv.bntx
+AOMap tr0002_00_eye_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 1.0
+EmissionIntensity 0.800000011920929
+BaseColorMap tr0002_00_hairstyle_alb.bntx
+WeatherLayerMaskMap tr0002_00_hairstyle_wlm.bntx
+NormalMap tr0002_00_hairstyle_nrm.bntx
+MetallicMap tr0002_00_hairstyle_mtl.bntx
+RoughnessMap tr0002_00_hairstyle_rgn.bntx
+AOMap tr0002_00_hairstyle_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+BaseColorMap tr0002_00_face_alb.bntx
+AOMap tr0002_00_face_ao.bntx
+DiscardValue 0.0
+Metallic 0.0
+Roughness 0.699999988079071
+EmissionIntensity 0.0
+BaseColorMap tr0002_00_hairstyle_alb.bntx
+WeatherLayerMaskMap tr0002_00_hairstyle_wlm.bntx
+NormalMap tr0002_00_hairstyle_nrm.bntx
+MetallicMap tr0002_00_hairstyle_mtl.bntx
+RoughnessMap tr0002_00_hairstyle_rgn.bntx
+AOMap tr0002_00_hairstyle_ao.bntx
+DiscardValue 0.0
+NormalHeight 1.0
+EmissionIntensity 0.0
+Offline Mode
+! Loaded shader blend file.
+Parsing TRMSH...
+Parsing TRMBF...
+PROBE_OBJECTS [('tr0002_00_doctor_b', 'ARMATURE'), ('camera_mesh', 'MESH'), ('inner_mesh', 'MESH'), ('hands_mesh', 'MESH'), ('coat_back_mesh', 'MESH'), ('coat_out_mesh', 'MESH'), ('shoes_mesh', 'MESH'), ('lowerbody_mesh', 'MESH'), ('face_mesh', 'MESH'), ('beard_mesh', 'MESH'), ('eyeball_mesh', 'MESH'), ('eyehilight_mesh', 'MESH'), ('eyebrow_mesh', 'MESH'), ('eyelash_mesh', 'MESH'), ('hat01_mesh', 'MESH'), ('hat02_mesh', 'MESH'), ('mouth_mesh', 'MESH'), ('tooth_mesh', 'MESH'), ('tongue_mesh', 'MESH')]
+PROBE_MAT body [('Group', ''), ('Image Texture', 'tr0002_00_body_alb.png.001'), ('Image Texture.001', 'tr0002_00_body_nrm.png'), ('Image Texture.002', 'tr0002_00_body_rgn.png'), ('Image Texture.003', 'tr0002_00_body_mtl.png')]
+PROBE_MAT body_skin [('Group', ''), ('Image Texture', 'tr0002_00_body_alb.png.003'), ('Image Texture.001', 'tr0002_00_body_nrm.png.001'), ('Image Texture.002', 'tr0002_00_body_rgn.png.001'), ('Image Texture.003', 'tr0002_00_body_mtl.png.001')]
+PROBE_MAT eye [('Group', ''), ('Image Texture', 'tr0002_00_eye_alb.png.001'), ('Image Texture.001', 'tr0002_00_eye_emv.png')]
+PROBE_MAT face [('Group', ''), ('Image Texture', 'tr0002_00_face_alb.png.001')]
+PROBE_MAT face_skin [('Group', ''), ('Image Texture', 'tr0002_00_face_alb.png.003')]
+PROBE_MAT hairstyle [('Group', ''), ('Image Texture', 'tr0002_00_hairstyle_alb.png.001'), ('Image Texture.001', 'tr0002_00_hairstyle_nrm.png'), ('Image Texture.002', 'tr0002_00_hairstyle_rgn.png'), ('Image Texture.003', 'tr0002_00_hairstyle_mtl.png')]
+PROBE_MAT hairstyle_obj [('Group', ''), ('Image Texture', 'tr0002_00_hairstyle_alb.png.003'), ('Image Texture.001', 'tr0002_00_hairstyle_nrm.png.001'), ('Image Texture.002', 'tr0002_00_hairstyle_rgn.png.001'), ('Image Texture.003', 'tr0002_00_hairstyle_mtl.png.001')]
+PROBE_MAT obj [('Group', ''), ('Image Texture', 'tr0002_00_obj_alb.png.001'), ('Image Texture.001', 'tr0002_00_obj_nrm.png'), ('Image Texture.002', 'tr0002_00_obj_rgn.png'), ('Image Texture.003', 'tr0002_00_obj_mtl.png')]
+PROBE_MAT PokemonShader [('Group', '')]
+BONES ['chara_root', 'origin', 'foot_base', 'waist', 'spine_01', 'spine_02', 'spine_03', 'neck', 'look', 'head', 'upper_head', 'left_root_eyeball', 'left_eyeball', 'left_eyehilight', 'left_upper_eyelid_a', 'left_upper_eyelid_b', 'left_upper_eyelid_c', 'left_lower_eyelid_a', 'left_lower_eyelid_b', 'left_side_eyelid_a', 'left_side_eyelid_b', 'left_lower_eyelid_c', 'left_eyebrow_a', 'left_eyebrow_b', 'left_eyebrow_c', 'left_eyebrow_d', 'right_root_eyeball', 'right_eyeball', 'right_eyehilight', 'right_upper_eyelid_a', 'right_upper_eyelid_b', 'right_upper_eyelid_c', 'right_lower_eyelid_a', 'right_lower_eyelid_b', 'right_lower_eyelid_c']
+Blender 4.5.3 LTS (hash 67807e1800cc built 2025-09-09 01:33:33)
+
+Blender quit

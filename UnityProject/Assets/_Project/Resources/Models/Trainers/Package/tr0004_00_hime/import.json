@@ -1,0 +1,42 @@
+{
+  "key": "Package/tr0004_00_hime",
+  "source": "tr0004_00_hime/tr0004_00_hime.trmdl",
+  "sha256": "539f3c1718b2f18cc829b186f0eb2fb058c86dee3b130360647c4ee212c2c313",
+  "bindings": [
+    {
+      "material": "hairstyle_obj",
+      "texture": "tex/hairstyle_obj.png"
+    },
+    {
+      "material": "hairstyle",
+      "texture": "tex/hairstyle.png"
+    },
+    {
+      "material": "face_skin",
+      "texture": "tex/face_skin.png"
+    },
+    {
+      "material": "face",
+      "texture": "tex/face.png"
+    },
+    {
+      "material": "eye",
+      "texture": "tex/eye.png"
+    },
+    {
+      "material": "body",
+      "texture": "tex/body.png"
+    },
+    {
+      "material": "body_skin",
+      "texture": "tex/body_skin.png"
+    },
+    {
+      "material": "obj",
+      "texture": "tex/obj.png"
+    }
+  ],
+  "vertices": 7582,
+  "bones": 210,
+  "bakedAlbedo": true
+}
